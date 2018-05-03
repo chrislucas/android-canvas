@@ -31,17 +31,14 @@ public class CircleTrigonometryView extends View {
 
     public CircleTrigonometryView(Context context) {
         super(context);
-        preparePaintToDrawPointOnTouch();
     }
 
     public CircleTrigonometryView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        preparePaintToDrawPointOnTouch();
     }
 
     public CircleTrigonometryView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        preparePaintToDrawPointOnTouch();
     }
 
     @Override
@@ -132,6 +129,7 @@ public class CircleTrigonometryView extends View {
             windowManager.getDefaultDisplay().getMetrics(displayMetrics);
         }
         preparePaintToDrawCenterPoint(w, h);
+        preparePaintToDrawPointOnTouch(w, h);
         setDimension(new PointF(w, h));
     }
 
