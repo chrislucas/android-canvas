@@ -1,0 +1,15 @@
+    CircleTrigonometryView
+
+    private void testMetrict() {
+        // https://androidknowledgeblog.wordpress.com/2016/04/04/how-to-detect-mobile-screen-size-programatically/
+        int widthPixel = displayMetrics.widthPixels;
+        int heightPixel = displayMetrics.heightPixels;
+        float widthDensity = widthPixel / displayMetrics.density;
+        float heightDensity = heightPixel/ displayMetrics.density;
+        Log.i("METRICS", String.format("W pixel %d, H pixel %d.\nDensity WH(%f, %f)"
+                , widthPixel
+                , heightPixel
+                , widthDensity
+                , heightDensity)
+        );
+    }

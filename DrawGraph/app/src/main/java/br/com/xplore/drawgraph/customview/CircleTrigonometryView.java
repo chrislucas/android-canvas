@@ -2,9 +2,11 @@ package br.com.xplore.drawgraph.customview;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.PointF;
+import android.graphics.Point;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -19,26 +21,55 @@ import android.view.WindowManager;
 
 import java.util.Locale;
 
-import br.com.xplore.drawgraph.geometry.Trigonometry;
+import br.com.xplore.drawgraph.geometry.TrigonometryAdjustDeviceCoordinate;
 
 public class CircleTrigonometryView extends View {
 
-    private PointF dimension;
-    private Paint mPaintCenterPoint, mPaintFloatPoint;
+    private Point dimension, touched;
+    private Paint mPaintDrawOnCanvas;
     private DisplayMetrics displayMetrics;
 
     private DoublingBufferDrawing mDoublingBufferDrawing;
+    private Matrix mIdentity = new Matrix();
+
+    private static final int OFFSET_DRAW_RECT_PX = 30; // px
+    private static final int OFFSET_DRAW_TEXT_PX = 15; // px
+    private static final float FONT_SIZE = 23f;
+
+
+    private static final String BUNDLE_LAST_POINT_TOUCHED = "BUNDLE_LAST_POINT_TOUCHED";
+
+    private Paint defaultConfig() {
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setAntiAlias(true);
+        paint.setDither(true);
+        return paint;
+    }
+
+    private void init() {
+        mPaintDrawOnCanvas = defaultConfig();
+        touched = new Point(-1, -1);
+    }
+
+    private void setDoublingBufferDrawing() {
+        mDoublingBufferDrawing = new DoublingBufferDrawing(mPaintDrawOnCanvas, dimension.x, dimension.y);
+    }
 
     public CircleTrigonometryView(Context context) {
         super(context);
+        init();
     }
 
     public CircleTrigonometryView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        init();
+
     }
 
     public CircleTrigonometryView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
     }
 
     @Override
@@ -51,88 +82,79 @@ public class CircleTrigonometryView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
-    private void initDoublingBufferDrawing(int w, int h, Paint paint) {
-        mDoublingBufferDrawing = new DoublingBufferDrawing(paint, w, h);
-    }
-
-    // Executado antes do OnDraw
+    /**
+     * Executado depois do onMeasure
+     * Executado antes do OnDraw
+     */
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         w -= (getPaddingLeft() + getPaddingRight());
         h -= (getPaddingTop() + getPaddingBottom());
-        initDimension(w, h);
+        // definir dimensao da area de dsenho
+        setDimensionCanvas(w, h);
+        // preparar o buffer de desenho para recebe-lo
+        setDoublingBufferDrawing();
+        // desenhar o ponto no centro da tela sempre que rotaciona-la
+        drawDotOnCenterScreen();
+        if (touched.x != -1 && touched.y != -1) {
+            // desenhar o ponto que foi tocado na tela
+            drawDotOnTouch();
+        }
     }
 
     @Override
     protected void onDraw(android.graphics.Canvas canvas) {
         super.onDraw(canvas);
-        // marcar um ponto no centro
-        if (displayMetrics != null) {
-            int width   = (int)dimension.x;     //displayMetrics.widthPixels;
-            int height  = (int)dimension.y;     //displayMetrics.heightPixels;
-            float cx = width/ 2;
-            float cy = height / 2;
-            int wi = width / displayMetrics.densityDpi;
-            int he = height / displayMetrics.densityDpi;
-            double diagonal =  Math.sqrt(wi*wi+he*he);
-
-            // displayMetrics.density
-            double diagonalInch = diagonal * displayMetrics.scaledDensity; //;
-            double ppi = diagonal / diagonalInch;
-            Log.i("METRICS"
-                    , String.format("Diagonal %f, DiagonalInch %f, PPI %f"
-                            , diagonal, diagonalInch, ppi)
-            );
-            float offsetX = cx + 15;
-            float offsetY = cy + 15;
-            canvas.drawRect(getDot(cx, cy, offsetX, offsetY), mPaintCenterPoint);
-            mPaintCenterPoint.setTextSize(23.0f);
-            mPaintCenterPoint.setTypeface(Typeface.DEFAULT_BOLD);
-            canvas.drawText(String.format(Locale.getDefault(), "p(%.1f %.1f)", cx, cy), offsetX + 15, offsetY, mPaintCenterPoint);
-        }
-    }
-
-    public RectF getDot(float left, float top, float right, float bottom) {
-        return new RectF(left, top, right, bottom);
-    }
-
-    private void testMetrict() {
-        // https://androidknowledgeblog.wordpress.com/2016/04/04/how-to-detect-mobile-screen-size-programatically/
-        int widthPixel = displayMetrics.widthPixels;
-        int heightPixel = displayMetrics.heightPixels;
-        float widthDensity = widthPixel / displayMetrics.density;
-        float heightDensity = heightPixel/ displayMetrics.density;
-        Log.i("METRICS", String.format("W pixel %d, H pixel %d.\nDensity WH(%f, %f)"
-                , widthPixel
-                , heightPixel
-                , widthDensity
-                , heightDensity)
-        );
+        canvas.drawBitmap(mDoublingBufferDrawing.getCacheBitmap(), mIdentity, mPaintDrawOnCanvas);
     }
 
     @Override
     protected void onRestoreInstanceState(Parcelable state) {
         super.onRestoreInstanceState(state);
+        /*
+        if (state instanceof  Bundle) {
+            touched = ((Bundle) state).getParcelable(BUNDLE_LAST_POINT_TOUCHED);
+        }
+        */
+        if (state instanceof  SaveStateTrigonometryCustomView) {
+            SaveStateTrigonometryCustomView s = (SaveStateTrigonometryCustomView) state;
+            touched = s.getPoint();
+        }
     }
 
     @Nullable
     @Override
     protected Parcelable onSaveInstanceState() {
-        return super.onSaveInstanceState();
+        Parcelable p = super.onSaveInstanceState();
+        /*
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(BUNDLE_LAST_POINT_TOUCHED, touched);
+        return bundle;
+        */
+        SaveStateTrigonometryCustomView savedState = new SaveStateTrigonometryCustomView(p);
+        savedState.setPoint(touched);
+        return savedState;
     }
 
-    private void initDimension(int w, int h) {
+    private void setDimensionCanvas(int w, int h) {
         WindowManager windowManager = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
         if (windowManager != null) {
             displayMetrics = new DisplayMetrics();
             windowManager.getDefaultDisplay().getMetrics(displayMetrics);
         }
-        preparePaintToDrawCenterPoint(w, h);
-        preparePaintToDrawPointOnTouch(w, h);
-        setDimension(new PointF(w, h));
+        setDimension(new Point(w, h));
     }
 
+
+    /**
+     * Configuracao padrao para desenhar
+     * */
+    private void defaultPaintToDraw() {
+        mPaintDrawOnCanvas.setStyle(Paint.Style.FILL);
+        mPaintDrawOnCanvas.setStrokeWidth(Math.min(dimension.x, dimension.y) * 0.6f);
+        mPaintDrawOnCanvas.setColor(Color.RED);
+    }
 
     /**
      * Paint para desenhar:
@@ -141,79 +163,189 @@ public class CircleTrigonometryView extends View {
      * 3) Limpar a tela
      * */
 
-    private void preparePaintToDrawCenterPoint(int width, int height) {
-        mPaintCenterPoint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
-        mPaintCenterPoint.setStyle(Paint.Style.STROKE);
-        mPaintCenterPoint.setAntiAlias(true);
-        mPaintCenterPoint.setDither(true);
-
-        mPaintCenterPoint.setStyle(Paint.Style.FILL);
-        mPaintCenterPoint.setStrokeWidth(Math.min(width, height) * 0.6f);
-        mPaintCenterPoint.setColor(Color.RED);
+    private void preparePaintToDrawCenterPoint() {
+        defaultPaintToDraw();
     }
 
     /**
      * Paint para desenhar o ponto onde o usuario toca
      * */
-    private void preparePaintToDrawPointOnTouch(int width, int height) {
-        mPaintFloatPoint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
-        mPaintFloatPoint.setStyle(Paint.Style.STROKE);
-        mPaintFloatPoint.setAntiAlias(true);
-        mPaintFloatPoint.setDither(true);
-
-        mPaintFloatPoint.setStyle(Paint.Style.FILL);
-        mPaintFloatPoint.setStrokeWidth(Math.min(width, height) * 0.6f);
-        mPaintFloatPoint.setColor(Color.RED);
+    private void preparePaintToDrawOnTouch() {
+        defaultPaintToDraw();
     }
 
+    private void preparePaintToWriteTextAngle() {
+        defaultPaintToDraw();
+    }
 
     private void clearCanvas() {
         int bg = getBackground() == null ? Color.WHITE
                 : ((ColorDrawable) getBackground()).getColor();
-        mPaintCenterPoint.setStyle(Paint.Style.FILL);
-        mPaintCenterPoint.setColor(bg);
+        // configurando a canera para pintar a area de desenho inteira
+        mPaintDrawOnCanvas.setStyle(Paint.Style.FILL);
+        // com a cor de fundo padrao da view
+        mPaintDrawOnCanvas.setColor(bg);
+        // definindo buffer de pintura com as definicoes da caneta (COR, DIMENSAO)
+        // e o formato do desenho (Um retangulo que vai preencher a tela inteira)
         mDoublingBufferDrawing.getCacheCanvas()
-                .drawRect(mDoublingBufferDrawing.getRectFBlankCanvas(), mPaintCenterPoint);
+                .drawRect(mDoublingBufferDrawing.getRectFBlankCanvas(), mPaintDrawOnCanvas);
+        // invalida a view inteira para ser recriada
         invalidate();
-        initDoublingBufferDrawing((int)dimension.x, (int)dimension.y, mPaintCenterPoint);
-        //preparePencilToDrawing();
+        setDoublingBufferDrawing();
     }
 
-    public void setDimension(PointF dimension) {
+    public void setDimension(Point dimension) {
         this.dimension = dimension;
     }
 
-
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        PointF p = new PointF(motionEvent.getX(), motionEvent.getY());
         /**
          * https://stackoverflow.com/questions/17384983/in-android-what-is-the-difference-between-getaction-and-getactionmasked-in
          * */
         int actionMasked = motionEvent.getActionMasked();
-        int action = motionEvent.getAction();   // action and pointer index
-        int actionAfterMasked = action & MotionEvent.ACTION_MASK;
-        int pointerIndentifier = action & 0xf;
-        Log.i("ON_TOUCH",
-                String.format(Locale.getDefault()
-                        ,"ActionMasked: %d.\nAction: %d.\nAction & Mask: %d\nPointer Indentifier %d"
-                        , actionMasked, action, actionAfterMasked, pointerIndentifier)
-        );
         double cx = dimension.x/2;
         double cy = dimension.y/2;
-        String text = "";
+        double px = Math.floor(motionEvent.getX());
+        double py = Math.floor(motionEvent.getY());
+        touched.x = (int)px;
+        touched.y = (int)py;
+
+        double angleA   = TrigonometryAdjustDeviceCoordinate.circularAngleDegBetweenPoints(cx, cy, px, py);
+        double angleB   = TrigonometryAdjustDeviceCoordinate.angleDegreeBetweenPointsUsingDotProduct(cx, cy, px, py);
+        double radians  = TrigonometryAdjustDeviceCoordinate.circularAngleRadBetweenPoints(cx, cy, px, py);
+        String text = String.format(Locale.getDefault()
+                ,"\nCentro (%f, %f).\nToque (%f, %f)\nÂngulo: %f.\nÂngulo PV: %f.\nRadianos: %f"
+                , cx
+                , cy
+                , px
+                , py
+                , angleA
+                , angleB
+                , radians
+        );
+
         switch (actionMasked) {
             case MotionEvent.ACTION_DOWN:
-                text = String.format(Locale.getDefault()
-                        ,"%s\nÂngulo: %f"
-                        , text, Trigonometry.angleDegBetweenPoints(cx, cy, p.x, p.y));
-                Log.i("TOUCH_DOWN", text);
-                break;
+                Log.i("ON_TOUCH", text.concat("\nACTION_DOWN"));
             case MotionEvent.ACTION_MOVE:
+                Log.i("ON_TOUCH", text.concat("\nACTION_MOVE"));
+                clearCanvas();
+                drawDotOnTouch();
+                drawDotOnCenterScreen();
+                drawTextAngle(angleA, angleB, radians);
                 break;
-
         }
 
         return true;
     }
+
+    private void drawDotOnTouch() {
+        preparePaintToDrawOnTouch();
+        float tx = touched.x, ty = touched.y;
+        float offsetX = tx + OFFSET_DRAW_RECT_PX;
+        float offsetY = ty + OFFSET_DRAW_RECT_PX;
+        Canvas canvas = mDoublingBufferDrawing.getCacheCanvas();
+        drawDot(canvas, tx, ty, offsetX, offsetY);
+
+        // mudando a configuracao da caneta para escrever o local do ponto tocado na tela
+        mPaintDrawOnCanvas.setTextSize(FONT_SIZE);
+        mPaintDrawOnCanvas.setTypeface(Typeface.DEFAULT_BOLD);
+        String textPositionPoint = String.format(Locale.getDefault(), "p(%.0f, %.0f)", tx, ty);
+        canvas.drawText(textPositionPoint
+                , offsetX + OFFSET_DRAW_TEXT_PX, offsetY, mPaintDrawOnCanvas);
+    }
+
+    private void drawDotOnCenterScreen() {
+        // prepara a caneta para desenhar um ponto no centro da tela
+        preparePaintToDrawCenterPoint();
+        // marcar um ponto no centro
+        if (displayMetrics != null) {
+            float cx = dimension.x / 2;
+            float cy = dimension.y / 2;
+            float offsetX = cx + OFFSET_DRAW_RECT_PX;
+            float offsetY = cy + OFFSET_DRAW_RECT_PX;
+            Canvas canvas = mDoublingBufferDrawing.getCacheCanvas();
+            drawDot(canvas, cx, cy, offsetX, offsetY);
+
+            // Mudando a configuracao da caneta para escrever um texto
+            mPaintDrawOnCanvas.setTextSize(FONT_SIZE);
+            mPaintDrawOnCanvas.setTypeface(Typeface.DEFAULT_BOLD);
+            String textPositionPoint = String.format(Locale.getDefault(), "c(%.0f, %.0f)", cx, cy);
+            canvas.drawText(textPositionPoint
+                    , offsetX + OFFSET_DRAW_TEXT_PX, offsetY, mPaintDrawOnCanvas);
+        }
+    }
+
+    private void drawDot(Canvas canvas, float left, float top, float right, float bottom) {
+        RectF dot = new RectF(left, top, right, bottom);
+        canvas.drawRect(dot, mPaintDrawOnCanvas);
+    }
+
+    private void drawTextAngle(double angleA, double angleB, double radians) {
+        preparePaintToWriteTextAngle();
+        float offsetX = dimension.x / 2 + OFFSET_DRAW_RECT_PX;
+        float offsetY = dimension.y / 2 + OFFSET_DRAW_RECT_PX;
+        // Mudando a configuracao da caneta para escrever um texto
+        mPaintDrawOnCanvas.setTextSize(FONT_SIZE);
+        mPaintDrawOnCanvas.setTypeface(Typeface.DEFAULT_BOLD);
+        Canvas canvas = mDoublingBufferDrawing.getCacheCanvas();
+
+        String textPositionPoint = String.format(Locale.getDefault(), "atan2: %f", angleA);
+        drawText(canvas
+                , mPaintDrawOnCanvas
+                , textPositionPoint
+                , offsetX + OFFSET_DRAW_TEXT_PX * 2
+                , offsetY - OFFSET_DRAW_TEXT_PX * 3);
+
+        textPositionPoint = String.format(Locale.getDefault(), "Radianos: %f", radians);
+        drawText(canvas
+                , mPaintDrawOnCanvas
+                , textPositionPoint
+                , offsetX + OFFSET_DRAW_TEXT_PX * 2
+                , offsetY - OFFSET_DRAW_TEXT_PX * 6);
+
+
+        textPositionPoint = String.format(Locale.getDefault(), "Angulo PV: %f", angleB);
+        drawText(canvas
+                , mPaintDrawOnCanvas
+                , textPositionPoint
+                , offsetX + OFFSET_DRAW_TEXT_PX * 2
+                , offsetY - OFFSET_DRAW_TEXT_PX * 9);
+    }
+
+    private void drawText(Canvas canvas, Paint paint, String text, float offsetX, float offsetY) {
+        canvas.drawText(text, offsetX, offsetY, paint);
+    }
+
+
+    private void logMetrics() {
+        int wi = dimension.x / displayMetrics.densityDpi;
+        int he = dimension.y / displayMetrics.densityDpi;
+        double diagonal =  Math.sqrt(wi*wi+he*he);
+        // displayMetrics.density
+        double diagonalInch = diagonal * displayMetrics.scaledDensity; //;
+        double ppi = diagonal / diagonalInch;
+        Log.i("METRICS"
+                , String.format("Diagonal %f, DiagonalInch %f, PPI %f"
+                        , diagonal, diagonalInch, ppi)
+        );
+    }
+
+    private void logMptionEvent(MotionEvent motionEvent) {
+        int action = motionEvent.getAction();   // action and pointer index
+        int actionAfterMasked = action & MotionEvent.ACTION_MASK;
+        int pointerIndentifier = action & 0xf;
+        int actionMasked = motionEvent.getActionMasked();
+        Log.i("ON_TOUCH",
+                String.format(Locale.getDefault()
+                        ,"ActionMasked: %d.\nAction: %d.\nAction & Mask: %d\nPointer Indentifier %d"
+                        , actionMasked
+                        , action
+                        , actionAfterMasked
+                        , pointerIndentifier
+                )
+        );
+    }
+
 }

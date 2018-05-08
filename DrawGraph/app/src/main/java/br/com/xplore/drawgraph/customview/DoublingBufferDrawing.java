@@ -21,6 +21,7 @@ public class DoublingBufferDrawing {
     private final int widthCanvas, heightCanvas;
     // retangulo usando para repintar uma view com um tamanho especifico
     private final RectF rectFBlankCanvas;
+
     public DoublingBufferDrawing(Paint mPaintDrawing, int widthCanvas, int heightCanvas) {
         this.mPaintDrawing = mPaintDrawing;
         this.widthCanvas = widthCanvas;
@@ -41,5 +42,17 @@ public class DoublingBufferDrawing {
 
     public RectF getRectFBlankCanvas() {
         return rectFBlankCanvas;
+    }
+
+    public int getHeightCanvas() {
+        return heightCanvas;
+    }
+
+    public int getWidthCanvas() {
+        return widthCanvas;
+    }
+
+    public Paint getmPaintDrawing() {
+        return mPaintDrawing;
     }
 }
