@@ -7,6 +7,27 @@ import static java.lang.Math.PI;
 
 public class TrigonometryAdjustDeviceCoordinate {
 
+
+    /**
+     *
+     *
+     * x < 0 e y > 0 atan2(y, x) [PI, PI/2]
+     * quando x se aproxima de 0 a funcao se aproxima de PI/2
+     *
+     * x > 0 e y > 0  atan2(y, x) [PI/2, 0]
+     * quando y se aproxima de 0 a funcao se aproxima de 0
+     *
+     * x > 0 e y < 0 atan2(y, x) [-PI/4, -PI/2]
+     * conforme x se aproxima de 0 atan2(y, x) -> -PI/2
+     *
+     * conforme x se torna < 0 e y > 0 atan2(y, x) -> -PI
+     *
+     *
+     *
+     * x < 0 e y < 0 atan2(y, x) [-PI/2, -PI]
+     *
+     * */
+
     public static double circularAngleRadBetweenPoints(double cx, double cy, double px, double py) {
         /**
          * Lembrado que a formula
@@ -39,15 +60,18 @@ public class TrigonometryAdjustDeviceCoordinate {
          *
          * para x > 0 e y < 0 -> para x positivo e y negativo
          * o intervalor da funcao eh [3PI/2, PI*2]
+         *
+         * Ajustando o quadrante para ficar igual as coordenadas cartesianas
+         * return PI - atan2(-(py2-cy1), -(px2-cx1)) % (PI * 2);
+         *
          * */
-        //return PI - atan2(-(py2-cy1), -(px2-cx1)) % (PI * 2);
-        return PI - atan2((py-cy), (px-cx)) % PI;
+        //
+        return atan2(py-cy, px-cx);
+        //return atan2(-(py-cy), -(px-cx));
     }
 
     public static double circularAngleDegBetweenPoints(double cx, double cy, double px, double py) {
-        /**
-         * https://en.wikipedia.org/wiki/Atan2
-         * https://stackoverflow.com/questions/9970281/java-calculating-the-angle-between-two-points-in-degrees/28316570#28316570
+        /**0
          * quadrante 1
          * pora x e y
          * quadrante 2
@@ -78,7 +102,7 @@ public class TrigonometryAdjustDeviceCoordinate {
          *  vai fazer os pontos variarem entre 0 e 360
          * */
         //
-        return (180 - atan2(-(py-cy), -(px-cx)) * 180.0f / PI) % 360;
+        return (180 - atan2(-(py-cy), -(px-cx)) * 180.0f / PI) % 180;
     }
 
     private static double dotProduct(double px1, double py1, double px2, double py2) {

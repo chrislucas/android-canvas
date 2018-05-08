@@ -2,9 +2,13 @@ https://math.stackexchange.com/questions/1201337/finding-the-angle-between-two-p
 
 
 Manter o estado de um custom view
-
 https://stackoverflow.com/questions/3542333/how-to-prevent-custom-views-from-losing-state-across-screen-orientation-changes/8127813#8127813
 
 
 Calcular angulos entre pontos
+https://stackoverflow.com/questions/9970281/java-calculating-the-angle-between-two-points-in-degrees/28316570#28316570
+
+atan2
+https://en.wikipedia.org/wiki/Atan2
+https://gamedev.stackexchange.com/questions/14602/what-are-atan-and-atan2-used-for-in-games
 https://stackoverflow.com/questions/9970281/java-calculating-the-angle-between-two-points-in-degrees/28316570#28316570
