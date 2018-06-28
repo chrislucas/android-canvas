@@ -1,4 +1,4 @@
-package canvar.xplorer.com.circularchart
+package canvas.xplorer.com.circularchart
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

@@ -1,9 +1,10 @@
-package canvar.xplorer.com.circularchart;
+package canvas.xplorer.com.circularchart;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Main2Activity extends AppCompatActivity {
+public class
+ActivityCircleView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

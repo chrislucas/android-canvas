@@ -1,4 +1,4 @@
-package canvar.xplorer.com.circularchart
+package canvas.xplorer.com.circularchart
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

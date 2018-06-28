@@ -1,4 +1,4 @@
-package canvar.xplorer.com.circularchart
+package canvas.xplorer.com.circularchart
 
 import org.junit.Test
 

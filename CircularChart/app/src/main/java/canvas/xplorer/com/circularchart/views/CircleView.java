@@ -1,4 +1,4 @@
-package canvar.xplorer.com.circularchart.views;
+package canvas.xplorer.com.circularchart.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,26 +8,26 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import canvar.xplorer.com.circularchart.R;
+import canvas.xplorer.com.circularchart.R;
 
-public class Circle extends View {
+public class CircleView extends View {
 
 
     private Paint paint;
     private int cx, cy;
     private float radius;
 
-    public Circle(Context context) {
+    public CircleView(Context context) {
         super(context);
         initPaint();
     }
 
-    public Circle(Context context, @Nullable AttributeSet attrs) {
+    public CircleView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initPaint();
     }
 
-    public Circle(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public CircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initPaint();
     }

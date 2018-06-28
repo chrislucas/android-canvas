@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="canvar.xplorer.com.circularchart">
+    package="canvas.xplorer.com.circularchart">
 
     <application
         android:allowBackup="true"
@@ -9,12 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            />
+        <activity android:name=".ActivityCircleView"
+            />
+        <activity
+            android:name=".ActivitySensorTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityRotationVectorSensor"
+            />
+        <activity
+            android:name=".ActivityOvalView"
+            />
 
-        <activity android:name=".Main2Activity">
+        <activity android:name=".ActivityArcView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
