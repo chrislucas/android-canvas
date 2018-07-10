@@ -5,3 +5,29 @@ http://www.mathematische-basteleien.de/heart.htm
 
 https://stackoverflow.com/questions/33473420/drawing-a-heart-with-sharp-corner-in-android
 https://stackoverflow.com/questions/7007429/android-how-to-draw-triangle-star-square-heart-on-the-canvas/14676589
+
+
+Bezier Curve
+https://github.com/topics/bezier-curve?o=desc&s=stars
+
+Heart
+https://stackoverflow.com/questions/22775442/draw-a-heart-on-canvas
+
+Math
+http://www.mathematische-basteleien.de/heart.htm
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Cubic_Bezier_curves
+
+https://yalantis.com/blog/how-we-created-visualization-for-horizon-our-open-source-library-for-sound-visualization/
+
+
+Bezier Cube
+http://android-coding.blogspot.com/2012/04/draw-cubic-bezier-on-path-cubicto.html
+https://buptfarmer.wordpress.com/2016/08/12/bezier-curves-in-android-using-path-cubicto/
+https://medium.com/square-corner-blog/smoother-signatures-be64515adb33
+
+
+PathInterpolator
+https://developer.android.com/reference/android/view/animation/PathInterpolator
+https://proandroiddev.com/how-to-animate-on-android-f8d227135613
+http://book2s.com/java/api/android/view/animation/pathinterpolator/pathinterpolator-4.html
+https://medium.com/@Tarek360/crop-a-shape-from-an-android-bitmap-9690b7432774
