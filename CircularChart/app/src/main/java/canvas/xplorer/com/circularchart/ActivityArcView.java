@@ -18,7 +18,6 @@ public class ActivityArcView extends AppCompatActivity {
         setContentView(R.layout.activity_arc_view);
 
         arcView = findViewById(R.id.arc);
-
         barStartAngle = findViewById(R.id.start_angle);
         setChangeListener(barStartAngle, new SeekBar.OnSeekBarChangeListener() {
             @Override
