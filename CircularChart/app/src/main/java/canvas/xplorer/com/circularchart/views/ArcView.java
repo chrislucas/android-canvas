@@ -2,11 +2,8 @@ package canvas.xplorer.com.circularchart.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.graphics.Shader;
 import android.graphics.SweepGradient;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -74,14 +71,27 @@ public class ArcView extends View {
 
     private void drawBorderLine() {
         this.mPaint.setStyle(Paint.Style.STROKE);
-        this.mPaint.setStrokeCap(Paint.Cap.SQUARE);
-        this.mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_GREEN));
+        this.mPaint.setStrokeCap(Paint.Cap.BUTT);
+        this.mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_VIOLET));
+/*
+        int [] colors = {getResources().getColor(R.color.LIGHT_VIOLET), getResources().getColor(R.color.LIGHT_GREEN)};
+        float [] positions = {0, sweepAngle/360.0f};
+        SweepGradient gradient = new SweepGradient(cx, cy, colors, positions);
+*/
+/*
+        SweepGradient gradient = new SweepGradient(cx, cy
+                , getResources().getColor(R.color.LIGHT_VIOLET), getResources().getColor(R.color.LIGHT_GREEN));
+
+        this.mPaint.setShader(gradient);
+        */
         this.mCanvas.drawArc(rectF, startAngle, sweepAngle, false, mPaint);
     }
 
     private void drawCentralCircle() {
         mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_VIOLET));
+        //mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_GREEN));
+        mPaint.setColor(ContextCompat.getColor(getContext(), R.color.TRANSLUCENT));
+        //mPaint.setColor(ContextCompat.getColor(getContext(), R.color.WHITE));
         this.mCanvas.drawOval(rectF, mPaint);
     }
 
