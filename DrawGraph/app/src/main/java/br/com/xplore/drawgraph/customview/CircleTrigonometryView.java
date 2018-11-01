@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.RectF;
@@ -12,6 +11,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Parcelable;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -21,6 +21,7 @@ import android.view.WindowManager;
 
 import java.util.Locale;
 
+import br.com.xplore.drawgraph.R;
 import br.com.xplore.drawgraph.geometry.TrigonometryAdjustDeviceCoordinate;
 
 public class CircleTrigonometryView extends View {
@@ -30,7 +31,7 @@ public class CircleTrigonometryView extends View {
     private DisplayMetrics displayMetrics;
 
     private DoublingBufferDrawing mDoublingBufferDrawing;
-    private Matrix mIdentity = new Matrix();
+
 
     private static final int OFFSET_DRAW_RECT_PX = 30; // px
     private static final int OFFSET_DRAW_TEXT_PX = 15; // px
@@ -82,6 +83,11 @@ public class CircleTrigonometryView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
+
+    private float getRadius(int w, int h) {
+        return Math.min(w, h) * .25f;
+    }
+
     /**
      * Executado depois do onMeasure
      * Executado antes do OnDraw
@@ -95,29 +101,29 @@ public class CircleTrigonometryView extends View {
         setDimensionCanvas(w, h);
         // preparar o buffer de desenho para recebe-lo
         setDoublingBufferDrawing();
+        drawTrigonometryCircle(w*1.0f/2.0f, h*1.0f/2.0f, getRadius(w, h));
         // desenhar o ponto no centro da tela sempre que rotaciona-la
         drawDotOnCenterScreen();
         if (touched.x != -1 && touched.y != -1) {
             // desenhar o ponto que foi tocado na tela
             drawDotOnTouch();
         }
+
+
     }
 
     @Override
     protected void onDraw(android.graphics.Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawBitmap(mDoublingBufferDrawing.getCacheBitmap(), mIdentity, mPaintDrawOnCanvas);
+        canvas.drawBitmap(mDoublingBufferDrawing.getCacheBitmap()
+                , mDoublingBufferDrawing.getMatrixIdentity(), mPaintDrawOnCanvas);
     }
 
     @Override
     protected void onRestoreInstanceState(Parcelable state) {
         super.onRestoreInstanceState(state);
-        /*
-        if (state instanceof  Bundle) {
-            touched = ((Bundle) state).getParcelable(BUNDLE_LAST_POINT_TOUCHED);
-        }
-        */
-        if (state instanceof  SaveStateTrigonometryCustomView) {
+        //if (state instanceof  Bundle) { touched = ((Bundle) state).getParcelable(BUNDLE_LAST_POINT_TOUCHED);}
+        if (state instanceof SaveStateTrigonometryCustomView) {
             SaveStateTrigonometryCustomView s = (SaveStateTrigonometryCustomView) state;
             touched = s.getPoint();
         }
@@ -162,11 +168,9 @@ public class CircleTrigonometryView extends View {
      * 2) a sua coordena
      * 3) Limpar a tela
      * */
-
     private void preparePaintToDrawCenterPoint() {
         defaultPaintToDraw();
     }
-
     /**
      * Paint para desenhar o ponto onde o usuario toca
      * */
@@ -210,7 +214,6 @@ public class CircleTrigonometryView extends View {
         double py = Math.floor(motionEvent.getY());
         touched.x = (int)px;
         touched.y = (int)py;
-
         double angleA   = TrigonometryAdjustDeviceCoordinate.circularAngleDegBetweenPoints(cx, cy, px, py);
         double angleB   = TrigonometryAdjustDeviceCoordinate.angleDegreeBetweenPointsUsingDotProduct(cx, cy, px, py);
         double radians  = TrigonometryAdjustDeviceCoordinate.circularAngleRadBetweenPoints(cx, cy, px, py);
@@ -229,8 +232,10 @@ public class CircleTrigonometryView extends View {
             case MotionEvent.ACTION_DOWN:
                 Log.i("ON_TOUCH", text.concat("\nACTION_DOWN"));
             case MotionEvent.ACTION_MOVE:
-                Log.i("ON_TOUCH", text.concat("\nACTION_MOVE"));
                 clearCanvas();
+                drawTrigonometryCircle(dimension.x*1.0f/2.0f
+                        , dimension.y*1.0f/2.0f, getRadius(dimension.x, dimension.y));
+                Log.i("ON_TOUCH", text.concat("\nACTION_MOVE"));
                 drawDotOnTouch();
                 drawDotOnCenterScreen();
                 drawTextAngle(angleA, angleB, radians);
@@ -247,7 +252,6 @@ public class CircleTrigonometryView extends View {
         float offsetY = ty + OFFSET_DRAW_RECT_PX;
         Canvas canvas = mDoublingBufferDrawing.getCacheCanvas();
         drawDot(canvas, tx, ty, offsetX, offsetY);
-
         // mudando a configuracao da caneta para escrever o local do ponto tocado na tela
         mPaintDrawOnCanvas.setTextSize(FONT_SIZE);
         mPaintDrawOnCanvas.setTypeface(Typeface.DEFAULT_BOLD);
@@ -316,6 +320,18 @@ public class CircleTrigonometryView extends View {
 
     private void drawText(Canvas canvas, Paint paint, String text, float offsetX, float offsetY) {
         canvas.drawText(text, offsetX, offsetY, paint);
+    }
+
+    private void drawTrigonometryCircle(float centerX, float centerY, float radius) {
+        mPaintDrawOnCanvas.setStrokeWidth(radius * 0.5f);
+        mPaintDrawOnCanvas.setStrokeJoin(Paint.Join.ROUND);
+        mPaintDrawOnCanvas.setColor(ContextCompat.getColor(getContext(), R.color.background_trigonometry_circle));
+        mDoublingBufferDrawing.getCacheCanvas().drawCircle(centerX, centerY, radius, mPaintDrawOnCanvas);
+    }
+
+    private void drawTriangle() {
+        // centro da tela
+        float cx = dimension.x / 2, cy = dimension.y / 2;
     }
 
 
