@@ -13,13 +13,13 @@
         android:id="@+id/arc"
         android:layout_width="match_parent"
         android:layout_height="0sp"
-        android:layout_weight="0.7"
+        android:layout_weight="0.6"
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="00sp"
+        android:layout_height="0sp"
         android:orientation="vertical"
-        android:layout_weight="0.3"
+        android:layout_weight="0.4"
         android:weightSum="1">
         <canvas.xplorer.com.circularchart.views.CustomSeekBar
             android:id="@+id/start_angle"

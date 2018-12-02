@@ -32,7 +32,7 @@ public class TrigonometryAdjustDeviceCoordinate {
         /**
          * Lembrado que a formula
          * atan2(-(py2-cy1), -(px2-cx1))
-         * eh usada para quandp lidamos com coordenada de dispositivo
+         * eh usada para quando lidamos com coordenada de dispositivo
          * onde os quadrantes sao diferentes
          *
          * A imagem da funcao atan2
@@ -73,9 +73,9 @@ public class TrigonometryAdjustDeviceCoordinate {
     public static double circularAngleDegBetweenPoints(double cx, double cy, double px, double py) {
         /**0
          * quadrante 1
-         * pora x e y
+         * para x e y
          * quadrante 2
-         * pora -x e y
+         * para -x e y
          * quadrante 3
          * para -x e -y
          * quadrante 4

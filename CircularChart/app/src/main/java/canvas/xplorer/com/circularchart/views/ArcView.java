@@ -2,12 +2,18 @@ package canvas.xplorer.com.circularchart.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.SweepGradient;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+
+import java.util.Locale;
+
+import canvas.xplorer.com.circularchart.R;
 
 public class ArcView extends View {
 
@@ -52,26 +58,46 @@ public class ArcView extends View {
         this.mCanvas = canvas;
         drawCentralCircle();
         drawBorderLine();
-        //drawOutsidecircle();
+        //drawOutsideCircle();
+        this.mPaint.setStyle(Paint.Style.FILL);
+        this.mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_VIOLET));
+        this.mPaint.setTextSize(28f);
+        this.mPaint.setTextAlign(Paint.Align.CENTER);
+        String message =String.format(Locale.getDefault(), "%.2f"
+                , sweepAngle / 360.0f * 100.0f);
+        Log.i("ON_DRAW", message);
+        this.mCanvas.drawText(message, cx, cy, mPaint);
     }
 
     private void drawBorderLine() {
         this.mPaint.setStyle(Paint.Style.STROKE);
         this.mPaint.setStrokeCap(Paint.Cap.BUTT);
-        this.mPaint.setColor(Color.RED);
+        this.mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_VIOLET));
+/*
+        int [] colors = {getResources().getColor(R.color.LIGHT_VIOLET), getResources().getColor(R.color.LIGHT_GREEN)};
+        float [] positions = {0, sweepAngle/360.0f};
+        SweepGradient gradient = new SweepGradient(cx, cy, colors, positions);
+*/
+/*
+        SweepGradient gradient = new SweepGradient(cx, cy
+                , getResources().getColor(R.color.LIGHT_VIOLET), getResources().getColor(R.color.LIGHT_GREEN));
+
+        this.mPaint.setShader(gradient);
+        */
         this.mCanvas.drawArc(rectF, startAngle, sweepAngle, false, mPaint);
     }
 
     private void drawCentralCircle() {
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.BLACK);
+        mPaint.setStyle(Paint.Style.STROKE);
+        //mPaint.setColor(ContextCompat.getColor(getContext(), R.color.LIGHT_GREEN));
+        mPaint.setColor(ContextCompat.getColor(getContext(), R.color.TRANSLUCENT));
+        //mPaint.setColor(ContextCompat.getColor(getContext(), R.color.WHITE));
         this.mCanvas.drawOval(rectF, mPaint);
     }
 
-    private void drawOutsidecircle() {
+    private void drawOutsideCircle() {
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint.setColor(Color.GREEN);
-        this.mCanvas.drawArc(rectF, 270, 90, true, mPaint);
+        this.mCanvas.drawArc(rectF, startAngle, sweepAngle, true, mPaint);
     }
 
     @Override
@@ -80,12 +106,10 @@ public class ArcView extends View {
         cx = w * 0.5f;
         cy = h * 0.5f;
         radius = Math.min(w, h) * 0.7f * 0.5f;
-
         mPaint.setStrokeWidth(radius * 0.3f);
-
-        rectF.left = cx - radius;
-        rectF.top = cy - radius;
-        rectF.right = cx + radius;
-        rectF.bottom = cy + radius;
+        rectF.left      = cx - radius;
+        rectF.top       = cy - radius;
+        rectF.right     = cx + radius;
+        rectF.bottom    = cy + radius;
     }
 }

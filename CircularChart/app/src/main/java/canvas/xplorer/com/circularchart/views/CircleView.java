@@ -43,8 +43,7 @@ public class CircleView extends View {
         this.cx = w / 2;
         this.cy = h / 2;
         SweepGradient gradient = new SweepGradient(cx, cy
-                , getResources().getColor(R.color.a), getResources().getColor(R.color.b));
-
+                , getResources().getColor(R.color.LIGHT_VIOLET), getResources().getColor(R.color.LIGHT_GREEN));
         this.paint.setShader(gradient);
         this.radius = Math.min(w, h) * .7f *.5f;
     }
