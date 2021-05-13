@@ -1,0 +1,4 @@
+include ':bookcustomview'
+include ':app'
+rootProject.name='SampleCustomView'
+include ':samplecustomviews'
