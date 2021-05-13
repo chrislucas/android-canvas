@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
     // https://medium.com/@mbonnin/the-different-kotlin-stdlibs-explained-83d7c6bf293
     private fun log() {
-        Log.i("SYSTEM_PROPERTY", System.getProperty("java.specification.version") ?: "null")
-        Log.i("SYSTEM_PROPERTY", System.getProperty("java.vm.name") ?: "null")
+        Log.i("SYSTEM_PROPERTY", "java.specification.version:${System.getProperty("java.specification.version") ?: ":null"}")
+        Log.i("SYSTEM_PROPERTY", "java.vm.name:${System.getProperty("java.vm.name") ?: "null"}")
     }
 
 
