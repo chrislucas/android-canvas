@@ -1,5 +1,5 @@
 package com.xp.samplecustomview.helper.fragments
 
-interface CommunicationChannelFragmentActivity {
+interface ChannelCommunicationFragmentActivity {
     fun openThisFragment(baseBehaviorFragment: BaseBehaviorFragment)
 }

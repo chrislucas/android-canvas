@@ -1,5 +1,6 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.view.fragments
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -10,18 +11,25 @@ import android.view.View
 import android.view.ViewGroup
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.RecyclerViewAdapterGalleryOfFeatures
-import com.xp.samplecustomview.feature.galleryoffeatures.models.helpers.StaticFeatures
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 import com.xp.samplecustomview.commons.ext.ownTag
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_CUSTOM_VIEWS
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT
+import com.xp.samplecustomview.feature.galleryoffeatures.models.*
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.binders.BinderAdapterGalleryOfFeatures
+import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
+import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
 
 /**
  * A fragment representing a list of Items.
  */
-class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment {
+class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
+    ChannelCommunicationViewHolderFragment {
 
     private var columnCount = 2
+
+    private lateinit var channelCommunicationFragmentActivity: ChannelCommunicationFragmentActivity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +37,22 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment {
         arguments?.let {
             columnCount = it.getInt(ARG_COLUMN_COUNT)
         }
+    }
+
+    private val itemsOfMenuFeature: List<HolderBinderViewHolder<Any>> by lazy {
+        listOf(
+            HolderBinderViewHolder(
+                VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
+                ItemFeatureCustomView(R.string.txt_title_feature_custom_view),
+                BindItemFeatureCustomView(this)
+            ),
+
+            HolderBinderViewHolder(
+                VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
+                ItemFeatureViewBindingFragment(R.string.txt_title_feature_view_binding_fragment),
+                BindItemFeatureViewBindingFragment(this)
+            )
+        ) as List<HolderBinderViewHolder<Any>>
     }
 
     override fun onCreateView(
@@ -46,12 +70,19 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment {
                 }
 
                 adapter = RecyclerViewAdapterGalleryOfFeatures(
-                    StaticFeatures.ITEMS,
+                    itemsOfMenuFeature,
                     BinderAdapterGalleryOfFeatures()
                 )
             }
         }
         return view
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        if (context is ChannelCommunicationFragmentActivity) {
+            channelCommunicationFragmentActivity = context
+        }
     }
 
     companion object {
@@ -70,4 +101,8 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment {
     override fun getMyOwnTag(): String = this.javaClass.ownTag
 
     override fun getInstanceFragment(): Fragment = this
+
+    override fun call(behaviorFragment: BaseBehaviorFragment) {
+        channelCommunicationFragmentActivity.openThisFragment(behaviorFragment)
+    }
 }

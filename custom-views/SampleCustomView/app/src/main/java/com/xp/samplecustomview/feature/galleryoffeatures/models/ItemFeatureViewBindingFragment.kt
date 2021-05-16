@@ -5,11 +5,13 @@ import androidx.annotation.StringRes
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewBindingFragmentViewHolder
+import com.xp.samplecustomview.feature.viewbindfragment.view.fragments.SampleViewBindingFragmentBase
+import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
 
 class ItemFeatureViewBindingFragment(@StringRes val description: Int)
 
 
-class BindItemFeatureViewBindingFragment : BindDataToViewHolder<ItemFeatureViewBindingFragment> {
+class BindItemFeatureViewBindingFragment(private val channel: ChannelCommunicationViewHolderFragment) : BindDataToViewHolder<ItemFeatureViewBindingFragment> {
     override fun onClick(
         viewHolder: RecyclerView.ViewHolder,
         data: ItemFeatureViewBindingFragment
@@ -22,6 +24,7 @@ class BindItemFeatureViewBindingFragment : BindDataToViewHolder<ItemFeatureViewB
                 Toast.LENGTH_LONG
             ).show()
 
+            channel.call(SampleViewBindingFragmentBase.newInstance())
         }
     }
 

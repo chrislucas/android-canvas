@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import com.xp.samplecustomview.feature.galleryoffeatures.view.fragments.FragmentGalleryOfFeatures
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
-import com.xp.samplecustomview.helper.fragments.CommunicationChannelFragmentActivity
+import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
-class MainActivity : AppCompatActivity(), CommunicationChannelFragmentActivity {
+class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragmentActivity {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

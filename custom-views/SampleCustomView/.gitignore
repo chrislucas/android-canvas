@@ -3,6 +3,10 @@
 /local.properties
 /.idea/caches
 /.idea/libraries
+/.idea/sonarlint
+/.idea/sonarlint/issuesstore
+/.idea/codeStyle/Project.xml
+/.idea/sonarIssues.xml
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml

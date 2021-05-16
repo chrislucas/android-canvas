@@ -1,0 +1,36 @@
+apply from: "$rootDir/gradle/dependencies/dependencies.gradle"
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    ktlint
+}
+
+dependencies {
+    ktlint dependencyPath.ktlint
+}
+
+task runKtlint(type: JavaExec, group: "verification") {
+    description = "Analisa se o código kotlin segue as diretrizes de estilo."
+    classpath = configurations.ktlint
+    main = dependencyPath.main
+    args "src/**/*.kt",
+        "!src/**/generated/**",
+        "--reporter=plain?group_by_file",
+        "--reporter=checkstyle,output=${buildDir}/reports/ktlint/ktlint-checkstyle.xml",
+        "--baseline=${buildDir}/reports/ktlint/ktlint-checkstyle-baseline.xml"
+}
+
+
+task runKtlintCheckingAndFormatting(type: JavaExec, group: "formatting") {
+    dependsOn runKtlint
+    description = "Executa a task runKtlint e para os apontamentos de erros de estilo de codigo aplica a correcao quando possivel"
+    classpath = configurations.ktlint
+    main = dependencyPath.main
+    args "-F",
+        "src/**/*.kt",
+        "--reporter=checkstyle,output=${buildDir}/reports/ktlint/ktlint-checkstyle-formatted.xml",
+        "--baseline=${buildDir}/reports/ktlint/ktlint-baseline-formatted.xml"
+}
