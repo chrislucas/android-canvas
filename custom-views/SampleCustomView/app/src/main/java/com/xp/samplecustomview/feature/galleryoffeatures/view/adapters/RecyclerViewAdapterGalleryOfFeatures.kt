@@ -27,13 +27,16 @@ class RecyclerViewAdapterGalleryOfFeatures<T>(
      * (a lista values possui uma lista de modelos) que possui essa informacao.
      * */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val viewHolder = actionViewHolderSimple.getViewHolder(viewType, parent)
+        return  actionViewHolderSimple.getViewHolder(viewType, parent)
+    }
+
+    override fun onViewAttachedToWindow(viewHolder: RecyclerView.ViewHolder) {
         if (viewHolder.absoluteAdapterPosition >= 0) {
             values[viewHolder.absoluteAdapterPosition].run {
                 binder.onClick(viewHolder, this.item)
             }
         }
-        return viewHolder
+        super.onViewAttachedToWindow(viewHolder)
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -57,7 +60,6 @@ class RecyclerViewAdapterGalleryOfFeatures<T>(
         super.onAttachedToRecyclerView(recyclerView)
         Log.i("ON_ATTACHED", "onAttachedToRecyclerView")
     }
-
 
     override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
         super.onDetachedFromRecyclerView(recyclerView)
