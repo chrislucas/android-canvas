@@ -7,7 +7,7 @@
     android:divider="?android:attr/listDivider"
     android:orientation="vertical"
     android:showDividers="middle"
-    tools:context=".ColorOptionsViewFragment">
+    tools:context=".feature.galleryoffeatures.coloroptions.view.fragments.ColorOptionsViewFragment">
 
     <com.xp.samplecustomviews.ColorOptionView
         android:layout_width="match_parent"

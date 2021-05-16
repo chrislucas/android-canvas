@@ -1,4 +1,4 @@
-package com.xp.samplecustomview
+package com.xp.samplecustomview.feature.viewbindfragment.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.xp.samplecustomview.databinding.FragmentSampleViewBinding
+import com.xp.samplecustomview.commons.ext.ownTag
+import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 
 /**
  * A simple [Fragment] subclass.
- * Use the [SampleViewBindingFragment.newInstance] factory method to
+ * Use the [SampleViewBindingFragmentBase.newInstance] factory method to
  * create an instance of this fragment.
  *
  * Lembrete: Fragments precisam ter construtores publicos
  *
  */
-class SampleViewBindingFragment public constructor() : BaseFragment() {
+class SampleViewBindingFragmentBase : Fragment(), BaseBehaviorFragment {
 
     private lateinit var binding: FragmentSampleViewBinding
 
@@ -44,8 +46,9 @@ class SampleViewBindingFragment public constructor() : BaseFragment() {
         }
     }
 
+    override fun getMyOwnTag(): String =  this.javaClass.ownTag
 
-    override fun getTag1() = javaClass.name
+    override fun getInstanceFragment() = this
 
     companion object {
         /**
@@ -54,6 +57,6 @@ class SampleViewBindingFragment public constructor() : BaseFragment() {
          * @return A new instance of fragment SampleViewBindingFragment.
          */
         @JvmStatic
-        fun newInstance() = SampleViewBindingFragment()
+        fun newInstance() = SampleViewBindingFragmentBase()
     }
 }
