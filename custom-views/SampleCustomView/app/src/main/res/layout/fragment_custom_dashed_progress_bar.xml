@@ -3,17 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".feature.customviews.view.fragment.CustomDashedProgressBarFragment">
 
-
+<!--
+style="@android:style/Widget.ProgressBar.Horizontal"
+-->
     <ProgressBar
-        style="?android:progressBarStyleHorizontal"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:progressDrawable="@drawable/dashed_progress_bar"
         android:indeterminateOnly="false"
-        />
+        android:visibility="visible"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/dashed_progress_bar"
+        tools:progress="50" />
 
 </LinearLayout>
