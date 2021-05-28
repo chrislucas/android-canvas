@@ -24,6 +24,8 @@ android {
         }
     }
 
+    //resourcePrefix 'app_mod_ui_'
+
     viewBinding {
         enabled = true
     }
@@ -33,7 +35,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation deps.kotlin.stdlib
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation deps.ktx.core
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
