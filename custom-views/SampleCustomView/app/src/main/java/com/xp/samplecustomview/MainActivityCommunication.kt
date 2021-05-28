@@ -1,8 +1,8 @@
 package com.xp.samplecustomview
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.xp.samplecustomview.feature.galleryoffeatures.view.fragments.FragmentGalleryOfFeatures
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
@@ -28,8 +28,7 @@ class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragm
 
     private fun load(fragmentBase: BaseBehaviorFragment) {
 
-        supportFragmentManager.let {
-            manager ->
+        supportFragmentManager.let { manager ->
             if (manager.backStackEntryCount > 1)
                 manager.popBackStack()
 
@@ -49,6 +48,18 @@ class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragm
 
     override fun openThisFragment(baseBehaviorFragment: BaseBehaviorFragment) {
         load(baseBehaviorFragment)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        supportFragmentManager.run {
+            val fragment = fragments[backStackEntryCount]
+            if (fragment is BaseBehaviorFragment) {
+                // chamar metodo actionOnBackPressedInFragment cuja implementacao eh responsabilidade
+                // de cada fragment
+                fragment.actionOnBackPressedInFragment()
+            }
+        }
     }
 
 }

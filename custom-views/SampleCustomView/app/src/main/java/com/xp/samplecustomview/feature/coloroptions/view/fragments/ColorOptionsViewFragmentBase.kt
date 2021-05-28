@@ -25,4 +25,13 @@ class ColorOptionsViewFragmentBase : Fragment(), BaseBehaviorFragment {
     override fun getMyOwnTag(): String =  this.javaClass.ownTag
 
     override fun getInstanceFragment() = this
+
+    companion object {
+        @JvmStatic
+        fun newInstance() = ColorOptionsViewFragmentBase()
+    }
+
+    override fun actionOnBackPressedInFragment() {
+
+    }
 }

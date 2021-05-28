@@ -59,4 +59,8 @@ class SampleViewBindingFragmentBase : Fragment(), BaseBehaviorFragment {
         @JvmStatic
         fun newInstance() = SampleViewBindingFragmentBase()
     }
+
+    override fun actionOnBackPressedInFragment() {
+
+    }
 }

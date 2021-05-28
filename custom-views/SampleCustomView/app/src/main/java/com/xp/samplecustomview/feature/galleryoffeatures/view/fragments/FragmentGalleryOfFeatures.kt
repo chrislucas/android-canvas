@@ -105,4 +105,8 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
     override fun call(behaviorFragment: BaseBehaviorFragment) {
         channelCommunicationFragmentActivity.openThisFragment(behaviorFragment)
     }
+
+    override fun actionOnBackPressedInFragment() {
+
+    }
 }
