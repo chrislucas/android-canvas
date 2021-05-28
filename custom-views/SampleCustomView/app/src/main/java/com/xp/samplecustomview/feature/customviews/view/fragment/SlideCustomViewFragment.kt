@@ -22,8 +22,7 @@ import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
  * An example full-screen fragment that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-class CustomViewsFragment : Fragment(), BaseBehaviorFragment {
-
+class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
     private val hideHandler = Handler()
 
     @Suppress("InlinedApi")
@@ -194,7 +193,7 @@ class CustomViewsFragment : Fragment(), BaseBehaviorFragment {
         private const val UI_ANIMATION_DELAY = 300
 
         @JvmStatic
-        fun newInstance() = CustomViewsFragment()
+        fun newInstance() = SlideCustomViewFragment()
     }
 
     override fun getMyOwnTag(): String = this.javaClass.ownTag

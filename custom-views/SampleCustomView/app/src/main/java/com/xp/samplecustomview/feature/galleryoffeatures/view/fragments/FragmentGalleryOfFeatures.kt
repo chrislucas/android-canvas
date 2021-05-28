@@ -15,6 +15,7 @@ import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_CUSTOM_VIEWS
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_LIST_DEFAULT
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT
 import com.xp.samplecustomview.feature.galleryoffeatures.models.*
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.binders.BinderAdapterGalleryOfFeatures
@@ -43,14 +44,20 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
         listOf(
             HolderBinderViewHolder(
                 VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
-                ItemFeatureCustomView(R.string.txt_title_feature_custom_view),
-                BindItemFeatureCustomView(this)
+                ItemFeatureSlideCustomView(R.string.txt_title_feature_custom_view),
+                BindItemFeatureSlideCustomView(this)
             ),
 
             HolderBinderViewHolder(
                 VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
                 ItemFeatureViewBindingFragment(R.string.txt_title_feature_view_binding_fragment),
                 BindItemFeatureViewBindingFragment(this)
+            ),
+
+            HolderBinderViewHolder(
+                VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+                ItemFeatureCustomPopupView(R.string.txt_title_feature_custom_popup_view),
+                BindItemFeatureCustomPopupView(this)
             )
         ) as List<HolderBinderViewHolder<Any>>
     }

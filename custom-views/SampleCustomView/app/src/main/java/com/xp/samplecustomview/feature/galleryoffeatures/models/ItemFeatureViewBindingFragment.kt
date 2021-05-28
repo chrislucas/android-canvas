@@ -11,7 +11,8 @@ import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFr
 class ItemFeatureViewBindingFragment(@StringRes val description: Int)
 
 
-class BindItemFeatureViewBindingFragment(private val channel: ChannelCommunicationViewHolderFragment) : BindDataToViewHolder<ItemFeatureViewBindingFragment> {
+class BindItemFeatureViewBindingFragment(private val channel: ChannelCommunicationViewHolderFragment) :
+    BindDataToViewHolder<ItemFeatureViewBindingFragment> {
     override fun onClick(
         viewHolder: RecyclerView.ViewHolder,
         data: ItemFeatureViewBindingFragment

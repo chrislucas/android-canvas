@@ -49,7 +49,18 @@ dependencies {
     implementation deps.ktx.core
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
+
+
     testImplementation 'junit:jdependencyInsightunit:4.1.3'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // Core library
+    androidTestImplementation 'androidx.test:core:1.3.0'
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation('androidx.test:runner:1.3.0')
+    androidTestImplementation('androidx.test:rules:1.3.0')
+
+
+    testImplementation "org.robolectric:robolectric:4.5.1"
+    testImplementation "io.mockk:mockk:1.10.0"
 }

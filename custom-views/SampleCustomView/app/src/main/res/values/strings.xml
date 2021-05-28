@@ -7,4 +7,6 @@
     <string name="txt_title_feature_view_binding_fragment">ViewBinding Fragment</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="txt_title_feature_custom_popup_view">Custom PopupView</string>
+    <string name="txt_bt_control_custom_popup_view">Abrir PopupView</string>
 </resources>

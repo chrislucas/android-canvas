@@ -10,6 +10,9 @@ versions.junit = '4.13.2'
 versions.kotlin = '1.4.32'
 versions.ktlint = '0.41.0'
 
+versions.robolectric = '4.5.1'
+versions.mockk = '1.10.0'
+
 
 def buildVariables = [:]
 buildVariables.compileSdkVersion = 30
@@ -37,6 +40,11 @@ deps.proj = proj
 def kotlin = [:]
 kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
 deps.kotlin = kotlin
+
+
+def libTest = [:]
+
+libTest =
 
 extensions.deps = deps
 
