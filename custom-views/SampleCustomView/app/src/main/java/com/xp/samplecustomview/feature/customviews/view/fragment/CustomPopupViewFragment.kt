@@ -41,7 +41,10 @@ class CustomPopupViewFragment : Fragment(), BaseBehaviorFragment {
                 ), R.layout.layout_custom_popup_view_1
             )
 
-            popupView.showAtLocation(viewRoot, OffsetLocation(0, 0, Gravity.CENTER))
+            popupView.showAtLocation(
+                viewRoot,
+                OffsetLocation(0, 0, Gravity.START or Gravity.CENTER_HORIZONTAL)
+            )
 
             popupView.contentView.findViewById<Button>(R.id.bt_close_popup_view)?.let {
                 it.setOnClickListener {
