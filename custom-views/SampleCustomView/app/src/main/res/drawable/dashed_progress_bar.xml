@@ -2,10 +2,22 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
         <shape android:shape="line">
-            <stroke android:width="20dp" android:dashWidth="10dp" android:dashGap="10dp" />
+            <stroke
+                android:width="20dp"
+                android:dashWidth="10dp"
+                android:dashGap="10dp" />
         </shape>
     </item>
-    <item>
-
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="10dp"
+                    android:color="@color/colorAccent"
+                    android:dashWidth="14dp"
+                    android:dashGap="5sp"
+                    />
+            </shape>
+        </clip>
     </item>
 </layer-list>
