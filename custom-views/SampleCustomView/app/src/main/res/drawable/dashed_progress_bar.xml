@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item android:id="@android:id/background">
         <shape android:shape="line">
-            <!--
             <stroke
                 android:width="20dp"
+                android:color="@color/black_overlay"
                 android:dashWidth="10dp"
-                android:color="@color/white"
                 android:dashGap="10dp" />
-                -->
-            <corners android:radius="5sp" />
-            <solid android:color="@color/colorPrimary" />
         </shape>
     </item>
     <item android:id="@android:id/progress">
@@ -20,8 +17,7 @@
                     android:width="10dp"
                     android:color="@color/colorAccent"
                     android:dashWidth="14dp"
-                    android:dashGap="5sp"
-                    />
+                    android:dashGap="5sp" />
             </shape>
         </clip>
     </item>

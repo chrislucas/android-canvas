@@ -16,8 +16,6 @@ style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:indeterminateOnly="false"
-        android:visibility="visible"
-        android:indeterminate="false"
         android:progressDrawable="@drawable/dashed_progress_bar"
         tools:progress="50" />
 
