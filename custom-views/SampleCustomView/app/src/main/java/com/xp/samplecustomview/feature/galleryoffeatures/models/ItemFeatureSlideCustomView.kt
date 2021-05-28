@@ -9,7 +9,7 @@ import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFr
 
 class ItemFeatureSlideCustomView(val description: String)
 
-class BindItemFeatureCustomView(private val channel: ChannelCommunicationViewHolderFragment) :
+class BindItemFeatureSlideCustomView(private val channel: ChannelCommunicationViewHolderFragment) :
     BindDataToViewHolder<ItemFeatureSlideCustomView> {
     override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemFeatureSlideCustomView) {
         viewHolder.itemView.setOnClickListener {

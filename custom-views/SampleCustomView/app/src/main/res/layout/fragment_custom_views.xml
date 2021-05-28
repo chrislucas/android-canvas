@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/fullscreenBackgroundColor"
+    android:orientation="vertical"
     android:theme="@style/ThemeOverlay.SampleCustomView.FullscreenContainer"
     tools:context=".feature.customviews.view.fragment.SlideCustomViewFragment">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
+
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:keepScreenOn="true"
         android:text="@string/dummy_content"
         android:textColor="?attr/fullscreenTextColor"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="0"
+        />
 
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/slider"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:layout_height="wrap_content"
+        />
 
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="@style/Widget.AppTheme.MaterialComponent.ButtonBar.Fullscreen"
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:buttonBarStyle="?android:attr/buttonBarStyle"
+        android:gravity="bottom|center">
+
+        <Button
+            android:id="@+id/dummy_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
+            android:text="@string/dummy_button" />
 
-            <Button
-                android:id="@+id/dummy_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
+    </LinearLayout>
 
-        </LinearLayout>
-    </FrameLayout>
-
-</FrameLayout>
+</LinearLayout>

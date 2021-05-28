@@ -168,7 +168,52 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/CustomDashedProgressBarFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/CustomPopupViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/CustomViewsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/ScreenSlidePageFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/SlideCustomViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/adapter/ScreenSlidePageAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/viewpg/adapter/DefaultFragmentStateAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/viewpg/adapter/ScreenSlidePageAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/pageadapter/ScreenSlidePageAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/fullscreen/views/fragment/FullscreenSampleFragment.kt">
           <value>
             <set />
           </value>
@@ -249,6 +294,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureSlideCustomView.kt">
           <value>
             <set />
           </value>
@@ -418,6 +468,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_custom_popup_view.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_custom_views.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_custom_views_backup.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_fullscreen_sample.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_gallery_custom_views.xml">
           <value>
             <set />
@@ -429,6 +499,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_layout_list_of_features.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_screen_slide_page.xml">
           <value>
             <set />
           </value>
@@ -453,6 +528,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
           <value>
             <set />
@@ -468,7 +548,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/raw/design_pattern_command">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/fragment_state_adapter">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/fragments">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/raw/view_binding">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/view_pager_2">
           <value>
             <set />
           </value>

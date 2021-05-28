@@ -53,4 +53,5 @@ class CustomDashedProgressBarFragment : Fragment(), BaseBehaviorFragment {
     override fun getMyOwnTag(): String = javaClass.ownTag
 
     override fun getInstanceFragment(): Fragment = this
+    override fun actionOnBackPressedInFragment() {}
 }

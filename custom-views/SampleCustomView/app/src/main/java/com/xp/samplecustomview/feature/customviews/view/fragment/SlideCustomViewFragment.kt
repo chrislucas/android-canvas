@@ -9,8 +9,13 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
+import com.xp.samplecustomview.feature.coloroptions.view.fragments.ColorOptionsViewFragmentBase
+import com.xp.samplecustomview.feature.customviews.view.fragment.viewpg.adapter.DefaultFragmentStateAdapter
+import com.xp.samplecustomview.feature.fullscreen.views.fragment.FullscreenSampleFragment
+import com.xp.samplecustomview.feature.viewbindfragment.view.fragments.SampleViewBindingFragmentBase
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 /**
@@ -60,6 +65,8 @@ class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
     private var fullscreenContent: View? = null
     private var fullscreenContentControls: View? = null
 
+    private var viewPager: ViewPager2? = null
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -78,6 +85,20 @@ class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
         fullscreenContentControls = view.findViewById(R.id.fullscreen_content_controls)
         // Set up the user interaction to manually show or hide the system UI.
         fullscreenContent?.setOnClickListener { toggle() }
+
+        viewPager = view.findViewById(R.id.slider)
+
+        activity?.let {
+            viewPager?.adapter = DefaultFragmentStateAdapter(
+                it,
+                listOf(
+                    FullscreenSampleFragment.newInstance(),
+                    ColorOptionsViewFragmentBase.newInstance(),
+                    SampleViewBindingFragmentBase.newInstance()
+                )
+            )
+        }
+
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
@@ -178,4 +199,12 @@ class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
     override fun getMyOwnTag(): String = this.javaClass.ownTag
 
     override fun getInstanceFragment(): Fragment = this
+
+    override fun actionOnBackPressedInFragment() {
+        viewPager?.run {
+            if (currentItem > 0) {
+                currentItem -= 1
+            }
+        }
+    }
 }

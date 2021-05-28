@@ -44,7 +44,7 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
             HolderBinderViewHolder(
                 VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
                 ItemFeatureSlideCustomView(getString(R.string.txt_title_feature_custom_view)),
-                BindItemFeatureCustomView(this)
+                BindItemFeatureSlideCustomView(this)
             ),
 
             HolderBinderViewHolder(
@@ -116,4 +116,6 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
     override fun call(behaviorFragment: BaseBehaviorFragment) {
         channelCommunicationFragmentActivity.openThisFragment(behaviorFragment)
     }
+
+    override fun actionOnBackPressedInFragment() {}
 }

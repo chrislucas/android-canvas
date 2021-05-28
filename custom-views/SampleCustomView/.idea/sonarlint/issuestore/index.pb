@@ -17,8 +17,6 @@ x
 Hbookcustomview/src/main/java/com/experience/bookcustomview/SimpleView.kt,5\6\56d259f047b0d5f18f70fae006f73290b4b847a1
 @
 raw/estilo_temas,6\7\673dfd43441635b42f9299b9702094d8b10d2c39
-q
-Aapp/src/main/java/com/xp/samplecustomview/commons/ext/ClassExt.kt,b\b\bb07ba80a39d8d4c703ee229e2b01248eeb4c436
 @
 raw/view_binding,0\a\0a62bd940855b823352febdaffe7dd1528535e0e
 :
@@ -28,8 +26,6 @@ raw/kotlin,2\0\200311d585da89954f51d787897c7c5f867d7d80
 	raw/links,a\c\acf521cfc253be5d3139a4500dad1d4c9b876a55
 ù
 mapp/src/main/java/com/xp/samplecustomview/commons/view/recyclerview/viewholder/helper/EmptyStateViewHolder.kt,1\3\132063545b87a16aa8374a996a54e7b818d7996a
-ù
-mapp/src/main/java/com/xp/samplecustomview/feature/coloroptions/view/fragments/ColorOptionsViewFragmentBase.kt,6\5\655ab228363afb8afebe84171206d310f10c3e4a
 ã
 [app/src/main/java/com/xp/samplecustomview/commons/view/recyclerview/action/LayoutBuilder.kt,c\5\c516d30810fb242f52f1d132edd01664e5682df2
 í
@@ -48,3 +44,16 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 Ø
 app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/view/adapters/reyclerview/viewholders/FeatureCustomViews.kt,8\c\8cb2a181633ad04e5329e5eaf7ab5d0b9b09929e
+Q
+!tools/dependencies-version.gradle,7\4\74d78ab2588fcb1f3df0207a2628a74e4010a0a5
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+î
+dapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/helpers/StaticFeatures.kt,a\5\a5f34152b89de06d3601ba0c36a936a22213b869
+¬
+ëapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/view/adapters/reyclerview/viewholders/FeatureViewBindingFragmentViewHolder.kt,1\6\16382a5b724ee90305d5f13ff2a3a9bebb9d99c2
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
