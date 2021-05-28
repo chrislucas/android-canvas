@@ -2,18 +2,16 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".feature.customviews.view.fragment.CustomPopupViewFragment">
+    tools:context=".feature.customviews.view.fragment.CustomDashedProgressBarFragment">
 
-    <Button
-        android:id="@+id/bt_control_custom_view"
+
+    <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity=""
-        android:text="@string/txt_bt_control_custom_popup_view"
-        />
+        android:gravity="center"
+        android:progressDrawable="@drawable/dashed_progress_bar" />
 
 </LinearLayout>

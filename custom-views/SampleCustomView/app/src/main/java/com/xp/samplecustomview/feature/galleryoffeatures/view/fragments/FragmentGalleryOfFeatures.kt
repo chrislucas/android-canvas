@@ -2,24 +2,22 @@ package com.xp.samplecustomview.feature.galleryoffeatures.view.fragments
 
 import android.content.Context
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.xp.samplecustomview.R
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.RecyclerViewAdapterGalleryOfFeatures
-import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
-
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_EMPTY_STATE
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_CUSTOM_VIEWS
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_LIST_DEFAULT
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT
 import com.xp.samplecustomview.feature.galleryoffeatures.models.*
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.RecyclerViewAdapterGalleryOfFeatures
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.binders.BinderAdapterGalleryOfFeatures
+import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
 
@@ -45,20 +43,25 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
         listOf(
             HolderBinderViewHolder(
                 VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
-                ItemFeatureSlideCustomView(R.string.txt_title_feature_custom_view),
+                ItemFeatureSlideCustomView(getString(R.string.txt_title_feature_custom_view)),
                 BindItemFeatureCustomView(this)
             ),
 
             HolderBinderViewHolder(
                 VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
-                ItemFeatureViewBindingFragment(R.string.txt_title_feature_view_binding_fragment),
+                ItemFeatureViewBindingFragment(getString(R.string.txt_title_feature_view_binding_fragment)),
                 BindItemFeatureViewBindingFragment(this)
             ),
 
             HolderBinderViewHolder(
                 VIEW_HOLDER_FEATURE_LIST_DEFAULT,
-                ItemFeatureCustomPopupView(R.string.txt_title_feature_custom_popup_view),
+                ItemFeatureCustomPopupView(getString(R.string.txt_title_feature_custom_popup_view)),
                 BindItemFeatureCustomPopupView(this)
+            ),
+            HolderBinderViewHolder(
+                VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+                ItemFeatureDefault(getString(R.string.txt_title_feature_dashed_progress_bar)),
+                BindItemFeatureCustomDashedProgressBar(this)
             )
         ) as List<HolderBinderViewHolder<Any>>
     }

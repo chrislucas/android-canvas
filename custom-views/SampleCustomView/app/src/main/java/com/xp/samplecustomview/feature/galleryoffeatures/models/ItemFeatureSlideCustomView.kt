@@ -1,6 +1,5 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
-import androidx.annotation.StringRes
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.feature.customviews.view.fragment.SlideCustomViewFragment
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
@@ -8,7 +7,7 @@ import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclervi
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
 
 
-class ItemFeatureSlideCustomView(@StringRes val description: Int)
+class ItemFeatureSlideCustomView(val description: String)
 
 class BindItemFeatureCustomView(private val channel: ChannelCommunicationViewHolderFragment) :
     BindDataToViewHolder<ItemFeatureSlideCustomView> {
@@ -23,7 +22,7 @@ class BindItemFeatureCustomView(private val channel: ChannelCommunicationViewHol
         data: ItemFeatureSlideCustomView
     ) {
         val vh = viewHolder as FeatureCustomViews
-        vh.tvTitle.text = viewHolder.itemView.context.getString(data.description)
+        vh.tvTitle.text = data.description
     }
 }
 
