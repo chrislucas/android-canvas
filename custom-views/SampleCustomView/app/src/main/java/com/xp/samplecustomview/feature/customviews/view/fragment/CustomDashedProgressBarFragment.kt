@@ -30,16 +30,21 @@ class CustomDashedProgressBarFragment : Fragment(), BaseBehaviorFragment {
         view.findViewById<ProgressBar>(R.id.progressbar).let { progressBar ->
             Thread {
                 activity?.run {
-                    var counter = 1
+                    var counter = 0
+                    var counter2 = 0
+                    var flag = true
                     while (true) {
-                        if (progressBar.progress < 101)
+                        flag = (counter2 / 100) and 1 == 0
+                        if (flag)
                             counter += 1
                         else
                             counter -= 1
                         this.runOnUiThread {
                             progressBar.progress = counter
                         }
-                        Thread.sleep(100)
+                        Thread.sleep(1000)
+                        counter2 %= 1000
+                        counter2 += 1
                     }
                 }
             }.start()
