@@ -1,0 +1,173 @@
+compound views
+https://www.vogella.com/tutorials/AndroidCustomViews/article.html
+
+Android Graphics
+https://developer.android.com/reference/android/graphics/package-summary
+
+Compounds Views sao ViewGroups pre configuradas baseados em Views existentes com algumas
+interacoes pre definidas (CustomViews que sao generalizacoes por exemplo de LinearLayout
+, RelativeLayout). ELas permitem a adicao de APIs personalizadas para atualizacao e consulta
+de seu estado. (Segundo o autor do blog usado como referencia, custom views que herdam da classe View
+possuem um desempenho grãfico melhor pois a hierarquia de views constuma ser menor em relação a custom
+views compounded)
+
+https://medium.com/android-bits/android-widgets-ad3d166458d3
+
+Performance
+https://developer.android.com/topic/performance/vitals/render
+https://developer.android.com/reference/androidx/core/app/FrameMetricsAggregator
+https://firebase.google.com/docs/perf-mon/get-started-android#pdc
+https://developer.android.com/topic/performance/vitals/launch-time
+
+Performance e mais materiais sobre Views
+https://developer.android.com/training/custom-views/optimizing-view
+
+Bubbles
+https://developer.android.com/guide/topics/ui/bubbles
+
+
+Widgets
+https://developer.android.com/guide/topics/appwidgets/host
+https://www.journaldev.com/14673/android-floating-widget
+https://stackoverflow.com/questions/52980478/how-to-create-a-floating-window-like-clipboard-pro-app
+
+
+news androidx
+https://developer.android.com/jetpack/androidx/versions/rc-channel
+
+Jetpack compose
+https://developer.android.com/jetpack/compose
+https://developer.android.com/jetpack/compose/tutorial
+
+Custom View
+https://www.vogella.com/tutorials/AndroidCustomViews/article.html
+
+Life cycle of a Android View:  (https://www.vogella.com/tutorials/AndroidCustomViews/article.html)
+
+1) Related to the WINDOW
+
+Uma View eh mostrada se ela for anexada a hierarquia do layout que por sua vez eh anexada
+a WINDOW. Ela possui alguns HOOK METHODS que podem ajudar a interceptar o seu ciclo de vida
+
+ - onAttachedToWindow(): Chamado uma vez assim que a WINDOW estiver disponivel
+ - onDetachedFromWindow(): Chamado quando a view e removida de seu View parent e esse eh removido
+ da window. Isso acontetece por exemplo quando uma Activity eh recicla ao chamar o metodo finished().
+ Esse metodo pode ser chamado por exemplo para parar uma animacao
+
+Class ViewConfiguration
+https://developer.android.com/reference/android/view/ViewConfiguration
+
+Criando custom views, sobre AttributeSet e afins
+https://developer.android.com/training/custom-views/create-view
+
+Formatos de atributos para custom views
+https://stackoverflow.com/questions/3441396/defining-custom-attrs
+Link dos atributos definidos no framework android:
+ https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/res/res/values/attrs.xml
+
+Podemos definir atributos diretamente como filhos da TAG <resource> caso seja um atributo util
+em diversas Views ou como atributos da TAG <declare-styleable name="">
+
+A tag <attr> possui 2 atributos name e format
+
+Os tipos de formato de um atributo sao
+
+reference - if it references another resource id (e.g, "@color/my_color", "@layout/my_layout")
+color
+boolean
+dimension
+float
+integer
+string
+fraction
+enum - normally implicitly defined
+flag - normally implicitly defined
+
+
+Custom attributes: Problemas ao declarar o mesmo atributo personalizado multiplas vezes. Nao
+eh possivel definir mais de uma vez o mesmo nome de atributo e seu formato em diferentes
+<declare-styleable >
+https://medium.com/@elye.project/better-way-of-declaring-custom-view-attributes-23f876c28534
+O artigo acima propoe uma solucao interessante para o problema, agrupar os atributos que
+se repetem numa unica declaracao de atributos personalizados
+
+
+Contem metodos para padronizar valores constantes usados na interface de usuários
+para TIMEOUTS, dimensoes e distancias
+
+Graphics architecture
+https://source.android.com/devices/graphics/architecture.html
+
+
+// obtainStyledAttributes
+https://developer.android.com/reference/android/content/res/Resources.Theme
+
+final class Resources.Theme
+Classe que armazena valores de atributos de um tema(estilo) android. Um tema
+eh um conjunto de valores de atributos usados para estilizar componentes visuais
+no android. Essa classe eh utilizada em conjunto com a TypedArray de forma a associar
+um valor a um atributo de um tema
+
+Os atributos de um tema podem ser utilizados de 2 formas
+
+1) Um atributo de estilo pode fazer referencia a um valor num tema atraves da sintaxe
+"?themeAttribute"
+
+2) Se nenhum valor foi definido para um atributo em particular, a API tenta encontrar um valor
+no tema
+
+O metodo "obtainStyledAttributes(AttributeSet, int[], int, int)"" definido na API recupera
+atributos definidos num XML com a informacao de estilo e temas aplicados
+
+https://developer.android.com/reference/android/content/res/TypedArray
+android.content.res.TypedArray
+
+Um container para um array de valores de atributos de um tema. Esses valores podem ser obtidos
+atraves do metodo Resources.Theme#obtainStyledAttributes(AttributeSet, int[], int, int) ,
+
+
+interface AttributeSet: https://developer.android.com/reference/android/util/AttributeSet
+
+Uma colecao de atributos associados a uma TAG num documento XML. Em geral nao usamos uma instancia
+dessa classe diretamente, por exemplo alguns construtores de uma View ou ViewGroup aceitam receber
+uma implementacao dessa interface e usamos essa instancia para recuperar os atributos e valores de
+um estilo definido no projeto. A api de RESOURCE ira converter as referencias de resource
+(@string/something) de valores definidos num XML para o tipo correto para uso. Se usarmos a instancia
+de AttributSet diretamento precisaremos checar manualmente se a referencia para o atributo que
+queremos ter acesso existe atraves do metodo getAttributeResourceValue(int index, int defaultValue)
+
+A interface fornece um eficiente mecanismo para recuperar dados de um arquivo XML compilado, que pode
+ser recuperado por uma implementacao customizada ou nao  da interf XmlPullParser
+
+Exemplo
+ XmlPullParser parser = resources.getXml(myResource);
+ AttributeSet attributes = Xml.asAttributeSet(parser);
+
+ XmlPullParser
+ https://www.vogella.com/tutorials/AndroidXML/article.html
+ https://www.javatpoint.com/android-XMLPullParser-tutorial
+
+Reutilizar layouts com: (https://developer.android.com/training/improving-layouts/reusing-layouts)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
