@@ -19,4 +19,17 @@ style="@android:style/Widget.ProgressBar.Horizontal"
         android:progressDrawable="@drawable/dashed_progress_bar"
         tools:progress="50" />
 
+
+    <TextView
+        android:id="@+id/tv_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2sp"
+        android:layout_marginEnd="2sp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="20%"
+        />
+
 </LinearLayout>
