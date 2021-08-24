@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.R
 
 // https://developer.android.com/reference/android/text/style/ImageSpan
+// https://developer.android.com/reference/android/text/style/SuperscriptSpan
+// https://developer.android.com/reference/android/text/style/SuperscriptSpan?hl=pt-br
 
 
 class FunWithSpannebleFragment : Fragment() {
