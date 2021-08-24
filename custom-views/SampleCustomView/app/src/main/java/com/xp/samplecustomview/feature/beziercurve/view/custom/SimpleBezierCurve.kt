@@ -1,0 +1,16 @@
+package com.xp.samplecustomview.feature.beziercurve.view.custom
+
+import android.content.Context
+import android.util.AttributeSet
+import android.view.View
+
+/**
+ * Baseado em:
+ * https://www.programmersought.com/article/15634321983/
+ * https://www.programmersought.com/article/26645516115/
+ * */
+
+class SimpleBezierCurve @JvmOverloads constructor(
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
+}

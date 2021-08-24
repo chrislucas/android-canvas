@@ -1,0 +1,16 @@
+
+
+def versions = [:]
+
+versions.dynamic_animation_version = '1.0.0'
+versions.kotlin = '1.4.31'
+
+
+def dependenciesTable = [:]
+
+dependenciesTable.dynamic_animation = "androidx.dynamicanimation:dynamicanimation:" +
+        "${versions.dynamic_animation_version}"
+
+
+extensions.code = versions
+extensions.library = dependenciesTable
