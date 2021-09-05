@@ -44,6 +44,10 @@ dependencies {
 
     // dependencias de kotlin
     implementation deps.kotlin
+    implementation project(path: ':samplecustomviews')
+    implementation project(path: ':androidcanvas')
+    implementation project(path: ':sampleeyetracking')
+    implementation project(path: ':tryjetcompose')
 
     // dependencia coroutines tests
     testImplementation deps.coroutines_tests
@@ -67,6 +71,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation project(path: ':intentnavigation')
-    implementation project(path: ':samplecustomviews')
     implementation project(path: ':bookcustomview')
 }

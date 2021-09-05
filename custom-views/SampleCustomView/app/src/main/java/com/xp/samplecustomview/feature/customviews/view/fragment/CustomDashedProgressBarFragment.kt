@@ -28,7 +28,7 @@ class CustomDashedProgressBarFragment : Fragment(), BaseBehaviorFragment {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val tvPercentage: TextView= view.findViewById(R.id.tv_percentage)
+        val tvPercentage: TextView = view.findViewById(R.id.tv_percentage)
         view.findViewById<ProgressBar>(R.id.progressbar).let { progressBar ->
             Thread {
                 updateProgressBar(progressBar, tvPercentage)
@@ -67,12 +67,12 @@ class CustomDashedProgressBarFragment : Fragment(), BaseBehaviorFragment {
 
     companion object {
         @JvmStatic
-        fun newInstance() =
-            CustomDashedProgressBarFragment()
+        fun newInstance() = CustomDashedProgressBarFragment()
     }
 
     override fun getMyOwnTag(): String = javaClass.ownTag
 
     override fun getInstanceFragment(): Fragment = this
+
     override fun actionOnBackPressedInFragment() {}
 }

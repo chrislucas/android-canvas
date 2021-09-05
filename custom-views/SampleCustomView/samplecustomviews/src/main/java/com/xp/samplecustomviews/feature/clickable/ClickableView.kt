@@ -1,22 +1,58 @@
-package com.xp.samplecustomviews
+package com.xp.samplecustomviews.feature.clickable
 
 import android.content.Context
+import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.util.AttributeSet
 import android.util.Log
 import android.view.DragEvent
 import android.view.View
+import com.br.classext.Behavior
+import com.br.classext.fromClassNameToCreateBehavior
+import com.xp.samplecustomviews.R
+import com.xp.samplecustomviews.feature.clickable.action.SimpleClickView
 
-class SampleCustomView : View {
+class ClickableView : View {
+    private var mBehavior: Behavior? = null
+
+
     constructor(context: Context?) : super(context)
 
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {
+        initBehavior(context, attrs)
+    }
 
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
         context,
         attrs,
         defStyleAttr
-    )
+    ) {
+        initBehavior(context, attrs)
+    }
+
+    private fun initBehavior(ctx: Context?, attrs: AttributeSet?) {
+        val styledAttrs: TypedArray? = ctx?.obtainStyledAttributes(attrs, R.styleable.ClickableView)
+
+        val hasAttr = styledAttrs?.hasValue(R.styleable.ClickableView_classCreateBehavior) ?: false
+
+        if (hasAttr) {
+            mBehavior = styledAttrs?.getString(R.styleable.ClickableView_classCreateBehavior)
+                ?.fromClassNameToCreateBehavior()
+        }
+
+        this.setOnClickListener {
+            mBehavior?.let {
+                if (it is SimpleClickView) {
+                    it.onclick(this)
+                }
+            }
+        }
+        styledAttrs?.recycle()
+    }
+
+    override fun callOnClick(): Boolean {
+        return super.callOnClick()
+    }
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
@@ -49,7 +85,7 @@ class SampleCustomView : View {
     override fun onDragEvent(event: DragEvent?): Boolean {
 
         event?.let {
-            when(event.action) {
+            when (event.action) {
                 DragEvent.ACTION_DRAG_STARTED ->
                     Log.i("DRAG_EVENT", "ACTION_DRAG_STARTED")
                 else -> {

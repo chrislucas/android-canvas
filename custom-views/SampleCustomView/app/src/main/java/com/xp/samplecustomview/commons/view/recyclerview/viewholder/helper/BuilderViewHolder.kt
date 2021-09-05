@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.view.recyclerview.action.*
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureColorOptionsViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureCustomViews
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureCustomViewsViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewBindingFragmentViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewHolderDefault
 import java.lang.IllegalArgumentException
@@ -30,7 +30,7 @@ object BuilderViewHolder {
             }
 
             VIEW_HOLDER_FEATURE_CUSTOM_VIEWS -> {
-                FeatureCustomViews(getView(viewGroup, R.layout.layout_item_feature_custom_views))
+                FeatureCustomViewsViewHolder(getView(viewGroup, R.layout.layout_item_feature_custom_views))
             }
 
             VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT -> {

@@ -62,6 +62,11 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
                 VIEW_HOLDER_FEATURE_LIST_DEFAULT,
                 ItemFeatureDefault(getString(R.string.txt_title_feature_dashed_progress_bar)),
                 BindItemFeatureCustomDashedProgressBar(this)
+            ),
+            HolderBinderViewHolder(
+                VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+                ItemFeatureCustomBehaviorForCustomView(getString(R.string.txt_title_feature_custom_behavior)),
+                BindItemFeatureCustomBehaviorForCustomView(this)
             )
         ) as List<HolderBinderViewHolder<Any>>
     }

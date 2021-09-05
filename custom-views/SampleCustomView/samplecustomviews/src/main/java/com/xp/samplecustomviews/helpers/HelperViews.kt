@@ -1,4 +1,4 @@
-package com.xp.samplecustomviews
+package com.xp.samplecustomviews.helpers
 
 import android.util.AttributeSet
 import android.util.Log
