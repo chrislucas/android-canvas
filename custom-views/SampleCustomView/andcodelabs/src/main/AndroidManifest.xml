@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.br.andcodelabs">
+
+    <application>
+        <activity
+            android:name=".feature.basicnav.BasicNavComponentActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="basicnavcomponent"
+                    android:scheme="andcodelabs" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".feature.jetpack.navcomponent.activities.JetpackNavComponentActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="jetpacknavcomponent"
+                    android:scheme="andcodelabs" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.fragment.navcomponent.activities.FragmentNavComponentActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="fragmentnavcomponent"
+                    android:scheme="andcodelabs" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ClassExt" />
+            <option value="$PROJECT_DIR$/andcodelabs" />
             <option value="$PROJECT_DIR$/androidcanvas" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bookcustomview" />
