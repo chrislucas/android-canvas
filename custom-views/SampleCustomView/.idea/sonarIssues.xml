@@ -548,6 +548,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/canvas">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/compose">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/raw/design_pattern_command">
           <value>
             <set />
@@ -584,6 +599,41 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/DumbCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tools/dependencies-version.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/gradle/wrapper/gradle-wrapper.properties">
           <value>
             <set />
           </value>
