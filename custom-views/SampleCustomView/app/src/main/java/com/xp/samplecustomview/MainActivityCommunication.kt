@@ -42,8 +42,6 @@ class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragm
                     .commit()
             }
         }
-
-
     }
 
     override fun openThisFragment(baseBehaviorFragment: BaseBehaviorFragment) {

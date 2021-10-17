@@ -1,0 +1,57 @@
+SpringForce
+https://developer.android.com/reference/androidx/dynamicanimation/animation/SpringForce
+
+
+
+Spring = mola
+Stiff = [rigido, duro, firm] = [hard, tough, rough, rigid, inflexbile]
+Stiffer = [rigidez]
+Damp = [amortecer, abafar] [cushion, absorb] [stifle, smother]
+
+"Efeito fisico mola"
+
+Spring force define as caracteristicas do efeito "mola/spring" que esta sendo usado na animacao.
+
+Configurando a rigidez e a taxa de amortecimento, pode-se criar um efeito de mola com as caracteristica
+que sejam as mais adequadas a que se deseja.
+
+    - Quanto mais rigida a mola, mas dificil eh dela se contrair e mais rapido sera o amortecimento
+
+Spring damping ratio: Descreve como as oscilacoes num sistema decais apos o disturbio causado
+
+    - Quando o damping ratio > 1 (over-damped), o objeto rapidamente retornara a posicao de descanso
+
+    - Se o damping ration = 1 (critically damped), o objeto retornara ao equlibrio
+    num curto espaco de tempo
+
+    - Se o damping ratio eh < 1 (under-damped), ocorre o efeito de mola (a massa tende a ultrapassar
+    o limite, retornar e ultrabasar de novo)
+
+    - Nao definindo damping-ration a massa oscila para sempre
+
+
+ Samples: spring force android sample
+ https://developer.android.com/guide/topics/graphics/spring-animation
+ https://www.thedroidsonroids.com/blog/springanimation-examples
+ https://proandroiddev.com/spring-animation-in-android-de3d4197879b
+ https://www.journaldev.com/21896/android-spring-animation-physics-animation
+
+
+ https://androidexample365.com/a-simple-spring-animation-example-android-app/
+ https://medium.com/@temidjoy/android-animations-animate-movement-using-spring-physics-f4aa8ab6f67b
+
+ Projects
+ https://github.com/Rkhcy/PhysicsBasedAnimation
+https://www.codota.com/code/java/classes/android.support.animation.SpringForce
+
+https://www.raywenderlich.com/9384883-physics-based-animations-in-android-with-dynamicanimation-getting-started
+
+
+CodeLabs
+https://developer.android.com/codelabs/advanced-android-training-animations#4
+
+
+Fling Animation
+https://developer.android.com/guide/topics/graphics/fling-animation
+
+Introduction to animations

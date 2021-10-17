@@ -68,6 +68,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/gradle.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -603,6 +608,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/settings.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/tools/dependencies-version.gradle">
           <value>
             <set />
@@ -614,6 +624,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/tools/dependencies-version.gradle">
           <value>
             <set />
           </value>

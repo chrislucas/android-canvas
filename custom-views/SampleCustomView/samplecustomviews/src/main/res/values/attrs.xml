@@ -3,6 +3,9 @@
     <declare-styleable name="ColorOptionView">
         <attr name="titleText" format="string" localization="suggested" />
         <attr name="valueColor" format="color" />
-        <attr name="behavior" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ClickableView">
+        <attr format="string" name="classCreateBehavior" />
     </declare-styleable>
 </resources>

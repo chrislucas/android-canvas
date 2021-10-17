@@ -3,7 +3,7 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.feature.customviews.view.fragment.SlideCustomViewFragment
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureCustomViews
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureCustomViewsViewHolder
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
 
 
@@ -21,7 +21,7 @@ class BindItemFeatureSlideCustomView(private val channel: ChannelCommunicationVi
         viewHolder: RecyclerView.ViewHolder,
         data: ItemFeatureSlideCustomView
     ) {
-        val vh = viewHolder as FeatureCustomViews
+        val vh = viewHolder as FeatureCustomViewsViewHolder
         vh.tvTitle.text = data.description
     }
 }

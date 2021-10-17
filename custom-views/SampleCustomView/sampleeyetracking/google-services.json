@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "454916939650",
+    "project_id": "bold-hallway-158720",
+    "storage_bucket": "bold-hallway-158720.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454916939650:android:1056fd1a85d81329ccf99b",
+        "android_client_info": {
+          "package_name": "com.br.sampleeyetracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454916939650-r7j8t9s0a8dpkua9adobrlq92igp3e8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk67fnR-Y0GKEuBnr-UIlv7N0sS18x4hY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454916939650-r7j8t9s0a8dpkua9adobrlq92igp3e8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
