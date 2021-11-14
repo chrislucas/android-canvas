@@ -1,7 +1,7 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import androidx.recyclerview.widget.RecyclerView
-import com.xp.samplecustomview.feature.customviews.view.fragment.CustomPopupViewFragment
+import com.xp.samplecustomview.feature.customviews.sample.popupview.view.fragment.CustomPopupViewFragment
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewHolderDefault
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment

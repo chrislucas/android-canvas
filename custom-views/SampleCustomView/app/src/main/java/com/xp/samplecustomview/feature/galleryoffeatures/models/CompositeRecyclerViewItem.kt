@@ -5,7 +5,7 @@ import com.xp.samplecustomview.commons.view.recyclerview.action.ViewType
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
 
 
-class HolderBinderViewHolder<T>(
+class CompositeRecyclerViewItem<T>(
     @ViewType val viewType: Int,
     val item: T,
     val binder: BindDataToViewHolder<T>

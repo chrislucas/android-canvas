@@ -39,36 +39,42 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
         }
     }
 
-    private val itemsOfMenuFeature: List<HolderBinderViewHolder<Any>> by lazy {
+    private val itemsOfMenuFeature: List<CompositeRecyclerViewItem<Any>> by lazy {
         listOf(
-            HolderBinderViewHolder(
+            CompositeRecyclerViewItem(
                 VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
-                ItemFeatureSlideCustomView(getString(R.string.txt_title_feature_custom_view)),
+                ItemFeatureFullscreenSlideCustomView(getString(R.string.txt_title_feature_fullscreen_slider_custom_view)),
+                BindItemFeatureFulscreenSlideCustomView(this)
+            ),
+
+            CompositeRecyclerViewItem(
+                VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
+                ItemFeatureSlideCustomView(getString(R.string.txt_title_feature_slider_custom_view)),
                 BindItemFeatureSlideCustomView(this)
             ),
 
-            HolderBinderViewHolder(
+            CompositeRecyclerViewItem(
                 VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
                 ItemFeatureViewBindingFragment(getString(R.string.txt_title_feature_view_binding_fragment)),
                 BindItemFeatureViewBindingFragment(this)
             ),
 
-            HolderBinderViewHolder(
+            CompositeRecyclerViewItem(
                 VIEW_HOLDER_FEATURE_LIST_DEFAULT,
                 ItemFeatureCustomPopupView(getString(R.string.txt_title_feature_custom_popup_view)),
                 BindItemFeatureCustomPopupView(this)
             ),
-            HolderBinderViewHolder(
+            CompositeRecyclerViewItem(
                 VIEW_HOLDER_FEATURE_LIST_DEFAULT,
                 ItemFeatureDefault(getString(R.string.txt_title_feature_dashed_progress_bar)),
                 BindItemFeatureCustomDashedProgressBar(this)
             ),
-            HolderBinderViewHolder(
+            CompositeRecyclerViewItem(
                 VIEW_HOLDER_FEATURE_LIST_DEFAULT,
                 ItemFeatureCustomBehaviorForCustomView(getString(R.string.txt_title_feature_custom_behavior)),
                 BindItemFeatureCustomBehaviorForCustomView(this)
             )
-        ) as List<HolderBinderViewHolder<Any>>
+        ) as List<CompositeRecyclerViewItem<Any>>
     }
 
     override fun onCreateView(

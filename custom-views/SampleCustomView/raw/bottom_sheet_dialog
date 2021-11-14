@@ -1,0 +1,15 @@
+BottomSheet
+https://material.io/develop/android/components/bottom-sheet-dialog-fragment
+https://medium.com/android-dev-br/android-ui-bottom-sheet-4709cad826d2
+https://www.section.io/engineering-education/bottom-sheet-dialogs-using-android-studio/
+https://blog.mindorks.com/android-bottomsheet-in-kotlin
+https://www.simplifiedcoding.net/bottom-sheet-android/
+https://www.androidhive.info/2017/12/android-working-with-bottom-sheet/
+https://www.thiengo.com.br/utilizando-bottomsheet-material-design-no-android
+
+BottomSheetBehavior
+https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetBehavior
+
+BottomSheetDialogFragment
+https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialogFragment
+https://medium.com/@traviswkim/show-rounded-corners-for-bottomsheetdialogfragment-fc3ada4b49b4

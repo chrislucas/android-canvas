@@ -18,7 +18,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textAlignment="center"
-            android:text="@string/txt_title_feature_custom_view"
+            android:text="@string/txt_title_feature_slider_custom_view"
             android:textSize="20sp"
             />
 

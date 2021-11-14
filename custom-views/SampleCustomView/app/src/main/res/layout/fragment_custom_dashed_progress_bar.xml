@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".feature.customviews.view.fragment.CustomDashedProgressBarFragment">
+    tools:context=".feature.customviews.sample.dashedprogressbar.view.fragment.CustomDashedProgressBarFragment">
 
 <!--
 style="@android:style/Widget.ProgressBar.Horizontal"
