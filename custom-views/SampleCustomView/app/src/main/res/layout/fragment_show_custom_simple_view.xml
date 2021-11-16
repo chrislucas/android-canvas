@@ -5,9 +5,18 @@
     android:layout_height="match_parent"
     tools:context=".feature.customviews.sample.canvasbook.chp1.view.fragment.ShowCustomSimpleViewFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_title_fragment_simple_view"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
     <com.br.androidcanvas.chp1.SimpleView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         />
 
 </LinearLayout>

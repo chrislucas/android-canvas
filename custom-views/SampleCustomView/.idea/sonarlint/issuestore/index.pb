@@ -38,8 +38,6 @@ mapp/src/main/java/com/xp/samplecustomview/feature/coloroptions/view/fragments/C
 rapp/src/main/java/com/xp/samplecustomview/feature/viewbindfragment/view/fragments/SampleViewBindingFragmentBase.kt,c\3\c3de4a147e0319129273d3b1a2d57ca0aefd525c
 ‚
 Rapp/src/main/java/com/xp/samplecustomview/helper/fragments/BaseBehaviorFragment.kt,1\5\15c1b784722f522d4bd2eb424c98809550be1d80
-v
-Fapp/src/main/java/com/xp/samplecustomview/MainActivityCommunication.kt,a\9\a9a5c9a5e16664023bb8430d6fe9ce1703083151
 J
 raw/fragment_state_adapter,6\9\69958b9f5ce6908d9ae22e8591b7e201200491ef
 —

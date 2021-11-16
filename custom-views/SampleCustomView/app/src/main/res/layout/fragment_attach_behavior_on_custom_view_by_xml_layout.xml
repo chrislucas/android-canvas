@@ -7,10 +7,18 @@
     android:orientation="vertical"
     tools:context=".feature.customviews.sample.behaviorcustomview.view.fragment.AttachBehaviorOnCustomViewByXmlLayout">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_title_fragment_attach_behavior_cv"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
 
     <com.xp.samplecustomviews.feature.clickable.ClickableView
-        android:layout_width="300sp"
-        android:layout_height="300sp"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
         android:layout_gravity="center"
         android:background="@color/colorPrimary"
         custom_attr:classCreateBehavior="com.xp.samplecustomview.feature.customviews.sample.behaviorcustomview.behavior.creator.CreateSimpleClickableView" />

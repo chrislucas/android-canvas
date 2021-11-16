@@ -12,11 +12,8 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.feature.coloroptions.view.fragments.ColorOptionsViewFragmentBase
 import com.xp.samplecustomview.feature.customviews.sample.listOfFragments
-import com.xp.samplecustomview.feature.customviews.view.fragment.viewpg.adapter.DefaultFragmentStateAdapter
-import com.xp.samplecustomview.feature.fullscreen.views.fragment.FullscreenSampleFragment
-import com.xp.samplecustomview.feature.viewbindfragment.view.fragments.SampleViewBindingFragmentBase
+import com.xp.samplecustomview.feature.customviews.view.viewpager.adapter.DefaultFragmentStateAdapter
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 /**

@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
+import com.xp.samplecustomview.feature.customviews.sample.listOfFragments
+import com.xp.samplecustomview.feature.customviews.view.viewpager.adapter.DefaultFragmentStateAdapter
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 class ScreenSliderCustomViewFragment : Fragment(), BaseBehaviorFragment {
@@ -24,6 +26,17 @@ class ScreenSliderCustomViewFragment : Fragment(), BaseBehaviorFragment {
         val view =  inflater.inflate(R.layout.fragment_screen_slide_page, container, false)
         slider = view.findViewById(R.id.sliderViewPager)
 
+        activity?.let {
+            fa ->
+            /*
+                ViewPager2 usa uma instancia de FragmentStateAdapter
+                https://developer.android.com/reference/kotlin/androidx/viewpager2/adapter/FragmentStateAdapter
+                abstract class FragmentStateAdapter : RecyclerView.Adapter<FragmentViewHolder!>, StatefulAdapter
+
+             */
+            slider.adapter = DefaultFragmentStateAdapter(fa, listOfFragments)
+        }
+
         return view
     }
 
@@ -37,6 +50,10 @@ class ScreenSliderCustomViewFragment : Fragment(), BaseBehaviorFragment {
     override fun getInstanceFragment(): Fragment = this
 
     override fun actionOnBackPressedInFragment() {
-        // TODO
+        with(slider) {
+            if (currentItem > 0) {
+                currentItem -= 1
+            }
+        }
     }
 }

@@ -12,4 +12,6 @@
     <string name="txt_bt_control_custom_popup_view">Abrir PopupView</string>
     <string name="txt_title_feature_dashed_progress_bar">Dashed ProgressBar</string>
     <string name="txt_title_feature_custom_behavior">Adicionar Comportamento a CustoView Via XML</string>
+    <string name="txt_title_fragment_simple_view">Simple Custom View</string>
+    <string name="txt_title_fragment_attach_behavior_cv">Adicionando comportamento a uma CV via xml</string>
 </resources>
