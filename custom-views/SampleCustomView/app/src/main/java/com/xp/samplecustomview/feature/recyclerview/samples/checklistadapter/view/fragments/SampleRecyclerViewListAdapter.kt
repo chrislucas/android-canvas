@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
+import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.commons.view.recyclerview.action.DefaultSimpleBindViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER
 import com.xp.samplecustomview.commons.view.recyclerview.adapter.GenRecyclerViewWithListAdapter
@@ -20,7 +21,7 @@ import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.vie
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.view.list.models.BindUserItem
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
-class SampleRecyclerViewListAdapter : Fragment(), ListenerFeaturesViewHolder {
+class SampleRecyclerViewListAdapter : Fragment(), BaseBehaviorFragment {
 
     private val users = mutableListOf(
         CompositeRecyclerViewItem(
@@ -89,5 +90,9 @@ class SampleRecyclerViewListAdapter : Fragment(), ListenerFeaturesViewHolder {
         fun newInstance() = SampleRecyclerViewListAdapter()
     }
 
-    override fun onInteractWithView(behaviorFragment: BaseBehaviorFragment) {}
+    override fun getMyOwnTag(): String = javaClass.ownTag
+
+    override fun getInstanceFragment(): Fragment = this
+
+    override fun actionOnBackPressedInFragment() {}
 }

@@ -12,11 +12,6 @@ import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 class AttachBehaviorOnCustomViewByXmlLayout : Fragment(), BaseBehaviorFragment {
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

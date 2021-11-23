@@ -22,7 +22,7 @@
             android:exported="false"
             android:label="@string/title_activity_frag_container_view"
             android:theme="@style/AppTheme.MaterialComponent.Light.NoActionBar.NoActionBar" />
-        <activity android:name=".MainActivityCommunication" android:exported="false">
+        <activity android:name=".MainActivityCommunication" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
