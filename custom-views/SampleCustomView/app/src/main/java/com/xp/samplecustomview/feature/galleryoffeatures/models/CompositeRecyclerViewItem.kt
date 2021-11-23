@@ -14,7 +14,7 @@ import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerv
         preenchida
  */
 
-class HolderBinderViewHolder<T>(
+class CompositeRecyclerViewItem<T>(
     @ViewType val viewType: Int,
     val item: T,
     val binder: BindDataToViewHolder<T>

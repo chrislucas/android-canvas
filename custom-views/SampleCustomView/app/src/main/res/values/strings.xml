@@ -3,7 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="txt_title_feature_custom_view">Feature Custom Views</string>
+    <string name="txt_title_feature_slider_custom_view">Feature Slider Custom Views</string>
+    <string name="txt_title_feature_fullscreen_slider_custom_view">Feature Fullscreen Slider Custom Views</string>
     <string name="txt_title_feature_view_binding_fragment">ViewBinding Fragment</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -22,4 +23,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="text_default_empty_state_list">Lista Vazia</string>
     <string name="txt_title_feature_recycler_view_list_adapter">RecyclerViewListAdapter - DiffCallback</string>
+    <string name="txt_title_fragment_simple_view">Simple Custom View</string>
+    <string name="txt_title_fragment_attach_behavior_cv">Adicionando comportamento a uma CV via xml</string>
 </resources>

@@ -14,49 +14,53 @@ fun provideFeatures(
     communicationWithViewHolder: ListenerFeaturesViewHolder
 ) =
     listOf(
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
-            ItemFeatureSlideCustomView(ctx.getString(R.string.txt_title_feature_custom_view)),
+            ItemFeatureSlideCustomView(ctx.getString(R.string.txt_title_feature_slider_custom_view)),
             BindItemFeatureSlideCustomView(communicationWithViewHolder)
         ),
 
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
             ItemFeatureViewBindingFragment(ctx.getString(R.string.txt_title_feature_view_binding_fragment)),
             BindItemFeatureViewBindingFragment(communicationWithViewHolder)
         ),
 
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureCustomPopupView(ctx.getString(R.string.txt_title_feature_custom_popup_view)),
             BindItemFeatureCustomPopupView(communicationWithViewHolder)
         ),
 
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureDefault(ctx.getString(R.string.txt_title_feature_dashed_progress_bar)),
             BindItemFeatureCustomDashedProgressBar(communicationWithViewHolder)
         ),
 
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
-            ItemFeatureCustomBehaviorForCustomView(ctx.getString(R.string.txt_title_feature_custom_behavior)),
+            ItemFeatureCustomBehaviorForCustomView(
+                ctx.getString(R.string.txt_title_feature_custom_behavior)
+            ),
             BindItemFeatureCustomBehaviorForCustomView(communicationWithViewHolder)
         ),
 
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
-            ItemFeatureRecyclerViewListAdapter(ctx.getString(R.string.txt_title_feature_recycler_view_list_adapter)),
+            ItemFeatureRecyclerViewListAdapterWithDiffCallback(
+                ctx.getString(R.string.txt_title_feature_recycler_view_list_adapter)
+            ),
             BindItemFeatureRecyclerViewListAdapter(communicationWithViewHolder)
         )
-    ) as List<HolderBinderViewHolder<Any>>
+    ) as List<CompositeRecyclerViewItem<Any>>
 
 
 fun provideEmptyStateList() = listOf(
-    HolderBinderViewHolder(
+    CompositeRecyclerViewItem(
         VIEW_HOLDER_EMPTY_STATE,
         ItemEmptyStateList(),
         BindEmptyStateListViewHolder()
     )
 
-) as List<HolderBinderViewHolder<Any>>
+) as List<CompositeRecyclerViewItem<Any>>

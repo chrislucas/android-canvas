@@ -1,0 +1,22 @@
+
+https://developer.android.com/guide/topics/manifest/activity-element#exported
+
+Exported
+android:exported
+This element sets whether the activity can be launched by components of other applications:
+If "true", the activity is accessible to any app, and is launchable by its exact class name.
+
+If "false", the activity can be launched only by components of the same application, applications
+with the same user ID, or privileged system components. This is the default value when there are no
+intent filters.
+
+If an activity in your app includes intent filters, set this element to "true" to allow other
+apps to start it. For example, if the activity is the main activity of the app and includes the
+category "android.intent.category.LAUNCHER".
+
+If this element is set to "false" and an app tries to start the activity, the system throws an
+ctivityNotFoundException.
+
+This attribute is not the only way to limit an activity's exposure to other applications.
+Permissions can also be used to limit the external entities that can invoke the activity
+(see the permission attribute).

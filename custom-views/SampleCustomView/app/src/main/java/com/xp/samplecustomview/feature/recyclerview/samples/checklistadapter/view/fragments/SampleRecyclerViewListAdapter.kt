@@ -11,44 +11,44 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.view.recyclerview.action.DefaultSimpleBindViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER
-import com.xp.samplecustomview.feature.galleryoffeatures.models.HolderBinderViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.adapter.GenRecyclerViewWithListAdapter
+import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.models.ComparatorUserByAge
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.models.User
-import com.xp.samplecustomview.commons.view.recyclerview.adapter.GenRecyclerViewWithListAdapter
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.view.list.diffdata.providerDiffCallback
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.view.list.models.BindUserItem
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
 class SampleRecyclerViewListAdapter : Fragment(), ListenerFeaturesViewHolder {
 
     private val users = mutableListOf(
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
             User("Chris", 31),
             BindUserItem()
         ),
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
             User("Chris", 21),
             BindUserItem()
         ),
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
             User("Laura", 15),
             BindUserItem()
         ),
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
             User("Philippe", 23),
             BindUserItem()
         ),
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
             User("Andrezza", 23),
             BindUserItem()
         ),
-        HolderBinderViewHolder(
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
             User("Andressa", 27),
             BindUserItem()
@@ -89,7 +89,5 @@ class SampleRecyclerViewListAdapter : Fragment(), ListenerFeaturesViewHolder {
         fun newInstance() = SampleRecyclerViewListAdapter()
     }
 
-    override fun onInteractWithView(behaviorFragment: BaseBehaviorFragment) {
-
-    }
+    override fun onInteractWithView(behaviorFragment: BaseBehaviorFragment) {}
 }

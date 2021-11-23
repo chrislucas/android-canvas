@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.commons.view.recyclerview.action.DefaultSimpleBindViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.models.HolderBinderViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 import com.xp.samplecustomview.feature.galleryoffeatures.models.provideEmptyStateList
 import com.xp.samplecustomview.feature.galleryoffeatures.models.provideFeatures
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.RecyclerViewAdapterGalleryOfFeatures
@@ -37,7 +37,7 @@ class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
         }
     }
 
-    private val itemsOfMenuFeature: List<HolderBinderViewHolder<Any>> by lazy {
+    private val itemsOfMenuFeature: List<CompositeRecyclerViewItem<Any>> by lazy {
         this.context?.let {
             provideFeatures(it, this)
         } ?: provideEmptyStateList()

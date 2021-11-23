@@ -12,17 +12,15 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.feature.coloroptions.view.fragments.ColorOptionsViewFragmentBase
-import com.xp.samplecustomview.feature.customviews.view.fragment.viewpg.adapter.DefaultFragmentStateAdapter
-import com.xp.samplecustomview.feature.fullscreen.views.fragment.FullscreenSampleFragment
-import com.xp.samplecustomview.feature.viewbindfragment.view.fragments.SampleViewBindingFragmentBase
+import com.xp.samplecustomview.feature.customviews.sample.listOfFragments
+import com.xp.samplecustomview.feature.customviews.view.viewpager.adapter.DefaultFragmentStateAdapter
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 /**
  * An example full-screen fragment that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
+class FullScreenSliderCustomViewFragment : Fragment(), BaseBehaviorFragment {
     private val hideHandler = Handler()
 
     @Suppress("InlinedApi")
@@ -86,17 +84,11 @@ class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
         // Set up the user interaction to manually show or hide the system UI.
         fullscreenContent?.setOnClickListener { toggle() }
 
-        viewPager = view.findViewById(R.id.slider)
+        viewPager = view.findViewById(R.id.sliderViewPager)
 
         activity?.let {
-            viewPager?.adapter = DefaultFragmentStateAdapter(
-                it,
-                listOf(
-                    FullscreenSampleFragment.newInstance(),
-                    ColorOptionsViewFragmentBase.newInstance(),
-                    SampleViewBindingFragmentBase.newInstance()
-                )
-            )
+            fragActivity ->
+            viewPager?.adapter = DefaultFragmentStateAdapter(fragActivity, listOfFragments)
         }
 
 
@@ -119,7 +111,6 @@ class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
     override fun onPause() {
         super.onPause()
         activity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
-
         // Clear the systemUiVisibility flag
         activity?.window?.decorView?.systemUiVisibility = 0
         show()
@@ -193,7 +184,7 @@ class SlideCustomViewFragment : Fragment(), BaseBehaviorFragment {
         private const val UI_ANIMATION_DELAY = 300
 
         @JvmStatic
-        fun newInstance() = SlideCustomViewFragment()
+        fun newInstance() = FullScreenSliderCustomViewFragment()
     }
 
     override fun getMyOwnTag(): String = this.javaClass.ownTag

@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.customviews.view.fragment
+package com.xp.samplecustomview.feature.customviews.sample.popupview.view.fragment
 
 import android.os.Bundle
 import android.view.Gravity

@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
 import com.xp.samplecustomview.commons.view.recyclerview.action.SimpleBindViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_UNDEFINED
-import com.xp.samplecustomview.feature.galleryoffeatures.models.HolderBinderViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 
 
 /**
@@ -18,7 +18,7 @@ import com.xp.samplecustomview.feature.galleryoffeatures.models.HolderBinderView
  *
  * */
 class RecyclerViewAdapterGalleryOfFeatures<T>(
-    private val values: List<HolderBinderViewHolder<T>>,
+    private val values: List<CompositeRecyclerViewItem<T>>,
     private val actionViewHolderSimple: SimpleBindViewHolder
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

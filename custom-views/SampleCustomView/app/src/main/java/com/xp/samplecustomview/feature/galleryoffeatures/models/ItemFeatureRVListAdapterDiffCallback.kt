@@ -4,25 +4,25 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
-class ItemFeatureRecyclerViewListAdapter(val description: String)
+class ItemFeatureRecyclerViewListAdapterWithDiffCallback(val description: String)
 
 
 typealias ChannelCommunication = ListenerFeaturesViewHolder
 
 
 class BindItemFeatureRecyclerViewListAdapter(private val channel: ChannelCommunication) :
-    BindDataToViewHolder<ItemFeatureRecyclerViewListAdapter> {
+    BindDataToViewHolder<ItemFeatureRecyclerViewListAdapterWithDiffCallback> {
 
     override fun onClick(
         viewHolder: RecyclerView.ViewHolder,
-        data: ItemFeatureRecyclerViewListAdapter
+        data: ItemFeatureRecyclerViewListAdapterWithDiffCallback
     ) {
 
     }
 
     override fun fillViewHolderWithData(
         viewHolder: RecyclerView.ViewHolder,
-        data: ItemFeatureRecyclerViewListAdapter
+        data: ItemFeatureRecyclerViewListAdapterWithDiffCallback
     ) {
 
     }

@@ -5,10 +5,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.commons.view.recyclerview.action.SimpleBindViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.models.HolderBinderViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 
 class GenRecyclerViewWithListAdapter<T>(
-    private val values: MutableList<HolderBinderViewHolder<T>>,
+    private val values: MutableList<CompositeRecyclerViewItem<T>>,
     private val simpleBindViewHolder: SimpleBindViewHolder,
     diffCallback: DiffUtil.ItemCallback<T>
 

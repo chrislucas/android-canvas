@@ -68,6 +68,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/gradle.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/CircleView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/chp1/SimpleView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -168,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/canvasbook/chp1/view/fragment/ShowCustomSimpleViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/CustomDashedProgressBarFragment.kt">
           <value>
             <set />
@@ -183,7 +203,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/FullScreenSliderCustomViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/ScreenSlidePageFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/ScreenSliderCustomViewFragment.kt">
           <value>
             <set />
           </value>
@@ -209,6 +239,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/pageadapter/ScreenSlidePageAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewpager/adapter/transformer/SimpleTransformer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewpager/transformer/SimpleTransformer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewpager/transformer/SimpleTransformer2.kt">
           <value>
             <set />
           </value>
@@ -253,6 +298,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ComposedItemViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ComposedRecyclerViewItem.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/CompositeRecyclerViewItem.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/DataViewHolder.kt">
           <value>
             <set />
@@ -293,7 +353,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeature.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureFullscreenSlideCustomView.kt">
           <value>
             <set />
           </value>
@@ -463,6 +533,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_attach_behavior_on_custom_view_by_xml_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_color_options_view.xml">
           <value>
             <set />
@@ -508,6 +583,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_custom_simple_view.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_item_feature.xml">
           <value>
             <set />
@@ -519,6 +599,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_item_feature_default.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <value>
             <set />
           </value>
@@ -548,6 +633,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/bottom_sheet_dialog">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/canvas">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/compose">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/raw/design_pattern_command">
           <value>
             <set />
@@ -573,6 +678,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/raw/views">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/AnyHelper.kt">
           <value>
             <set />
@@ -584,6 +694,51 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/DumbCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/settings.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tools/dependencies-version.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/arch/mvvm/FlowAndLiveDataSample/tools/dependencies-version.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/kotlin/view/XploringPatternLocking/gradle/wrapper/gradle-wrapper.properties">
           <value>
             <set />
           </value>
