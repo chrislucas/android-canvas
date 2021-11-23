@@ -1,0 +1,10 @@
+ListAdapter
+https://developer.android.com/reference/androidx/recyclerview/widget/ListAdapter
+https://medium.com/androiddevelopers/adapting-to-listadapter-341da4218f5b
+https://medium.com/android-dev-br/como-criar-um-listadapter-usando-kotlin-1f2259840ebc
+
+ListAdapter + DiffUtil
+https://bignerdranch.com/blog/efficient-lists-with-diffutil-and-listadapter/
+https://medium.com/tech-carnot/making-recyclerview-efficient-using-list-adapter-with-diffutil-4a06d4583ea4
+https://digitalinnovation.one/artigos/recyclerview-performatica-com-listadapter-e-diffutil
+https://medium.com/tech-carnot/making-recyclerview-efficient-using-list-adapter-with-diffutil-4a06d4583ea4

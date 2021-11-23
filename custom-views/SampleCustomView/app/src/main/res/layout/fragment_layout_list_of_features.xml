@@ -9,5 +9,5 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".feature.galleryoffeatures.view.fragments.FragmentGalleryOfFeatures"
+    tools:context=".feature.galleryoffeatures.view.fragments.GalleryOfFeatures"
     tools:listitem="@layout/layout_item_feature_default" />

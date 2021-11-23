@@ -1,8 +1,8 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import com.xp.samplecustomview.feature.customviews.view.fragment.CustomDashedProgressBarFragment
-import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
 
-class BindItemFeatureCustomDashedProgressBar(channel: ChannelCommunicationViewHolderFragment) :
+class BindItemFeatureCustomDashedProgressBar(channel: ListenerFeaturesViewHolder) :
     BindItemFeatureDefault(channel, CustomDashedProgressBarFragment.newInstance())

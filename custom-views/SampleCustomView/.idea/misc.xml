@@ -5,13 +5,21 @@
       <map>
         <entry key="app/src/main/res/drawable/dashed_progress_bar.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/drawable/ic_custom_view_foreground.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/activity_appication_lifecycle_callback.xml" value="0.2755208333333333" />
+        <entry key="app/src/main/res/layout/activity_basic_content_provider.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/content_frag_container_view.xml" value="0.2755208333333333" />
         <entry key="app/src/main/res/layout/fragment_attach_behavior_on_custom_view_by_xml_layout.xml" value="0.351931330472103" />
         <entry key="app/src/main/res/layout/fragment_color_options_view.xml" value="0.128125" />
         <entry key="app/src/main/res/layout/fragment_custom_dashed_progress_bar.xml" value="0.189209726443769" />
+        <entry key="app/src/main/res/layout/fragment_flex_u_i_s2.xml" value="0.2755208333333333" />
+        <entry key="app/src/main/res/layout/fragment_layout_list_of_features.xml" value="0.1140625" />
+        <entry key="app/src/main/res/layout/fragment_sample_recycler_view_list_adapter.xml" value="0.2296875" />
         <entry key="app/src/main/res/layout/fragment_screen_slide_page.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/fragment_simple_web_view.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/layout_item_empty_state.xml" value="0.2296875" />
         <entry key="app/src/main/res/layout/layout_item_feature_custom_views.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/layout_item_feature_default.xml" value="0.3640625" />
+        <entry key="app/src/main/res/layout/layout_item_user_list.xml" value="0.25" />
       </map>
     </option>
   </component>

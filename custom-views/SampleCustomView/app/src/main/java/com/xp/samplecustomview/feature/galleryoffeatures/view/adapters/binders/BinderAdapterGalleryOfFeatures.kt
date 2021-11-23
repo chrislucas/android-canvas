@@ -5,9 +5,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.commons.view.recyclerview.action.SimpleBindViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.viewholder.helper.BuilderViewHolder
 
+@Deprecated("Usar a classe DefaultSimpleBindViewHolder")
 class BinderAdapterGalleryOfFeatures : SimpleBindViewHolder {
-
     override fun getViewHolder(viewType: Int, viewRoot: ViewGroup): RecyclerView.ViewHolder =
         BuilderViewHolder.build(viewType, viewRoot)
-
 }
+
+

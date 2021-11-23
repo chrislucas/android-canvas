@@ -7,10 +7,11 @@ import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.view.recyclerview.action.*
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureColorOptionsViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureCustomViewsViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewBindingFragmentViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewHolderDefault
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureColorOptionsViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureCustomViewsViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewBindingFragmentViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
+import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.view.list.viewholder.UserDataViewHolder
 import java.lang.IllegalArgumentException
 
 object BuilderViewHolder {
@@ -23,7 +24,7 @@ object BuilderViewHolder {
     ): RecyclerView.ViewHolder {
         return when (viewType) {
             VIEW_HOLDER_EMPTY_STATE -> {
-                EmptyStateViewHolder(getView(viewGroup, R.layout.layout_item_feature_default))
+                EmptyStateViewHolder(getView(viewGroup, R.layout.layout_item_empty_state))
             }
             VIEW_HOLDER_FEATURE_LIST_DEFAULT -> {
                 FeatureViewHolderDefault(getView(viewGroup, R.layout.layout_item_feature_default))
@@ -39,6 +40,9 @@ object BuilderViewHolder {
 
             VIEW_HOLDER_FEATURE_COLOR_OPTIONS -> {
                 FeatureColorOptionsViewHolder(getView(viewGroup, R.layout.layout_item_feature_default))
+            }
+            VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER -> {
+                UserDataViewHolder(getView(viewGroup, R.layout.layout_item_user_list))
             }
             else -> {
                 defaultBuilder?.run {

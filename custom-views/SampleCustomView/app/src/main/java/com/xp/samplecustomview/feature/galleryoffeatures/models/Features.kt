@@ -1,0 +1,62 @@
+package com.xp.samplecustomview.feature.galleryoffeatures.models
+
+import android.content.Context
+import com.xp.samplecustomview.R
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_EMPTY_STATE
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_CUSTOM_VIEWS
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_LIST_DEFAULT
+import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
+
+
+fun provideFeatures(
+    ctx: Context,
+    communicationWithViewHolder: ListenerFeaturesViewHolder
+) =
+    listOf(
+        HolderBinderViewHolder(
+            VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
+            ItemFeatureSlideCustomView(ctx.getString(R.string.txt_title_feature_custom_view)),
+            BindItemFeatureSlideCustomView(communicationWithViewHolder)
+        ),
+
+        HolderBinderViewHolder(
+            VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
+            ItemFeatureViewBindingFragment(ctx.getString(R.string.txt_title_feature_view_binding_fragment)),
+            BindItemFeatureViewBindingFragment(communicationWithViewHolder)
+        ),
+
+        HolderBinderViewHolder(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureCustomPopupView(ctx.getString(R.string.txt_title_feature_custom_popup_view)),
+            BindItemFeatureCustomPopupView(communicationWithViewHolder)
+        ),
+
+        HolderBinderViewHolder(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(ctx.getString(R.string.txt_title_feature_dashed_progress_bar)),
+            BindItemFeatureCustomDashedProgressBar(communicationWithViewHolder)
+        ),
+
+        HolderBinderViewHolder(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureCustomBehaviorForCustomView(ctx.getString(R.string.txt_title_feature_custom_behavior)),
+            BindItemFeatureCustomBehaviorForCustomView(communicationWithViewHolder)
+        ),
+
+        HolderBinderViewHolder(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureRecyclerViewListAdapter(ctx.getString(R.string.txt_title_feature_recycler_view_list_adapter)),
+            BindItemFeatureRecyclerViewListAdapter(communicationWithViewHolder)
+        )
+    ) as List<HolderBinderViewHolder<Any>>
+
+
+fun provideEmptyStateList() = listOf(
+    HolderBinderViewHolder(
+        VIEW_HOLDER_EMPTY_STATE,
+        ItemEmptyStateList(),
+        BindEmptyStateListViewHolder()
+    )
+
+) as List<HolderBinderViewHolder<Any>>

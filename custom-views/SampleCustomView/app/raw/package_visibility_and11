@@ -1,0 +1,8 @@
+Possivel problema
+AAPT: error: unexpected element <queries> found in <manifest>.
+https://stackoverflow.com/questions/62969917/how-to-fix-unexpected-element-queries-found-in-manifest-error
+
+Ainda sobre package visibility
+https://android-developers.googleblog.com/2020/07/preparing-your-build-for-package-visibility-in-android-11.html
+https://developer.android.com/training/package-visibility/declaring?hl=pt-br
+https://developer.android.com/guide/topics/manifest/queries-element

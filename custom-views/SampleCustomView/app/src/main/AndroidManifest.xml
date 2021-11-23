@@ -11,6 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.MaterialComponent.Light.NoActionBar">
+        <activity
+            android:name=".feature.checkapplifecycle.AppicationLifecycleCallbackActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.contentprovider.s1.BasicContentProviderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.fragmentcontainerview.fragment.FragContainerViewActivity"
+            android:exported="true"
+            android:label="@string/title_activity_frag_container_view"
+            android:theme="@style/AppTheme.MaterialComponent.Light.NoActionBar.NoActionBar" />
         <activity android:name=".MainActivityCommunication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

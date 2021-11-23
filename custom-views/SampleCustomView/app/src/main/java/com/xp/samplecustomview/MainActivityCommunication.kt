@@ -3,7 +3,7 @@ package com.xp.samplecustomview
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.xp.samplecustomview.feature.galleryoffeatures.view.fragments.FragmentGalleryOfFeatures
+import com.xp.samplecustomview.feature.galleryoffeatures.view.fragments.GalleryOfFeatures
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
@@ -12,7 +12,7 @@ class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragm
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        load(FragmentGalleryOfFeatures.newInstance())
+        load(GalleryOfFeatures.newInstance())
         log()
     }
 

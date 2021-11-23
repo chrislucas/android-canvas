@@ -2,18 +2,17 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.feature.customviews.view.fragment.SlideCustomViewFragment
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureCustomViewsViewHolder
-import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
-
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureCustomViewsViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
 class ItemFeatureSlideCustomView(val description: String)
 
-class BindItemFeatureSlideCustomView(private val channel: ChannelCommunicationViewHolderFragment) :
+class BindItemFeatureSlideCustomView(private val channel: ListenerFeaturesViewHolder) :
     BindDataToViewHolder<ItemFeatureSlideCustomView> {
     override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemFeatureSlideCustomView) {
         viewHolder.itemView.setOnClickListener {
-            channel.call(SlideCustomViewFragment.newInstance())
+            channel.onInteractWithView(SlideCustomViewFragment.newInstance())
         }
     }
 

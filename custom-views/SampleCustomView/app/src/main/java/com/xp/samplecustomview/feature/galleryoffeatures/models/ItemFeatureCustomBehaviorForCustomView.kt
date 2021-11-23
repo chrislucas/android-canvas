@@ -4,14 +4,13 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.feature.customviews.sample.behaviorcustomview.view.fragment.AttachBehaviorOnCustomViewByXmlLayout
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewHolderDefault
-import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
 class ItemFeatureCustomBehaviorForCustomView(val description: String)
 
-
-class BindItemFeatureCustomBehaviorForCustomView(private val channel: ChannelCommunicationViewHolderFragment) :
+class BindItemFeatureCustomBehaviorForCustomView(private val channel: ListenerFeaturesViewHolder) :
     BindDataToViewHolder<ItemFeatureCustomBehaviorForCustomView> {
 
     override fun onClick(
@@ -19,7 +18,7 @@ class BindItemFeatureCustomBehaviorForCustomView(private val channel: ChannelCom
         data: ItemFeatureCustomBehaviorForCustomView
     ) {
         viewHolder.itemView.setOnClickListener {
-            channel.call(AttachBehaviorOnCustomViewByXmlLayout.newInstance())
+            channel.onInteractWithView(AttachBehaviorOnCustomViewByXmlLayout.newInstance())
         }
     }
 
