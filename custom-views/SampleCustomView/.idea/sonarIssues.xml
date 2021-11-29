@@ -73,6 +73,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/misc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/CircleView.kt">
           <value>
             <set />
@@ -283,6 +288,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/checkapplifecycle/AppicationLifecycleCallbackActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/checkapplifecycle/ApplicationLifecycleCallbackActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/coloroptions/view/fragments/ColorOptionsViewFragment.kt">
           <value>
             <set />
@@ -454,6 +469,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/FeatureLayout.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/Features.kt">
           <value>
             <set />
           </value>

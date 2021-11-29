@@ -3,7 +3,7 @@ package com.xp.samplecustomview
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.xp.samplecustomview.feature.galleryoffeatures.view.fragments.FragmentGalleryOfFeatures
+import com.xp.samplecustomview.feature.galleryoffeatures.view.fragments.GalleryOfFeatures
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
@@ -12,17 +12,19 @@ class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragm
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        load(FragmentGalleryOfFeatures.newInstance())
+        load(GalleryOfFeatures.newInstance())
         log()
     }
 
     // https://medium.com/@mbonnin/the-different-kotlin-stdlibs-explained-83d7c6bf293
     private fun log() {
-        Log.i(
-            "SYSTEM_PROPERTY",
-            "java.specification.version:${System.getProperty("java.specification.version") ?: ":null"}"
-        )
-        Log.i("SYSTEM_PROPERTY", "java.vm.name:${System.getProperty("java.vm.name") ?: "null"}")
+        if(BuildConfig.DEBUG) {
+            Log.i(
+                "SYSTEM_PROPERTY",
+                "java.specification.version:${System.getProperty("java.specification.version") ?: ":null"}"
+            )
+            Log.i("SYSTEM_PROPERTY", "java.vm.name:${System.getProperty("java.vm.name") ?: "null"}")
+        }
     }
 
 
@@ -59,5 +61,4 @@ class MainActivityCommunication : AppCompatActivity(), ChannelCommunicationFragm
             }
         }
     }
-
 }

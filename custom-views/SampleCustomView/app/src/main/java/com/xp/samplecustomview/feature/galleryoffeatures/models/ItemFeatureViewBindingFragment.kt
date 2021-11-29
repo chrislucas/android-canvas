@@ -2,15 +2,15 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.actions.BindDataToViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.reyclerview.viewholders.FeatureViewBindingFragmentViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewBindingFragmentViewHolder
 import com.xp.samplecustomview.feature.viewbindfragment.view.fragments.SampleViewBindingFragmentBase
-import com.xp.samplecustomview.helper.fragments.ChannelCommunicationViewHolderFragment
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
 class ItemFeatureViewBindingFragment(val description: String)
 
 
-class BindItemFeatureViewBindingFragment(private val channel: ChannelCommunicationViewHolderFragment) :
+class BindItemFeatureViewBindingFragment(private val channel: ListenerFeaturesViewHolder) :
     BindDataToViewHolder<ItemFeatureViewBindingFragment> {
     override fun onClick(
         viewHolder: RecyclerView.ViewHolder,
@@ -24,7 +24,7 @@ class BindItemFeatureViewBindingFragment(private val channel: ChannelCommunicati
                 Toast.LENGTH_LONG
             ).show()
 
-            channel.call(SampleViewBindingFragmentBase.newInstance())
+            channel.onInteractWithView(SampleViewBindingFragmentBase.newInstance())
         }
     }
 

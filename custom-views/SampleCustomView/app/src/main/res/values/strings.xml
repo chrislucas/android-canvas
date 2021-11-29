@@ -12,6 +12,17 @@
     <string name="txt_bt_control_custom_popup_view">Abrir PopupView</string>
     <string name="txt_title_feature_dashed_progress_bar">Dashed ProgressBar</string>
     <string name="txt_title_feature_custom_behavior">Adicionar Comportamento a CustoView Via XML</string>
+    <string name="title_activity_frag_container_view">FragContainerViewActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="text_default_empty_state_list">Lista Vazia</string>
+    <string name="txt_title_feature_recycler_view_list_adapter">RecyclerViewListAdapter - DiffCallback</string>
     <string name="txt_title_fragment_simple_view">Simple Custom View</string>
     <string name="txt_title_fragment_attach_behavior_cv">Adicionando comportamento a uma CV via xml</string>
     <string name="txt_title_fragment_list_options_sample_modal_bottom_sheet">Bottom Sheet 1# Modal: Lista de opções</string>
