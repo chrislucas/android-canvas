@@ -24,7 +24,6 @@ class SimpleMenuBottomSheetDialogFragment : BottomSheetDialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val ref = this
         return binder?.run {
             this.tvDelete.setOnClickListener {
                 Toast.makeText(context, "DELETE", Toast.LENGTH_SHORT).show()

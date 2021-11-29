@@ -11,7 +11,7 @@ import com.xp.samplecustomview.databinding.FragmentSampleBottomSheetDialogBindin
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 
-class ShowSimpleBottomSheetDialog : Fragment(), BaseBehaviorFragment {
+class ShowSimpleMenuBottomSheetDialogFragment : Fragment(), BaseBehaviorFragment {
 
     lateinit var binderView: FragmentSampleBottomSheetDialogBinding
 
@@ -26,8 +26,8 @@ class ShowSimpleBottomSheetDialog : Fragment(), BaseBehaviorFragment {
     ): View {
         // Inflate the layout for this fragment
         binderView.btOpenBottomSheetDialogFrag.setOnClickListener {
-            val dialog = SimpleMenuBottomSheetDialogFragment.newInstance()
             activity?.supportFragmentManager?.let {
+                val dialog = SimpleMenuBottomSheetDialogFragment.newInstance()
                 dialog.show(it, SimpleMenuBottomSheetDialogFragment.tag())
             }
         }
@@ -36,7 +36,7 @@ class ShowSimpleBottomSheetDialog : Fragment(), BaseBehaviorFragment {
 
     companion object {
         @JvmStatic
-        fun newInstance() = ShowSimpleBottomSheetDialog()
+        fun newInstance() = ShowSimpleMenuBottomSheetDialogFragment()
     }
 
     override fun getMyOwnTag(): String = this.javaClass.ownTag

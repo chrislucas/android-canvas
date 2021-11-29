@@ -31,4 +31,5 @@
     <string name="txt_share">compartilhar</string>
     <string name="txt_title_fragment_bottom_sheet_dialogt">Versão simples BottomSheetDialog</string>
     <string name="label_open_simple_bottom_sheet_dialog_fragmeent">Abrir o Modal BottomSheetDialogFragment</string>
+    <string name="label_bt_open_bottom_sheet_dialog_frag_list_options">Abrir Bottom Sheet com Lista</string>
 </resources>

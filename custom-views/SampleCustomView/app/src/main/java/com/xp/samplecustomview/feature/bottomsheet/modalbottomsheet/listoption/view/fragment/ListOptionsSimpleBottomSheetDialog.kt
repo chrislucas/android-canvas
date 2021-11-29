@@ -7,49 +7,36 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.databinding.FragmentFirstExampleBottomSheetBinding
+import com.xp.samplecustomview.databinding.LayoutBottomSheetDialogListOptionSample1Binding
 import com.xp.samplecustomview.feature.bottomsheet.modalbottomsheet.listoption.models.MenuOption
 import com.xp.samplecustomview.feature.bottomsheet.modalbottomsheet.listoption.view.list.adapter.ListOptionsAdapter
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
-
-/**
- * https://material.io/develop/android/components/bottom-sheet-dialog-fragment
- * */
-
-class ListOptionsSampleBottomSheetFragment : Fragment(), BaseBehaviorFragment {
+class ListOptionsSimpleBottomSheetDialog: BottomSheetDialogFragment(), BaseBehaviorFragment {
 
 
-    lateinit var bindView: FragmentFirstExampleBottomSheetBinding
-
-    private val menuOptions: List<MenuOption> = (1..35).map { MenuOption("Item $it") }
+    lateinit var bindView: LayoutBottomSheetDialogListOptionSample1Binding
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        bindView = FragmentFirstExampleBottomSheetBinding.inflate(layoutInflater)
+        bindView = LayoutBottomSheetDialogListOptionSample1Binding.inflate(layoutInflater)
     }
+
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
 
-        val recyclerViewListMenuOption = bindView.rcListOptions
-
-        with(recyclerViewListMenuOption) {
-            layoutManager = LinearLayoutManager(context)
-            adapter = ListOptionsAdapter(menuOptions)
+        with(bindView.rcListOptions) {
+            this.adapter = ListOptionsAdapter(menuOptions)
+            this.layoutManager = LinearLayoutManager(context)
         }
 
-
         return bindView.root
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = ListOptionsSampleBottomSheetFragment()
     }
 
     override fun getMyOwnTag(): String = this.javaClass.ownTag
@@ -57,4 +44,16 @@ class ListOptionsSampleBottomSheetFragment : Fragment(), BaseBehaviorFragment {
     override fun getInstanceFragment(): Fragment = this
 
     override fun actionOnBackPressedInFragment() {}
+
+
+    companion object {
+
+        @JvmStatic
+        fun newInstance() = ListOptionsSimpleBottomSheetDialog()
+
+        private val menuOptions: List<MenuOption> = (1..35).map { MenuOption("Item #$it") }
+
+        @JvmStatic
+        fun tag(): String = this::class.java.ownTag
+    }
 }

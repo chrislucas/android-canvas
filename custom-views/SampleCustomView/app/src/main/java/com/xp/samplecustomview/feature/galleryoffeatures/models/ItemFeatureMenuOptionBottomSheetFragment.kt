@@ -1,7 +1,7 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import androidx.recyclerview.widget.RecyclerView
-import com.xp.samplecustomview.feature.bottomsheet.modalbottomsheet.listoption.view.fragment.ListOptionsSampleBottomSheetFragment
+import com.xp.samplecustomview.feature.bottomsheet.modalbottomsheet.listoption.view.fragment.ShowListOptionsSimpleBottomSheetDialogFragment
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
@@ -18,7 +18,7 @@ class BindItemFeatureMenuOptionBottomSheetFragment(private val channel: Listener
         data: ItemFeatureMenuOptionBottomSheetFragment
     ) {
         viewHolder.itemView.setOnClickListener {
-            channel.onInteractWithView(ListOptionsSampleBottomSheetFragment.newInstance())
+            channel.onInteractWithView(ShowListOptionsSimpleBottomSheetDialogFragment.newInstance())
         }
     }
 

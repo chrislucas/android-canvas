@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".feature.bottomsheet.modalbottomsheet.listoption.view.fragment.ListOptionsSampleBottomSheetFragment">
+    android:orientation="vertical"
+    tools:context=".feature.bottomsheet.modalbottomsheet.listoption.view.fragment.ShowListOptionsSimpleBottomSheetDialogFragment">
 
-    <FrameLayout
+    <Button
+        android:id="@+id/bt_open_bottom_sheet_dialog_frag_list_options"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        android:text="@string/label_bt_open_bottom_sheet_dialog_frag_list_options"
+        />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rc_list_options"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </FrameLayout>
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

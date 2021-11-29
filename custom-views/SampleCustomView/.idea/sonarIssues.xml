@@ -238,6 +238,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/dialogfragment/view/fragment/ShowSimpleMenuBottomSheetDialogFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/dialogfragment/view/fragment/SimpleMenuBottomSheetDialogFragment.kt">
           <value>
             <set />
@@ -268,7 +273,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/fragment/ListOptionsSimpleBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/fragment/ModalBottomSheet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/fragment/ShowListOptionsSimpleBottomSheetDialogFragment.kt">
           <value>
             <set />
           </value>
@@ -764,6 +779,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_custom_simple_view.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml">
           <value>
             <set />
           </value>
