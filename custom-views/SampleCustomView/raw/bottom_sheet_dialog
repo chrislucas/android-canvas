@@ -1,3 +1,7 @@
+------------------------------------------------------------------------------------------
+Leitura importante
+https://material.io/develop/android/components/bottom-sheet-dialog-fragment#standard-bottom-sheet
+------------------------------------------------------------------------------------------
 Bottom Sheet Android Tutorial – Working with BottomSheet
 https://www.simplifiedcoding.net/bottom-sheet-android/
 
@@ -26,10 +30,12 @@ https://medium.com/@traviswkim/show-rounded-corners-for-bottomsheetdialogfragmen
 com.google.android.material.bottomsheet
 https://developer.android.com/reference/com/google/android/material/bottomsheet/package-summary
 
-----------------
+----------------------------------------------------------------------------------------------------------------
 
-projeto github
+projeto github - Muito interessante. A leitura e exploração eh obrigatoria
 https://github.com/material-components/material-components-android/blob/master/docs/catalog-app.md
 
 Getting started with Material Components for Android
 https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md
+
+----------------------------------------------------------------------------------------------------------------

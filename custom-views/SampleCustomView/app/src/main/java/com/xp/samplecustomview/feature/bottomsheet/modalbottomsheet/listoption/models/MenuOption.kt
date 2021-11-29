@@ -1,3 +1,3 @@
 package com.xp.samplecustomview.feature.bottomsheet.modalbottomsheet.listoption.models
 
-data class MenuOption(val label: String)
+data class MenuOption(val label: String, val action: MenuOption.() -> Unit = {})

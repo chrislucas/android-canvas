@@ -17,7 +17,15 @@ class ListOptionsAdapter(private val options: List<MenuOption>) :
         )
     }
 
-    override fun onBindViewHolder(holder: ListOptionsViewHolder, position: Int) {}
+    override fun onBindViewHolder(holder: ListOptionsViewHolder, position: Int) {
+        with(options[position]) {
+            holder.optionRadioButton.text = this.label
+
+            holder.optionRadioButton.setOnClickListener {
+                this.action()
+            }
+        }
+    }
 
     override fun getItemCount(): Int = options.size
 }

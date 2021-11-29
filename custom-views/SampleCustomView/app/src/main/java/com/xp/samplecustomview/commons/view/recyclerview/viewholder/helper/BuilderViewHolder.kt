@@ -42,7 +42,7 @@ object BuilderViewHolder {
                 FeatureColorOptionsViewHolder(getView(viewGroup, R.layout.layout_item_feature_default))
             }
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER -> {
-                UserDataViewHolder(getView(viewGroup, R.layout.layout_item_user_list))
+                 UserDataViewHolder(getView(viewGroup, R.layout.layout_item_user_list))
             }
             else -> {
                 defaultBuilder?.run {

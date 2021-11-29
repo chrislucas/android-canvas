@@ -11,7 +11,7 @@
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_show_custom_simple_view.xml" value="0.17916666666666667" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.14947916666666666" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.33" />
-        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.14947916666666666" />
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -20,5 +20,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.14947916666666666" />
+      </ProjectState>
+    </option>
   </component>
 </project>
