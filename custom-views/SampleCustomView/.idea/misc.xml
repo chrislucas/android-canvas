@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_attach_behavior_on_custom_view_by_xml_layout.xml" value="0.175" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_custom_views.xml" value="0.20606884057971014" />
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_first_example_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_sample_bottom_sheet_dialog.xml" value="0.14375" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_screen_slide_page.xml" value="0.17916666666666667" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_show_custom_simple_view.xml" value="0.17916666666666667" />
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.33" />
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.14947916666666666" />
       </map>
     </option>
   </component>

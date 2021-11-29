@@ -21,6 +21,8 @@ versions.activityCompose = "1.3.0-beta01"
 versions.viewModelCompose = "1.0.0-alpha06"
 versions.coroutines_android_version = '1.5.2'
 
+versions.coordinatorLayoutVersion = '1.1.0'
+
 
 def buildVariables = [:]
 buildVariables.compileSdkVersion = 30
@@ -44,6 +46,12 @@ def proj = [:]
 proj.junit = "junit:junit:${versions.junit}"
 deps.proj = proj
 
+
+def coordinatorLayout = [
+    "androidx.coordinatorlayout:coordinatorlayout:${versions.coordinatorLayoutVersion}"
+]
+
+deps.coordinatorLayout = coordinatorLayout
 
 def kotlin = [
     "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",

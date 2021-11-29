@@ -9,10 +9,14 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
+import com.xp.samplecustomview.feature.customviews.view.viewmodel.ViewModelCustomDashedProgressBar
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 
 class CustomDashedProgressBarFragment : Fragment(), BaseBehaviorFragment {
+
+
+    private lateinit var viewModelCustomDashedProgressBar: ViewModelCustomDashedProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

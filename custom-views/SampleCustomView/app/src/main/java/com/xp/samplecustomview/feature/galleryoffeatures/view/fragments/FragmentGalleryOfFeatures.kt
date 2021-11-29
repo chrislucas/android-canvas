@@ -73,6 +73,17 @@ class FragmentGalleryOfFeatures : Fragment(), BaseBehaviorFragment,
                 VIEW_HOLDER_FEATURE_LIST_DEFAULT,
                 ItemFeatureCustomBehaviorForCustomView(getString(R.string.txt_title_feature_custom_behavior)),
                 BindItemFeatureCustomBehaviorForCustomView(this)
+            ),
+            CompositeRecyclerViewItem(
+                VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+                ItemFeatureMenuOptionBottomSheetFragment(getString(R.string.txt_title_fragment_list_options_sample_modal_bottom_sheet)),
+                BindItemFeatureMenuOptionBottomSheetFragment(this)
+            ),
+
+            CompositeRecyclerViewItem(
+                VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+                ItemFeatureShowSimpleBottomSheetDialog(getString(R.string.txt_title_fragment_bottom_sheet_dialogt)),
+                BindItemFeatureShowSimpleBottomSheetDialog(this)
             )
         ) as List<CompositeRecyclerViewItem<Any>>
     }

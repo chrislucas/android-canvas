@@ -163,6 +163,126 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/firstexaple/adapter/ListOptionsSampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/firstexaple/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/firstexaple/view/ListOptionsSampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/adapter/ListOptionsSampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/models/MenuOption.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/models/Options.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/view/fragment/AdapterListOptions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/view/fragment/ListOptionsSampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/view/list/adapter/ListOptionsAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/view/list/adapter/ListOptionsViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/listoption/view/list/viewholder/ListOptionsViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/dialogfragment/view/fragment/SampleBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/dialogfragment/view/fragment/ShowSimpleBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/dialogfragment/view/fragment/SimpleMenuBottomSheetDialogFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/dialogfragment/view/fragment/SimpleMenuBotttomSheetDialogFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/firstexample/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/firstsample/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/models/MenuOption.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/fragment/ListOptionsSampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/fragment/ModalBottomSheet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/fragment/SimpleBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/list/adapter/ListOptionsAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/modalbottomsheet/listoption/view/list/viewholder/ListOptionsViewHolder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/coloroptions/view/fragments/ColorOptionsViewFragment.kt">
           <value>
             <set />
@@ -184,6 +304,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/canvasbook/chp1/view/fragment/ShowCustomSimpleViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/dashedprogressbar/view/fragment/CustomDashedProgressBarFragment.kt">
           <value>
             <set />
           </value>
@@ -239,6 +364,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/pageadapter/ScreenSlidePageAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewmodel/ViewModelCustomDashedProgressBar.kt">
           <value>
             <set />
           </value>
@@ -358,12 +488,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureBottomSheet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureBottomSheetDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureCustomView.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureFullscreenSlideCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureMenuOptionBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureShowSimpleBottomSheetDialog.kt">
           <value>
             <set />
           </value>
@@ -558,6 +708,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_first_example_bottom_sheet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_fullscreen_sample.xml">
           <value>
             <set />
@@ -578,12 +733,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_sample_bottom_sheet_dialog.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_screen_slide_page.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_custom_simple_view.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml">
           <value>
             <set />
           </value>
@@ -599,6 +764,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_item_feature_default.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_item_menu_option_list.xml">
           <value>
             <set />
           </value>
@@ -649,6 +819,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/raw/compose">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/raw/coordinator_layout">
           <value>
             <set />
           </value>

@@ -14,12 +14,8 @@ raw/kotlin,2\0\200311d585da89954f51d787897c7c5f867d7d80
 mapp/src/main/java/com/xp/samplecustomview/commons/view/recyclerview/viewholder/helper/EmptyStateViewHolder.kt,1\3\132063545b87a16aa8374a996a54e7b818d7996a
 ’
 bapp/src/main/java/com/xp/samplecustomview/commons/view/recyclerview/action/SimpleBindViewHolder.kt,8\e\8eb5de84305f35a4bf2971ab9fb8deedc5762940
-¶
-…app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/view/adapters/reyclerview/viewholders/FeatureViewHolderDefault.kt,4\9\49dc5844032835f66974d82ba55e91e7e0ddb7f4
 »
 Šapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/view/adapters/reyclerview/viewholders/FeatureColorOptionsViewHolder.kt,1\f\1f42deb677297d81e2674f8c232d0d0e9a3213a8
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 ”
 dapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/helpers/StaticFeatures.kt,a\5\a5f34152b89de06d3601ba0c36a936a22213b869
 Â

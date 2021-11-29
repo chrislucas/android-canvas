@@ -3,7 +3,57 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/../../../github-pro/meli-pesquisa-produtos/ApiMercadoLivre/app/src/main/java/com/br/apimercadolivre/searchproducts/ui/fragments/SearchFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/bottomsheetdialog/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/firstexample/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/java/com/xp/samplecustomview/feature/bottomsheet/firstsample/view/FirstExampleBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/dashedprogressbar/view/fragment/CustomDashedProgressBarFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewmodel/ViewModelCustomDashedProgressBar.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureSlideCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/app/src/main/res/layout/fragment_first_example_bottom_sheet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/raw/coordinator_layout">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../custom-views/SampleCustomView/tools/dependencies-version.gradle">
           <value>
             <set />
           </value>

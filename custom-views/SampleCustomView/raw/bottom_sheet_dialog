@@ -1,9 +1,17 @@
+Bottom Sheet Android Tutorial – Working with BottomSheet
+https://www.simplifiedcoding.net/bottom-sheet-android/
+
+
 BottomSheet
 https://material.io/develop/android/components/bottom-sheet-dialog-fragment
 https://medium.com/android-dev-br/android-ui-bottom-sheet-4709cad826d2
 https://www.section.io/engineering-education/bottom-sheet-dialogs-using-android-studio/
 https://blog.mindorks.com/android-bottomsheet-in-kotlin
+------------------------------------------------------------------------------------------
 https://www.simplifiedcoding.net/bottom-sheet-android/
+------------------------------------------------------------------------------------------
+
+
 https://www.androidhive.info/2017/12/android-working-with-bottom-sheet/
 https://www.thiengo.com.br/utilizando-bottomsheet-material-design-no-android
 
@@ -12,4 +20,16 @@ https://developer.android.com/reference/com/google/android/material/bottomsheet/
 
 BottomSheetDialogFragment
 https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialogFragment
+https://androidwave.com/bottom-sheet-dialog-fragment-in-android/
 https://medium.com/@traviswkim/show-rounded-corners-for-bottomsheetdialogfragment-fc3ada4b49b4
+
+com.google.android.material.bottomsheet
+https://developer.android.com/reference/com/google/android/material/bottomsheet/package-summary
+
+----------------
+
+projeto github
+https://github.com/material-components/material-components-android/blob/master/docs/catalog-app.md
+
+Getting started with Material Components for Android
+https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md
