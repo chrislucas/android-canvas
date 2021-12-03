@@ -2,15 +2,15 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewBindingFragmentViewHolder
 import com.xp.samplecustomview.feature.viewbindfragment.view.fragments.SampleViewBindingFragmentBase
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 
 class ItemFeatureViewBindingFragment(val description: String)
 
 
-class BindItemFeatureViewBindingFragment(private val channel: ListenerFeaturesViewHolder) :
+class BindItemFeatureViewBindingFragment(private val channel: ListenerListFragmentsViewHolder) :
     BindDataToViewHolder<ItemFeatureViewBindingFragment> {
     override fun onClick(
         viewHolder: RecyclerView.ViewHolder,

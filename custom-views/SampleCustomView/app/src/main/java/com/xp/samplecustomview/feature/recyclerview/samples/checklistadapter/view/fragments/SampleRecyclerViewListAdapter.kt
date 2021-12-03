@@ -11,10 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.commons.view.recyclerview.action.DefaultSimpleBindViewHolder
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER
 import com.xp.samplecustomview.commons.view.recyclerview.adapter.GenRecyclerViewWithListAdapter
+import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER
 import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.models.ComparatorUserByAge
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.models.User
 import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.view.list.diffdata.providerDiffCallback

@@ -3,28 +3,24 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
-import com.xp.samplecustomview.feature.customviews.sample.behaviorcustomview.view.fragment.AttachBehaviorOnCustomViewByXmlLayout
+import com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.view.fragment.TypeOfBottomSheetsFragment
 import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
 import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 
-class ItemFeatureCustomBehaviorForCustomView(val description: String)
+class ItemFeatureTypeOfBottomSheet(val description: String)
 
-class BindItemFeatureCustomBehaviorForCustomView(private val channel: ListenerListFragmentsViewHolder) :
-    BindDataToViewHolder<ItemFeatureCustomBehaviorForCustomView> {
-
-    override fun onClick(
-        viewHolder: RecyclerView.ViewHolder,
-        data: ItemFeatureCustomBehaviorForCustomView
-    ) {
+class BindItemFeatureTypeOfBottomSheet(private val channel: ListenerListFragmentsViewHolder) :
+    BindDataToViewHolder<ItemFeatureTypeOfBottomSheet> {
+    override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemFeatureTypeOfBottomSheet) {
         viewHolder.itemView.setOnClickListener {
-            channel.onInteractWithView(AttachBehaviorOnCustomViewByXmlLayout.newInstance())
+            channel.onInteractWithView(TypeOfBottomSheetsFragment.newInstance())
         }
     }
 
     override fun fillViewHolderWithData(
         viewHolder: RecyclerView.ViewHolder,
-        data: ItemFeatureCustomBehaviorForCustomView
+        data: ItemFeatureTypeOfBottomSheet
     ) {
         val mView = viewHolder as FeatureViewHolderDefault
         mView.viewTitle.text = data.description

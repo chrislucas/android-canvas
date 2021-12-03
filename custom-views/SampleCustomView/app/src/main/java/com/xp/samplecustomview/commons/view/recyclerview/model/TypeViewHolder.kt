@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.commons.view.recyclerview.action
+package com.xp.samplecustomview.commons.view.recyclerview.model
 
 import androidx.annotation.IntDef
 

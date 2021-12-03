@@ -12,6 +12,16 @@
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.14947916666666666" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.33" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.328125" />
+        <entry key="app/src/main/res/layout/fragment_first_example_bottom_sheet.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/fragment_modal_bottom_sheet_example.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_standard_bottom_sheet.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/fragment_type_of_bottom_sheets.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.625" />
+        <entry key="app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_list_behavitor.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/layout_standardl_bottom_sheet_dialog_fragment_1.xml" value="0.31197916666666664" />
       </map>
     </option>
   </component>

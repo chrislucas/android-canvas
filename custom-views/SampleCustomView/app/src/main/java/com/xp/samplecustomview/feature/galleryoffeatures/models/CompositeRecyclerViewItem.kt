@@ -1,8 +1,8 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
+import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.action.ProviderViewTypeForViewHolder
-import com.xp.samplecustomview.commons.view.recyclerview.action.ViewType
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.model.ViewType
 
 /*
     classe composto por um item e uma interface responsável por

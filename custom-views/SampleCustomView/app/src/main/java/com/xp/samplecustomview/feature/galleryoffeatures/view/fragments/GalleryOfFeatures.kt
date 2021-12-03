@@ -16,7 +16,7 @@ import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecycle
 import com.xp.samplecustomview.feature.galleryoffeatures.models.provideEmptyStateList
 import com.xp.samplecustomview.feature.galleryoffeatures.models.provideFeatures
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.RecyclerViewAdapterGalleryOfFeatures
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
@@ -24,7 +24,7 @@ import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActi
  * A fragment representing a list of Items.
  */
 class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
-    ListenerFeaturesViewHolder {
+    ListenerListFragmentsViewHolder {
 
     private var columnCount = 2
 

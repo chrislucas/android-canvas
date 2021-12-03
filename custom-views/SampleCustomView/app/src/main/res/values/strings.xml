@@ -29,7 +29,10 @@
     <string name="txt_upload">upload</string>
     <string name="txt_delete">remover</string>
     <string name="txt_share">compartilhar</string>
-    <string name="txt_title_fragment_bottom_sheet_dialogt">Versão simples BottomSheetDialog</string>
+    <string name="txt_title_fragment_bottom_sheet_dialog">Versão simples BottomSheetDialog</string>
     <string name="label_open_simple_bottom_sheet_dialog_fragmeent">Abrir o Modal BottomSheetDialogFragment</string>
     <string name="label_bt_open_bottom_sheet_dialog_frag_list_options">Abrir Bottom Sheet com Lista</string>
+    <string name="txt_title_fragment_type_of_bottom_sheet">Explorando tipos de BottomSheet</string>
+    <string name="label_bt_open_modal_bottom_sheet">Abrir BottomSheetDialog</string>
+    <string name="label_bt_open_standard_bottom_sheet">Abrir Standard BottomSheetDialog</string>
 </resources>

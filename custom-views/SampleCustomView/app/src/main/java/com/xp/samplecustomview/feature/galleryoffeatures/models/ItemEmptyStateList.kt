@@ -1,7 +1,7 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import androidx.recyclerview.widget.RecyclerView
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
 
 class ItemEmptyStateList
 
