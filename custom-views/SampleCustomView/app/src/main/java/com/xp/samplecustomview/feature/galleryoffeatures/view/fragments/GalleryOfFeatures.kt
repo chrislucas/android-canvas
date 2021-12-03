@@ -12,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.commons.view.recyclerview.action.DefaultSimpleBindViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 import com.xp.samplecustomview.feature.galleryoffeatures.models.provideEmptyStateList
 import com.xp.samplecustomview.feature.galleryoffeatures.models.provideFeatures
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.RecyclerViewAdapterGalleryOfFeatures
-import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
@@ -28,7 +28,7 @@ class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
 
     private var columnCount = 2
 
-    private lateinit var channelCommunicationFragmentActivity: ChannelCommunicationFragmentActivity
+    private var channelCommunicationFragmentActivity: ChannelCommunicationFragmentActivity? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -91,7 +91,7 @@ class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
     override fun getInstanceFragment(): Fragment = this
 
     override fun onInteractWithView(behaviorFragment: BaseBehaviorFragment) {
-        channelCommunicationFragmentActivity.openThisFragment(behaviorFragment)
+        channelCommunicationFragmentActivity?.openThisFragment(behaviorFragment)
     }
 
     override fun actionOnBackPressedInFragment() {}

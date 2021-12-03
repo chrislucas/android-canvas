@@ -14,15 +14,21 @@ import com.xp.samplecustomview.commons.view.recyclerview.adapter.GenRecyclerView
 import com.xp.samplecustomview.databinding.FragmentTypeOfBottomSheetsBinding
 import com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.models.providerTypesOfBottomSheet
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
+import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
 class TypeOfBottomSheetsFragment : Fragment(), BaseBehaviorFragment,
     ListenerListFragmentsViewHolder {
 
     private lateinit var bindView: FragmentTypeOfBottomSheetsBinding
+    private var channelCommunicationFragmentActivity: ChannelCommunicationFragmentActivity? = null
+
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         bindView = FragmentTypeOfBottomSheetsBinding.inflate(layoutInflater)
+        if (context is ChannelCommunicationFragmentActivity) {
+            channelCommunicationFragmentActivity = context
+        }
     }
 
     override fun onCreateView(
@@ -55,6 +61,6 @@ class TypeOfBottomSheetsFragment : Fragment(), BaseBehaviorFragment,
     override fun actionOnBackPressedInFragment() {}
 
     override fun onInteractWithView(behaviorFragment: BaseBehaviorFragment) {
-
+        channelCommunicationFragmentActivity?.openThisFragment(behaviorFragment)
     }
 }
