@@ -35,4 +35,7 @@
     <string name="txt_title_fragment_type_of_bottom_sheet">Explorando tipos de BottomSheet</string>
     <string name="label_bt_open_modal_bottom_sheet">Abrir BottomSheetDialog</string>
     <string name="label_bt_open_standard_bottom_sheet">Abrir Standard BottomSheetDialog</string>
+    <string name="label_tv_behavior_expanded">Expandir</string>
+    <string name="label_tv_behavior_dragging">Deslocar</string>
+    <string name="label_tv_behavior_collapse">Colapsar</string>
 </resources>

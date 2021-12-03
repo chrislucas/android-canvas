@@ -2,17 +2,22 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_overlay"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
 
     <LinearLayout
         android:id="@+id/ll_standard_bottom_sheet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-        style="?attr/bottomSheetStyle">
+        style="@style/ModalBottomSheetDialog"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="25sp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-        <include layout="@layout/layout_modal_bottom_sheet_list_behavior" />
+        <include
+            android:id="@+id/cl_layout_modal_bottom_sheet_list_behavior"
+            layout="@layout/layout_modal_bottom_sheet_list_behavior"
+            />
 
     </LinearLayout>
 

@@ -5,12 +5,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_upload"
+        android:id="@+id/tv_behavior_expanded"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:drawablePadding="4sp"
-        android:text="Behavior 1"
+        android:text="@string/label_tv_behavior_expanded"
         android:textSize="23sp"
         app:drawableLeftCompat="@drawable/ic_baseline_arrow_forward_24"
         app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_24"
@@ -19,35 +19,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_delete"
+        android:id="@+id/tv_behavior_dragging"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:drawablePadding="4sp"
-        android:text="Behavior 2"
+        android:text="@string/label_tv_behavior_dragging"
         android:textSize="23sp"
         app:drawableLeftCompat="@drawable/ic_baseline_arrow_forward_24"
         app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_upload"
-
-        />
+        app:layout_constraintTop_toBottomOf="@+id/tv_behavior_expanded" />
 
     <TextView
-        android:id="@+id/tv_share"
+        android:id="@+id/tv_behavior_collapse"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:drawablePadding="4sp"
-        android:text="Behavior 3"
+        android:text="@string/label_tv_behavior_collapse"
         android:textSize="23sp"
         app:drawableLeftCompat="@drawable/ic_baseline_arrow_forward_24"
         app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_delete"
-
-        />
+        app:layout_constraintTop_toBottomOf="@+id/tv_behavior_dragging" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

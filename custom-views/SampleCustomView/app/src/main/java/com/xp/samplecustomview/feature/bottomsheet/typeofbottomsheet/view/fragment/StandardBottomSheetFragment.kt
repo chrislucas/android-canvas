@@ -3,16 +3,15 @@ package com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.view.fragm
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
+import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.BuildConfig
-import com.xp.samplecustomview.R
+import com.xp.samplecustomview.commons.ext.onClick
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.FragmentStandardBottomSheetBinding
 import com.xp.samplecustomview.databinding.LayoutStandardBottomSheetDialogFragment1Binding
@@ -24,12 +23,15 @@ import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
     https://medium.com/over-engineering/hands-on-with-material-components-for-android-bottom-sheet-970c5f0f1840
  */
 
-class StandardBottomSheet private constructor(): BottomSheetDialogFragment() {
+class StandardBottomSheet private constructor() : BottomSheetDialogFragment() {
 
 
     lateinit var bindView: LayoutStandardBottomSheetDialogFragment1Binding
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ViewGroup>
+
+    @BottomSheetBehavior.State
+    private var bottomSheetBehaviorState: Int = BottomSheetBehavior.STATE_HALF_EXPANDED
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -42,7 +44,35 @@ class StandardBottomSheet private constructor(): BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View {
         bottomSheetBehavior = BottomSheetBehavior.from(bindView.llStandardBottomSheet)
+
+        val mDialog = dialog as BottomSheetDialog
+
+
+        bindView.clLayoutModalBottomSheetListBehavior.tvBehaviorExpanded.onClick {
+            bottomSheetBehaviorState = BottomSheetBehavior.STATE_EXPANDED
+            mDialog.dismiss()
+        }
+
+        bindView.clLayoutModalBottomSheetListBehavior.tvBehaviorDragging.onClick {
+            bottomSheetBehaviorState = BottomSheetBehavior.STATE_DRAGGING
+            mDialog.dismiss()
+        }
+
+        bindView.clLayoutModalBottomSheetListBehavior.tvBehaviorCollapse.onClick {
+            bottomSheetBehaviorState = BottomSheetBehavior.STATE_COLLAPSED
+            mDialog.dismiss()
+        }
+
+
+        mDialog.setOnShowListener {
+            setBottomSheetBehaviorState(bottomSheetBehaviorState)
+        }
+
         return bindView.root
+    }
+
+    private fun setBottomSheetBehaviorState(@BottomSheetBehavior.State state: Int) {
+        BottomSheetBehavior.from(bindView.llStandardBottomSheet).state = state
     }
 
 
