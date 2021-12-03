@@ -46,4 +46,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_behavior_dragging" />
 
+    <TextView
+        android:id="@+id/tv_behavior_settling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:drawablePadding="4sp"
+        android:text="@string/label_tv_behavior_settling"
+        android:textSize="23sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_arrow_forward_24"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_behavior_collapse" />
+
+
+    <TextView
+        android:id="@+id/tv_behavior_half_expanded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:drawablePadding="4sp"
+        android:text="@string/label_tv_behavior_half_expanded"
+        android:textSize="23sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_arrow_forward_24"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_behavior_settling" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

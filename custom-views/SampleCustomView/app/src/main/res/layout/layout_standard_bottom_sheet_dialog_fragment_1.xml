@@ -12,6 +12,7 @@
         style="@style/ModalBottomSheetDialog"
         app:behavior_hideable="true"
         app:behavior_peekHeight="25sp"
+        app:behavior_fitToContents="false"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <include

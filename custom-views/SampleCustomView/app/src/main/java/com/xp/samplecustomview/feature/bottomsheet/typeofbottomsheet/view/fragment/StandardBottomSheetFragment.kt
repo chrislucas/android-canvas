@@ -63,6 +63,16 @@ class StandardBottomSheet private constructor() : BottomSheetDialogFragment() {
             mDialog.dismiss()
         }
 
+        bindView.clLayoutModalBottomSheetListBehavior.tvBehaviorSettling.onClick {
+            bottomSheetBehaviorState = BottomSheetBehavior.STATE_SETTLING
+            mDialog.dismiss()
+        }
+
+        bindView.clLayoutModalBottomSheetListBehavior.tvBehaviorHalfExpanded.onClick {
+            bottomSheetBehaviorState = BottomSheetBehavior.STATE_HALF_EXPANDED
+            mDialog.dismiss()
+        }
+
 
         mDialog.setOnShowListener {
             setBottomSheetBehaviorState(bottomSheetBehaviorState)

@@ -38,4 +38,6 @@
     <string name="label_tv_behavior_expanded">Expandir</string>
     <string name="label_tv_behavior_dragging">Deslocar</string>
     <string name="label_tv_behavior_collapse">Colapsar</string>
+    <string name="label_tv_behavior_settling">Animação Up/Down</string>
+    <string name="label_tv_behavior_half_expanded">Meia Expansão</string>
 </resources>
