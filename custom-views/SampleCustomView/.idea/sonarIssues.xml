@@ -78,12 +78,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/raw/refs">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/CircleView.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/chp1/SimpleView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/ext/CanvasExt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/ext/ViewExt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/ext/WindowExt.kt">
           <value>
             <set />
           </value>

@@ -45,8 +45,6 @@ gapp/src/main/java/com/xp/samplecustomview/feature/fullscreen/views/fragment/Ful
 napp/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewpager/transformer/SimpleTransformer2.kt,f\4\f4d961f848ffcf883fda14348917c7c3c481b9e2
 ∏
 áapp/src/main/java/com/xp/samplecustomview/feature/customviews/sample/dashedprogressbar/view/fragment/CustomDashedProgressBarFragment.kt,c\6\c61866a27fe599f887b0255bad55074707a7b46b
-†
-papp/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewmodel/ViewModelCustomDashedProgressBar.kt,2\f\2f4f05a22e6a1f44424418531e7bb5c53804ffba
 £
 sapp/src/main/java/com/xp/samplecustomview/feature/customviews/view/viewpager/adapter/DefaultFragmentStateAdapter.kt,4\4\444735632ad68e954c80c1e7b5b8ea21e7f60295
 @
@@ -63,8 +61,6 @@ happ/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/Item
 \app/src/main/java/com/xp/samplecustomview/commons/view/recyclerview/action/TypeViewHolder.kt,a\1\a1174de8db0c92203334d8c859ca3991118c0719
 §
 tapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureCustomBehaviorForCustomView.kt,4\a\4a0037074f5640b722e44a2489c2031105591ff3
-ù
-mapp/src/main/java/com/xp/samplecustomview/feature/customviews/view/fragment/ScreenSliderCustomViewFragment.kt,8\4\84d624697d5c22219d22f32a5e777781f5000fbb
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 ©
