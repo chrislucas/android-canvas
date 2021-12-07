@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawingVerticesView">
+        <attr name="vertexMode" format="enum">
+            <enum name="triangle" value="0" />
+            <enum name="triangleStrip" value="1" />
+            <enum name="triangleFan" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

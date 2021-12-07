@@ -1,6 +1,7 @@
 package com.br.androidcanvas.feature.drawing.vertices.views
 
 import android.content.Context
+import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
@@ -19,6 +20,24 @@ class DrawingVerticesView @JvmOverloads constructor(
     var vertexMode = Canvas.VertexMode.TRIANGLES
 
     private val vertices = mutableListOf<Float>()
+
+    init {
+        val styledAttrs: TypedArray =
+            context.obtainStyledAttributes(attrs, R.styleable.DrawingVerticesView)
+
+        val hasAttr = styledAttrs.hasValue(R.styleable.DrawingVerticesView_vertexMode) ?: false
+
+        if (hasAttr) {
+            val value = styledAttrs.getInt(R.styleable.DrawingVerticesView_vertexMode, 0)
+            vertexMode = when (value) {
+                0 -> Canvas.VertexMode.TRIANGLES
+                1 -> Canvas.VertexMode.TRIANGLE_STRIP
+                else -> Canvas.VertexMode.TRIANGLE_FAN
+            }
+        }
+
+        styledAttrs.recycle()
+    }
 
 
     override fun onDraw(canvas: Canvas?) {
@@ -41,15 +60,15 @@ class DrawingVerticesView @JvmOverloads constructor(
         if (vertices.size == 64) {
             Toast.makeText(
                 context,
-                context.getString(R.string.message_quantity_max_vertices)
-                , Toast.LENGTH_SHORT).show()
+                context.getString(R.string.message_quantity_max_vertices), Toast.LENGTH_SHORT
+            ).show()
             return false
         }
 
         event?.let {
             val pointerIndex = it.actionIndex
 
-            return when(event.actionMasked) {
+            return when (event.actionMasked) {
                 MotionEvent.ACTION_DOWN, MotionEvent.ACTION_POINTER_DOWN -> true
                 MotionEvent.ACTION_UP,
                 MotionEvent.ACTION_POINTER_UP -> {
