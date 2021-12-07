@@ -49,14 +49,17 @@ class DrawingVerticesView @JvmOverloads constructor(
         event?.let {
             val pointerIndex = it.actionIndex
 
-            when(event.actionMasked) {
-                MotionEvent.ACTION_DOWN, MotionEvent.ACTION_POINTER_DOWN -> return true
+            return when(event.actionMasked) {
+                MotionEvent.ACTION_DOWN, MotionEvent.ACTION_POINTER_DOWN -> true
                 MotionEvent.ACTION_UP,
                 MotionEvent.ACTION_POINTER_UP -> {
                     vertices.add(event.getX(pointerIndex))
                     vertices.add(event.getY(pointerIndex))
                     invalidate()
-                    return true
+                    true
+                }
+                else -> {
+                    false
                 }
             }
         }
