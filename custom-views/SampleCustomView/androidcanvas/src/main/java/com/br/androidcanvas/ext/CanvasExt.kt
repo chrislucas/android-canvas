@@ -3,21 +3,22 @@ package com.br.androidcanvas.ext
 import android.graphics.Canvas
 import android.graphics.Paint
 
-fun Canvas.simpleDrawingVertices(
+
+fun Canvas.simplestDrawingVertices(
     vertexMode: Canvas.VertexMode,
     vertexCountOffset: Int,
-    vertexCount: Int,
     vertices: FloatArray,
+    color: IntArray,
     paint: Paint = Paint()
 ) {
     this.drawVertices(
         vertexMode,
-        vertexCount,
+        vertices.size,
         vertices,
         vertexCountOffset,
         null,
         0,
-        null,
+        color,
         0,
         null,
         0,

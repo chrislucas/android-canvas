@@ -1,10 +1,10 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.view.adapters
 
 import android.util.Log
-import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.commons.view.recyclerview.action.SimpleBindViewHolder
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_UNDEFINED
+import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_UNDEFINED
 import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 
 
@@ -27,7 +27,7 @@ class RecyclerViewAdapterGalleryOfFeatures<T>(
      * (a lista values possui uma lista de modelos) que possui essa informacao.
      * */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return  actionViewHolderSimple.getViewHolder(viewType, parent)
+        return actionViewHolderSimple.getViewHolder(viewType, parent)
     }
 
     override fun onViewAttachedToWindow(viewHolder: RecyclerView.ViewHolder) {

@@ -78,6 +78,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/RegexDebugger/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/raw/refs">
           <value>
             <set />
@@ -104,6 +114,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/ext/WindowExt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/DrawingVertices.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/views/ColorProvider.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/views/DrawingVertices.kt">
           <value>
             <set />
           </value>
@@ -359,6 +384,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/dashedprogressbar/view/fragment/CustomDashedProgressBarFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/dashedprogressbar/view/fragment/viewmodel/ViewModelCustomDashedProgressBar.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/samplesviewpager/view/fragment/FullScreenSliderCustomViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/samplesviewpager/view/fragment/ScreenSliderCustomViewFragment.kt">
           <value>
             <set />
           </value>
@@ -863,7 +903,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/intentnavigation/build.gradle">
           <value>
             <set />
           </value>
@@ -918,6 +968,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/samplecustomviews/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/AnyHelper.kt">
           <value>
             <set />
@@ -933,12 +988,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/sampleeyetracking/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/samplejetpackcompose/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/settings.gradle">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/tools/dependencies-version.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tryjetcompose/build.gradle">
           <value>
             <set />
           </value>

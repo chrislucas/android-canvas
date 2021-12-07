@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions
+package com.xp.samplecustomview.commons.view.recyclerview.action
 
 import androidx.recyclerview.widget.RecyclerView
 

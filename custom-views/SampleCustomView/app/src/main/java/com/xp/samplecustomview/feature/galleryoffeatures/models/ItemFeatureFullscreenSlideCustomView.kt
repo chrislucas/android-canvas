@@ -1,17 +1,20 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import androidx.recyclerview.widget.RecyclerView
+import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 import com.xp.samplecustomview.feature.customviews.sample.samplesviewpager.view.fragment.FullScreenSliderCustomViewFragment
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.actions.BindDataToViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureCustomViewsViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
 
 
 class ItemFeatureFullscreenSlideCustomView(val description: String)
 
-class BindItemFeatureFulscreenSlideCustomView(private val channel: ListenerFeaturesViewHolder) :
+class BindItemFeatureFullscreenSlideCustomView(private val channel: ListenerListFragmentsViewHolder) :
     BindDataToViewHolder<ItemFeatureFullscreenSlideCustomView> {
-    override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemFeatureFullscreenSlideCustomView) {
+    override fun onClick(
+        viewHolder: RecyclerView.ViewHolder,
+        data: ItemFeatureFullscreenSlideCustomView
+    ) {
         viewHolder.itemView.setOnClickListener {
             channel.onInteractWithView(FullScreenSliderCustomViewFragment.newInstance())
         }

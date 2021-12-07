@@ -2,22 +2,28 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 
 import android.content.Context
 import com.xp.samplecustomview.R
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_EMPTY_STATE
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_CUSTOM_VIEWS
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_LIST_DEFAULT
-import com.xp.samplecustomview.commons.view.recyclerview.action.VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.ListenerFeaturesViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
+import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_EMPTY_STATE
+import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_FEATURE_CUSTOM_VIEWS
+import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_FEATURE_LIST_DEFAULT
+import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT
 
 
 fun provideFeatures(
     ctx: Context,
-    communicationWithViewHolder: ListenerFeaturesViewHolder
+    communicationWithViewHolder: ListenerListFragmentsViewHolder
 ) =
     listOf(
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
             ItemFeatureSlideCustomView(ctx.getString(R.string.txt_title_feature_slider_custom_view)),
             BindItemFeatureSlideCustomView(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
+            ItemFeatureFullscreenSlideCustomView(ctx.getString(R.string.txt_title_feature_fullscreen_slider_custom_view)),
+            BindItemFeatureFullscreenSlideCustomView(communicationWithViewHolder)
         ),
 
         CompositeRecyclerViewItem(
@@ -65,11 +71,20 @@ fun provideFeatures(
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureShowSimpleBottomSheetDialog(
-                ctx.getString(R.string.txt_title_fragment_bottom_sheet_dialogt)
+                ctx.getString(R.string.txt_title_fragment_bottom_sheet_dialog)
             ),
             BindItemFeatureShowSimpleBottomSheetDialog(communicationWithViewHolder)
-        )
-    ) as List<CompositeRecyclerViewItem<Any>>
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureTypeOfBottomSheet(
+                ctx.getString(R.string.txt_title_fragment_type_of_bottom_sheet)
+            ),
+            BindItemFeatureTypeOfBottomSheet(communicationWithViewHolder)
+        ),
+
+        ) as List<CompositeRecyclerViewItem<Any>>
 
 
 fun provideEmptyStateList() = listOf(
