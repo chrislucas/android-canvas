@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
 }
@@ -9,7 +9,7 @@ apply from: "$rootDir/tools/codestyle/ktlint.gradle"
 
 android {
     compileSdkVersion 31
-    buildToolsVersion "30.0.3"
+    buildToolsVersion '29.0.3'
     defaultConfig {
         applicationId "com.xp.samplecustomview"
         minSdkVersion 21
@@ -61,6 +61,7 @@ dependencies {
     implementation deps.kotlin
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation project(path: ':androidcanvas')
 
     // dependencia coroutines tests
     testImplementation deps.coroutines_tests

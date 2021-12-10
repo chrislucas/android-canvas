@@ -8,7 +8,7 @@ versions.ktx = '1.3.2'
 versions.androidxJunit = '1.1.2'
 versions.junit = '4.13.2'
 versions.kotlin = '1.5.30'
-versions.kotlinPlugin = '1.6.0'
+versions.kotlinPlugin = '1.5.20'
 versions.ktlint = '0.41.0'
 
 versions.robolectric = '4.5.1'
@@ -61,7 +61,7 @@ def kotlin = [
     "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
 ]
 
-def coroutines_tests = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.kotlin}"
+def coroutines_tests = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.1.0"
 
 deps.kotlin = kotlin
 deps.coroutines_tests = coroutines_tests
