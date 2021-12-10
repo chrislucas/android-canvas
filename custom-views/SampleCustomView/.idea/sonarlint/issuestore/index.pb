@@ -50,8 +50,6 @@ tapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/Item
 yapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/view/adapters/RecyclerViewAdapterGalleryOfFeatures.kt,3\5\35c2bebc24100370f41cb55203c2a3312e8d0a28
 «
 {app/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/view/adapters/binders/BinderAdapterGalleryOfFeatures.kt,0\c\0c7570c49214033c26fc1bbc63829eec0c07f5dc
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 ›
 kapp/src/main/java/com/xp/samplecustomview/feature/checkapplifecycle/ApplicationLifecycleCallbackActivity.kt,2\d\2d513146cb3887f7c9aaf8e4db234500aa497913
 —
@@ -106,12 +104,8 @@ J
 RegexDebugger/build.gradle,2\9\296a1417dab8d8db8f9b89aa887ebd70e679be6c
 J
 tryjetcompose/build.gradle,e\2\e22c45701707ea2669ae92d4859e42405d36c13f
-N
-samplecustomviews/build.gradle,e\6\e6c28969d99b425b5adae85e4fe23c8b2802a110
 ˜
 happ/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureSlideCustomView.kt,0\f\0f1fa664b1e092ef0e26c94a7972931e5fbcf8a9
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 n
 >androidcanvas/src/main/java/com/br/androidcanvas/CircleView.kt,a\9\a970349ec8030c06a5579663ab9dfb1aa5cd5667
 k
