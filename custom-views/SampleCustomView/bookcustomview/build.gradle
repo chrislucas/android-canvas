@@ -7,8 +7,8 @@ apply from: "$rootDir/tools/dependencies-version.gradle"
 
 
 android {
-    compileSdkVersion deps.buildVariables.compileSdkVersion
-    buildToolsVersion deps.buildVariables.buildToolsVersion
+    compileSdkVersion 31
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         minSdkVersion deps.buildVariables.minSdkVersion

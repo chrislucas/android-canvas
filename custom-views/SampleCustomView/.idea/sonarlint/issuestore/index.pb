@@ -32,9 +32,6 @@ J
 raw/fragment_state_adapter,6\9\69958b9f5ce6908d9ae22e8591b7e201200491ef
 —
 gapp/src/main/java/com/xp/samplecustomview/feature/fullscreen/views/fragment/FullscreenSampleFragment.kt,0\2\02370b5f72a8e627fe5e9a3817405f323eccfc38
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 ?
 raw/eye-tracker,a\9\a946a918e976678e5b4b76dcd70916d1e47e4f23
 ¸
@@ -99,8 +96,6 @@ I
 labanimation/build.gradle,a\5\a5c46e2bf9c65fcf78805ad8ce45e528685f133c
 N
 sampleeyetracking/build.gradle,0\d\0d619014833bb0d642d9673a8480dc01d5b5efb5
-A
-gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 Q
 !samplejetpackcompose/build.gradle,9\6\9689a071d8d8830a54b85bb096c7cfd52c8b9ace
 †
@@ -113,10 +108,6 @@ J
 tryjetcompose/build.gradle,e\2\e22c45701707ea2669ae92d4859e42405d36c13f
 N
 samplecustomviews/build.gradle,e\6\e6c28969d99b425b5adae85e4fe23c8b2802a110
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-X
-(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 ˜
 happ/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureSlideCustomView.kt,0\f\0f1fa664b1e092ef0e26c94a7972931e5fbcf8a9
 @
@@ -141,3 +132,19 @@ _app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/ListOfFrag
 mapp/src/main/java/com/xp/samplecustomview/feature/bottomsheet/typeofbottomsheet/models/ExpadingBottomSheet.kt,d\2\d2cb24ccd21a191080880a24d0fd514758cd6ddd
 ¡
 qapp/src/main/java/com/xp/samplecustomview/feature/bottomsheet/typeofbottomsheet/models/ItemStandardBottomSheet.kt,3\7\37df79545c7296bc93c375241116b4a369969bde
+F
+androidcanvas/raw/refs,3\2\32915e91b38a742c28efbbd4fcfebc99ebf27b29
+J
+androidcanvas/build.gradle,3\e\3e8687ef9e9a556eddbbfe8fb6015cee0496b1a7
+s
+Candroidcanvas/src/main/java/com/br/androidcanvas/chp1/SimpleView.kt,c\5\c57c18d941c6d85f28daa7adb9af51674d220d9d
+¨
+xapp/src/main/java/com/xp/samplecustomview/feature/customviews/sample/canvas/feature/views/BoardToDrawVerticesFragment.kt,d\f\dff3d6abe8e8dee9c54fd71252c54538644e3f6f
+q
+Aapp/src/main/java/com/xp/samplecustomview/commons/ext/ClassExt.kt,b\b\bb07ba80a39d8d4c703ee229e2b01248eeb4c436
+¿
+Žapp/src/main/java/com/xp/samplecustomview/feature/customviews/sample/behaviorcustomview/view/fragment/AttachBehaviorOnCustomViewByXmlLayout.kt,1\3\138a255c9610ec91bec8c9ef79336e618b7c049c
+›
+ksamplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/action/DumbBehaviorCustomView.kt,6\0\60c87a7529a2dffec79a4cf8882d581aa2fa6f42
+”
+dsamplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/action/SimpleClickView.kt,8\8\88f8caa289ba394dc59151ff94dd0dcde974d1e1
