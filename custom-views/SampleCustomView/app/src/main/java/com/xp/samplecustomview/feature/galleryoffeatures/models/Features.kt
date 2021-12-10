@@ -21,6 +21,12 @@ fun provideFeatures(
         ),
 
         CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
+            ItemFeatureFullscreenSlideCustomView(ctx.getString(R.string.txt_title_feature_fullscreen_slider_custom_view)),
+            BindItemFeatureFullscreenSlideCustomView(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_VIEW_BINDING_FRAGMENT,
             ItemFeatureViewBindingFragment(ctx.getString(R.string.txt_title_feature_view_binding_fragment)),
             BindItemFeatureViewBindingFragment(communicationWithViewHolder)

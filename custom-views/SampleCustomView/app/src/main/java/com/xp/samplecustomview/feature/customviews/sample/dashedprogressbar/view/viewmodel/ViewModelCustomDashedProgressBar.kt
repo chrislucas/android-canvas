@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.customviews.view.viewmodel
+package com.xp.samplecustomview.feature.customviews.sample.dashedprogressbar.view.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

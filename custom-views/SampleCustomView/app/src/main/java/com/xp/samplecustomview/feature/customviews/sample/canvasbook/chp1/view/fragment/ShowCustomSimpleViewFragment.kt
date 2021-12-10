@@ -12,6 +12,10 @@ import com.xp.samplecustomview.R
  * A simple [Fragment] subclass.
  * Use the [ShowCustomSimpleViewFragment.newInstance] factory method to
  * create an instance of this fragment.
+ *
+ * Classe responsavel por carregar uma simples custom view
+ *
+ * @see com.br.androidcanvas.chp1.SimpleView
  */
 class ShowCustomSimpleViewFragment : Fragment() {
 

@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.customviews.view.fragment
+package com.xp.samplecustomview.feature.customviews.sample.viewpager.view.fragment
 
 import android.os.Bundle
 import android.os.Handler
@@ -13,7 +13,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.feature.customviews.sample.listOfFragments
-import com.xp.samplecustomview.feature.customviews.view.viewpager.adapter.DefaultFragmentStateAdapter
+import com.xp.samplecustomview.feature.customviews.sample.viewpager.view.viewpager.adapter.DefaultFragmentStateAdapter
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 /**

@@ -3,27 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/androidcanvas/src/main/res/drawable/drawable.xml" value="0.15833333333333333" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_attach_behavior_on_custom_view_by_xml_layout.xml" value="0.175" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_custom_views.xml" value="0.20606884057971014" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_first_example_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_fullscreen_sample.xml" value="0.20516304347826086" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_sample_bottom_sheet_dialog.xml" value="0.14375" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_screen_slide_page.xml" value="0.17916666666666667" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/fragment_show_custom_simple_view.xml" value="0.17916666666666667" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.14947916666666666" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.33" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.33" />
-        <entry key="app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.328125" />
-        <entry key="app/src/main/res/layout/fragment_first_example_bottom_sheet.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/fragment_modal_bottom_sheet_example.xml" value="0.29791666666666666" />
-        <entry key="app/src/main/res/layout/fragment_standard_bottom_sheet.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/fragment_type_of_bottom_sheets.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.2268557130942452" />
-        <entry key="app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_list_behavior.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_list_behavitor.xml" value="0.31197916666666664" />
-        <entry key="app/src/main/res/layout/layout_standard_bottom_sheet_dialog_fragment_1.xml" value="0.14166666666666666" />
-        <entry key="app/src/main/res/layout/layout_standardl_bottom_sheet_dialog_fragment_1.xml" value="0.31197916666666664" />
       </map>
     </option>
   </component>

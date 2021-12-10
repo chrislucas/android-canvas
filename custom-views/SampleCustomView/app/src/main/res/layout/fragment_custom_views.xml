@@ -7,7 +7,7 @@
     android:background="?attr/fullscreenBackgroundColor"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.SampleCustomView.FullscreenContainer"
-    tools:context=".feature.customviews.view.fragment.FullScreenSliderCustomViewFragment">
+    tools:context=".feature.customviews.sample.viewpager.view.fragment.FullScreenSliderCustomViewFragment">
 
 
     <TextView

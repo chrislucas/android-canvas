@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_quantity_max_vertices">Você atingiu a quantidade máxima de vertices permitida: 64</string>
+</resources>

@@ -7,8 +7,8 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.DragEvent
 import android.view.View
-import com.br.classext.Behavior
-import com.br.classext.fromClassNameToCreateBehavior
+import com.br.classext.feature.builderbehavior.Behavior
+import com.br.classext.feature.builderbehavior.fromClassNameToCreateBehavior
 import com.xp.samplecustomviews.R
 import com.xp.samplecustomviews.feature.clickable.action.SimpleClickView
 

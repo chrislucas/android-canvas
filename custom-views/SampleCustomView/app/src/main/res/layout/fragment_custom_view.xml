@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".feature.customviews.view.fragment.CustomViewFragment">
+    tools:context=".feature.customviews.sample.viewpager.view.fragment.CustomViewFragment">
 
     <com.br.bookcustomview.CustomView
         android:layout_width="match_parent"
