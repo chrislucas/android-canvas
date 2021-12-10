@@ -78,6 +78,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/ClassExt/src/main/java/com/br/classext/BuilderBehavior.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ClassExt/src/main/java/com/br/classext/ClassExt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ClassExt/src/main/java/com/br/classext/feature/builderbehavior/BuilderBehavior.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/RegexDebugger/build.gradle">
           <value>
             <set />
@@ -88,7 +103,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/raw/bitmap_shader">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/raw/refs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/raw/tutoriais">
           <value>
             <set />
           </value>
@@ -123,12 +148,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/action/BuilderDrawBehavior.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/action/Draw.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/views/BoardToDrawVertices.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/views/ColorProvider.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/views/DrawingVertices.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/res/drawable/drawable.xml">
           <value>
             <set />
           </value>
@@ -383,6 +428,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/behaviorcustomview/behavior/creator/CreateSimpleClickableView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/canvas/feature/views/BoardToDrawVerticesFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/canvasbook/chp1/view/fragment/ShowCustomSimpleViewFragment.kt">
           <value>
             <set />
@@ -404,6 +459,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/samplesviewpager/view/fragment/ScreenSliderCustomViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/viewpager/view/fragment/FullScreenSliderCustomViewFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/viewpager/view/fragment/ScreenSliderCustomViewFragment.kt">
           <value>
             <set />
           </value>
@@ -989,6 +1054,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/DumbCustomView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/ClickableView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/samplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/action/SimpleClickView.kt">
           <value>
             <set />
           </value>

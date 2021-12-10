@@ -1,11 +1,20 @@
 Playing with Android canvas drawVertices
 https://medium.com/mobile-app-development-publication/playing-with-android-canvas-drawvertices-32266c480ab6
+
+Projeto desenhando com drawVertices
 https://github.com/elye/demo_android_draw_vertices/blob/master/app/src/main/java/com/elyeproj/demoandroiddrawvertices/DrawVerticesView.kt
+
 https://developer.android.com/reference/android/graphics/Canvas#drawVertices(android.graphics.Canvas.VertexMode,%20int,%20float[],%20int,%20float[],%20int,%20int[],%20int,%20short[],%20int,%20int,%20android.graphics.Paint)
 
 drawTextRun
 https://developer.android.com/reference/android/graphics/Canvas#drawVertices(android.graphics.Canvas.VertexMode,%20int,%20float[],%20int,%20float[],%20int,%20int[],%20int,%20short[],%20int,%20int,%20android.graphics.Paint)
 
 
+
+
 View layers
 https://developer.android.com/guide/topics/graphics/hardware-accel#layers
+
+
+Perspective Vision on Canvas
+https://stackoverflow.com/questions/46195753/perspective-vision-on-canvas

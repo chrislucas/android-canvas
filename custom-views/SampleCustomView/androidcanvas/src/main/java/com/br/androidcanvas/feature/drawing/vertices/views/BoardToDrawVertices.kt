@@ -2,16 +2,18 @@ package com.br.androidcanvas.feature.drawing.vertices.views
 
 import android.content.Context
 import android.content.res.TypedArray
-import android.graphics.Canvas
-import android.graphics.Paint
+import android.graphics.*
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
 import com.br.androidcanvas.R
 import com.br.androidcanvas.ext.simplestDrawingVertices
+import com.br.androidcanvas.feature.drawing.vertices.action.Draw
+import com.br.classext.feature.builderbehavior.Behavior
+import com.br.classext.feature.builderbehavior.fromClassNameToCreateBehavior
 
-class DrawingVerticesView @JvmOverloads constructor(
+class BoardToDrawVerticesView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
@@ -21,19 +23,28 @@ class DrawingVerticesView @JvmOverloads constructor(
 
     private val vertices = mutableListOf<Float>()
 
+    private var mBehavior: Behavior? = null
+
     init {
         val styledAttrs: TypedArray =
-            context.obtainStyledAttributes(attrs, R.styleable.DrawingVerticesView)
+            context.obtainStyledAttributes(attrs, R.styleable.BoardToDrawVerticesView)
 
-        val hasAttr = styledAttrs.hasValue(R.styleable.DrawingVerticesView_vertexMode) ?: false
+        var hasAttr = styledAttrs.hasValue(R.styleable.BoardToDrawVerticesView_vertexMode) ?: false
 
         if (hasAttr) {
-            val value = styledAttrs.getInt(R.styleable.DrawingVerticesView_vertexMode, 0)
+            val value = styledAttrs.getInt(R.styleable.BoardToDrawVerticesView_vertexMode, 0)
             vertexMode = when (value) {
                 0 -> Canvas.VertexMode.TRIANGLES
                 1 -> Canvas.VertexMode.TRIANGLE_STRIP
                 else -> Canvas.VertexMode.TRIANGLE_FAN
             }
+        }
+
+        hasAttr = styledAttrs.hasValue(R.styleable.BoardToDrawVerticesView_drawBehavior)
+
+        if (hasAttr) {
+            mBehavior = styledAttrs.getString(R.styleable.BoardToDrawVerticesView_drawBehavior)
+                ?.fromClassNameToCreateBehavior()
         }
 
         styledAttrs.recycle()
@@ -53,9 +64,32 @@ class DrawingVerticesView @JvmOverloads constructor(
             vColor,
             paint
         )
+
+        mBehavior?.let { behavior ->
+            if (behavior is Draw) {
+                behavior.onDraw()
+            }
+        }
+    }
+
+    /**
+     * Tex Shader
+     * */
+    fun drawBitmapShader() {
+        val paint = Paint().apply {
+            val bitmap = BitmapFactory.decodeResource(resources, R.drawable.triangle24px)
+            this.shader = BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
+
+        }
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
+
+        mBehavior?.let { behavior ->
+            if (behavior is Draw) {
+                behavior.onTouchEvent()
+            }
+        }
 
         if (vertices.size == 64) {
             Toast.makeText(

@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.customviews.sample.samplesviewpager.view.viewpager.adapter
+package com.xp.samplecustomview.feature.customviews.sample.viewpager.view.viewpager.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

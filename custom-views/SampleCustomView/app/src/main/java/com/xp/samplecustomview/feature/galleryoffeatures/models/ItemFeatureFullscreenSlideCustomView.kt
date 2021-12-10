@@ -3,7 +3,7 @@ package com.xp.samplecustomview.feature.galleryoffeatures.models
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
-import com.xp.samplecustomview.feature.customviews.sample.samplesviewpager.view.fragment.FullScreenSliderCustomViewFragment
+import com.xp.samplecustomview.feature.customviews.sample.viewpager.view.fragment.FullScreenSliderCustomViewFragment
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureCustomViewsViewHolder
 
 

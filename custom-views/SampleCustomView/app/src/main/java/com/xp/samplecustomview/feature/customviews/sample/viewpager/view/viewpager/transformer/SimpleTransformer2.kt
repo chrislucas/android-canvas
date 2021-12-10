@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.customviews.sample.samplesviewpager.view.viewpager.transformer
+package com.xp.samplecustomview.feature.customviews.sample.viewpager.view.viewpager.transformer
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2
