@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.feature.customviews.sample.dashedprogressbar.view.fragment.viewmodel.ViewModelCustomDashedProgressBar
+import com.xp.samplecustomview.feature.customviews.sample.dashedprogressbar.view.viewmodel.ViewModelCustomDashedProgressBar
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 
