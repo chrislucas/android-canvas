@@ -38,7 +38,7 @@ class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
     }
 
     private val itemsOfMenuFeature: List<CompositeRecyclerViewItem<Any>> by lazy {
-        this.context?.let {
+        this.activity?.let {
             provideFeatures(it, this)
         } ?: provideEmptyStateList()
     }
@@ -49,6 +49,7 @@ class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
     ): View? {
         val view = inflater.inflate(R.layout.fragment_layout_list_of_features, container, false)
 
+        this.activity?.application
         // Set the adapter
         if (view is RecyclerView) {
             with(view) {

@@ -14,7 +14,9 @@
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.14947916666666666" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.33" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.33" />
+        <entry key="androidcanvas/src/main/res/layout/activity_glrenderer.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_board_to_draw_vertices.xml" value="0.146875" />
+        <entry key="app/src/main/res/layout/fragment_javascript_interface_sample.xml" value="0.20833333333333334" />
       </map>
     </option>
   </component>

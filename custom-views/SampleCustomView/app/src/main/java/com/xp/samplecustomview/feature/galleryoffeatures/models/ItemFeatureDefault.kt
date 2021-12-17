@@ -9,7 +9,7 @@ import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFrag
 
 open class ItemFeatureDefault(val description: String)
 
-open class BindItemFeatureDefault(
+open class BindItemFeatureDefaultForFragment(
     private val channel: ListenerListFragmentsViewHolder,
     val baseBehaviorFragment: BaseBehaviorFragment
 ) :
