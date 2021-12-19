@@ -988,6 +988,46 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/labanimation/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/raw/spring_physics_animation">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/java/com/br/labanimation/springphysics/features/draggingbutton/DraggingButtonActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/java/com/br/labanimation/springphysics/features/start/InitAnimationActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/java/com/br/labanimation/springphysics/features/start/flinganim/FlignAnimationActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/java/com/br/labanimation/springphysics/features/start/flinganim/FlingAnimationActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/res/layout/activity_flign_animation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/res/layout/activity_init_animation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/raw/bottom_sheet_dialog">
           <value>
             <set />

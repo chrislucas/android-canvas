@@ -90,8 +90,6 @@ o
 ?androidcanvas/src/main/java/com/br/androidcanvas/ext/ViewExt.kt,1\3\13831ec5799402147223af65f8bb5bce210d9fc3
 M
 intentnavigation/build.gradle,7\8\78fb50c1d87f9e391bacb81bccf24e9655f3e0e6
-I
-labanimation/build.gradle,a\5\a5c46e2bf9c65fcf78805ad8ce45e528685f133c
 N
 sampleeyetracking/build.gradle,0\d\0d619014833bb0d642d9673a8480dc01d5b5efb5
 Q
@@ -142,3 +140,34 @@ Aapp/src/main/java/com/xp/samplecustomview/commons/ext/ClassExt.kt,b\b\bb07ba80
 ksamplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/action/DumbBehaviorCustomView.kt,6\0\60c87a7529a2dffec79a4cf8882d581aa2fa6f42
 ”
 dsamplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/action/SimpleClickView.kt,8\8\88f8caa289ba394dc59151ff94dd0dcde974d1e1
+O
+androidcanvas/raw/bitmap_shader,e\5\e505ef80f7eaa572c3c301850f3ff056a6718222
+K
+androidcanvas/raw/tutoriais,8\a\8a4701c143e2b1e4fc0a3ac175e017b03b80f01a
+ˆ
+Xandroidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/action/Draw.kt,d\9\d9cc5951a11dcde5eeee8645d2b45b42ef81485a
+—
+gandroidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/action/BuilderDrawBehavior.kt,d\4\d40c9a8a60fe0895d8b776ba95a375ef65731387
+‹
+[samplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/ClickableView.kt,6\c\6cc18b46d6739e447c9196526373a102265e0bc2
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+¶
+…app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/behaviorcustomview/behavior/creator/CreateSimpleClickableView.kt,a\f\af3a3a90740e7f7c5a1bd83d4c7fb63eebffd193
+
+QClassExt/src/main/java/com/br/classext/feature/builderbehavior/BuilderBehavior.kt,0\5\05506dbe1c0a8dbb14788d8f0c2fe38bc20f0c18
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+N
+samplecustomviews/build.gradle,e\6\e6c28969d99b425b5adae85e4fe23c8b2802a110
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+?
+settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+v
+Fapp/src/main/java/com/xp/samplecustomview/MainActivityCommunication.kt,a\9\a9a5c9a5e16664023bb8430d6fe9ce1703083151

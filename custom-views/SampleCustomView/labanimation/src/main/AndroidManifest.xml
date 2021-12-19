@@ -2,4 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.br.labanimation">
 
+    <application>
+        <activity
+            android:name=".springphysics.features.start.flinganim.FlingAnimationActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".springphysics.features.start.InitAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".springphysics.features.draggingbutton.DraggingButtonActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
 </manifest>
