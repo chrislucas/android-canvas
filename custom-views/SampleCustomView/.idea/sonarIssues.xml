@@ -68,6 +68,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.idea/compiler.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.idea/gradle.xml">
           <value>
             <set />
@@ -998,6 +1003,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/labanimation/src/main/java/com/br/labanimation/springphysics/features/draggingbutton/DraggingButtonActivity.kt">
           <value>
             <set />
@@ -1019,6 +1029,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/labanimation/src/main/res/layout/activity_flign_animation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/labanimation/src/main/res/layout/activity_fling_animation.xml">
           <value>
             <set />
           </value>

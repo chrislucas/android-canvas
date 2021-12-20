@@ -1,4 +1,4 @@
-package com.br.androidcanvas.feature.drawmatrix
+package com.br.androidcanvas.feature.canvas.drawmatrix
 
 import android.content.Context
 import android.util.AttributeSet

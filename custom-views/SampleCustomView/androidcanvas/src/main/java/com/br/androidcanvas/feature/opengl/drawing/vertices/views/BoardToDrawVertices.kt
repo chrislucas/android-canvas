@@ -1,4 +1,4 @@
-package com.br.androidcanvas.feature.drawing.vertices.views
+package com.br.androidcanvas.feature.opengl.drawing.vertices.views
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -9,7 +9,7 @@ import android.view.View
 import android.widget.Toast
 import com.br.androidcanvas.R
 import com.br.androidcanvas.ext.simplestDrawingVertices
-import com.br.androidcanvas.feature.drawing.vertices.action.Draw
+import com.br.androidcanvas.feature.opengl.drawing.vertices.action.Draw
 import com.br.classext.feature.builderbehavior.Behavior
 import com.br.classext.feature.builderbehavior.fromClassNameToCreateBehavior
 

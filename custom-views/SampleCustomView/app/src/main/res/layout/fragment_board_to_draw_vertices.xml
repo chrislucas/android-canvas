@@ -6,7 +6,7 @@
     tools:context=".feature.customviews.sample.canvas.feature.views.BoardToDrawVerticesFragment">
 
 
-    <com.br.androidcanvas.feature.drawing.vertices.views.BoardToDrawVerticesView
+    <com.br.androidcanvas.feature.opengl.drawing.vertices.views.BoardToDrawVerticesView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
          />

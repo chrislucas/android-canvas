@@ -94,8 +94,6 @@ N
 sampleeyetracking/build.gradle,0\d\0d619014833bb0d642d9673a8480dc01d5b5efb5
 Q
 !samplejetpackcompose/build.gradle,9\6\9689a071d8d8830a54b85bb096c7cfd52c8b9ace
-Ü
-Vapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/Features.kt,b\d\bd0aaa91f620b1eadde79f55069634e492408a05
 ¢
 rapp/src/main/java/com/xp/samplecustomview/feature/galleryoffeatures/models/ItemFeatureFullscreenSlideCustomView.kt,7\d\7d792ef71a319ec2f8372e092f21845979357e2c
 J
@@ -108,8 +106,6 @@ n
 >androidcanvas/src/main/java/com/br/androidcanvas/CircleView.kt,a\9\a970349ec8030c06a5579663ab9dfb1aa5cd5667
 k
 ;androidcanvas/src/main/java/com/br/androidcanvas/DotView.kt,2\0\207f1c3b71790a54f25970e53c365854ae51a85b
-ê
-`androidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/views/ColorProvider.kt,5\0\50ef531bd438a135167d54a3a42a14a1722289dc
 q
 Aandroidcanvas/src/main/java/com/br/androidcanvas/ext/CanvasExt.kt,5\e\5eaeebaac00b6e31a3981797ce8fc9c4c9daa81b
 Æ
@@ -144,10 +140,6 @@ O
 androidcanvas/raw/bitmap_shader,e\5\e505ef80f7eaa572c3c301850f3ff056a6718222
 K
 androidcanvas/raw/tutoriais,8\a\8a4701c143e2b1e4fc0a3ac175e017b03b80f01a
-à
-Xandroidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/action/Draw.kt,d\9\d9cc5951a11dcde5eeee8645d2b45b42ef81485a
-ó
-gandroidcanvas/src/main/java/com/br/androidcanvas/feature/drawing/vertices/action/BuilderDrawBehavior.kt,d\4\d40c9a8a60fe0895d8b776ba95a375ef65731387
 ã
 [samplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/ClickableView.kt,6\c\6cc18b46d6739e447c9196526373a102265e0bc2
 A
@@ -171,3 +163,11 @@ X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 v
 Fapp/src/main/java/com/xp/samplecustomview/MainActivityCommunication.kt,a\9\a9a5c9a5e16664023bb8430d6fe9ce1703083151
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+û
+nlabanimation/src/main/java/com/br/labanimation/springphysics/features/draggingbutton/DraggingButtonActivity.kt,2\0\20deae5a2ef2569ab7dfd5cb8ac50c796bcc2e29
+î
+dlabanimation/src/main/java/com/br/labanimation/springphysics/features/start/InitAnimationActivity.kt,d\1\d1ec0f86598bb2c527d686aa08e2a66876ac4bee
+Z
+*androidcanvas/src/main/AndroidManifest.xml,c\7\c74ae62a1012915599ff37f3ddd0214697a872d9

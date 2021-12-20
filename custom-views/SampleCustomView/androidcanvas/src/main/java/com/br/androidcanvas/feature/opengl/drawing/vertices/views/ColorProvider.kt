@@ -1,4 +1,4 @@
-package com.br.androidcanvas.feature.drawing.vertices.views
+package com.br.androidcanvas.feature.opengl.drawing.vertices.views
 
 val vColor = listOf<Long>(
     0xFF080000,

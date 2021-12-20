@@ -16,7 +16,7 @@ import com.br.labanimation.databinding.ActivityFlingAnimationBinding
 class FlingAnimationActivity : AppCompatActivity() {
 
 
-    val bindView: ActivityFlingAnimationBinding by lazy {
+    private val bindView: ActivityFlingAnimationBinding by lazy {
         ActivityFlingAnimationBinding.inflate(
             layoutInflater
         )
