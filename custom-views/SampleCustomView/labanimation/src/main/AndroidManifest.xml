@@ -4,11 +4,28 @@
 
     <application>
         <activity
-            android:name=".springphysics.features.start.flinganim.FlingAnimationActivity"
+            android:name=".springphysics.features.start.FirstAnimationDrawableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".springphysics.features.start.FirstMoveAnimationActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- deeplink://main_activity_first_sample_opengl_renderer -->
+                <data
+                    android:host="move_anim_activity_first_sample"
+                    android:scheme="deeplink" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".springphysics.features.start.flinganim.FlingAnimationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- deeplink://main_activity_first_sample_opengl_renderer -->
@@ -22,22 +39,24 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="init_anim_activity_first_sample"
                     android:scheme="deeplink" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".springphysics.features.draggingbutton.DraggingButtonActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="drag_button_spring_anim_activity_first_sample"
                     android:scheme="deeplink" />

@@ -40,6 +40,7 @@
     <string name="label_tv_behavior_collapse">Colapsar</string>
     <string name="label_tv_behavior_settling">Animação Up/Down</string>
     <string name="label_tv_behavior_half_expanded">Meia Expansão</string>
-    <string name="txt_title_activity_first_sample_gl_renderer" tools:ignore="ExtraTranslation">Primeiro exemplo Renderizando Formas com OpenGL</string>
-    <string name="txt_title_activity_fling_anim_first_sample">1st Animação com ObjectAnimator</string>
+    <string name="txt_title_activity_first_sample_gl_renderer" tools:ignore="ExtraTranslation">1st  exemplo Renderizando Formas com OpenGL</string>
+    <string name="txt_title_activity_fling_anim_first_sample">Fling Animation</string>
+    <string name="txt_title_activity_move_anim_first_sample" tools:ignore="ExtraTranslation">1st Animação com ObjectAnimator</string>
 </resources>

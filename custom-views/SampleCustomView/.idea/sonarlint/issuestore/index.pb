@@ -167,7 +167,5 @@ Fapp/src/main/java/com/xp/samplecustomview/MainActivityCommunication.kt,a\9\a9a
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 ž
 nlabanimation/src/main/java/com/br/labanimation/springphysics/features/draggingbutton/DraggingButtonActivity.kt,2\0\20deae5a2ef2569ab7dfd5cb8ac50c796bcc2e29
-”
-dlabanimation/src/main/java/com/br/labanimation/springphysics/features/start/InitAnimationActivity.kt,d\1\d1ec0f86598bb2c527d686aa08e2a66876ac4bee
 Z
 *androidcanvas/src/main/AndroidManifest.xml,c\7\c74ae62a1012915599ff37f3ddd0214697a872d9

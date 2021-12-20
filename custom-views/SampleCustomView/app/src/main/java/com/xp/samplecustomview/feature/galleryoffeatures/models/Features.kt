@@ -104,6 +104,17 @@ fun provideFeatures(
             BindItemFeatureResolverDeeplinkDefault()
         ),
 
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureResolverDeeplink(
+                activity.getString(R.string.txt_title_activity_move_anim_first_sample),
+                "deeplink://move_anim_activity_first_sample",
+                activity
+            ),
+            BindItemFeatureResolverDeeplinkDefault()
+        ),
+
         ) as List<CompositeRecyclerViewItem<Any>>
 
 

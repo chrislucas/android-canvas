@@ -1,6 +1,5 @@
 package com.br.labanimation.springphysics.features.start
 
-import android.animation.ObjectAnimator
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.br.labanimation.R
