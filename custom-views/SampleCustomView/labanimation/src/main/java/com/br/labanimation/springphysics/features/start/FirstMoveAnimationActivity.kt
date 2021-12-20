@@ -2,8 +2,11 @@ package com.br.labanimation.springphysics.features.start
 
 import android.animation.Animator
 import android.animation.ObjectAnimator
+import android.graphics.Path
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.animation.PathInterpolator
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.br.labanimation.R
@@ -67,13 +70,34 @@ class FirstMoveAnimationActivity : AppCompatActivity() {
          * https://developer.android.com/guide/topics/graphics/prop-animation#object-animator
          * */
 
-        bindView.ivSampleImageToMove.setOnClickListener {
-            Toast.makeText(it.context, "Clicked", Toast.LENGTH_SHORT).show()
-            if (!animator.isStarted)
-                animator.start()
-            animator.addListener(animatorListener)
+        with(bindView.ivSampleImageToMove) {
+            this.setOnClickListener {
+                Toast.makeText(it.context, "Clicked", Toast.LENGTH_SHORT).show()
+                if (!animator.isStarted)
+                    animator.start()
+                animator.addListener(animatorListener)
+            }
         }
 
+
+        with(bindView.ivSampleImageToMove) {
+            setOnClickListener {
+                Toast.makeText(it.context, "Clicked", Toast.LENGTH_SHORT).show()
+                if (!animator.isStarted)
+                    animator.start()
+                animator.addListener(animatorListener)
+            }
+
+            /**
+             * https://developer.android.com/training/animation/reposition-view#CurvedMotion
+             * */
+
+            setOnLongClickListener {
+                Toast.makeText(it.context, "Long Click", Toast.LENGTH_SHORT).show()
+
+                true
+            }
+        }
 
     }
 }
