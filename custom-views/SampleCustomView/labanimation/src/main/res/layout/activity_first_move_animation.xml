@@ -24,11 +24,10 @@
         android:id="@+id/iv_sample_image_to_move"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_first_sample_object_animator"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/ic_baseline_electrical_services_120"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_first_sample_object_animator" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

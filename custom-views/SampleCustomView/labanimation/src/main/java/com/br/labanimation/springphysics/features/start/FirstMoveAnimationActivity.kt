@@ -2,10 +2,10 @@ package com.br.labanimation.springphysics.features.start
 
 import android.animation.Animator
 import android.animation.ObjectAnimator
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.animation.Animation
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.br.labanimation.R
 import com.br.labanimation.databinding.ActivityFirstMoveAnimationBinding
 
@@ -22,7 +22,9 @@ import com.br.labanimation.databinding.ActivityFirstMoveAnimationBinding
 class FirstMoveAnimationActivity : AppCompatActivity() {
 
     private val bindView: ActivityFirstMoveAnimationBinding by lazy {
-        ActivityFirstMoveAnimationBinding.inflate(layoutInflater)
+        ActivityFirstMoveAnimationBinding.inflate(
+            layoutInflater
+        )
     }
 
     private val animatorListener = object : Animator.AnimatorListener {
@@ -49,14 +51,12 @@ class FirstMoveAnimationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_first_move_animation)
-
-
+        setContentView(bindView.root)
 
         val animator = ObjectAnimator.ofFloat(
             bindView.ivSampleImageToMove,
             "translationY",
-            3000f
+            200f
         )
 
         animator.duration = 3000
@@ -68,9 +68,12 @@ class FirstMoveAnimationActivity : AppCompatActivity() {
          * */
 
         bindView.ivSampleImageToMove.setOnClickListener {
+            Toast.makeText(it.context, "Clicked", Toast.LENGTH_SHORT).show()
             if (!animator.isStarted)
                 animator.start()
             animator.addListener(animatorListener)
         }
+
+
     }
 }
