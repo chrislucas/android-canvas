@@ -94,7 +94,6 @@ class FirstMoveAnimationActivity : AppCompatActivity() {
 
             setOnLongClickListener {
                 Toast.makeText(it.context, "Long Click", Toast.LENGTH_SHORT).show()
-
                 true
             }
         }
