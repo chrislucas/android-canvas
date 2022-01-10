@@ -113,6 +113,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/raw/drawing_board">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/raw/game_boardl">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/raw/refs">
           <value>
             <set />
@@ -144,6 +154,26 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/ext/WindowExt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/canvas/geom/CircleView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/canvas/geom/animation/CircleView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/canvas/geom/animation/DrawingLineTurningInAPoint.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/src/main/java/com/br/androidcanvas/feature/canvas/geom/animation/WaveView.kt">
           <value>
             <set />
           </value>
@@ -1169,6 +1199,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/tryjetcompose/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../android-modular-puzzles/android-puzzle-2048/app/src/main/res/layout/activity_main.xml">
           <value>
             <set />
           </value>

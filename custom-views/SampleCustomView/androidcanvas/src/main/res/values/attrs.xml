@@ -9,4 +9,15 @@
         <attr format="string" name="drawBehavior" />
 
     </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="strokeWidthView" format="float" />
+        <attr name="paintStyle" format="enum">
+            <enum name="Style.STROKE" value="1" />
+            <enum name="Style.FILL" value="0" />
+            <enum name="Style.FILL_AND_STROKE" value="2" />
+        </attr>
+    </declare-styleable>
 </resources>

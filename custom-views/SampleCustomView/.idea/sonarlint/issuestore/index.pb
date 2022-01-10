@@ -120,8 +120,6 @@ _app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/ListOfFrag
 mapp/src/main/java/com/xp/samplecustomview/feature/bottomsheet/typeofbottomsheet/models/ExpadingBottomSheet.kt,d\2\d2cb24ccd21a191080880a24d0fd514758cd6ddd
 ¡
 qapp/src/main/java/com/xp/samplecustomview/feature/bottomsheet/typeofbottomsheet/models/ItemStandardBottomSheet.kt,3\7\37df79545c7296bc93c375241116b4a369969bde
-F
-androidcanvas/raw/refs,3\2\32915e91b38a742c28efbbd4fcfebc99ebf27b29
 J
 androidcanvas/build.gradle,3\e\3e8687ef9e9a556eddbbfe8fb6015cee0496b1a7
 s
