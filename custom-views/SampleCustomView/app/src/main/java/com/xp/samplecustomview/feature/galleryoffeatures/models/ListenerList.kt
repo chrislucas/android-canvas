@@ -1,0 +1,5 @@
+package com.xp.samplecustomview.feature.galleryoffeatures.models
+
+import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
+
+typealias ListenerListFragments = ListenerListFragmentsViewHolder

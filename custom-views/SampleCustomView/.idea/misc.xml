@@ -20,6 +20,8 @@
         <entry key="androidcanvas/src/main/res/layout/activity_glrenderer.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_board_to_draw_vertices.xml" value="0.146875" />
         <entry key="app/src/main/res/layout/fragment_javascript_interface_sample.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_moving_in_circle_custom_view.xml" value="0.3848958333333333" />
+        <entry key="app/src/main/res/layout/fragment_show_circle_view.xml" value="0.1" />
       </map>
     </option>
   </component>

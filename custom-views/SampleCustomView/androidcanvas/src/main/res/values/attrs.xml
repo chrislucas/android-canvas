@@ -19,5 +19,7 @@
             <enum name="Style.FILL" value="0" />
             <enum name="Style.FILL_AND_STROKE" value="2" />
         </attr>
+        <attr name="android:antialias" />
+        <attr name="android:dither" />
     </declare-styleable>
 </resources>

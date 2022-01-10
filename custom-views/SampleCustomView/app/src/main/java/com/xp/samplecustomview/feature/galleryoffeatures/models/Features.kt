@@ -115,6 +115,14 @@ fun provideFeatures(
             BindItemFeatureResolverDeeplinkDefault()
         ),
 
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_moving_in_circle_custom_view)
+            ),
+            BindItemFeatureMovingInCircleCustomViewFragment(communicationWithViewHolder)
+        ),
+
         ) as List<CompositeRecyclerViewItem<Any>>
 
 

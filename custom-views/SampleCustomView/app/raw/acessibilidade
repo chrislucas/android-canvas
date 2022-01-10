@@ -1,0 +1,5 @@
+https://developer.android.com/guide/topics/ui/accessibility/service
+https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent
+
+SendEvent
+https://stackoverflow.com/questions/22338454/android-fire-a-custom-accessibility-event-from-an-actionbar-button-click
