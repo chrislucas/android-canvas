@@ -1,7 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.5.10'
 
     apply from:  "$rootDir/tools/dependencies-version.gradle"
     repositories {
@@ -19,7 +18,7 @@ buildscript {
         // in the individual module build.gradle files
         classpath dependencyPath
         classpath 'com.google.gms:google-services:4.3.10'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
     }
 }
 
