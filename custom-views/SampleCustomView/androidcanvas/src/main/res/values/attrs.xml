@@ -22,4 +22,9 @@
         <attr name="android:antialias" />
         <attr name="android:dither" />
     </declare-styleable>
+
+    <declare-styleable name="GridCircles">
+        <attr name="quantityCircles" format="integer" />
+        <attr name="radiusEachCircle" format="float" />
+    </declare-styleable>
 </resources>

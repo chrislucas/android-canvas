@@ -9,20 +9,23 @@ import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
-class MovingInCircleCustomViewFragment : Fragment(), BaseBehaviorFragment {
+class DrawingGridOfCirclesFragment : Fragment(), BaseBehaviorFragment {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_moving_in_circle_custom_view, container, false)
+        return inflater.inflate(
+            R.layout.fragment_drawing_grid_of_circles,
+            container, false
+        )
     }
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            MovingInCircleCustomViewFragment()
+            DrawingGridOfCirclesFragment()
     }
 
     override fun getMyOwnTag(): String = javaClass.ownTag

@@ -123,7 +123,38 @@ fun provideFeatures(
             BindItemFeatureMovingInCircleCustomViewFragment(communicationWithViewHolder)
         ),
 
-        ) as List<CompositeRecyclerViewItem<Any>>
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_create_typeface_canvas_draw_text)
+            ),
+            BindItemFeatureCreateTypefaceFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_combine_typefaces_canvas_draw_text)
+            ),
+            BindItemFeatureCombineTypefacesFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_drawing_grid_of_circle)
+            ),
+            BindItemDrawingGridOfCirclesFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_drawing_circle_using_path)
+            ),
+            BindItemDrawingCircleUinsgPathFragment(communicationWithViewHolder)
+        ),
+    ) as List<CompositeRecyclerViewItem<Any>>
 
 
 fun provideEmptyStateList() = listOf(

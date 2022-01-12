@@ -25,7 +25,7 @@ class MovingOnCircleView @JvmOverloads constructor(
 
     var startPosition: Pair<Double, Double> = Pair(0.0, 0.0)
 
-    val mPaint = Paint()
+    val mPaintTextAngle = Paint()
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
 
@@ -105,6 +105,5 @@ class MovingOnCircleView @JvmOverloads constructor(
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         center = Pair(w / 2.0f, h / 2.0f)
-
     }
 }
