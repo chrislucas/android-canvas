@@ -86,6 +86,14 @@ fun provideFeatures(
 
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_solving_keyboard_overlapping_bsheet)
+            ),
+            BindItemFeatureSolvingKeyboardOverlappingBottomSheetFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureResolverDeeplink(
                 activity.getString(R.string.txt_title_activity_first_sample_gl_renderer),
                 "deeplink://main_activity_first_sample_opengl_renderer",
@@ -103,7 +111,6 @@ fun provideFeatures(
             ),
             BindItemFeatureResolverDeeplinkDefault()
         ),
-
 
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
@@ -153,6 +160,14 @@ fun provideFeatures(
                 activity.getString(R.string.txt_title_fragment_drawing_circle_using_path)
             ),
             BindItemDrawingCircleUinsgPathFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_composite_list_of_data)
+            ),
+            BindItemCompositeCombinedRecyclerViews(communicationWithViewHolder)
         ),
     ) as List<CompositeRecyclerViewItem<Any>>
 

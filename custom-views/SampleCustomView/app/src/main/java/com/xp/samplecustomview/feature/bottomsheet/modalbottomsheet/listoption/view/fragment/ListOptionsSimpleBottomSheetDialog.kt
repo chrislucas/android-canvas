@@ -38,7 +38,6 @@ class ListOptionsSimpleBottomSheetDialog : BottomSheetDialogFragment(), BaseBeha
 
     private lateinit var behavior: BottomSheetBehavior<FrameLayout>
 
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         bindView = LayoutBottomSheetDialogListOptionSample1Binding.inflate(layoutInflater)

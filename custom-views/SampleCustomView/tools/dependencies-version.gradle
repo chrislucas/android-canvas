@@ -24,6 +24,9 @@ versions.coroutines_android_version = '1.5.2'
 versions.coordinatorLayoutVersion = '1.1.0'
 
 
+versions.gsonVersion = '2.8.9'
+
+
 def buildVariables = [:]
 buildVariables.compileSdkVersion = 30
 buildVariables.buildToolsVersion = "30.0.3"
@@ -72,6 +75,13 @@ def coroutines = [
 ]
 
 deps.coroutines = coroutines
+
+
+def gson = [
+   "com.google.code.gson:gson:${versions.gsonVersion}"
+]
+
+deps.gson = gson
 
 
 def libTest = [:]
