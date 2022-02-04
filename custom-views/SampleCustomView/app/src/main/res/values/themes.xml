@@ -21,6 +21,6 @@
     </style>
 
     <style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
-        <item name="bottomSheetStyle">@style/ModalBottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/DefaultModalBottomSheetDialog</item>
     </style>
 </resources>

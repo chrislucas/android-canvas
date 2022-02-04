@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.LayoutBottomSheetDialogDepartmentsBinding
@@ -19,14 +21,27 @@ class DepartmentsBottomSheetDialog private constructor(private val departments: 
 
     private lateinit var bindView: LayoutBottomSheetDialogDepartmentsBinding
 
-    private val mapDepartment: Map<Int, List<Department>> =
-        departments.run {
-            val map = mutableMapOf<Int, List<Department>>()
-            for (dep in this) {
-                map[dep.id] = dep.subDepartments
+    private val mapDepartment: Map<Int, List<Department>> = mappingDepartment()
+
+    private fun mappingDepartment(): Map<Int, List<Department>> {
+
+        val tree = linkedMapOf<Int, List<Department>>()
+
+        fun builder(department: Department?, map: LinkedHashMap<Int, List<Department>>) {
+            if (department == null) {
+                return
+            } else {
+                if (department.subDepartments.isNotEmpty()) {
+                    map[department.id] = department.subDepartments
+                    for (subDepartment in department.subDepartments) {
+                        builder(subDepartment, map)
+                    }
+                }
             }
-            map
         }
+        departments.forEach { builder(it, tree) }
+        return tree
+    }
 
     private val mutableDepartmentAdapter = MutableDepartmentAdapter(departments[0].subDepartments)
 
@@ -43,16 +58,36 @@ class DepartmentsBottomSheetDialog private constructor(private val departments: 
         savedInstanceState: Bundle?
     ): View {
 
+        val bottomSheetBehavior = BottomSheetBehavior.from(bindView.flRootBottomSheet)
+        val bottomSheetDialog = dialog as BottomSheetDialog
+
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+        bottomSheetDialog.setOnShowListener {
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+        bottomSheetDialog.setOnDismissListener {
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+        }
+
         bindView.rcDepartments.adapter = DepartmentAdapter(departments, this)
         bindView.rcSubDepartments.adapter = mutableDepartmentAdapter
-
         return bindView.root
     }
 
-    override fun update(parentId: Int) {
-        mapDepartment[parentId]?.let { department ->
-            mutableDepartmentAdapter.mutableDepartments = departments
-            mutableDepartmentAdapter.notifyItemRangeChanged(0, departments.size)
+
+    private fun max(p: Int, q: Int) = if (p > q) p else q
+
+    override fun update(id: Int) {
+        mapDepartment[id]?.let { subDepartments ->
+
+            mutableDepartmentAdapter.mutableDepartments = subDepartments
+            bindView.rcSubDepartments.recycledViewPool.clear()
+            /*
+            mutableDepartmentAdapter.notifyItemRangeChanged(0
+                , subDepartments.size -1)
+
+             */
+            mutableDepartmentAdapter.notifyDataSetChanged()
             postUpdate.post()
         }
     }

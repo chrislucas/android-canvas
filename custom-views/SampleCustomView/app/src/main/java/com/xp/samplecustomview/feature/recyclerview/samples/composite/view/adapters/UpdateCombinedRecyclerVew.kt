@@ -1,5 +1,5 @@
 package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters
 
 interface UpdateCombinedRecyclerVew {
-    fun update(parentId: Int)
+    fun update(id: Int)
 }

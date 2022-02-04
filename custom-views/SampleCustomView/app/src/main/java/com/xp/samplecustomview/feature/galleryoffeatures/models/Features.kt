@@ -167,7 +167,7 @@ fun provideFeatures(
             ItemFeatureDefault(
                 activity.getString(R.string.txt_title_fragment_composite_list_of_data)
             ),
-            BindItemCompositeCombinedRecyclerViews(communicationWithViewHolder)
+            BindItemCompositeCombineTwoRecyclerViews(communicationWithViewHolder)
         ),
     ) as List<CompositeRecyclerViewItem<Any>>
 

@@ -73,9 +73,14 @@ class StandardBottomSheet private constructor() : BottomSheetDialogFragment() {
             mDialog.dismiss()
         }
 
+        setBottomSheetBehaviorState(BottomSheetBehavior.STATE_COLLAPSED)
 
         mDialog.setOnShowListener {
-            setBottomSheetBehaviorState(bottomSheetBehaviorState)
+            setBottomSheetBehaviorState(BottomSheetBehavior.STATE_EXPANDED)
+        }
+
+        mDialog.setOnDismissListener {
+            setBottomSheetBehaviorState(BottomSheetBehavior.STATE_COLLAPSED)
         }
 
         return bindView.root

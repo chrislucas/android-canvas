@@ -9,9 +9,9 @@
         android:id="@+id/ll_standard_bottom_sheet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ModalBottomSheetDialog"
+        style="?attr/bottomSheetDialogTheme"
         app:behavior_hideable="true"
-        app:behavior_peekHeight="25sp"
+        app:behavior_peekHeight="40sp"
         app:behavior_fitToContents="false"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 

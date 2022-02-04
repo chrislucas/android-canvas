@@ -7,15 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.commons.gson.fromJson
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.providerDepartments
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
-class CompositeDepartmentsFragment() :
+class CombineTwoListDepartmentsFragment() :
     BaseBehaviorFragment, Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,7 +34,7 @@ class CompositeDepartmentsFragment() :
     companion object {
         @JvmStatic
         fun newInstance() =
-            CompositeDepartmentsFragment()
+            CombineTwoListDepartmentsFragment()
     }
 
 

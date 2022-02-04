@@ -26,10 +26,10 @@ open class DepartmentAdapter(
     override fun onBindViewHolder(holder: DepartmentViewHolder, position: Int) {
         val pos = holder.bindingAdapterPosition
         departments[pos].run {
-            holder.departmentName.text = this.description
+            holder.departmentName.text = this.name
             holder.departmentImage.setImageResource(R.drawable.ic_baseline_cloud_upload_24)
-            parent?.let {
-                updateCombinedRecyclerVew.update(it)
+            holder.itemView.setOnClickListener {
+                updateCombinedRecyclerVew.update(this.id)
             }
             lastPosition = pos
         }
@@ -52,11 +52,11 @@ class MutableDepartmentAdapter(var mutableDepartments: List<Department>) :
     }
 
     override fun onBindViewHolder(holder: DepartmentViewHolder, position: Int) {
-        mutableDepartments[position].run {
-            holder.departmentName.text = this.description
+        mutableDepartments[holder.absoluteAdapterPosition].run {
+            holder.departmentName.text = this.name
             holder.departmentImage.setImageResource(R.drawable.ic_baseline_cloud_upload_24)
         }
-        lastPosition = position
+        lastPosition = holder.absoluteAdapterPosition
     }
 
     override fun post() {

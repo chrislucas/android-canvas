@@ -19,6 +19,7 @@
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/labanimation/src/main/res/layout/activity_fling_animation.xml" value="0.3125" />
         <entry key="androidcanvas/src/main/res/layout/activity_glrenderer.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_board_to_draw_vertices.xml" value="0.146875" />
+        <entry key="app/src/main/res/layout/fragment_combine_multiple_recycler_views.xml" value="0.32518115942028986" />
         <entry key="app/src/main/res/layout/fragment_combine_typefaces.xml" value="0.2598958333333333" />
         <entry key="app/src/main/res/layout/fragment_composite_departments.xml" value="0.37083333333333335" />
         <entry key="app/src/main/res/layout/fragment_create_typeface.xml" value="0.27395833333333336" />
@@ -30,12 +31,15 @@
         <entry key="app/src/main/res/layout/fragment_sample_bottom_sheet_dialog.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_show_circle_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_solving_keyboard_overlapping_bottom_sheet.xml" value="0.3848958333333333" />
-        <entry key="app/src/main/res/layout/layout_bottom_sheet_dialog_departments.xml" value="0.3848958333333333" />
+        <entry key="app/src/main/res/layout/layout_bottom_sheet_dialog_departments.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_bottom_sheet_dialog_list_option_sample_1.xml" value="0.18718338399189463" />
         <entry key="app/src/main/res/layout/layout_bottom_sheet_fragment_dialog_sample_1.xml" value="0.21331521739130435" />
         <entry key="app/src/main/res/layout/layout_bottom_sheet_fragment_solving_problem_jeyboard_overlapping.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/layout_item_departments.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.18718338399189463" />
+        <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_dialog_fragment_1.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_list_behavior.xml" value="0.1983695652173913" />
+        <entry key="app/src/main/res/layout/layout_standard_bottom_sheet_dialog_fragment_1.xml" value="0.1983695652173913" />
       </map>
     </option>
   </component>
