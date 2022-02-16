@@ -72,10 +72,10 @@ fun providerDepartments() = listOf(
     Department(
         7, null, 1, "department 7",
         listOf(
-            Department(1, 7, 1, "sub-department 7:1"),
-            Department(1, 7, 1, "sub-department 7:2"),
-            Department(1, 7, 1, "sub-department 7:3"),
-            Department(1, 7, 1, "sub-department 7:4")
+            Department(36, 7, 1, "sub-department 7:1"),
+            Department(37, 7, 1, "sub-department 7:2"),
+            Department(38, 7, 1, "sub-department 7:3"),
+            Department(39, 7, 1, "sub-department 7:4")
         )
     ),
 
@@ -83,13 +83,85 @@ fun providerDepartments() = listOf(
     Department(
         8, null, 1, "department 8",
         listOf(
-            Department(1, 8, 1, "sub-department 8:1"),
-            Department(1, 8, 1, "sub-department 8:2"),
-            Department(1, 8, 1, "sub-department 8:3"),
-            Department(1, 8, 1, "sub-department 8:4")
+            Department(40, 8, 1, "sub-department 8:1"),
+            Department(41, 8, 1, "sub-department 8:2"),
+            Department(42, 8, 1, "sub-department 8:3"),
+            Department(
+                43, 8, 1, "sub-department 8:4"
+            )
         )
     )
 )
 
 
-fun providerComplexityStructureDepartment() = listOf<Department>()
+fun providerComplexityStructureDepartment() = listOf<Department>(
+    Department(
+        1, null, 1, "department 1",
+        listOf(
+            Department(6, 1, 1, "sub-department 1:1"),
+            Department(7, 1, 1, "sub-department 1:2"),
+            Department(
+                8,
+                1,
+                1,
+                "sub-department 1:3",
+                listOf(
+                    Department(9, 8, 1, "sub-department 4:1"),
+                    Department(10, 8, 1, "sub-department 4:2"),
+                    Department(11, 8, 1, "sub-department 4:3"),
+                )
+            ),
+            Department(
+                5, 1, 1, "sub-department 1:4",
+                listOf(
+                    Department(6, 5, 1, "sub-department 5:1"),
+                    Department(7, 5, 1, "sub-department 5:2"),
+                    Department(8, 5, 1, "sub-department 5:3"),
+                    Department(9, 5, 1, "sub-department 5:4"),
+                )
+            )
+        )
+    ),
+
+    Department(
+        2, null, 1, "department 2",
+        listOf(
+            Department(6, 1, 1, "sub-department 1:1", listOf()),
+            Department(7, 1, 1, "sub-department 1:2", listOf()),
+        )
+    ),
+
+    Department(
+        3, null, 1, "department 2",
+        listOf(
+            Department(8, 1, 1, "sub-department 1:1", listOf()),
+            Department(9, 1, 1, "sub-department 1:2", listOf()),
+            Department(9, 1, 1, "sub-department 1:2", listOf()),
+        )
+    ),
+
+
+    Department(
+        4, null, 1, "department 2",
+        listOf(
+            Department(10, 1, 1, "sub-department 1:1", listOf())
+        )
+    ),
+
+    Department(
+        5, null, 1, "department 2",
+        listOf(
+            Department(10,
+                1,
+                1,
+                "sub-department 1:1",
+                listOf()
+            ),
+            Department(10,
+                1,
+                1,
+                "sub-department 1:1",
+                listOf())
+        )
+    )
+)

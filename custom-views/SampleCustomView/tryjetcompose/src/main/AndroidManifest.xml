@@ -2,4 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.br.tryjetcompose">
 
+    <application>
+        <activity
+            android:name=".codelabs.feature.navigation.NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.SampleCustomView.NoActionBar" />
+    </application>
+
 </manifest>

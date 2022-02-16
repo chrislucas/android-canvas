@@ -16,7 +16,6 @@
 
 
     <style name="Theme.App" parent="Theme.MaterialComponents">
-        ...
         <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
     </style>
 

@@ -1,18 +1,17 @@
 package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.fragments
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.providerDepartments
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
-class CombineTwoListDepartmentsFragment() :
-    BaseBehaviorFragment, Fragment() {
+class TwoListDepartmentBottomSheetDialogFragment : Fragment(), BaseBehaviorFragment {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,23 +19,23 @@ class CombineTwoListDepartmentsFragment() :
     ): View? {
         // Inflate the layout for this fragment
 
-        val departments = providerDepartments()
-            //fromJson<List<Department>>("src/main/res/raw/departments.json")
-        activity?.supportFragmentManager?.let { fm ->
-            val dialog = DepartmentsBottomSheetDialog.newInstance(departments)
+        activity?.supportFragmentManager?.let {
+            fm ->
+            val dialog = DepartmentsBottomSheetDialog.newInstance(providerDepartments())
             dialog.show(fm, DepartmentsBottomSheetDialog.TAG)
         }
 
-
-        return inflater.inflate(R.layout.fragment_composite_departments, container, false)
+        return inflater.inflate(
+            R.layout.fragment_two_list_department_bottom_sheet_dialog,
+            container,
+            false
+        )
     }
 
     companion object {
         @JvmStatic
-        fun newInstance() =
-            CombineTwoListDepartmentsFragment()
+        fun newInstance() = TwoListDepartmentBottomSheetDialogFragment()
     }
-
 
     override fun getMyOwnTag(): String = this.javaClass.ownTag
 

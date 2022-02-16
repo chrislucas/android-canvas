@@ -7,16 +7,16 @@ def versions = [:]
 versions.ktx = '1.3.2'
 versions.androidxJunit = '1.1.2'
 versions.junit = '4.13.2'
-versions.kotlin = '1.5.30'
+versions.kotlin = '1.6.10'
 versions.kotlinPlugin = '1.6.10'
 versions.ktlint = '0.41.0'
 
 versions.robolectric = '4.5.1'
 versions.mockk = '1.10.0'
-versions.jetpackCompose = '1.0.0-beta08'
-versions.runtimeLiveDataCompose = '1.0.0-beta08'
-versions.runtimeRxJava2Compose = '1.0.0-beta08'
-versions.junit4Compose = '1.0.0-beta08'
+versions.jetpackCompose = '1.2.0-alpha03'
+versions.runtimeLiveDataCompose = '1.2.0-alpha03'
+versions.runtimeRxJava2Compose = '1.2.0-alpha03'
+versions.junit4Compose = 'runtimeLiveDataCompose'
 versions.activityCompose = "1.3.0-beta01"
 versions.viewModelCompose = "1.0.0-alpha06"
 versions.coroutines_android_version = '1.5.2'
@@ -61,7 +61,6 @@ def kotlin = [
     "org.jetbrains.kotlin:kotlin-reflect:${versions.kotlin}",
     "org.jetbrains.kotlin:kotlin-test:${versions.kotlin}",
     "org.jetbrains.kotlin:kotlin-test-junit:${versions.kotlin}",
-    "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
 ]
 
 def coroutines_tests = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.1.0"

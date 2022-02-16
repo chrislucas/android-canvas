@@ -52,5 +52,7 @@
     <string name="label_hint_form_overlapping_problem">100</string>
     <string name="label_bt_open_bottom_sheet_dialog_form_keyboard_overlapping">Abrir Formulário - Keyboard Overlapping BottomSheet</string>
     <string name="txt_title_fragment_solving_keyboard_overlapping_bsheet">Explorando problema com Keyboard que se sobrepõe ao layout</string>
-    <string name="txt_title_fragment_composite_list_of_data">RecyclerViews Combinados</string>
+    <string name="txt_title_fragment_two_list_department_persistent_bottom_sheet">PersistentBottomSheet - Combinando 2 listas de departamentos</string>
+    <string name="txt_title_fragment_tree_structure_departments_bottom_sheet_dialog">BottomSheetDialog - Departamento numa estrutura em árvore</string>
+    <string name="txt_title_fragment_two_list_department_bottom_sheet_dialog">BottomSheetDialog - Combinando 2 listas de departamentos</string>
 </resources>

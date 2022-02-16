@@ -165,10 +165,28 @@ fun provideFeatures(
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureDefault(
-                activity.getString(R.string.txt_title_fragment_composite_list_of_data)
+                activity.getString(R.string.txt_title_fragment_two_list_department_persistent_bottom_sheet)
             ),
-            BindItemCompositeCombineTwoRecyclerViews(communicationWithViewHolder)
+            BindItemTwoListDepartmentsPersistentBottomSheet(communicationWithViewHolder)
         ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_two_list_department_bottom_sheet_dialog)
+            ),
+            BindItemTwoListDepartmentBottomSheetDialog(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_tree_structure_departments_bottom_sheet_dialog)
+            ),
+            BindItemTreeStructureDepartmentRecyclerView(communicationWithViewHolder)
+        )
+
+
     ) as List<CompositeRecyclerViewItem<Any>>
 
 

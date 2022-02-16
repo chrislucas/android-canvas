@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    https://www.section.io/engineering-education/bottom-sheet-dialogs-using-android-studio/
+    Modal Bottom Sheet e Persistent Bottom Sheet
+
+    Persistent Bottom Sheet permite prover uma forma de exibir um conteudo suplementar
+    na tela. Essa bottom Sheet precisa ser um nó filho de CoordinatorLayout
+
+
+    Bottom Sheet Behavioral Flags
+    https://www.section.io/engineering-education/bottom-sheet-dialogs-using-android-studio/
+    app:layout_behavior -
+    Define um determinado layout como um Bottom Sheet Dialog
+
+    app:behavior_hideable -
+    Recebe um argumento boolean. se true o usuario pode fazer aparecer
+    ou esconder com o movimento de drag n drop
+
+    app:behavior_peekHeight - Define a altura que pode estar visivel
+    para o usuário quando o componente estiver "em repouso"
+
+
+    https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetBehavior#setFitToContents(boolean)
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_root_bottom_sheet"
+    style="@style/ModalBottomSheetDialogCompositeRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="70sp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_departments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="5sp"
+        android:paddingTop="5sp"
+        android:paddingEnd="5sp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@layout/layout_item_departments" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_sub_departments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="5sp"
+        android:paddingTop="5sp"
+        android:paddingEnd="5sp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@layout/layout_item_departments" />
+</LinearLayout>

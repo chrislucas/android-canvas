@@ -7,11 +7,8 @@ import com.xp.samplecustomview.R
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.holder.DepartmentViewHolder
 
-open class DepartmentAdapter(
-    private val departments: List<Department>,
-    private val updateCombinedRecyclerVew: UpdateCombinedRecyclerVew
-) :
-    RecyclerView.Adapter<DepartmentViewHolder>() {
+class MutableDepartmentAdapter(var mutableDepartments: List<Department>) :
+    RecyclerView.Adapter<DepartmentViewHolder>(), PostUpdateCombinedRecyclerView {
 
     private var lastPosition = -1
 
@@ -24,17 +21,16 @@ open class DepartmentAdapter(
     }
 
     override fun onBindViewHolder(holder: DepartmentViewHolder, position: Int) {
-        val pos = holder.bindingAdapterPosition
-        departments[pos].run {
+        mutableDepartments[holder.absoluteAdapterPosition].run {
             holder.departmentName.text = this.name
             holder.departmentImage.setImageResource(R.drawable.ic_baseline_cloud_upload_24)
-            holder.itemView.setOnClickListener {
-                updateCombinedRecyclerVew.update(this.id)
-            }
-            lastPosition = pos
         }
+        lastPosition = holder.absoluteAdapterPosition
     }
 
-    override fun getItemCount(): Int = departments.size
-}
+    override fun post() {
+        lastPosition = -1
+    }
 
+    override fun getItemCount(): Int = mutableDepartments.size
+}

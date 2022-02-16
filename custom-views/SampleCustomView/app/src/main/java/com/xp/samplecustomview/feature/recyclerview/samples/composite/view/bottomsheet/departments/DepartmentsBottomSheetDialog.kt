@@ -11,6 +11,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.LayoutBottomSheetDialogDepartmentsBinding
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
+import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.toTreeStructure
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.DepartmentAdapter
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.MutableDepartmentAdapter
 import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.PostUpdateCombinedRecyclerView
@@ -21,27 +22,7 @@ class DepartmentsBottomSheetDialog private constructor(private val departments: 
 
     private lateinit var bindView: LayoutBottomSheetDialogDepartmentsBinding
 
-    private val mapDepartment: Map<Int, List<Department>> = mappingDepartment()
-
-    private fun mappingDepartment(): Map<Int, List<Department>> {
-
-        val tree = linkedMapOf<Int, List<Department>>()
-
-        fun builder(department: Department?, map: LinkedHashMap<Int, List<Department>>) {
-            if (department == null) {
-                return
-            } else {
-                if (department.subDepartments.isNotEmpty()) {
-                    map[department.id] = department.subDepartments
-                    for (subDepartment in department.subDepartments) {
-                        builder(subDepartment, map)
-                    }
-                }
-            }
-        }
-        departments.forEach { builder(it, tree) }
-        return tree
-    }
+    private val mapDepartment: Map<Int, List<Department>> = toTreeStructure(departments)
 
     private val mutableDepartmentAdapter = MutableDepartmentAdapter(departments[0].subDepartments)
 
@@ -58,36 +39,53 @@ class DepartmentsBottomSheetDialog private constructor(private val departments: 
         savedInstanceState: Bundle?
     ): View {
 
-        val bottomSheetBehavior = BottomSheetBehavior.from(bindView.flRootBottomSheet)
+        val bottomSheetBehavior =
+            BottomSheetBehavior.from(bindView.bottomSheetDepartment.flRootBottomSheet)
         val bottomSheetDialog = dialog as BottomSheetDialog
 
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+        //bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+
         bottomSheetDialog.setOnShowListener {
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+            if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+            }
         }
         bottomSheetDialog.setOnDismissListener {
-            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            }
+            // bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
         }
 
-        bindView.rcDepartments.adapter = DepartmentAdapter(departments, this)
-        bindView.rcSubDepartments.adapter = mutableDepartmentAdapter
+        bindView.bottomSheetDepartment.rcDepartments.adapter = DepartmentAdapter(departments, this)
+        bindView.bottomSheetDepartment.rcSubDepartments.adapter = mutableDepartmentAdapter
         return bindView.root
     }
-
-
-    private fun max(p: Int, q: Int) = if (p > q) p else q
 
     override fun update(id: Int) {
         mapDepartment[id]?.let { subDepartments ->
 
+            val oldSize = mutableDepartmentAdapter.mutableDepartments.size
+            val newSize = subDepartments.size
             mutableDepartmentAdapter.mutableDepartments = subDepartments
-            bindView.rcSubDepartments.recycledViewPool.clear()
             /*
-            mutableDepartmentAdapter.notifyItemRangeChanged(0
-                , subDepartments.size -1)
+                https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.RecycledViewPool
 
              */
-            mutableDepartmentAdapter.notifyDataSetChanged()
+            //bindView.rcSubDepartments.recycledViewPool.clear()
+            /*
+                https://stackoverflow.com/questions/31759171/
+                recyclerview-and-java-lang-indexoutofboundsexception-inconsistency-detected-in
+             */
+
+            mutableDepartmentAdapter.notifyItemRangeRemoved(
+                0, oldSize
+            )
+
+            mutableDepartmentAdapter.notifyItemRangeInserted(
+                0, newSize
+            )
+
             postUpdate.post()
         }
     }
