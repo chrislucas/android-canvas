@@ -1,36 +1,9 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.multilevel.generics.view
 
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.view.recyclerview.action.ProviderViewTypeForViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.model.ViewType
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.holder.HorizontalRecyclerViewViewHolder
-
-class TreeStructureAdapter(private val data: List<RecyclerView>) :
-    RecyclerView.Adapter<HorizontalRecyclerViewViewHolder>() {
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
-            HorizontalRecyclerViewViewHolder {
-        return LayoutInflater.from(parent.context)
-            .inflate(
-                R.layout.layout_item_feature_horizontal_recycler_view,
-                parent, false
-            ).run {
-                HorizontalRecyclerViewViewHolder(this)
-            }
-    }
-
-    override fun onBindViewHolder(
-        holderHorizontal: HorizontalRecyclerViewViewHolder,
-        position: Int
-    ) {
-        // DO NOTHING
-    }
-
-    override fun getItemCount(): Int = data.size
-}
 
 class AdapterForRecyclerViewInTreeStructure<T>(
     private val data: List<Item<T>>,

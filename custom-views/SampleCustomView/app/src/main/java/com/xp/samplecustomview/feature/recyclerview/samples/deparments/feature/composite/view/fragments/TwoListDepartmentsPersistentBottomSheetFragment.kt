@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.fragments
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -9,13 +9,13 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.FragmentCompositeDepartmentsBinding
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.providerDepartments
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.toTreeStructure
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.DepartmentAdapter
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.MutableDepartmentAdapter
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.PostUpdateCombinedRecyclerView
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters.UpdateCombinedRecyclerVew
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.Department
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample.providerDepartments
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample.toTreeStructure
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.adapters.DepartmentAdapter
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.adapters.MutableDepartmentAdapter
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.adapters.PostUpdateCombinedRecyclerView
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.adapters.UpdateCombinedRecyclerVew
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 // PERSISTENT BOTTOM SHEET

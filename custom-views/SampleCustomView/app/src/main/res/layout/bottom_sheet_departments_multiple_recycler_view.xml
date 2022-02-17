@@ -6,8 +6,6 @@
     android:layout_height="wrap_content"
     android:background="@color/black_overlay"
     xmlns:tools="http://schemas.android.com/tools">
-
-
     <LinearLayout
         android:id="@+id/ll_wrapper_recycler_view"
         android:layout_width="match_parent"
@@ -17,17 +15,14 @@
         app:behavior_hideable="true"
         app:behavior_peekHeight="70sp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rc_multilevel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/layout_item_feature_horizontal_recycler_view"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
             tools:itemCount="5"
             />
-
     </LinearLayout>
-
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

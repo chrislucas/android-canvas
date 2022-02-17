@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.fragments
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.providerDepartments
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample.providerDepartments
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 class TwoListDepartmentBottomSheetDialogFragment : Fragment(), BaseBehaviorFragment {

@@ -1,6 +1,6 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample
 
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.Department
 
 internal fun toTreeStructure(departments: List<Department>): Map<Int, List<Department>> {
 

@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.models
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.models
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

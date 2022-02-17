@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.fragments
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.multilevel.view.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.FragmentTreeStructureDepartmentMultipleRecyclerViewsBinding
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample.providerComplexityStructureDepartment
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.bottomsheet.departments.TreeStructureDepartmentsBottomSheetDialog
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample.providerComplexityStructureDepartment
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.multilevel.view.bottomsheet.TreeStructureDepartmentsBottomSheetDialog
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
 

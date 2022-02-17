@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.holder
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.holder
 
 import android.view.View
 import android.widget.ImageView

@@ -1,6 +1,6 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.models.sample
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample
 
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.Department
 
 fun providerDepartments() = listOf(
     Department(
@@ -98,26 +98,22 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         1, null, 1, "department 1",
         listOf(
-            Department(6, 1, 1, "sub-department 1:1"),
-            Department(7, 1, 1, "sub-department 1:2"),
-            Department(
-                8,
-                1,
-                1,
-                "sub-department 1:3",
+            Department(6, 1, 1, "sub-department 1:6"),
+            Department(7, 1, 1, "sub-department 1:7"),
+            Department(8, 1, 1, "sub-department 1:8",
                 listOf(
-                    Department(9, 8, 1, "sub-department 4:1"),
-                    Department(10, 8, 1, "sub-department 4:2"),
-                    Department(11, 8, 1, "sub-department 4:3"),
+                    Department(10, 8, 1, "sub-department 8:10"),
+                    Department(11, 8, 1, "sub-department 8:11"),
+                    Department(12, 8, 1, "sub-department 8:12"),
                 )
             ),
             Department(
-                5, 1, 1, "sub-department 1:4",
+                9, 1, 1, "sub-department 1:9",
                 listOf(
-                    Department(6, 5, 1, "sub-department 5:1"),
-                    Department(7, 5, 1, "sub-department 5:2"),
-                    Department(8, 5, 1, "sub-department 5:3"),
-                    Department(9, 5, 1, "sub-department 5:4"),
+                    Department(13, 9, 1, "sub-department 9:13"),
+                    Department(14, 9, 1, "sub-department 9:14"),
+                    Department(15, 9, 1, "sub-department 9:15"),
+                    Department(16, 9, 1, "sub-department 9:16"),
                 )
             )
         )
@@ -126,41 +122,41 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         2, null, 1, "department 2",
         listOf(
-            Department(6, 1, 1, "sub-department 1:1", listOf()),
-            Department(7, 1, 1, "sub-department 1:2", listOf()),
+            Department(17, 2, 1, "sub-department 2:17", listOf()),
+            Department(18, 2, 1, "sub-department 2:18", listOf()),
         )
     ),
 
     Department(
-        3, null, 1, "department 2",
+        3, null, 1, "department 3",
         listOf(
-            Department(8, 1, 1, "sub-department 1:1", listOf()),
-            Department(9, 1, 1, "sub-department 1:2", listOf()),
-            Department(9, 1, 1, "sub-department 1:2", listOf()),
+            Department(18, 3, 1, "sub-department 3:18", listOf()),
+            Department(19, 3, 1, "sub-department 3:19", listOf()),
+            Department(20, 3, 1, "sub-department 3:20", listOf()),
         )
     ),
 
 
     Department(
-        4, null, 1, "department 2",
+        4, null, 1, "department 4",
         listOf(
-            Department(10, 1, 1, "sub-department 1:1", listOf())
+            Department(10, 4, 1, "sub-department 4:10", listOf())
         )
     ),
 
     Department(
-        5, null, 1, "department 2",
+        5, null, 1, "department 5",
         listOf(
             Department(10,
+                5,
                 1,
-                1,
-                "sub-department 1:1",
+                "sub-department 5:10",
                 listOf()
             ),
-            Department(10,
+            Department(11,
+                5,
                 1,
-                1,
-                "sub-department 1:1",
+                "sub-department 5:11",
                 listOf())
         )
     )

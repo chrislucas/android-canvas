@@ -1,11 +1,11 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view.adapters
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.models.Department
-import com.xp.samplecustomview.feature.recyclerview.samples.composite.view.holder.DepartmentViewHolder
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.Department
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.holder.DepartmentViewHolder
 
 class MutableDepartmentAdapter(var mutableDepartments: List<Department>) :
     RecyclerView.Adapter<DepartmentViewHolder>(), PostUpdateCombinedRecyclerView {

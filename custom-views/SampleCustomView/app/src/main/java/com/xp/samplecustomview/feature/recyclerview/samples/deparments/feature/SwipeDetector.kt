@@ -1,4 +1,4 @@
-package com.xp.samplecustomview.feature.recyclerview.samples.composite.view
+package com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature
 
 import android.view.GestureDetector
 import android.view.MotionEvent
@@ -70,7 +70,7 @@ class SwipeDetector<V : View>(private val bottomSheetBehavior: BottomSheetBehavi
             }
 
             angle < -45 && angle >= -135 -> {
-               Direction. DOWN
+                Direction.DOWN
             }
 
             else -> {
