@@ -14,3 +14,64 @@ https://androidcookbook.com/Recipe.seam;jsessionid=9C2BC1141802BE34C523BDCE42FE7
 https://proandroiddev.com/how-to-animate-on-android-f8d227135613
 
 http://perfectionkills.com/exploring-canvas-drawing-techniques/
+
+
+----------------------------------------------------------------------------------------
+0
+Understanding Bézier Curves
+https://mmrndev.medium.com/understanding-b%C3%A9zier-curves-f6eaa0fa6c7d
+https://proandroiddev.com/drawing-bezier-curve-like-in-google-material-rally-e2b38053038c
+https://buptfarmer.wordpress.com/2016/08/12/bezier-curves-in-android-using-path-cubicto/
+
+
+----------------------------------------------------------------------------------------
+1
+Understanding Bezier Curve In Android and ModdingGraphView library
+https://medium.com/@pranjalg2308/understanding-bezier-curve-in-android-and-moddinggraphview-library-a9b1f0f95cd0
+
+Interpolacao Linear
+https://pt.wikipedia.org/wiki/Interpola%C3%A7%C3%A3o_linear
+
+Dados 2 pontos P(x0, y0) e Q(x1, y1) a interpolante lienar e a linha entre os 2 pontos
+
+Para um valor no intervalor (x0, x1), o valor ya eh a linha entre os pontos. Estabelenceod
+a relacao
+
+
+(ya - y0 / y1 - y0) = (xa - x0 / x1 - x0) ->
+veja uma boa explicacao em https://www.youtube.com/watch?v=_QQU9OIPGYE
+
+
+lerp - Linear Interpolation
+
+----------------------------------------------------------------------------------------
+2
+Bezier Curves in Android using Path.cubicTo()
+https://buptfarmer.wordpress.com/2016/08/12/bezier-curves-in-android-using-path-cubicto/
+
+----------------------------------------------------------------------------------------
+3
+Drawing Bezier Curves like in Google Material Rally
+https://proandroiddev.com/drawing-bezier-curve-like-in-google-material-rally-e2b38053038c
+----------------------------------------------------------------------------------------
+3
+Extraordinary Animations using Trigonometry and Coroutines (Radar Animation)
+https://proandroiddev.com/extraordinary-animations-using-trigonometry-and-coroutines-radar-animation-83c3605ac4d
+
+----------------------------------------------------------------------------------------
+4
+Extraordinary Animations with Paths in android
+https://proandroiddev.com/extraordinary-animations-with-paths-in-android-2bd17c436943
+----------------------------------------------------------------------------------------
+Smoother Signatures
+https://medium.com/square-corner-blog/smoother-signatures-be64515adb33
+
+----------------------------------------------------------------------------------------
+
+
+https://mmrndev.medium.com/understanding-b%C3%A9zier-curves-f6eaa0fa6c7d
+
+https://www.droidcon.com/2022/06/22/creating-a-graph-in-jetpack-compose/
+
+Compose
+https://www.droidcon.com/2022/06/22/creating-a-graph-in-jetpack-compose/

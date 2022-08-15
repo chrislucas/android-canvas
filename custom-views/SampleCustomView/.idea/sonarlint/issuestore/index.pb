@@ -38,8 +38,6 @@ gapp/src/main/java/com/xp/samplecustomview/feature/fullscreen/views/fragment/Ful
 áapp/src/main/java/com/xp/samplecustomview/feature/customviews/sample/dashedprogressbar/view/fragment/CustomDashedProgressBarFragment.kt,c\6\c61866a27fe599f887b0255bad55074707a7b46b
 @
 raw/view_pager_2,2\2\22587f9e2bf0fb32ea7b1e296513bbe626798a0d
-Q
-!tools/dependencies-version.gradle,7\4\74d78ab2588fcb1f3df0207a2628a74e4010a0a5
 F
 raw/coordinator_layout,c\8\c82debe73b579453a6e3042857b6fb7fae1862c8
 ê
@@ -120,8 +118,6 @@ _app/src/main/java/com/xp/samplecustomview/feature/customviews/sample/ListOfFrag
 mapp/src/main/java/com/xp/samplecustomview/feature/bottomsheet/typeofbottomsheet/models/ExpadingBottomSheet.kt,d\2\d2cb24ccd21a191080880a24d0fd514758cd6ddd
 °
 qapp/src/main/java/com/xp/samplecustomview/feature/bottomsheet/typeofbottomsheet/models/ItemStandardBottomSheet.kt,3\7\37df79545c7296bc93c375241116b4a369969bde
-J
-androidcanvas/build.gradle,3\e\3e8687ef9e9a556eddbbfe8fb6015cee0496b1a7
 s
 Candroidcanvas/src/main/java/com/br/androidcanvas/chp1/SimpleView.kt,c\5\c57c18d941c6d85f28daa7adb9af51674d220d9d
 ®
@@ -140,10 +136,6 @@ K
 androidcanvas/raw/tutoriais,8\a\8a4701c143e2b1e4fc0a3ac175e017b03b80f01a
 ã
 [samplecustomviews/src/main/java/com/xp/samplecustomviews/feature/clickable/ClickableView.kt,6\c\6cc18b46d6739e447c9196526373a102265e0bc2
-A
-gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 ∂
 Öapp/src/main/java/com/xp/samplecustomview/feature/customviews/sample/behaviorcustomview/behavior/creator/CreateSimpleClickableView.kt,a\f\af3a3a90740e7f7c5a1bd83d4c7fb63eebffd193
 Å
@@ -157,13 +149,11 @@ N
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-X
-(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 v
 Fapp/src/main/java/com/xp/samplecustomview/MainActivityCommunication.kt,a\9\a9a5c9a5e16664023bb8430d6fe9ce1703083151
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 û
 nlabanimation/src/main/java/com/br/labanimation/springphysics/features/draggingbutton/DraggingButtonActivity.kt,2\0\20deae5a2ef2569ab7dfd5cb8ac50c796bcc2e29
 Z
 *androidcanvas/src/main/AndroidManifest.xml,c\7\c74ae62a1012915599ff37f3ddd0214697a872d9
+F
+androidcanvas/raw/geom,f\7\f78d4f9aea748b51a5911bea29718b564f107ecc
