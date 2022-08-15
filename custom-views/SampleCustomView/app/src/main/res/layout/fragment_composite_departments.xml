@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.recyclerview.samples.deparments.feature.composite.view.fragments.TwoListDepartmentsPersistentBottomSheetFragment">
+
+    <include
+        android:id="@+id/include_bs_department_1"
+        layout="@layout/bottom_sheet_departments_two_recycler_view"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

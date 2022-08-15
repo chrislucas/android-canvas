@@ -1,0 +1,6 @@
+https://source.android.com/devices/tech/debug/understanding-logging
+https://developer.android.com/reference/android/util/Log#isLoggable(java.lang.String,%20int)
+https://developer.android.com/studio/debug/am-logcat
+
+https://stackoverflow.com/questions/2018263/how-do-i-enable-disable-log-levels-in-android
+https://stackoverflow.com/questions/9468444/bug-or-feature-in-android-util-log-log-isloggabledebug-false-but-log-d

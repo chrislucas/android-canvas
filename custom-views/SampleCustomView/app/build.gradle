@@ -8,12 +8,12 @@ apply from: "$rootDir/tools/dependencies-version.gradle"
 apply from: "$rootDir/tools/codestyle/ktlint.gradle"
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 32
     buildToolsVersion '30.0.3'
     defaultConfig {
         applicationId "com.xp.samplecustomview"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -59,8 +59,8 @@ dependencies {
 
     // dependencias de kotlin
     implementation deps.kotlin
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.1'
     implementation project(path: ':reflabs')
 
     // dependencia coroutines tests
@@ -68,12 +68,14 @@ dependencies {
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.android.material:material:1.6.1'
 
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    implementation deps.gson
 
     implementation deps.coordinatorLayout
 

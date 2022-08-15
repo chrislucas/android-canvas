@@ -86,6 +86,14 @@ fun provideFeatures(
 
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_solving_keyboard_overlapping_bsheet)
+            ),
+            BindItemFeatureSolvingKeyboardOverlappingBottomSheetFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureResolverDeeplink(
                 activity.getString(R.string.txt_title_activity_first_sample_gl_renderer),
                 "deeplink://main_activity_first_sample_opengl_renderer",
@@ -104,7 +112,6 @@ fun provideFeatures(
             BindItemFeatureResolverDeeplinkDefault()
         ),
 
-
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
             ItemFeatureResolverDeeplink(
@@ -115,7 +122,72 @@ fun provideFeatures(
             BindItemFeatureResolverDeeplinkDefault()
         ),
 
-        ) as List<CompositeRecyclerViewItem<Any>>
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_moving_in_circle_custom_view)
+            ),
+            BindItemFeatureMovingInCircleCustomViewFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_create_typeface_canvas_draw_text)
+            ),
+            BindItemFeatureCreateTypefaceFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_combine_typefaces_canvas_draw_text)
+            ),
+            BindItemFeatureCombineTypefacesFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_drawing_grid_of_circle)
+            ),
+            BindItemDrawingGridOfCirclesFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_drawing_circle_using_path)
+            ),
+            BindItemDrawingCircleUinsgPathFragment(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_two_list_department_persistent_bottom_sheet)
+            ),
+            BindItemTwoListDepartmentsPersistentBottomSheet(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_two_list_department_bottom_sheet_dialog)
+            ),
+            BindItemTwoListDepartmentBottomSheetDialog(communicationWithViewHolder)
+        ),
+
+        CompositeRecyclerViewItem(
+            VIEW_HOLDER_FEATURE_LIST_DEFAULT,
+            ItemFeatureDefault(
+                activity.getString(R.string.txt_title_fragment_tree_structure_departments_bottom_sheet_dialog)
+            ),
+            BindItemTreeStructureDepartmentRecyclerView(communicationWithViewHolder)
+        )
+
+
+    ) as List<CompositeRecyclerViewItem<Any>>
 
 
 fun provideEmptyStateList() = listOf(
