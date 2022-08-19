@@ -33,7 +33,7 @@ class BindItemFeatureRecyclerViewListAdapter(private val channel: ChannelCommuni
         mView.viewIcon.setImageDrawable(
             AppCompatResources.getDrawable(
                 viewHolder.itemView.context,
-                R.mipmap.ic_custom_view_round
+                R.mipmap.ic_launcher_round
             )
         )
     }

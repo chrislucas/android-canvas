@@ -1,0 +1,17 @@
+App Manifest Overview
+https://developer.android.com/guide/topics/manifest/manifest-intro
+
+
+PackageManager
+How to get a list of installed android applications and pick one to run
+https://stackoverflow.com/questions/2695746/how-to-get-a-list-of-installed-android-applications-and-pick-one-to-run
+
+List intent filters for installed packages
+https://stackoverflow.com/questions/4619479/list-intent-filters-for-installed-packages
+
+How to get a list of installed android applications and pick one to run
+
+https://stackoverflow.com/questions/2695746/how-to-get-a-list-of-installed-android-applications-and-pick-one-to-run
+
+App security best practices
+https://developer.android.com/topic/security/best-practices

@@ -2,17 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="SampleCustomView.andcodelabs" target="1.8" />
-      <module name="SampleCustomView.androidcanvas" target="1.8" />
-      <module name="SampleCustomView.app" target="1.8" />
-      <module name="SampleCustomView.bookcustomview" target="1.8" />
-      <module name="SampleCustomView.intentnavigation" target="1.8" />
-      <module name="SampleCustomView.labanimation" target="1.8" />
-      <module name="SampleCustomView.reflabs" target="1.8" />
-      <module name="SampleCustomView.RegexDebugger" target="1.8" />
-      <module name="SampleCustomView.samplecustomviews" target="1.8" />
-      <module name="SampleCustomView.sampleeyetracking" target="1.8" />
-      <module name="SampleCustomView.tryjetcompose" target="1.8" />
+      <module name="custom-views.SampleCustomView.bookcustomview.main" target="11" />
+      <module name="SampleCustomView.andcodelabs" target="11" />
+      <module name="SampleCustomView.androidcanvas" target="11" />
+      <module name="SampleCustomView.app" target="11" />
+      <module name="SampleCustomView.bookcustomview" target="11" />
+      <module name="SampleCustomView.bookcustomview.main" target="11" />
+      <module name="SampleCustomView.intentnavigation" target="11" />
+      <module name="SampleCustomView.labanimation" target="11" />
+      <module name="SampleCustomView.reflabs" target="11" />
+      <module name="SampleCustomView.RegexDebugger" target="11" />
+      <module name="SampleCustomView.samplecustomviews" target="11" />
+      <module name="SampleCustomView.sampleeyetracking" target="11" />
+      <module name="SampleCustomView.tryjetcompose" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

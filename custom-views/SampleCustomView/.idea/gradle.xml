@@ -25,7 +25,6 @@
             <option value="$PROJECT_DIR$/tryjetcompose" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

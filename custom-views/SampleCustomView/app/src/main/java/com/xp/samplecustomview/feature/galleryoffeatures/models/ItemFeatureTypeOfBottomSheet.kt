@@ -27,7 +27,7 @@ class BindItemFeatureTypeOfBottomSheet(private val channel: ListenerListFragment
         mView.viewIcon.setImageDrawable(
             AppCompatResources.getDrawable(
                 viewHolder.itemView.context,
-                R.mipmap.ic_custom_view_round
+                R.mipmap.ic_launcher_round
             )
         )
     }

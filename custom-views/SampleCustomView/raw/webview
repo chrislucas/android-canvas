@@ -1,8 +1,52 @@
 https://developer.android.com/guide/webapps/webview
 https://developer.android.com/guide/webapps/managing-webview
 https://developer.android.com/guide/webapps/webview
+https://developer.android.com/reference/android/webkit/WebChromeClient
+https://developer.android.com/guide/webapps/webview
+
+Java Examples for android.webkit.WebChromeClient
+https://www.javatips.net/api/android.webkit.webchromeclient
+
+SslErrorHandler
+https://developer.android.com/reference/android/webkit/SslErrorHandler
+
+
+WebStorage
+https://developer.android.com/reference/android/webkit/WebStorage
+
+
+Pesquisar por
+addjavascriptinterface exploit
+https://www.infosecmatter.com/metasploit-module-library/?mm=exploit/android/browser/webview_addjavascriptinterface
+https://stackoverflow.com/questions/4325639/android-calling-javascript-functions-in-webview
+
+Managing WebView objects
+https://developer.android.com/guide/webapps/managing-webview
 
 @JavascriptInterface
 https://developer.android.com/reference/android/webkit/JavascriptInterface
 https://developer.android.com/guide/webapps/webview#BindingJavaScript
 https://www.codexpedia.com/android/javascript-interface-for-android-and-javascript-communication/
+
+Estudos sobre vulnerabilidade
+https://www.hackingarticles.in/android-penetration-testing-webview-attacks/
+https://pentestlab.blog/2017/02/12/android-webview-vulnerabilities/
+
+
+https://www.usenix.org/system/files/conference/leet13/leet13-paper_neugschwandtner.pdf
+
+exploit access data from android webview
+https://medium.com/mobis3c/exploiting-android-webview-vulnerabilities-e2bcff780892
+https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting/webview-attacks
+https://www.avg.com/en/signal/analyzing-an-android-webview-exploit
+https://www.varutra.com/all-you-need-to-know-about-android-webview-vulnerabilities/
+
+webchromeclient android
+http://android-doc.github.io/reference/android/webkit/WebChromeClient.html
+https://developer.android.com/reference/android/webkit/WebChromeClient
+
+
+allow File Access webview
+https://developer.android.com/reference/android/webkit/WebSettings
+https://stackoverflow.com/questions/10620417/access-local-file-in-a-webview
+https://rules.sonarsource.com/kotlin/RSPEC-6363

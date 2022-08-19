@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -17,12 +16,13 @@ import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.m
 import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.multilevel.view.adapters.LevelData
 import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.multilevel.view.adapters.MultiLevelRecyclerViewAdapter
 import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.Department
-import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample.toTreeStructure
+import com.xp.samplecustomview.feature.recyclerview.samples.deparments.models.sample.createTreeDepartmentStruct
 
 class TreeStructureDepartmentsBottomSheetDialog private constructor(private val departments: List<Department>) :
     BottomSheetDialogFragment() {
 
-    private val mapDepartment: Map<Int, List<Department>> = toTreeStructure(departments)
+    private val mapDepartment: Map<Department, List<Department>> =
+        createTreeDepartmentStruct(departments)
 
     private lateinit var bindView: BottomSheetDepartmentsMultipleRecyclerViewBinding
 

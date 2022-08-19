@@ -49,7 +49,7 @@ class GalleryOfFeatures : Fragment(), BaseBehaviorFragment,
     ): View? {
         val view = inflater.inflate(R.layout.fragment_layout_list_of_features, container, false)
 
-        this.activity?.application
+        //this.activity?.application
         // Set the adapter
         if (view is RecyclerView) {
             with(view) {
