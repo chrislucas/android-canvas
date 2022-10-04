@@ -16,10 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.MaterialComponent.Light.NoActionBar">
         <activity
-            android:name=".SampleEncryptedSharedPrerenceActivity"
+            android:name=".feature.security.features.sharedpreference.view.SampleEncryptedSharedPrerenceActivity"
             android:exported="false" />
         <activity
-            android:name=".CodelabsSharedPreferenceActivity"
+            android:name=".feature.security.features.sharedpreference.view.CodelabsSharedPreferenceActivity"
             android:exported="false" />
         <activity
             android:name=".feature.security.features.tips.view.BestPracticesActivity"

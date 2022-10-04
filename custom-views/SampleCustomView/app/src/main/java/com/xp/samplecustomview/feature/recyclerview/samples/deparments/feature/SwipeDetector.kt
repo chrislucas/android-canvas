@@ -20,40 +20,37 @@ class SwipeDetector<V : View>(private val bottomSheetBehavior: BottomSheetBehavi
         DOWN, TOP, LEFT, RIGHT
     }
 
+
+
     override fun onFling(
-        e1: MotionEvent?,
-        e2: MotionEvent?,
+        e1: MotionEvent,
+        e2: MotionEvent,
         velocityX: Float,
         velocityY: Float
     ): Boolean {
 
-        if (e1 != null && e2 != null) {
-            val p = Point2f(e1.x * 1.0, e1.y * 1.0)
-            val q = Point2f(e2.x * 1.0, e2.y * 1.0)
+        val p = Point2f(e1.x * 1.0, e1.y * 1.0)
+        val q = Point2f(e2.x * 1.0, e2.y * 1.0)
 
-           return when (direction(p, q)) {
-                Direction.TOP -> {
-                    bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-                    true
-                }
-                Direction.DOWN -> {
-                    if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
-                        bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
-                    }
-                    true
-                }
-                Direction.LEFT, Direction.RIGHT -> {
-                    true
-                }
-                else -> {
-                    false
-                }
-            }
-        }
-
-        return super.onFling(e1, e2, velocityX, velocityY)
+        return when (direction(p, q)) {
+             Direction.TOP -> {
+                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+                 true
+             }
+             Direction.DOWN -> {
+                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
+                     bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+                 }
+                 true
+             }
+             Direction.LEFT, Direction.RIGHT -> {
+                 true
+             }
+             else -> {
+                 false
+             }
+         }
     }
-
 
     private fun direction(p: Point2f, q: Point2f): Direction {
         val (x1, y1) = p

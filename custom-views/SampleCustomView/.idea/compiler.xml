@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="custom-views.SampleCustomView.bookcustomview.main" target="11" />
       <module name="SampleCustomView.andcodelabs" target="11" />
       <module name="SampleCustomView.androidcanvas" target="11" />
       <module name="SampleCustomView.app" target="11" />

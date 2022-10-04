@@ -2,6 +2,7 @@ package com.xp.samplecustomview.feature.security.features.sharedpreference.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.xp.samplecustomview.R
 
 /**
  * https://developer.android.com/reference/androidx/security/crypto/EncryptedSharedPreferences

@@ -123,6 +123,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/androidcanvas/raw/geom">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/androidcanvas/raw/refs">
           <value>
             <set />
@@ -1204,6 +1209,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../android-modular-puzzles/android-puzzle-2048/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../repo-android-2/jetpack/compose/TutorialEarthQuakeEffect/raw/refs">
           <value>
             <set />
           </value>
