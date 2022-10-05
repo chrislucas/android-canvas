@@ -8,7 +8,7 @@ import com.xp.samplecustomview.commons.view.recyclerview.model.ViewType
 
 
 @Deprecated("Nao utilizar")
-class AdapterForRecyclerViewInTreeStructure<T>(
+class AdapterMultiLevelReyclerView<T>(
     private val data: List<Item<T>>,
     private val bindViewHolder: BindViewHolder
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

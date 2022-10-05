@@ -26,7 +26,7 @@ open class DepartmentAdapter(
     override fun onBindViewHolder(holder: DepartmentViewHolder, position: Int) {
         val pos = holder.bindingAdapterPosition
         departments[pos].run {
-            holder.departmentName.text = this.name
+            holder.departmentName.text = this.description
             holder.departmentImage.setImageResource(R.drawable.ic_baseline_cloud_upload_24)
             holder.itemView.setOnClickListener {
                 updateCombinedRecyclerVew.update(this.id)

@@ -14,10 +14,9 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.BuildConfig
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.BottomSheetDepartmentsMultipleRecyclerViewBinding
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.LevelData
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.AdapterData
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.*
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.createDepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.iterativeCreateTreeDepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.adapters.HorizontalDepartmentAdapter
@@ -37,7 +36,6 @@ private constructor(private val departments: List<Department>) :
         }
     }
 
-
     private val departmentStruct: DepartmentStruct =
         createDepartmentStruct(departments)
 
@@ -48,7 +46,7 @@ private constructor(private val departments: List<Department>) :
 
     private val adapter: MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
         MultiLevelRecyclerViewAdapter(
-            mutableMapOf(0 to mutableListOf(createLevelData(departments)))
+            mutableMapOf(0 to createLevelData(departments))
         )
 
     override fun onAttach(context: Context) {
@@ -88,7 +86,7 @@ private constructor(private val departments: List<Department>) :
     }
 
     private fun createLevelData(departments: List<Department>) =
-        LevelData(
+        AdapterData(
             HorizontalDepartmentAdapter(departments, this),
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         )
@@ -96,12 +94,12 @@ private constructor(private val departments: List<Department>) :
 
     private fun chooseDepartment(department: Department) {
         mapDepartment[department]?.let { subDepartments ->
-            departmentStruct.level[department]?.let { level ->
+            departmentStruct.level[department]?.let { parentLevel ->
+                val childLevel = parentLevel + 1
                 if (BuildConfig.DEBUG) {
-                    Log.i(TAG, "$level, $subDepartments")
+                    Log.i(TAG, "$childLevel, $subDepartments")
                 }
-                val levelSubDepartment = createLevelData(subDepartments)
-                adapter.updateLevel(level, listOf(levelSubDepartment))
+                adapter.updateLevel(childLevel, createLevelData(subDepartments))
             }
         }
     }

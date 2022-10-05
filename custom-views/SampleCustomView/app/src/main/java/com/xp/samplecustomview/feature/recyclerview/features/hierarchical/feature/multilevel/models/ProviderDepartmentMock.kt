@@ -99,7 +99,16 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
             Department(7, 1, 1, "sub-department 1:7"),
             Department(8, 1, 1, "sub-department 1:8",
                 listOf(
-                    Department(10, 8, 1, "sub-department 8:10"),
+                    Department(10, 8, 1, "sub-department 8:10",
+                        listOf(
+                            Department(
+                                21,
+                                10,
+                                1,
+                                "sub-department 21:10"
+                            )
+                        )
+                    ),
                     Department(11, 8, 1, "sub-department 8:11"),
                     Department(12, 8, 1, "sub-department 8:12"),
                 )
@@ -119,17 +128,63 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         2, null, 1, "department 2",
         listOf(
-            Department(17, 2, 1, "sub-department 2:17", listOf()),
-            Department(18, 2, 1, "sub-department 2:18", listOf()),
+            Department(17, 2, 1, "sub-department 2:17",
+                listOf(
+                    Department(
+                        22,
+                        17,
+                        1,
+                        "sub-department 17:22",
+                    ),
+
+                    Department(
+                        23,
+                        17,
+                        1,
+                        "sub-department 17:23",
+                    )
+                )
+            ),
+            Department(18, 2, 1, "sub-department 2:18",
+                listOf(
+                    Department(
+                        24,
+                        18,
+                        1,
+                        "sub-department 18:24",
+                        listOf(
+                            Department(
+                                26,
+                                24,
+                                1,
+                                "sub-department 24:26",
+                            )
+                        )
+                    ),
+
+                    Department(
+                        25,
+                        18,
+                        1,
+                        "sub-department 18:25",
+                    )
+                )
+            ),
         )
     ),
 
     Department(
         3, null, 1, "department 3",
         listOf(
-            Department(18, 3, 1, "sub-department 3:18", listOf()),
-            Department(19, 3, 1, "sub-department 3:19", listOf()),
-            Department(20, 3, 1, "sub-department 3:20", listOf()),
+            Department(18, 3, 1, "sub-department 3:18",
+                listOf()
+            ),
+            Department(19, 3, 1, "sub-department 3:19",
+                listOf()
+            ),
+            Department(20, 3, 1, "sub-department 3:20",
+                listOf()
+            ),
         )
     ),
 
@@ -137,7 +192,9 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         4, null, 1, "department 4",
         listOf(
-            Department(10, 4, 1, "sub-department 4:10", listOf())
+            Department(10, 4, 1, "sub-department 4:10",
+                listOf()
+            )
         )
     ),
 
@@ -148,13 +205,28 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
                 5,
                 1,
                 "sub-department 5:10",
-                listOf()
+                listOf(
+                    Department(
+                        27,
+                        10,
+                        1,
+                        "sub-department 10:27",
+                    )
+                )
             ),
             Department(11,
                 5,
                 1,
                 "sub-department 5:11",
-                listOf())
+                listOf(
+                    Department(
+                        28,
+                        1,
+                        1,
+                        "sub-department 11:28",
+                    )
+                )
+            )
         )
     )
 )

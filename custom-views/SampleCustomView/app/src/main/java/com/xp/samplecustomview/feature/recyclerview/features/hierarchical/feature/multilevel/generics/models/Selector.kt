@@ -9,7 +9,7 @@ class Selector(
     @SerializedName("id_selector") val id: Int,
     @SerializedName("selector_parent") val parent: Selector? = null,
     @SerializedName("description") val name: String,
-    @SerializedName("sub_departments") val option: List<Selector>?
+    @SerializedName("sub_departments") val options: List<Selector>?
 ) : Parcelable
 
 

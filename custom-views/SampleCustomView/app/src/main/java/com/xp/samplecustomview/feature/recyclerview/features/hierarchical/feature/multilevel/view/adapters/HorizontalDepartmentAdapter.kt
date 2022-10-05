@@ -6,6 +6,11 @@ import com.xp.samplecustomview.R
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.viewholders.DepartmentViewHolder
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 
+/*
+    TODO adicioanr titulo a todas as RecyclerViews
+    Usar a classe Section para que cada Sescao
+ */
+
 class HorizontalDepartmentAdapter(
     private val departments: List<Department>,
     private val onClickDepartment: OnClickDepartment
@@ -18,7 +23,7 @@ class HorizontalDepartmentAdapter(
     override fun onBindViewHolder(holder: DepartmentViewHolder, position: Int) {
         if (departments.isNotEmpty()) {
             departments[position].let { department ->
-                holder.departmentName.text = department.name
+                holder.departmentName.text = department.description
                 holder.departmentImage.setImageResource(R.drawable.ic_baseline_cloud_upload_24)
                 holder.itemView.setOnClickListener {
                     onClickDepartment.onClick(department)

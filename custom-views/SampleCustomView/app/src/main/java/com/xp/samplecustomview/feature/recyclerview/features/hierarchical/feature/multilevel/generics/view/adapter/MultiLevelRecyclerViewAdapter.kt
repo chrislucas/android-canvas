@@ -7,47 +7,39 @@ import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featur
 
 typealias RVAdapter = RecyclerView.Adapter<out RecyclerView.ViewHolder>
 
-class LevelData<R : RVAdapter>(val adapter: R, val layoutManager: RecyclerView.LayoutManager)
+class AdapterData<R : RVAdapter>(val adapter: R, val layoutManager: RecyclerView.LayoutManager)
 
 class MultiLevelRecyclerViewAdapter<R : RVAdapter>(
-    private val it: MutableMap<Int, MutableList<LevelData<R>>>
+    private val map: MutableMap<Int, AdapterData<R>>
 ) : RecyclerView.Adapter<ViewHolderForRecyclerView>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderForRecyclerView {
         return ViewHolderForRecyclerView.newInstance(parent)
     }
 
+    private var lastLevel = 0
+
     override fun onBindViewHolder(
         levelRecyclerViewViewHolder: ViewHolderForRecyclerView,
         position: Int
     ) {
-
-        for ((_, item) in it) {
-            if (item.isNotEmpty()) {
-                item[position].let { data ->
-                    with(levelRecyclerViewViewHolder.root as RecyclerView) {
-                        adapter = data.adapter
-                        layoutManager = data.layoutManager
+        map[position]?.let { data ->
+            when (levelRecyclerViewViewHolder.root) {
+                is RecyclerView -> {
+                    levelRecyclerViewViewHolder.root.let {
+                        it.adapter = data.adapter
+                        it.layoutManager = data.layoutManager
                     }
                 }
             }
         }
     }
 
-    fun updateLevel(level: Int, items: List<LevelData<R>>) {
-        if (it[level] != null) {
-            val oldSize = it.size
-            val newSize = items.size
-            it[level]?.clear()
-            it[level]?.addAll(items)
-            notifyItemRangeRemoved(0, oldSize)
-            notifyItemRangeInserted(0, newSize)
-        } else {
-            it[level] = mutableListOf()
-            it[level]?.addAll(items)
-        }
+    fun updateLevel(level: Int, data:AdapterData<R>) {
+        map[level] = data
+        notifyDataSetChanged()
     }
 
-    override fun getItemCount(): Int = it.size
+    override fun getItemCount(): Int = map.size
 }
 

@@ -22,7 +22,7 @@ class MutableDepartmentAdapter(var mutableDepartments: List<Department>) :
 
     override fun onBindViewHolder(holder: DepartmentViewHolder, position: Int) {
         mutableDepartments[holder.absoluteAdapterPosition].run {
-            holder.departmentName.text = this.name
+            holder.departmentName.text = this.description
             holder.departmentImage.setImageResource(R.drawable.ic_baseline_cloud_upload_24)
         }
         lastPosition = holder.absoluteAdapterPosition
