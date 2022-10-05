@@ -44,16 +44,16 @@ private constructor(private val departments: List<Department>) :
     private val mapDepartment: Map<Department, List<Department>> =
         departmentStruct.departmentTree
 
-    private lateinit var bindView: BottomSheetDepartmentsMultipleRecyclerViewBinding
-
-    private val mapLevelData = mapOf(0 to mutableListOf(createLevelData(departments)))
+    private lateinit var viewBinding: BottomSheetDepartmentsMultipleRecyclerViewBinding
 
     private val adapter: MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
-        MultiLevelRecyclerViewAdapter(mapLevelData)
+        MultiLevelRecyclerViewAdapter(
+            mutableMapOf(0 to mutableListOf(createLevelData(departments)))
+        )
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        bindView = BottomSheetDepartmentsMultipleRecyclerViewBinding.inflate(layoutInflater)
+        viewBinding = BottomSheetDepartmentsMultipleRecyclerViewBinding.inflate(layoutInflater)
     }
 
     override fun onCreateView(
@@ -62,12 +62,12 @@ private constructor(private val departments: List<Department>) :
         savedInstanceState: Bundle?
     ): View {
         configBottomSheet()
-        bindView.rcMultilevel.adapter = adapter
-        return bindView.root
+        viewBinding.rcMultilevel.adapter = adapter
+        return viewBinding.root
     }
 
     private fun configBottomSheet() {
-        val bottomSheetBehavior = BottomSheetBehavior.from(bindView.llWrapperRecyclerView)
+        val bottomSheetBehavior = BottomSheetBehavior.from(viewBinding.llWrapperRecyclerView)
         val bottomSheetDialog = dialog as BottomSheetDialog
 
         if (Log.isLoggable(TAG, Log.INFO)) {
