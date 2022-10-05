@@ -6,7 +6,7 @@
     android:id="@+id/rc_item_view_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     tools:itemCount="10"
     tools:listitem="@layout/layout_item_departments"

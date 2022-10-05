@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black_overlay"
-    tools:context=".feature.recyclerview.samples.deparments.feature.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog">
+    tools:context=".feature.recyclerview.features.hierarchical.feature.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog">
 
     <include
         android:id="@+id/bottom_sheet_department"

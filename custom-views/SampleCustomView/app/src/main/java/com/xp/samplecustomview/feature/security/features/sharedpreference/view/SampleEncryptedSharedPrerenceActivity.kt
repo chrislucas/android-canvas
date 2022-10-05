@@ -6,6 +6,7 @@ import com.xp.samplecustomview.R
 
 /**
  * https://developer.android.com/reference/androidx/security/crypto/EncryptedSharedPreferences
+ * TODO estudar sobre encriptacao e seguranca
  */
 class SampleEncryptedSharedPrerenceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

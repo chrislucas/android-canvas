@@ -3,5 +3,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.recyclerview.samples.deparments.feature.composite.view.fragments.TwoListDepartmentBottomSheetDialogFragment"
+    tools:context=".feature.recyclerview.features.hierarchical.feature.composite.view.fragments.TwoListDepartmentsBottomSheetDialogFragment"
     />

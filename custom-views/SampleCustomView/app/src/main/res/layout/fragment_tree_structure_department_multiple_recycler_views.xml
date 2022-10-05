@@ -3,5 +3,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.recyclerview.samples.deparments.feature.multilevel.view.fragments.TreeStructureDepartmentsBottomSheetDialogsFragment" />
+    tools:context=".feature.recyclerview.features.hierarchical.feature.multilevel.view.fragments.TreeStructureDepartmentsBottomSheetDialogsFragment" />
 
