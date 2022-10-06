@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.xp.samplecustomview.R
 import com.xp.samplecustomview.commons.ext.ownTag
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.providerDepartments
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.providerDepartments
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.composite.view.bottomsheet.departments.DepartmentsBottomSheetDialog
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 

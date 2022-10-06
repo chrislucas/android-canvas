@@ -6,11 +6,6 @@ import com.xp.samplecustomview.R
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.viewholders.DepartmentViewHolder
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 
-/*
-    TODO adicioanr titulo a todas as RecyclerViews
-    Usar a classe Section para que cada Sescao
- */
-
 class HorizontalDepartmentAdapter(
     private val departments: List<Department>,
     private val onClickDepartment: OnClickDepartment

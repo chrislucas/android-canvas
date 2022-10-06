@@ -14,19 +14,19 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.BuildConfig
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.BottomSheetDepartmentsMultipleRecyclerViewBinding
-
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter.*
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter.MultiLevelAdapterStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.createDepartmentStruct
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.iterativeCreateTreeDepartmentStruct
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.createDepartmentStruct
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.iterativeCreateTreeDepartmentStruct
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.titlePerLevelMock
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.toMapSection
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.adapters.HorizontalDepartmentAdapter
 
 class TreeStructureDepartmentsBottomSheetDialog
 private constructor(departments: List<Department>) :
     BottomSheetDialogFragment(), HorizontalDepartmentAdapter.OnClickDepartment {
-
 
     init {
         if (BuildConfig.DEBUG) {
@@ -42,13 +42,13 @@ private constructor(departments: List<Department>) :
         createDepartmentStruct(departments)
 
     private val mapDepartment: Map<Department, List<Department>> =
-        departmentStruct.departmentTree
+        departmentStruct.departmentStruct
 
     private lateinit var viewBinding: BottomSheetDepartmentsMultipleRecyclerViewBinding
 
-    private val adapter: MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
+    private val multiLevelRecyclerViewAdapter: MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
         MultiLevelRecyclerViewAdapter(
-            mutableMapOf(0 to createLevelData(departments))
+            mutableMapOf(0 to createMultiLevelAdapterData(departments))
         )
 
     override fun onAttach(context: Context) {
@@ -62,7 +62,7 @@ private constructor(departments: List<Department>) :
         savedInstanceState: Bundle?
     ): View {
         configBottomSheet()
-        viewBinding.rcMultilevel.adapter = adapter
+        viewBinding.rcMultilevel.adapter = multiLevelRecyclerViewAdapter
         return viewBinding.root
     }
 
@@ -87,27 +87,37 @@ private constructor(departments: List<Department>) :
         }
     }
 
-    private fun createLevelData(departments: List<Department>) =
-        MultiLevelAdapterData(
+    private fun createMultiLevelAdapterData(departments: List<Department>):
+            MultiLevelAdapterStruct<HorizontalDepartmentAdapter> {
+
+        val level = departmentStruct.departmentLevel[departments[0]] ?: 0
+
+        val titleSection = titlePerLevelMock(level)
+
+        return MultiLevelAdapterStruct(
             HorizontalDepartmentAdapter(departments, this),
-            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            LinearLayoutManager(
+                context,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
         )
+    }
 
 
-    private fun chooseDepartment(department: Department) {
+    override fun onClick(department: Department) {
         mapDepartment[department]?.let { subDepartments ->
-            departmentStruct.level[department]?.let { parentLevel ->
+            departmentStruct.departmentLevel[department]?.let { parentLevel ->
                 val childLevel = parentLevel + 1
                 if (BuildConfig.DEBUG) {
                     Log.i(TAG, "$childLevel, $subDepartments")
                 }
-                adapter.updateLevel(childLevel, createLevelData(subDepartments))
+                multiLevelRecyclerViewAdapter.updateLevel(
+                    childLevel,
+                    createMultiLevelAdapterData(subDepartments)
+                )
             }
         }
-    }
-
-    override fun onClick(department: Department) {
-        chooseDepartment(department)
     }
 
     companion object {

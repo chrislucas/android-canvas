@@ -1,4 +1,6 @@
-package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models
+package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper
+
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 
 fun providerDepartments() = listOf(
     Department(
@@ -97,9 +99,11 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
         listOf(
             Department(6, 1, 1, "sub-department 1:6"),
             Department(7, 1, 1, "sub-department 1:7"),
-            Department(8, 1, 1, "sub-department 1:8",
+            Department(
+                8, 1, 1, "sub-department 1:8",
                 listOf(
-                    Department(10, 8, 1, "sub-department 8:10",
+                    Department(
+                        10, 8, 1, "sub-department 8:10",
                         listOf(
                             Department(
                                 21,
@@ -110,7 +114,35 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
                         )
                     ),
                     Department(11, 8, 1, "sub-department 8:11"),
-                    Department(12, 8, 1, "sub-department 8:12"),
+                    Department(
+                        12, 8, 1, "sub-department 8:12",
+                        listOf(
+                            Department(29, 12, 1, "sub-department 12:29"),
+                            Department(30, 12, 1, "sub-department 12:30"),
+                            Department(31, 12, 1, "sub-department 12:31"),
+                            Department(
+                                32, 12, 1, "sub-department 12:32",
+                                listOf(
+                                    Department(
+                                        33, 32, 1,
+                                        "sub-department 32:33"
+                                    ),
+                                    Department(
+                                        34, 32, 1,
+                                        "sub-department 32:34"
+                                    ),
+                                    Department(
+                                        35, 32, 1,
+                                        "sub-department 32:35"
+                                    ),
+                                    Department(
+                                        36, 32, 1,
+                                        "sub-department 32:36"
+                                    )
+                                )
+                            )
+                        )
+                    ),
                 )
             ),
             Department(
@@ -128,7 +160,8 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         2, null, 1, "department 2",
         listOf(
-            Department(17, 2, 1, "sub-department 2:17",
+            Department(
+                17, 2, 1, "sub-department 2:17",
                 listOf(
                     Department(
                         22,
@@ -145,7 +178,8 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
                     )
                 )
             ),
-            Department(18, 2, 1, "sub-department 2:18",
+            Department(
+                18, 2, 1, "sub-department 2:18",
                 listOf(
                     Department(
                         24,
@@ -176,14 +210,30 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         3, null, 1, "department 3",
         listOf(
-            Department(18, 3, 1, "sub-department 3:18",
-                listOf()
+            Department(
+                18, 3, 1, "sub-department 3:18"
             ),
-            Department(19, 3, 1, "sub-department 3:19",
-                listOf()
+            Department(
+                19, 3, 1, "sub-department 3:19",
+                listOf(
+                    Department(
+                        39,
+                        19,
+                        1,
+                        "sub-department 19:39",
+                    )
+                )
             ),
-            Department(20, 3, 1, "sub-department 3:20",
-                listOf()
+            Department(
+                20, 3, 1, "sub-department 3:20",
+                listOf(
+                    Department(
+                        38,
+                        20,
+                        1,
+                        "sub-department 20:38",
+                    )
+                )
             ),
         )
     ),
@@ -192,8 +242,16 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         4, null, 1, "department 4",
         listOf(
-            Department(10, 4, 1, "sub-department 4:10",
-                listOf()
+            Department(
+                10, 4, 1, "sub-department 4:10",
+                listOf(
+                    Department(
+                        37,
+                        10,
+                        1,
+                        "sub-department 10:37",
+                    )
+                )
             )
         )
     ),
@@ -201,7 +259,8 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
     Department(
         5, null, 1, "department 5",
         listOf(
-            Department(10,
+            Department(
+                10,
                 5,
                 1,
                 "sub-department 5:10",
@@ -214,7 +273,8 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
                     )
                 )
             ),
-            Department(11,
+            Department(
+                11,
                 5,
                 1,
                 "sub-department 5:11",
@@ -230,3 +290,14 @@ fun providerComplexityStructureDepartment() = listOf<Department>(
         )
     )
 )
+
+
+fun titlePerLevelMock(key: Int) =
+    mapOf(
+        0 to "level 0",
+        1 to "level 1",
+        2 to "level 2",
+        3 to "level 3",
+        4 to "level 4",
+    )[key] ?: "Undefined title level: $key"
+

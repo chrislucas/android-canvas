@@ -10,8 +10,8 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.FragmentCompositeDepartmentsBinding
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.providerDepartments
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.createMapDepartment
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.providerDepartments
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.createMapDepartment
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.composite.view.adapters.DepartmentAdapter
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.composite.view.adapters.MutableDepartmentAdapter
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.composite.view.adapters.PostUpdateCombinedRecyclerView

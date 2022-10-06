@@ -7,43 +7,38 @@ import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featur
 
 typealias RVAdapter = RecyclerView.Adapter<out RecyclerView.ViewHolder>
 
-
-
 class MultiLevelRecyclerViewAdapter<R : RVAdapter>(
-    private val multiLevelStruct: MutableMap<Int, MultiLevelAdapterData<R>>
+    private val multiLevelStruct: MutableMap<Int, MultiLevelAdapterStruct<R>>
 ) : RecyclerView.Adapter<ViewHolderForRecyclerView>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderForRecyclerView {
         return ViewHolderForRecyclerView.newInstance(parent)
     }
 
-    private var lastLevel = 0
-
     override fun onBindViewHolder(
         levelRecyclerViewViewHolder: ViewHolderForRecyclerView,
         position: Int
     ) {
-        multiLevelStruct[position]?.let { data ->
+        multiLevelStruct[position]?.let { adapterStruct ->
             when (levelRecyclerViewViewHolder.root) {
                 is RecyclerView -> {
                     levelRecyclerViewViewHolder.root.let {
-                        it.adapter = data.adapter
-                        it.layoutManager = data.layoutManager
+                        it.adapter = adapterStruct.adapter
+                        it.layoutManager = adapterStruct.layoutManager
                     }
                 }
             }
         }
     }
 
-    fun updateLevel(level: Int, data: MultiLevelAdapterData<R>) {
+    fun updateLevel(level: Int, data: MultiLevelAdapterStruct<R>) {
         multiLevelStruct[level] = data
         notifyDataSetChanged()
     }
 
     override fun getItemCount(): Int = multiLevelStruct.size
 
-
-    class MultiLevelAdapterData<R : RVAdapter>(
+    class MultiLevelAdapterStruct<R : RVAdapter>(
         val adapter: R,
         val layoutManager: RecyclerView.LayoutManager
     )

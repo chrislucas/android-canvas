@@ -1,6 +1,8 @@
-package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models
+package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper
 
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.models.RecyclerViewSection
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.models.SectionStruct
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
 import java.util.*
 
 internal fun createMapDepartment(departments: List<Department>): Map<Int, List<Department>> {
@@ -20,37 +22,6 @@ internal fun createMapDepartment(departments: List<Department>): Map<Int, List<D
     departments.forEach { builder(it, tree) }
     return tree
 }
-
-internal fun createHashMapDepartment(departments: List<Department>): Map<Department, List<Department>> {
-    val tree = HashMap<Department, List<Department>>()
-    fun builder(department: Department, map: HashMap<Department, List<Department>>) {
-        if (department.subDepartments.isNotEmpty()) {
-            map[department] = department.subDepartments
-            for (sub in department.subDepartments) {
-                builder(sub, map)
-            }
-        }
-    }
-    departments.forEach { builder(it, tree) }
-    return tree
-}
-
-internal fun fromDepartmentsToSection(departments: List<Department>) {
-
-    fun builder(department: Department, root: RecyclerViewSection<Department>, level: Int) {
-
-    }
-
-    val section = RecyclerViewSection(
-        sectionName = "level 0",
-        values = departments.toMutableList()
-    )
-
-    section.values.forEach { department->
-        builder(department, section, 1)
-    }
-}
-
 
 internal fun createDepartmentStruct(departments: List<Department>): DepartmentStruct {
     val tree = HashMap<Department, List<Department>>()
@@ -73,7 +44,6 @@ internal fun createDepartmentStruct(departments: List<Department>): DepartmentSt
     departments.forEach { builder(it, tree, mapLevel, 0) }
     return DepartmentStruct(tree, mapLevel)
 }
-
 
 internal fun iterativeCreateTreeDepartmentStruct(departments: List<Department>)
         : Map<Pair<Int, Department>, List<Department>> {
