@@ -14,15 +14,17 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.xp.samplecustomview.BuildConfig
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.BottomSheetDepartmentsMultipleRecyclerViewBinding
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.AdapterData
+
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.*
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter.*
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.createDepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.iterativeCreateTreeDepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.adapters.HorizontalDepartmentAdapter
 
 class TreeStructureDepartmentsBottomSheetDialog
-private constructor(private val departments: List<Department>) :
+private constructor(departments: List<Department>) :
     BottomSheetDialogFragment(), HorizontalDepartmentAdapter.OnClickDepartment {
 
 
@@ -86,7 +88,7 @@ private constructor(private val departments: List<Department>) :
     }
 
     private fun createLevelData(departments: List<Department>) =
-        AdapterData(
+        MultiLevelAdapterData(
             HorizontalDepartmentAdapter(departments, this),
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         )
