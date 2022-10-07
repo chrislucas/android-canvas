@@ -10,6 +10,7 @@ import androidx.annotation.IntDef
     VIEW_HOLDER_FEATURE_CUSTOM_VIEWS,
     VIEW_HOLDER_UNDEFINED,
     VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER,
+    VIEW_HOLDER_HEADER
 )
 @Retention(AnnotationRetention.SOURCE)
 annotation class ViewType

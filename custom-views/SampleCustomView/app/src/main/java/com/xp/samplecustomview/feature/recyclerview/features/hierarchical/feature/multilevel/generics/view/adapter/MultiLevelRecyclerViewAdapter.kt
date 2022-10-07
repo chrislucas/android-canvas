@@ -16,18 +16,15 @@ class MultiLevelRecyclerViewAdapter<R : RVAdapter>(
     }
 
     override fun onBindViewHolder(
-        levelRecyclerViewViewHolder: ViewHolderForRecyclerView,
+        viewHolderRecyclerView: ViewHolderForRecyclerView,
         position: Int
     ) {
         multiLevelStruct[position]?.let { adapterStruct ->
-            when (levelRecyclerViewViewHolder.root) {
-                is RecyclerView -> {
-                    levelRecyclerViewViewHolder.root.let {
-                        it.adapter = adapterStruct.adapter
-                        it.layoutManager = adapterStruct.layoutManager
-                    }
-                }
+            viewHolderRecyclerView.recyclerView.let {
+                it.adapter = adapterStruct.adapter
+                it.layoutManager = adapterStruct.layoutManager
             }
+            viewHolderRecyclerView.tvTitle.text = adapterStruct.title
         }
     }
 
@@ -40,7 +37,8 @@ class MultiLevelRecyclerViewAdapter<R : RVAdapter>(
 
     class MultiLevelAdapterStruct<R : RVAdapter>(
         val adapter: R,
-        val layoutManager: RecyclerView.LayoutManager
+        val layoutManager: RecyclerView.LayoutManager,
+        val title: String
     )
 }
 

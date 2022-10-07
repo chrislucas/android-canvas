@@ -44,6 +44,7 @@
         <entry key="app/src/main/res/layout/fragment_sample_bottom_sheet_dialog.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_searcheable.xml" value="0.3046875" />
         <entry key="app/src/main/res/layout/fragment_show_circle_view.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_simple_concat_adapter.xml" value="0.17291666666666666" />
         <entry key="app/src/main/res/layout/fragment_solving_keyboard_overlapping_bottom_sheet.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_tree_structure_department_multiple_recycler_views.xml" value="0.3046875" />
         <entry key="app/src/main/res/layout/fragment_two_list_department_bottom_sheet_dialog.xml" value="0.37083333333333335" />
@@ -53,11 +54,12 @@
         <entry key="app/src/main/res/layout/layout_bottom_sheet_fragment_solving_problem_jeyboard_overlapping.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/layout_header_recycler_view.xml" value="0.36302083333333335" />
         <entry key="app/src/main/res/layout/layout_item_departments.xml" value="0.3848958333333333" />
+        <entry key="app/src/main/res/layout/layout_item_feature_default.xml" value="0.3640625" />
         <entry key="app/src/main/res/layout/layout_item_feature_horizontal_recycler_view.xml" value="0.3365036231884058" />
         <entry key="app/src/main/res/layout/layout_item_feature_recycler_view_of_recycler_views.xml" value="0.1296875" />
         <entry key="app/src/main/res/layout/layout_item_horizontal_feature_recycler_view_of_recycler_views.xml" value="0.3046875" />
         <entry key="app/src/main/res/layout/layout_item_menu_option_list.xml" value="0.18718338399189463" />
-        <entry key="app/src/main/res/layout/layout_item_recycler_view_view_holder.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/layout_item_recycler_view_view_holder.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_item_view_holder_recycler_view.xml" value="0.15260416666666668" />
         <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_dialog_fragment_1.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_list_behavior.xml" value="0.1983695652173913" />

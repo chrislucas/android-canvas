@@ -29,9 +29,8 @@ class TreeStructureDepartmentsBottomSheetDialogsFragment : BaseBehaviorFragment,
         savedInstanceState: Bundle?
     ): View {
         activity?.supportFragmentManager?.let { fm ->
-            val dialog = TreeStructureDepartmentsBottomSheetDialog
-                .newInstance(providerComplexityStructureDepartment())
-            dialog.show(fm, TreeStructureDepartmentsBottomSheetDialog.TAG)
+            TreeStructureDepartmentsBottomSheetDialog.newInstance()
+                .show(fm, TreeStructureDepartmentsBottomSheetDialog.TAG)
         }
         return bindView.root
     }

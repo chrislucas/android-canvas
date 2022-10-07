@@ -7,14 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.R
 
-
-/**
- * TODO escreer um exemplo Usando os modelos Genericos de como montar construir
- * uma recyclerview de multinivel
- *
- * @see MultiLevelRecyclerViewAdapter
- * @see Selector
- */
 class GenericMultilevelRecyclerViewFragment : Fragment() {
 
     override fun onCreateView(
@@ -32,5 +24,8 @@ class GenericMultilevelRecyclerViewFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = GenericMultilevelRecyclerViewFragment()
+
+
     }
+
 }

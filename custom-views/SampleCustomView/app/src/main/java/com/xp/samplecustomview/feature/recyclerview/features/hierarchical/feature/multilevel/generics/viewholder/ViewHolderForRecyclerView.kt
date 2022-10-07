@@ -3,6 +3,7 @@ package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featu
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
 
@@ -12,6 +13,9 @@ import com.xp.samplecustomview.R
  */
 class ViewHolderForRecyclerView private constructor(val root: View) :
     RecyclerView.ViewHolder(root) {
+
+    val recyclerView: RecyclerView by lazy { root.findViewById(R.id.rc_item_view_holder) }
+    val tvTitle: TextView by lazy { root.findViewById(R.id.tv_title_section) }
 
     companion object {
         @JvmStatic

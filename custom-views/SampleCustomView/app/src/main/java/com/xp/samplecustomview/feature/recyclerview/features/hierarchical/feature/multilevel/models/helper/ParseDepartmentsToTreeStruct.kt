@@ -1,6 +1,5 @@
 package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper
 
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.models.SectionStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
 import java.util.*
@@ -44,6 +43,30 @@ internal fun createDepartmentStruct(departments: List<Department>): DepartmentSt
     departments.forEach { builder(it, tree, mapLevel, 0) }
     return DepartmentStruct(tree, mapLevel)
 }
+
+
+internal fun createDepartmentStruct(department: Department): DepartmentStruct {
+    val tree = HashMap<Department, List<Department>>()
+    val mapLevel = HashMap<Department, Int>()
+    fun builder(
+        department: Department,
+        tree: HashMap<Department, List<Department>>,
+        mapLevel: HashMap<Department, Int>,
+        level: Int
+    ) {
+        mapLevel[department] = level
+        if (department.subDepartments.isNotEmpty()) {
+            val subDepartments = department.subDepartments
+            tree[department] = subDepartments
+            for (sub in subDepartments) {
+                builder(sub, tree, mapLevel, level + 1)
+            }
+        }
+    }
+    builder(department, tree, mapLevel, 0)
+    return DepartmentStruct(tree, mapLevel)
+}
+
 
 internal fun iterativeCreateTreeDepartmentStruct(departments: List<Department>)
         : Map<Pair<Int, Department>, List<Department>> {

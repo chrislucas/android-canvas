@@ -18,25 +18,17 @@ import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featur
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter.MultiLevelAdapterStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.*
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.createDepartmentStruct
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.iterativeCreateTreeDepartmentStruct
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.titlePerLevelMock
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.toMapSection
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.mockDepartmentStructTree
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.adapters.HorizontalDepartmentAdapter
 
 class TreeStructureDepartmentsBottomSheetDialog
-private constructor(departments: List<Department>) :
+private constructor() :
     BottomSheetDialogFragment(), HorizontalDepartmentAdapter.OnClickDepartment {
 
-    init {
-        if (BuildConfig.DEBUG) {
-            with(iterativeCreateTreeDepartmentStruct(departments)) {
-                if (BuildConfig.DEBUG) {
-                    Log.i("DEPARTMENTS", "$this")
-                }
-            }
-        }
-    }
+    private val departments = providerComplexityStructureDepartment()
+    private val departmentStructTree = mockDepartmentStructTree()
 
     private val departmentStruct: DepartmentStruct =
         createDepartmentStruct(departments)
@@ -92,18 +84,29 @@ private constructor(departments: List<Department>) :
 
         val level = departmentStruct.departmentLevel[departments[0]] ?: 0
 
-        val titleSection = titlePerLevelMock(level)
-
         return MultiLevelAdapterStruct(
             HorizontalDepartmentAdapter(departments, this),
             LinearLayoutManager(
                 context,
                 LinearLayoutManager.HORIZONTAL,
                 false
-            )
+            ),
+            titlePerLevelMock(level)
         )
     }
 
+    private fun createMultiLevelAdapterData(department: Department):
+            MultiLevelAdapterStruct<HorizontalDepartmentAdapter> {
+        return MultiLevelAdapterStruct(
+            HorizontalDepartmentAdapter(department.subDepartments, this),
+            LinearLayoutManager(
+                context,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            ),
+            department.subDepartmentName
+        )
+    }
 
     override fun onClick(department: Department) {
         mapDepartment[department]?.let { subDepartments ->
@@ -125,7 +128,6 @@ private constructor(departments: List<Department>) :
         val TAG = TreeStructureDepartmentsBottomSheetDialog::class.java.ownTag
 
         @JvmStatic
-        fun newInstance(departments: List<Department>) =
-            TreeStructureDepartmentsBottomSheetDialog(departments)
+        fun newInstance() = TreeStructureDepartmentsBottomSheetDialog()
     }
 }

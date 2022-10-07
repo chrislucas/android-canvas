@@ -5,4 +5,8 @@ package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featu
     Representa uma seção ou linha da reyclerview de recycelrviews
  */
 
-data class SectionStruct<T>(val sectionName: String, val values: List<T>)
+data class CompositeWrapper<T>(
+    val subSectionName: String = "undefined section name",
+    val data: T? = null,
+    val composition: List<CompositeWrapper<T>> = emptyList()
+)
