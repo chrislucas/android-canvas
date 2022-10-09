@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
@@ -20,28 +21,22 @@ import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featur
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.createDepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.mockDepartmentStructTree
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.providerComplexityStructureDepartment
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.titlePerLevelMock
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.adapters.HorizontalDepartmentAdapter
 
 class TreeStructureDepartmentsBottomSheetDialog private constructor() :
     BottomSheetDialogFragment(), HorizontalDepartmentAdapter.OnClickDepartment {
 
-    private val departments = providerComplexityStructureDepartment()
-    private val departmentStructTree = mockDepartmentStructTree()
+    private val departmentTree = mockDepartmentStructTree()
 
     private val departmentStruct: DepartmentStruct =
-        createDepartmentStruct(departments)
-
-    private val mapDepartment: Map<Department, List<Department>> =
-        departmentStruct.departmentStruct
+        createDepartmentStruct(departmentTree)
 
     private lateinit var viewBinding: BottomSheetDepartmentsMultipleRecyclerViewBinding
 
     private val multiLevelRecyclerViewAdapter:
             MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
         MultiLevelRecyclerViewAdapter(
-            mutableMapOf(0 to createMultiLevelAdapterData(departments))
+            mutableMapOf(0 to createMultiLevelAdapterData(departmentTree))
         )
 
     override fun onAttach(context: Context) {
@@ -80,22 +75,6 @@ class TreeStructureDepartmentsBottomSheetDialog private constructor() :
         }
     }
 
-    private fun createMultiLevelAdapterData(departments: List<Department>):
-            MultiLevelAdapterStruct<HorizontalDepartmentAdapter> {
-
-        val level = departmentStruct.departmentLevel[departments[0]] ?: 0
-
-        return MultiLevelAdapterStruct(
-            HorizontalDepartmentAdapter(departments, this),
-            LinearLayoutManager(
-                context,
-                LinearLayoutManager.HORIZONTAL,
-                false
-            ),
-            titlePerLevelMock(level)
-        )
-    }
-
     private fun createMultiLevelAdapterData(department: Department):
             MultiLevelAdapterStruct<HorizontalDepartmentAdapter> {
         return MultiLevelAdapterStruct(
@@ -110,18 +89,24 @@ class TreeStructureDepartmentsBottomSheetDialog private constructor() :
     }
 
     override fun onClick(department: Department) {
-        mapDepartment[department]?.let { subDepartments ->
-            departmentStruct.departmentLevel[department]?.let { parentLevel ->
-                val childLevel = parentLevel + 1
+        val subDepartments = departmentStruct.getSubDepartments(department)
+        if (subDepartments != null) {
+            departmentStruct.getLevel(department)?.let { parentLevel ->
                 if (BuildConfig.DEBUG) {
-                    Log.i(TAG, "$childLevel, $subDepartments")
+                    Log.i(TAG, "$parentLevel, $subDepartments")
                 }
-                multiLevelRecyclerViewAdapter.updateLevel(
-                    childLevel,
-                    createMultiLevelAdapterData(subDepartments)
+                multiLevelRecyclerViewAdapter.updateLevel(parentLevel,
+                    createMultiLevelAdapterData(department)
                 )
             }
+        } else {
+            Toast.makeText(
+                context,
+                "Departamento: ${department.description} Não possui subdepartamentos",
+                Toast.LENGTH_LONG
+            ).show()
         }
+
     }
 
     companion object {

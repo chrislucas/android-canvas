@@ -232,7 +232,8 @@ fun providerComplexityStructureDepartment() = listOf(
                     Department(16, 9, 1, "sub-department 9:16"),
                 )
             )
-        )
+        ),
+        subDepartmentName = "Nivel 1 Departmento 1"
     ),
 
     Department(
@@ -282,7 +283,8 @@ fun providerComplexityStructureDepartment() = listOf(
                     )
                 )
             ),
-        )
+        ),
+        subDepartmentName = "Nivel 1 Departmento 2"
     ),
 
     Department(
@@ -313,7 +315,9 @@ fun providerComplexityStructureDepartment() = listOf(
                     )
                 )
             ),
-        )
+        ),
+        subDepartmentName = "Nivel 1 Departmento 3"
+
     ),
 
     Department(
@@ -412,7 +416,8 @@ fun providerComplexityStructureDepartment() = listOf(
                     )
                 )
             )
-        )
+        ),
+        subDepartmentName = "Nivel 1 Departmento 4"
     ),
 
     Department(
@@ -446,7 +451,8 @@ fun providerComplexityStructureDepartment() = listOf(
                     )
                 )
             )
-        )
+        ),
+        subDepartmentName = "Nivel 1 Departmento 5"
     )
 )
 
