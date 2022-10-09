@@ -18,13 +18,13 @@ import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.featur
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.view.adapter.MultiLevelRecyclerViewAdapter.MultiLevelAdapterStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.*
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.createDepartmentStruct
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.mockDepartmentStructTree
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.providerComplexityStructureDepartment
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.titlePerLevelMock
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.adapters.HorizontalDepartmentAdapter
 
-class TreeStructureDepartmentsBottomSheetDialog
-private constructor() :
+class TreeStructureDepartmentsBottomSheetDialog private constructor() :
     BottomSheetDialogFragment(), HorizontalDepartmentAdapter.OnClickDepartment {
 
     private val departments = providerComplexityStructureDepartment()
@@ -38,7 +38,8 @@ private constructor() :
 
     private lateinit var viewBinding: BottomSheetDepartmentsMultipleRecyclerViewBinding
 
-    private val multiLevelRecyclerViewAdapter: MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
+    private val multiLevelRecyclerViewAdapter:
+            MultiLevelRecyclerViewAdapter<HorizontalDepartmentAdapter> =
         MultiLevelRecyclerViewAdapter(
             mutableMapOf(0 to createMultiLevelAdapterData(departments))
         )

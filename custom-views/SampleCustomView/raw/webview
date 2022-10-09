@@ -4,6 +4,26 @@ https://developer.android.com/guide/webapps/webview
 https://developer.android.com/reference/android/webkit/WebChromeClient
 https://developer.android.com/guide/webapps/webview
 
+
+----------------------------- Cookies ----------------------------
+https://developer.android.com/reference/android/webkit/WebView
+https://stackoverflow.com/questions/39541939/android-cookie-manager-how-to-get-all-cookies
+https://stackoverflow.com/questions/33120508/how-to-set-cookie-in-android-webview-client
+https://medium.com/mobile-app-development-publication/a-tale-on-android-cookies-store-management-b04832ca18c6
+https://developer.android.com/reference/android/webkit/CookieManager
+http://java.llp.dcc.ufmg.br:8080/apiminer/static/docs/reference/android/webkit/CookieManager.html
+https://stackoverflow.com/questions/39541939/android-cookie-manager-how-to-get-all-cookies
+
+https://developer.android.com/guide/webapps/webview?hl=pt-br
+-----------------------------------------------------------------
+webview shouldinterceptrequest example
+https://stackoverflow.com/questions/26319863/webview-traffic-monitor
+https://stackoverflow.com/questions/8273991/webview-shouldinterceptrequest-example
+https://gist.github.com/chethann/3edcc6f702430e42fe4f018546766481
+https://developer.android.com/reference/android/webkit/WebViewClient
+
+-----------------------------------------------------------------
+
 Java Examples for android.webkit.WebChromeClient
 https://www.javatips.net/api/android.webkit.webchromeclient
 
