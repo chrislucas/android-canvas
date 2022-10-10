@@ -22,6 +22,7 @@ internal fun createMapDepartment(departments: List<Department>): Map<Int, List<D
     return tree
 }
 
+@Deprecated("Criado para estudos")
 internal fun createDepartmentStruct(departments: List<Department>): DepartmentStruct {
     val tree = HashMap<Department, List<Department>>()
     val mapLevel = HashMap<Department, Int>()
@@ -43,7 +44,6 @@ internal fun createDepartmentStruct(departments: List<Department>): DepartmentSt
     departments.forEach { builder(it, tree, mapLevel, 0) }
     return DepartmentStruct(tree, mapLevel)
 }
-
 
 internal fun createDepartmentStruct(department: Department): DepartmentStruct {
     val tree = HashMap<Department, List<Department>>()
@@ -68,6 +68,7 @@ internal fun createDepartmentStruct(department: Department): DepartmentStruct {
 }
 
 
+@Deprecated("Criado somente para estudo de viabilidade de um algoritmo iterativo")
 internal fun iterativeCreateTreeDepartmentStruct(departments: List<Department>)
         : Map<Pair<Int, Department>, List<Department>> {
     val tree = HashMap<Pair<Int, Department>, List<Department>>()

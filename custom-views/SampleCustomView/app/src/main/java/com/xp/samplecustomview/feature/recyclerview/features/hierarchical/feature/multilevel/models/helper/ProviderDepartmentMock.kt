@@ -97,8 +97,43 @@ fun providerComplexityStructureDepartment() = listOf(
     Department(
         1, null, 1, "department 1",
         listOf(
-            Department(6, 1, 1, "sub-department 1:6"),
-            Department(7, 1, 1, "sub-department 1:7"),
+            Department(
+                6, 1, 1, "sub-department 1:6",
+                listOf(
+                    Department(
+                        70,
+                        6,
+                        1,
+                        "sub-department 6:70",
+                        listOf(
+                            Department(
+                                51,
+                                6,
+                                1,
+                                "sub-department 70:51",
+                                listOf(),
+                                subDepartmentName = "Nivel 4 departamento 51"
+
+                            ),
+                            Department(
+                                57,
+                                6,
+                                1,
+                                "sub-department 70:57",
+                                subDepartmentName = "Nivel 4 departamento 57"
+
+                            )
+                        ),
+                        subDepartmentName = "Nivel 3 departamento 70"
+                    )
+                ),
+                subDepartmentName = "Nivel 2 departamento 6",
+
+            ),
+            Department(
+                7, 1, 1, "sub-department 1:7",
+                subDepartmentName = "Nivel 2 departamento 7"
+            ),
             Department(
                 8, 1, 1, "sub-department 1:8",
                 listOf(
@@ -135,7 +170,9 @@ fun providerComplexityStructureDepartment() = listOf(
                                                                 1,
                                                                 "sub-department 54:59",
                                                             )
-                                                        )
+                                                        ),
+                                                        subDepartmentName = "Nivel 7 departamento 54"
+
                                                     ),
                                                     Department(
                                                         55,
@@ -149,7 +186,8 @@ fun providerComplexityStructureDepartment() = listOf(
                                                                 1,
                                                                 "sub-department 55:60",
                                                             )
-                                                        )
+                                                        ),
+                                                        subDepartmentName = "Nivel 7 departamento 55"
                                                     ),
                                                     Department(
                                                         56,
@@ -163,65 +201,109 @@ fun providerComplexityStructureDepartment() = listOf(
                                                                 1,
                                                                 "sub-department 56:61",
                                                             )
-                                                        )
+                                                        ),
+                                                        subDepartmentName = "Nivel 7 departamento 56"
                                                     )
-                                                )
+                                                ),
+                                                subDepartmentName = "Nivel 6 departamento 52"
                                             ),
                                             Department(
                                                 53,
                                                 51,
                                                 1,
                                                 "sub-department 51:53",
+                                                subDepartmentName = "Nivel 6 departamento 53"
                                             ),
-                                        )
+                                        ),
+                                        subDepartmentName = "Nivel 5 departamento 51"
+
                                     ),
                                     Department(
                                         57,
                                         21,
                                         1,
                                         "sub-department 21:57",
+                                        subDepartmentName = "Nivel 5 departamento 57"
+
                                     )
-                                )
+                                ),
+                                subDepartmentName = "Nivel 4 departamento 21"
                             ),
                             Department(
                                 58,
                                 10,
                                 1,
                                 "sub-department 10:58",
+                                listOf(),
+                                subDepartmentName = "Nivel 4 departamento 58"
                             )
-                        )
+                        ),
+                        subDepartmentName = "Nivel 3 departamento 10"
+
                     ),
-                    Department(11, 8, 1, "sub-department 8:11"),
+                    Department(
+                        11, 8, 1, "sub-department 8:11",
+                        listOf(),
+                        subDepartmentName = "Nivel 3 departamento 11"
+                    ),
                     Department(
                         12, 8, 1, "sub-department 8:12",
                         listOf(
-                            Department(29, 12, 1, "sub-department 12:29"),
-                            Department(30, 12, 1, "sub-department 12:30"),
-                            Department(31, 12, 1, "sub-department 12:31"),
+                            Department(
+                                29, 12, 1,
+                                "sub-department 12:29",
+                                listOf(),
+                                subDepartmentName = "Nivel 4 departamento 29"
+
+                            ),
+                            Department(
+                                30, 12, 1,
+                                "sub-department 12:30",
+                                listOf(),
+                                subDepartmentName = "Nivel 4 departamento 30"
+
+                            ),
+                            Department(
+                                31, 12, 1,
+                                "sub-department 12:31",
+                                listOf(),
+                                subDepartmentName = "Nivel 4 departamento 31"
+                            ),
                             Department(
                                 32, 12, 1, "sub-department 12:32",
                                 listOf(
                                     Department(
                                         33, 32, 1,
-                                        "sub-department 32:33"
+                                        "sub-department 32:33",
+                                        subDepartmentName = "Nivel 5 departamento 33"
+
                                     ),
                                     Department(
                                         34, 32, 1,
-                                        "sub-department 32:34"
+                                        "sub-department 32:34",
+                                        subDepartmentName = "Nivel 5 departamento 34"
+
                                     ),
                                     Department(
                                         35, 32, 1,
-                                        "sub-department 32:35"
+                                        "sub-department 32:35",
+                                        subDepartmentName = "Nivel 5 departamento 35"
+
                                     ),
                                     Department(
                                         36, 32, 1,
-                                        "sub-department 32:36"
+                                        "sub-department 32:36",
+                                        subDepartmentName = "Nivel 5 departamento 36"
                                     )
-                                )
+                                ),
+                                subDepartmentName = "Nivel 4 departamento 32"
                             )
-                        )
+                        ),
+                        subDepartmentName = "Nivel 3 departamento 14"
                     ),
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 8"
+
             ),
             Department(
                 9, 1, 1, "sub-department 1:9",
@@ -230,7 +312,8 @@ fun providerComplexityStructureDepartment() = listOf(
                     Department(14, 9, 1, "sub-department 9:14"),
                     Department(15, 9, 1, "sub-department 9:15"),
                     Department(16, 9, 1, "sub-department 9:16"),
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 9"
             )
         ),
         subDepartmentName = "Nivel 1 Departmento 1"
@@ -255,7 +338,9 @@ fun providerComplexityStructureDepartment() = listOf(
                         1,
                         "sub-department 17:23",
                     )
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 17"
+
             ),
             Department(
                 18, 2, 1, "sub-department 2:18",
@@ -281,7 +366,8 @@ fun providerComplexityStructureDepartment() = listOf(
                         1,
                         "sub-department 18:25",
                     )
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 18"
             ),
         ),
         subDepartmentName = "Nivel 1 Departmento 2"
@@ -317,7 +403,6 @@ fun providerComplexityStructureDepartment() = listOf(
             ),
         ),
         subDepartmentName = "Nivel 1 Departmento 3"
-
     ),
 
     Department(
@@ -366,9 +451,9 @@ fun providerComplexityStructureDepartment() = listOf(
                                 listOf(
                                     Department(
                                         45,
-                                        40,
+                                        42,
                                         1,
-                                        "sub-department 40:45",
+                                        "sub-department 42:45",
                                         listOf(
                                             Department(
                                                 46,
@@ -414,7 +499,8 @@ fun providerComplexityStructureDepartment() = listOf(
                         1,
                         "sub-department 10:49",
                     )
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 10"
             )
         ),
         subDepartmentName = "Nivel 1 Departmento 4"
@@ -435,7 +521,9 @@ fun providerComplexityStructureDepartment() = listOf(
                         1,
                         "sub-department 10:27",
                     )
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 10"
+
             ),
             Department(
                 11,
@@ -449,7 +537,9 @@ fun providerComplexityStructureDepartment() = listOf(
                         1,
                         "sub-department 11:28",
                     )
-                )
+                ),
+                subDepartmentName = "Nivel 2 departamento 11"
+
             )
         ),
         subDepartmentName = "Nivel 1 Departmento 5"

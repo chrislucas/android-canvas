@@ -90,14 +90,14 @@ class TreeStructureDepartmentsBottomSheetDialog private constructor() :
 
     override fun onClick(department: Department) {
         val subDepartments = departmentStruct.getSubDepartments(department)
-        if (subDepartments != null) {
-            departmentStruct.getLevel(department)?.let { parentLevel ->
-                if (BuildConfig.DEBUG) {
-                    Log.i(TAG, "$parentLevel, $subDepartments")
-                }
-                multiLevelRecyclerViewAdapter.updateLevel(parentLevel,
-                    createMultiLevelAdapterData(department)
-                )
+        val level = departmentStruct.getLevel(department)
+        if (subDepartments != null && level != null) {
+            multiLevelRecyclerViewAdapter.updateLevel(
+                level,
+                createMultiLevelAdapterData(department)
+            )
+            if (BuildConfig.DEBUG) {
+                Log.i(TAG, "${level}, $subDepartments")
             }
         } else {
             Toast.makeText(
@@ -106,7 +106,6 @@ class TreeStructureDepartmentsBottomSheetDialog private constructor() :
                 Toast.LENGTH_LONG
             ).show()
         }
-
     }
 
     companion object {
