@@ -12,6 +12,7 @@ import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerv
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewBindingFragmentViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
 import com.xp.samplecustomview.feature.recyclerview.features.checklistadapter.view.list.viewholder.UserDataViewHolder
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.generics.viewholder.HeaderViewHolder
 
 object BuilderViewHolder {
 
@@ -57,6 +58,9 @@ object BuilderViewHolder {
             }
             VIEW_HOLDER_MOCK_USERS_LIST_ADAPTER -> {
                 UserDataViewHolder(getView(viewGroup, R.layout.layout_item_user_list))
+            }
+            VIEW_HOLDER_HEADER -> {
+                HeaderViewHolder(getView(viewGroup, R.layout.layout_header_recycler_view))
             }
             else -> {
                 defaultBuilder?.run {

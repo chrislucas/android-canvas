@@ -1,5 +1,7 @@
-package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models
+package com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper
 
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.Department
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.DepartmentStruct
 import java.util.*
 
 internal fun createMapDepartment(departments: List<Department>): Map<Int, List<Department>> {
@@ -20,22 +22,7 @@ internal fun createMapDepartment(departments: List<Department>): Map<Int, List<D
     return tree
 }
 
-internal fun createHashMapDepartment(departments: List<Department>): Map<Department, List<Department>> {
-    val tree = HashMap<Department, List<Department>>()
-    fun builder(department: Department?, map: HashMap<Department, List<Department>>) {
-        department?.let {
-            if (it.subDepartments.isNotEmpty()) {
-                map[it] = it.subDepartments
-                for (sub in it.subDepartments) {
-                    builder(sub, map)
-                }
-            }
-        }
-    }
-    departments.forEach { builder(it, tree) }
-    return tree
-}
-
+@Deprecated("Criado para estudos")
 internal fun createDepartmentStruct(departments: List<Department>): DepartmentStruct {
     val tree = HashMap<Department, List<Department>>()
     val mapLevel = HashMap<Department, Int>()
@@ -58,7 +45,30 @@ internal fun createDepartmentStruct(departments: List<Department>): DepartmentSt
     return DepartmentStruct(tree, mapLevel)
 }
 
+internal fun createDepartmentStruct(department: Department): DepartmentStruct {
+    val tree = HashMap<Department, List<Department>>()
+    val mapLevel = HashMap<Department, Int>()
+    fun builder(
+        department: Department,
+        tree: HashMap<Department, List<Department>>,
+        mapLevel: HashMap<Department, Int>,
+        level: Int
+    ) {
+        mapLevel[department] = level
+        if (department.subDepartments.isNotEmpty()) {
+            val subDepartments = department.subDepartments
+            tree[department] = subDepartments
+            for (sub in subDepartments) {
+                builder(sub, tree, mapLevel, level + 1)
+            }
+        }
+    }
+    builder(department, tree, mapLevel, 0)
+    return DepartmentStruct(tree, mapLevel)
+}
 
+
+@Deprecated("Criado somente para estudo de viabilidade de um algoritmo iterativo")
 internal fun iterativeCreateTreeDepartmentStruct(departments: List<Department>)
         : Map<Pair<Int, Department>, List<Department>> {
     val tree = HashMap<Pair<Int, Department>, List<Department>>()

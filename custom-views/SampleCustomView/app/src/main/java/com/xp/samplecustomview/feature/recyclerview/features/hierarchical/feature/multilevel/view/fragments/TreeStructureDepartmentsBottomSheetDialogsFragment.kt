@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.xp.samplecustomview.commons.ext.ownTag
 import com.xp.samplecustomview.databinding.FragmentTreeStructureDepartmentMultipleRecyclerViewsBinding
-import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.providerComplexityStructureDepartment
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.models.helper.providerComplexityStructureDepartment
 import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.multilevel.view.bottomsheet.TreeStructureDepartmentsBottomSheetDialog
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 
@@ -29,9 +29,8 @@ class TreeStructureDepartmentsBottomSheetDialogsFragment : BaseBehaviorFragment,
         savedInstanceState: Bundle?
     ): View {
         activity?.supportFragmentManager?.let { fm ->
-            val dialog = TreeStructureDepartmentsBottomSheetDialog
-                .newInstance(providerComplexityStructureDepartment())
-            dialog.show(fm, TreeStructureDepartmentsBottomSheetDialog.TAG)
+            TreeStructureDepartmentsBottomSheetDialog.newInstance()
+                .show(fm, TreeStructureDepartmentsBottomSheetDialog.TAG)
         }
         return bindView.root
     }

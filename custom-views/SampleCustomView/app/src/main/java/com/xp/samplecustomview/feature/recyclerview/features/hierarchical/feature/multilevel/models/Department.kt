@@ -10,7 +10,8 @@ data class Department(
     @SerializedName("id_department_parent") val parent: Int? = null,
     @SerializedName("resource_image") val resourceImage: Int,
     @SerializedName("description") val description: String,
-    @SerializedName("sub_departments") val subDepartments: List<Department> = emptyList()
+    @SerializedName("sub_departments") val subDepartments: List<Department> = emptyList(),
+    @SerializedName("sub_department_name") val subDepartmentName: String = ""
 ) : Parcelable {
     override fun toString(): String = "Name: $description | ID: $id"
 }
