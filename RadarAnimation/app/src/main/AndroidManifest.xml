@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.br.experience.radaranimation">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -10,7 +9,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation">
         <activity
-            android:name=".MainActivity"
+            android:name="com.br.experience.features.radaranimation.RadarViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.pathanimations.PathAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.drawingbasicshapes.BasicShapesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

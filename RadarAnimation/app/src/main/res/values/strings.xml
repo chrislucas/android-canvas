@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">RadarAnimation</string>
+    <string name="label_bt_open_radar_view_activity">Abrir RadarViewActivity</string>
+    <string name="label_bt_open_path_animation_activity">Abrir PathAnimationActivity</string>
+    <string name="label_bt_open_basic_shapes_activity">Abrir BasicShapesActivity</string>
 </resources>

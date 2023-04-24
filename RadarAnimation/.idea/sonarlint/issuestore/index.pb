@@ -1,5 +1,5 @@
 
-Y
-)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
-r
-Bapp/src/main/java/com/br/experience/radaranimation/MainActivity.kt,3\7\37a4a325e0b14a3e88f9fa23abf06bbdd9b807e2
+@
+local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
