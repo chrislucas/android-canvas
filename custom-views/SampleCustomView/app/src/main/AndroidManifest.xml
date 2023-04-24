@@ -3,7 +3,10 @@
     package="com.xp.samplecustomview">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:glEsVersion="0x00030001" android:required="true" />
+
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.MaterialComponent.Light.NoActionBar">
+        <activity
+            android:name=".feature.security.features.sharedpreference.view.SampleEncryptedSharedPrerenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.security.features.sharedpreference.view.CodelabsSharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.security.features.tips.view.BestPracticesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.webview.features.listofwebviews.view.SamplesOfWebViewsActivity"
+            android:exported="false" />
         <activity
             android:name=".feature.checkapplifecycle.ApplicationLifecycleCallbackActivity"
             android:exported="false" />
@@ -23,7 +38,9 @@
             android:exported="false"
             android:label="@string/title_activity_frag_container_view"
             android:theme="@style/AppTheme.MaterialComponent.Light.NoActionBar.NoActionBar" />
-        <activity android:name=".MainActivityCommunication" android:exported="true">
+        <activity
+            android:name=".MainActivityCommunication"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

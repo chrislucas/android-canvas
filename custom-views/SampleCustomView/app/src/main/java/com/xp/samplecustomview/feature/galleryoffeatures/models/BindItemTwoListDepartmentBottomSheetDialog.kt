@@ -1,6 +1,6 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
-import com.xp.samplecustomview.feature.recyclerview.samples.deparments.feature.composite.view.fragments.TwoListDepartmentBottomSheetDialogFragment
+import com.xp.samplecustomview.feature.recyclerview.features.hierarchical.feature.composite.view.fragments.TwoListDepartmentsBottomSheetDialogFragment
 
 class BindItemTwoListDepartmentBottomSheetDialog(channel: ListenerListFragments) :
-    BindItemFeatureDefaultForFragment(channel, TwoListDepartmentBottomSheetDialogFragment.newInstance())
+    BindItemFeatureDefaultForFragment(channel, TwoListDepartmentsBottomSheetDialogFragment.newInstance())

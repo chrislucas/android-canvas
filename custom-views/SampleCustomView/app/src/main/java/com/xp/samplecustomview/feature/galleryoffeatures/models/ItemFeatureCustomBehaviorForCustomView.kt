@@ -1,12 +1,12 @@
 package com.xp.samplecustomview.feature.galleryoffeatures.models
 
-import androidx.appcompat.content.res.AppCompatResources
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
-import com.xp.samplecustomview.feature.customviews.sample.behaviorcustomview.view.fragment.AttachBehaviorOnCustomViewByXmlLayout
 import com.xp.samplecustomview.commons.view.recyclerview.action.BindDataToViewHolder
-import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
 import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
+import com.xp.samplecustomview.feature.customviews.sample.behaviorcustomview.view.fragment.AttachBehaviorOnCustomViewByXmlLayout
+import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
 
 class ItemFeatureCustomBehaviorForCustomView(val description: String)
 
@@ -28,11 +28,10 @@ class BindItemFeatureCustomBehaviorForCustomView(private val channel: ListenerLi
     ) {
         val mView = viewHolder as FeatureViewHolderDefault
         mView.viewTitle.text = data.description
+        val img = ContextCompat.getDrawable(mView.itemView.context,
+            R.mipmap.ic_launcher_round)
         mView.viewIcon.setImageDrawable(
-            AppCompatResources.getDrawable(
-                viewHolder.itemView.context,
-                R.mipmap.ic_custom_view_round
-            )
+            img
         )
     }
 }

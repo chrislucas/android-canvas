@@ -6,30 +6,32 @@ import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFrag
 import com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.view.fragment.ModalBottomSheetExampleFragment
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
 
-class ItemModalBottomSheet(private val listener: ListenerListFragmentsViewHolder) :
-    CompositeListItem {
-    override fun apply() {
+class ModalBottomSheet(private val listener: ListenerListFragmentsViewHolder) :
+    OnClickBottomSheet {
+
+    override fun run() {
         listener.onInteractWithView(ModalBottomSheetExampleFragment.newInstance())
     }
 
-    override fun getDescription(): String = "Modal BottomSheet"
+    override val description: String
+        get() = "Modal BottomSheet"
 }
 
 
-class BindItemModalBottomSheet : BindDataToViewHolder<ItemModalBottomSheet> {
+class BindItemModalBottomSheet : BindDataToViewHolder<ModalBottomSheet> {
 
-    override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemModalBottomSheet) {
+    override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ModalBottomSheet) {
         viewHolder.itemView.setOnClickListener {
-            data.apply()
+            data.run()
         }
     }
 
     override fun fillViewHolderWithData(
         viewHolder: RecyclerView.ViewHolder,
-        data: ItemModalBottomSheet
+        data: ModalBottomSheet
     ) {
         val holder = viewHolder as FeatureViewHolderDefault
-        holder.viewTitle.text = data.getDescription()
+        holder.viewTitle.text = data.description
     }
 
 }

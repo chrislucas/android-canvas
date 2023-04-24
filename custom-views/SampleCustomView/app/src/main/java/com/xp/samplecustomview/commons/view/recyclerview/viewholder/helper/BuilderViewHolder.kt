@@ -6,13 +6,12 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import com.xp.samplecustomview.R
-import com.xp.samplecustomview.commons.view.recyclerview.action.*
 import com.xp.samplecustomview.commons.view.recyclerview.model.*
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureColorOptionsViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureCustomViewsViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewBindingFragmentViewHolder
 import com.xp.samplecustomview.feature.galleryoffeatures.view.adapters.recyclerview.viewholders.FeatureViewHolderDefault
-import com.xp.samplecustomview.feature.recyclerview.samples.checklistadapter.view.list.viewholder.UserDataViewHolder
+import com.xp.samplecustomview.feature.recyclerview.features.checklistadapter.view.list.viewholder.UserDataViewHolder
 
 object BuilderViewHolder {
 

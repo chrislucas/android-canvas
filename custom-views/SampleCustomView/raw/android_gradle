@@ -1,0 +1,9 @@
+Proguard
+How to configure proguard to ONLY remove android logging calls
+https://stackoverflow.com/questions/15571520/how-to-configure-proguard-to-only-remove-android-logging-calls
+
+
+Shrink, obfuscate, and optimize your app
+https://developer.android.com/studio/build/shrink-code
+https://developer.android.com/studio/build/shrink-code?hl=pt-br
+https://gist.github.com/scottyab/6319110

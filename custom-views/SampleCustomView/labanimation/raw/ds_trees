@@ -1,0 +1,60 @@
+Class TreeMap<K,V>
+https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html
+public class TreeMap<K,V>
+extends AbstractMap<K,V>
+implements NavigableMap<K,V>, Cloneable, Serializable
+
+A red-black tree implementation
+
+The map is sorted according to the natural ordering of its keys, or by a comparator
+provided at map creation time (dependendo do construtor que for usado)
+
+Essa implementacao prove as operacoes containsKey, get, put e remove em tempo log(n)
+
+    - A implementacao do algoritmo sao adaptacoes do livros Introdution to ALgorithm do Cormen
+    e aliados :)
+
+- A ordem dos elementros no TreeMap eh mantida atraves do resultado do metodo equals
+    - Isso ocorre porque a interface Map esta definida em termos da operacao equals
+    - Mas um Sorted Map aplica todas as comparacoes de chaves usando o compareTo ou
+    compare das inferface Comparable e Comparator respecivamente
+
+
+------------------------------------------------------------------
+
+Class LinkedHashMap<K,V>
+https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html
+
+------------------------------------------------------------------
+
+Class HashMap<K,V>
+https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+
+
+------------------------------------------------------------------
+
+
+Differences between TreeMap, HashMap and LinkedHashMap in Java
+https://www.geeksforgeeks.org/differences-treemap-hashmap-linkedhashmap-java/
+
+------------------------------------------------------------------
+
+Difference between HashMap and TreeMap
+https://www.javatpoint.com/difference-between-hashmap-and-treemap
+
+------------------------------------------------------------------
+Java TreeMap vs HashMap
+https://www.baeldung.com/java-treemap-vs-hashmap
+
+------------------------------------------------------------------
+What is the difference between a HashMap and a TreeMap?
+https://stackoverflow.com/questions/2444359/what-is-the-difference-between-a-hashmap-and-a-treemap
+
+------------------------------------------------------------------
+
+treemap vs hashmap vs linkedhashmap vs hashtable
+https://dzone.com/articles/hashmap-vs-treemap-vs
+https://stackoverflow.com/questions/2444359/what-is-the-difference-between-a-hashmap-and-a-treemap
+
+
+------------------------------------------------------------------

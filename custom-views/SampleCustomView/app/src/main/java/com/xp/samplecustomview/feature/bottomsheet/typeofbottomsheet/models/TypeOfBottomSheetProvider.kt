@@ -5,16 +5,17 @@ import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_FEATU
 import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 
 internal fun providerTypesOfBottomSheet(listener: ListenerListFragmentsViewHolder) =
-    listOf<CompositeRecyclerViewItem<out MetadataListItem>>(
+
+    mutableListOf<CompositeRecyclerViewItem<out MetadataBottomSheet>>(
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
-            ItemStandardBottomSheet(listener),
+            StandardBottomSheet(listener),
             BindItemStandardBottomSheet(),
         ),
 
         CompositeRecyclerViewItem(
             VIEW_HOLDER_FEATURE_LIST_DEFAULT,
-            ItemModalBottomSheet(listener),
+            ModalBottomSheet(listener),
             BindItemModalBottomSheet(),
         )
-    )
+    ) as MutableList<CompositeRecyclerViewItem<Any>>

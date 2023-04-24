@@ -1,6 +1,6 @@
-include ':bookcustomview'
-include ':app'
 rootProject.name='SampleCustomView'
+include ':app'
+include ':bookcustomview'
 include ':samplecustomviews'
 include ':intentnavigation'
 include ':tryjetcompose'

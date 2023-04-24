@@ -12,7 +12,10 @@ import com.xp.samplecustomview.commons.view.recyclerview.action.DefaultSimpleBin
 import com.xp.samplecustomview.commons.view.recyclerview.action.ListenerListFragmentsViewHolder
 import com.xp.samplecustomview.commons.view.recyclerview.adapter.GenRecyclerView
 import com.xp.samplecustomview.databinding.FragmentTypeOfBottomSheetsBinding
+import com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.models.MetadataBottomSheet
+import com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.models.OnClickBottomSheet
 import com.xp.samplecustomview.feature.bottomsheet.typeofbottomsheet.models.providerTypesOfBottomSheet
+import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 import com.xp.samplecustomview.helper.fragments.BaseBehaviorFragment
 import com.xp.samplecustomview.helper.fragments.ChannelCommunicationFragmentActivity
 
@@ -41,7 +44,7 @@ class TypeOfBottomSheetsFragment : Fragment(), BaseBehaviorFragment,
         with(bindView.rcTypeOfBottomSheet) {
             layoutManager = GridLayoutManager(context, 2)
             adapter = GenRecyclerView(
-                providerTypesOfBottomSheet(listenerListViewHolder).toMutableList(),
+                providerTypesOfBottomSheet(listenerListViewHolder),
                 DefaultSimpleBindViewHolder()
             )
         }

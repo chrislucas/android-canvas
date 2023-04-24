@@ -6,6 +6,7 @@
       <module name="SampleCustomView.androidcanvas" target="11" />
       <module name="SampleCustomView.app" target="11" />
       <module name="SampleCustomView.bookcustomview" target="11" />
+      <module name="SampleCustomView.bookcustomview.main" target="11" />
       <module name="SampleCustomView.intentnavigation" target="11" />
       <module name="SampleCustomView.labanimation" target="11" />
       <module name="SampleCustomView.reflabs" target="11" />

@@ -4,11 +4,11 @@
 def deps = [:]
 def versions = [:]
 
-versions.ktx = '1.3.2'
+versions.ktx = '1.9.0'
 versions.androidxJunit = '1.1.2'
 versions.junit = '4.13.2'
-versions.kotlin = '1.6.10'
-versions.kotlinPlugin = '1.6.10'
+versions.kotlin = '1.7.10'
+versions.kotlinPlugin = '1.6.20'
 versions.ktlint = '0.41.0'
 
 versions.robolectric = '4.5.1'
@@ -19,7 +19,7 @@ versions.runtimeRxJava2Compose = '1.2.0-alpha03'
 versions.junit4Compose = 'runtimeLiveDataCompose'
 versions.activityCompose = "1.3.0-beta01"
 versions.viewModelCompose = "1.0.0-alpha06"
-versions.coroutines_android_version = '1.5.2'
+versions.coroutines_android_version = '1.6.0'
 
 versions.coordinatorLayoutVersion = '1.1.0'
 
@@ -28,10 +28,10 @@ versions.gsonVersion = '2.8.9'
 
 
 def buildVariables = [:]
-buildVariables.compileSdkVersion = 30
+buildVariables.compileSdkVersion = 33
 buildVariables.buildToolsVersion = "30.0.3"
 buildVariables.minSdkVersion = 21
-buildVariables.targetSdkVersion = 30
+buildVariables.targetSdkVersion = 33
 
 deps.buildVariables = buildVariables
 
@@ -92,8 +92,8 @@ extensions.versionsLib = versions
 
 def ktLintDependency = "com.pinterest:ktlint:${versions.ktlint}"
 extensions.dependencyPath = [
-        ktLintDependency,
-        "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlinPlugin}"
+        ktLintDependency
+        //, "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlinPlugin}"
 ]
 
 extensions.ktLintDependency = ktLintDependency

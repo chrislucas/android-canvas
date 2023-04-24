@@ -12,8 +12,7 @@ open class ItemFeatureDefault(val description: String)
 open class BindItemFeatureDefaultForFragment(
     private val channel: ListenerListFragmentsViewHolder,
     val baseBehaviorFragment: BaseBehaviorFragment
-) :
-    BindDataToViewHolder<ItemFeatureDefault> {
+) : BindDataToViewHolder<ItemFeatureDefault> {
 
     override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemFeatureDefault) {
         viewHolder.itemView.setOnClickListener {
@@ -28,4 +27,23 @@ open class BindItemFeatureDefaultForFragment(
         val mView = viewHolder as FeatureViewHolderDefault
         mView.viewTitle.text = data.description
     }
+}
+
+
+class BindItemFeatureDefaultActivity : BindDataToViewHolder<ItemFeatureDefault> {
+
+    override fun onClick(viewHolder: RecyclerView.ViewHolder, data: ItemFeatureDefault) {
+        viewHolder.itemView.setOnClickListener {
+
+        }
+    }
+
+    override fun fillViewHolderWithData(
+        viewHolder: RecyclerView.ViewHolder,
+        data: ItemFeatureDefault
+    ) {
+        val mView = viewHolder as FeatureViewHolderDefault
+        mView.viewTitle.text = data.description
+    }
+
 }

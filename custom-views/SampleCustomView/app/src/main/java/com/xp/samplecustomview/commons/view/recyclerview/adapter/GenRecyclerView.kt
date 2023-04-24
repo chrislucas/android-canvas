@@ -7,7 +7,7 @@ import com.xp.samplecustomview.commons.view.recyclerview.model.VIEW_HOLDER_UNDEF
 import com.xp.samplecustomview.feature.galleryoffeatures.models.CompositeRecyclerViewItem
 
 class GenRecyclerView<T>(
-    private val values: MutableList<CompositeRecyclerViewItem<in T>>,
+    private val values: MutableList<CompositeRecyclerViewItem<T>>,
     private val simpleBindViewHolder: SimpleBindViewHolder,
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -18,7 +18,7 @@ class GenRecyclerView<T>(
     override fun onViewAttachedToWindow(viewHolder: RecyclerView.ViewHolder) {
         if (viewHolder.absoluteAdapterPosition >= 0) {
             values[viewHolder.absoluteAdapterPosition].run {
-                val item = this.item as T
+                val item = this.item
                 binder.onClick(viewHolder, item)
             }
         }
@@ -28,7 +28,7 @@ class GenRecyclerView<T>(
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (values.isNotEmpty()) {
             values[position].run {
-                binder.fillViewHolderWithData(holder, this.item as T)
+                binder.fillViewHolderWithData(holder, this.item)
             }
         }
     }

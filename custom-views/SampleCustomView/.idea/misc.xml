@@ -18,6 +18,11 @@
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/labanimation/src/main/res/layout/activity_first_move_animation.xml" value="0.3541666666666667" />
         <entry key="..\:/g/repositories/github/android-canvas/custom-views/SampleCustomView/labanimation/src/main/res/layout/activity_fling_animation.xml" value="0.3125" />
         <entry key="androidcanvas/src/main/res/layout/activity_glrenderer.xml" value="0.3848958333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.134" />
+        <entry key="app/src/main/res/layout/activity_best_practices.xml" value="0.2706601466992665" />
+        <entry key="app/src/main/res/layout/activity_codelabs_shared_preference.xml" value="0.3640625" />
+        <entry key="app/src/main/res/layout/activity_sample_encrypted_shared_prerence.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_samples_of_webviews.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/bottom_sheet_departments_2_recycler_view.xml" value="0.3640625" />
         <entry key="app/src/main/res/layout/bottom_sheet_departments_multiple_recycler_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/bottom_sheet_departments_two_recycler_view.xml" value="0.3046875" />
@@ -30,7 +35,9 @@
         <entry key="app/src/main/res/layout/fragment_drawing_circle_using_path.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/fragment_drawing_grid_of_circles.xml" value="0.3640625" />
         <entry key="app/src/main/res/layout/fragment_first_example_bottom_sheet.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/fragment_generic_multilevel_recycler_view.xml" value="0.3640625" />
         <entry key="app/src/main/res/layout/fragment_javascript_interface_sample.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_layout_list_of_features.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_moving_in_circle_custom_view.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/fragment_navigation_u_i.xml" value="0.3046875" />
         <entry key="app/src/main/res/layout/fragment_recycler_view_pool.xml" value="0.22447916666666667" />
@@ -54,6 +61,10 @@
         <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_dialog_fragment_1.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/layout_modal_bottom_sheet_list_behavior.xml" value="0.1983695652173913" />
         <entry key="app/src/main/res/layout/layout_standard_bottom_sheet_dialog_fragment_1.xml" value="0.1983695652173913" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_custom_view_round.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.235" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.112" />
+        <entry key="app/src/main/res/mipmap-hdpi/ic_custom_view_round.xml" value="0.235" />
         <entry key="tryjetcompose/src/main/res/layout/fragment_first.xml" value="0.13802083333333334" />
       </map>
     </option>
