@@ -24,7 +24,7 @@ class CanvasView @JvmOverloads constructor(
 
     private var canvas: Canvas? = null
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         this.canvas = canvas
     }

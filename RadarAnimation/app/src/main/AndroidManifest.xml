@@ -9,8 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation">
         <activity
-            android:name="com.br.experience.features.radaranimation.RadarViewActivity"
+            android:name="com.br.experience.features.animation.view.BasicsViewAnimationActivity"
             android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.animation.fling.BasicsFlingAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.radaranimation.RadarViewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.br.experience.features.pathanimations.PathAnimationActivity"
             android:exported="false" />
@@ -19,13 +31,7 @@
             android:exported="false" />
         <activity
             android:name="com.br.experience.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
