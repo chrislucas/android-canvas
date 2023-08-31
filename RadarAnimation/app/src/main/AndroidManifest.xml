@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.br.experience.radaranimation">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -10,11 +9,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation">
         <activity
-            android:name=".MainActivity"
+            android:name=".EachStudyActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".canvas.book.FeatureEachChapterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".radaranimation.ShowRadarViewAnimationActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".canvas.drawing.plane.ShowCartesianPlaneViewActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.br.experience.canvas.book.chp3.ShowLineViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

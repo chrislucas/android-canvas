@@ -1,0 +1,69 @@
+Matematica para desenhar uma espiral num plano cartesiano
+
+
+Fonte do desafio
+https://twitter.com/LiveOverflow/status/1583849026901852162?t=X9ngooqEqXWa4QbEtSOxdQ&s=03
+
+Grafico
+https://www.wolframalpha.com/input?i=plot+x%3Dcos%28t%29*t%2F10%2Cy%3Dsin%28t%29*t%2F10+for+t%3D0..20pi
+plot x=cos(t)*t/10,y=sin(t)*t/10 for t=0..20pi
+
+
+Espiral de arquimedes
+https://www.wikiwand.com/en/Archimedean_spiral
+https://math.stackexchange.com/questions/3157030/parametrizing-the-square-spiral
+
+
+algorithm archimedes spiral
+https://www.obaricentrodamente.com/2012/01/construcao-geometrica-da-espiral-de.html
+https://pt.wikipedia.org/wiki/Espiral_de_Arquimedes
+https://rosettacode.org/wiki/Archimedean_spiral
+https://en.wikipedia.org/wiki/Archimedean_spiral
+https://en.wikipedia.org/wiki/Archimedean_spiral
+
+Trigonometria Basica
+https://www.ime.usp.br/~tgrando/210/L2.pdf
+
+Comprimento de uma Curva
+https://brasilescola.uol.com.br/matematica/comprimento-uma-curva.htm
+
+------------------------------------------------------------------------------------
+Ulam spiral
+https://en.wikipedia.org/wiki/Ulam_spiral
+https://pt.wikipedia.org/wiki/Espiral_de_Ulam
+
+------------------------------------------------------------------------------------
+Cartesian coordinates of the points on the plane in the same order as the Ulam Spiral
+https://math.stackexchange.com/questions/2388738/cartesian-coordinates-of-the-points-on-the-plane-in-the-same-order-as-the-ulam-s
+------------------------------------------------------------------------------------
+Investigating The Properties Of A Square Spiral
+https://jonseymour.medium.com/investigating-the-properties-of-a-square-spiral-6aa635a4d803
+------------------------------------------------------------------------------------
+
+Square spiral
+https://oeis.org/A174344
+	20--21--22--23--24--25
+
+   |                   |
+
+  19   6---7---8---9  26
+
+   |   |           |   |
+
+  18   5   0---1  10  27
+
+   |   |       |   |   |
+
+  17   4---3---2  11  28
+
+   |               |   |
+
+  16--15--14--13--12  29
+
+                       |
+
+  35--34--33--32--32--30
+  https://massivealgorithms.blogspot.com/2014/06/leetcode-spiral-matrix-java_26.html
+  https://computistics.tistory.com/25
+
+------------------------------------------------------------------------------------
