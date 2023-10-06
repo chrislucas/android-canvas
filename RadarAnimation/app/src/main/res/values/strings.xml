@@ -3,4 +3,11 @@
     <string name="label_bt_open_radar_view_activity">Abrir RadarViewActivity</string>
     <string name="label_bt_open_path_animation_activity">Abrir PathAnimationActivity</string>
     <string name="label_bt_open_basic_shapes_activity">Abrir BasicShapesActivity</string>
+    <string name="text_bt_drawing_rect">Retângulo</string>
+    <string name="text_bt_drawing_circle">Circulo</string>
+    <string name="text_bt_drawing_paths">Path</string>
+    <string name="text_bt_drawing_square">Quadrado</string>
+    <string name="text_bt_drawing_triangle">Triângulo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

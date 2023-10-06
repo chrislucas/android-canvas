@@ -9,6 +9,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation">
         <activity
+            android:name="com.br.experience.features.android2dgraphics.chp1.DrawCenteredLineViewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.android2dgraphics.chp3.DrawTextActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.android2dgraphics.chp3.ExplorerCanvasPathActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.android2dgraphics.chp3.DrawingPrimitivesActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name="com.br.experience.features.animation.view.BasicsViewAnimationActivity"
             android:exported="false" />
         <activity
@@ -16,13 +37,7 @@
             android:exported="false" />
         <activity
             android:name="com.br.experience.features.radaranimation.RadarViewActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name="com.br.experience.features.pathanimations.PathAnimationActivity"
             android:exported="false" />

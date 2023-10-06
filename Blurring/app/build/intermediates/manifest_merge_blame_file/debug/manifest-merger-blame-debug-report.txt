@@ -1,0 +1,82 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.br.blurring"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:5:5-28:19
+12        android:allowBackup="true"
+12-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.8.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/6a19de105318aab1da00cfa3c60fb56e/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:7:9-65
+15        android:debuggable="true"
+16        android:fullBackupContent="@xml/backup_rules"
+16-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:8:9-54
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:12:9-35
+21        android:theme="@style/Theme.Blurring" >
+21-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:13:9-46
+22        <activity
+22-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:15:9-27:20
+23            android:name="com.br.blurring.MainActivity"
+23-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:16:13-41
+24            android:exported="true" >
+24-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:17:13-36
+25            <intent-filter>
+25-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:18:13-22:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:19:17-69
+26-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:19:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:21:17-77
+28-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:21:27-74
+29            </intent-filter>
+30
+31            <meta-data
+31-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:24:13-26:36
+32                android:name="android.app.lib_name"
+32-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:25:17-52
+33                android:value="" />
+33-->/Users/chrsantos/Documents/repositories/personal/android-canvas/Blurring/app/src/main/AndroidManifest.xml:26:17-33
+34        </activity>
+35
+36        <provider
+36-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+37            android:name="androidx.startup.InitializationProvider"
+37-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+38            android:authorities="com.br.blurring.androidx-startup"
+38-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+39            android:exported="false" >
+39-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+40            <meta-data
+40-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+41                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+41-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+42                android:value="androidx.startup" />
+42-->[androidx.emoji2:emoji2:1.2.0] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+43            <meta-data
+43-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/a4f0fb44e9b56370f8c2ed23c9d5d030/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+44                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+44-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/a4f0fb44e9b56370f8c2ed23c9d5d030/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+45                android:value="androidx.startup" />
+45-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/chrsantos/.sdkman/candidates/gradle/caches/transforms-3/a4f0fb44e9b56370f8c2ed23c9d5d030/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+46        </provider>
+47    </application>
+48
+49</manifest>

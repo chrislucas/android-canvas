@@ -56,14 +56,17 @@ class RadarShape @JvmOverloads constructor(
         with(canvas) {
             rotate(angleRotation.toFloat(), midPoint, midPoint)
             increaseAngle()
-
+/*
             drawPath(path, alphaPaint)
+
             drawLine(
                 midPoint, midPoint, width.toFloat(), midPoint, linePaint
             )
             drawLine(
                 midPoint, midPoint, midPoint, ZERO_F, linePaint
             )
+
+ */
 
             drawCircle(midPoint, midPoint, pulseRadius, alphaPaint)
         }
@@ -75,7 +78,7 @@ class RadarShape @JvmOverloads constructor(
     private fun increaseAngle() {
         CoroutineScope(Dispatchers.Default).launch {
             while (true) {
-                delay(10)
+                delay(1000)
                 angleRotation += 1
                 degree += 1
                 val sine = abs(sin(Math.toRadians(degree.toDouble())))
