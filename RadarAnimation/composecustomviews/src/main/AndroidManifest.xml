@@ -3,14 +3,26 @@
 
     <application>
         <activity
+            android:name=".feature.createpolygons.DrawingPolygonsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_drawing_polygons"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name=".feature.tutorialgoogle.JetpackComposeTutorialActivity"
+            android:exported="false"
+            android:label="@string/title_activity_jetpack_compose_tutorial"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
             android:name=".view.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="main_compose_activity"
                     android:scheme="dpl" />

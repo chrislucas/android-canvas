@@ -16,9 +16,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        with(binding) {
+            btOpenMainComposeActivity.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://main_compose_activity")
+            }
 
-        binding.btOpenMainComposeActivity.setOnClickListener {
-            it.context.startActivityByDeeplink("dpl://main_compose_activity")
+            btOpenDrawingCenteredTextActivity.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://drawing_centered_text")
+            }
         }
+
+
+
+
     }
 }

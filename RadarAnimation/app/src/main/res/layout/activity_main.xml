@@ -49,6 +49,13 @@
                 android:text="@string/label_bt_open_main_compose_activity"
                 />
 
+            <Button
+                android:id="@+id/bt_open_drawing_centered_text_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_drawing_centered_text_activity"
+                />
+
         </LinearLayout>
 
     </ScrollView>

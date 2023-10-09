@@ -11,4 +11,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_bt_open_main_compose_activity">Abrir Main Activity Modulo Estudos Compose</string>
+    <string name="label_bt_open_drawing_centered_text_activity">Abrir Activity com DrawTextView</string>
 </resources>

@@ -1,4 +1,12 @@
 ------------------------------------------------------------------------------------------------------------------------
+Animate movement using spring physics
+https://developer.android.com/develop/ui/views/animations/spring-animation
+
+------------------------------------------------------------------------------------------------------------------------
+Customize animations
+https://developer.android.com/jetpack/compose/animation/customize#spring
+https://github.com/android/snippets/blob/edc51360798b8bb9eb540fc74a45a79710f307fa/compose/snippets/src/main/java/com/example/compose/snippets/animations/AnimationSnippets.kt#L635-L641
+------------------------------------------------------------------------------------------------------------------------
 Jetpack compose tutorial
 https://developer.android.com/jetpack/compose/tutorial?hl=pt-br
 https://developer.android.com/jetpack/compose/tutorial?hl=pt-br
