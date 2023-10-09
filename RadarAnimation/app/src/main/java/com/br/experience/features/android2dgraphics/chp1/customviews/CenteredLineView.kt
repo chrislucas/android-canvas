@@ -95,6 +95,7 @@ class CenteredLineView @JvmOverloads constructor(
         val measureTextPixel = paint.measureText(text)
 
         /*
+            https://alvinalexander.com/android/android-method-center-text-font-canvas-drawtext/
             Explicando a conta
 
             se eu tenho 100px para desenhar algo

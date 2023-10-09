@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_error_try_open_activity_by_deeplink">
+        Não foi encontrada uma activity que responde-se a $1%s
+    </string>
+</resources>

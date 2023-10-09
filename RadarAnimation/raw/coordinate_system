@@ -6,6 +6,52 @@ Computer Graphics Window to Viewport Co-ordinate Transformation
 https://www.javatpoint.com/computer-graphics-window-to-viewport-co-ordinate-transformation
 
 ------------------------------------------------------------------------------------------------------------------------
+Trigonometria
+	- funcoes trigonometricas inversas
+		- http://www.uel.br/projetos/matessencial/basico/trigonometria/trigo08.html
+	Basic Geometry
+		- https://cp-algorithms.com/geometry/basic-geometry.html
+
+------------------------------------------------------------------------------------------------------------------------
+About coordinate systems
+https://codeguppy.com/blog/coordinate-systems/index.html
+- Sistema de coordenadas e um importante conceito em computacao grafica. Tal conceito é usado para especificar
+a posicao e orientacao de um objeto num espaco virtual
+
+	- O sistema de coordenadas é constituido de
+		- Sistema de numeros
+		- Simbolos
+		- Eixos
+	- Usados para descrever a posicao de um ponto ou objeto no espaco
+
+- A uma serie de sistema de coordenadas utilizados em computacao grafica, algumas delas sao:
+	- cartesiano
+	- polar
+		- 2 valores um raio e um angulo
+				- O raio especifica a distancia do ponto a origem
+				- O angulo espeficica a direcao do ponto para origem
+		- para converter uma posicao do plano cartesiano para o polar basta usar a formula da hipotenusa de pitagoras
+			- O raio ou a distancia entre a origem e o ponto é dado equacao
+				- R = SQRT( x^2 + y^2)
+				- onde x e y sao os valores no ponto no plano cartesiano que se quer converter
+			- O angulo
+				- uma vez que o raio foi determinado precisamos calcular o angulo
+				- Ele pode ser calculado atraves da funcao arco tangente
+					- essa funcao recebe os valores de y e x e retonar o angulo em cadianos
+
+				- Exemplo, se P(3, 4) o ponto cartesiano que queremos converter em polar
+					- R = sqrt(9 + 16) = 5
+					- Angulo = atan(4, 3) ou atan(4/3) = aprox 53.13 graus
+
+	- esferico
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+3D Coordinates and Transforms
+https://math.hws.edu/graphicsbook/c3/s2.html
+------------------------------------------------------------------------------------------------------------------------
+https://www.cs.uic.edu/~jbell/CourseNotes/ComputerGraphics/Coordinates.html
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------

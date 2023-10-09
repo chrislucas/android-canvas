@@ -1,5 +1,8 @@
 package com.br.experience.features.android2dgraphics.chp2
 
+import kotlin.math.atan2
+import kotlin.math.sqrt
+
 /**
  * O sistema de coordenada de dispositivo tem sua ORIGEM no canto superior esquerdo da tela
  * Assim o ponto (0, 0) está lá.
@@ -60,9 +63,13 @@ class CoordinateSystem(private val originRef: Pair<Double, Double>) {
         return Pair(originRef.first + point.first, originRef.second + point.second)
     }
 
-
     fun toCartesianSystem(point: Pair<Double, Double>): Pair<Double, Double> {
         return Pair(originRef.first - point.first, originRef.second - point.second)
     }
+
+    fun Pair<Double, Double>.toPolarCoordinate(): Pair<Double, Double> =
+        let { (x, y) ->
+            Pair(sqrt(x * x + y * y), atan2(y, x))
+        }
 }
 
