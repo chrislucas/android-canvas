@@ -187,6 +187,42 @@
       <option name="m_minLength" value="0" />
       <option name="m_maxLength" value="0" />
     </inspection_tool>
+    <inspection_tool class="PreviewAnnotationInFunctionWithParameters" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewApiLevelMustBeValid" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewDimensionRespectsLimit" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewFontScaleMustBeGreaterThanZero" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewMultipleParameterProviders" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewMustBeTopLevelFunction" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewNeedsComposableAnnotation" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewNotSupportedInUnitTestFiles" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PreviewPickerAnnotation" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="composableFile" value="true" />
+      <option name="previewFile" value="true" />
+    </inspection_tool>
     <inspection_tool class="PrivateMemberAccessBetweenOuterAndInnerClass" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RedundantThrowsDeclaration" enabled="true" level="WARNING" enabled_by_default="true" />

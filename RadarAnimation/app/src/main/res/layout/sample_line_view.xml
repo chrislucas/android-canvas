@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.br.experience.features.android2dgraphics.chp1.customviews.CenteredLineView
+    <com.br.experience.features.book.android2dgraphics.chp1.customviews.CenteredLineView
         style="@style/Widget.Theme.RadarAnimation.MyView"
         android:layout_width="300dp"
         android:layout_height="300dp"

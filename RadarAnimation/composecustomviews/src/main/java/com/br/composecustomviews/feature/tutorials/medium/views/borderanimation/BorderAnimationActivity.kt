@@ -1,0 +1,46 @@
+package com.br.composecustomviews.feature.tutorials.medium.views.borderanimation
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.br.composecustomviews.feature.tutorials.medium.views.borderanimation.ui.theme.RadarAnimationTheme
+
+/**
+ * https://proandroiddev.com/animate-borders-in-jetpack-compose-ca359deed7d5
+ */
+class BorderAnimationActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            RadarAnimationTheme {
+                // A surface container using the 'background' color from the theme
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                    Greeting4("Android")
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun Greeting4(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview4() {
+    RadarAnimationTheme {
+        Greeting4("Android")
+    }
+}

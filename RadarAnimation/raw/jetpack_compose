@@ -27,10 +27,32 @@ https://developer.android.com/develop/ui/views/graphics/drawables
 Canvas
 https://developer.android.com/reference/android/graphics/Canvas
 ------------------------------------------------------------------------------------------------------------------------
+
+Apis de interoperabilidade
+https://developer.android.com/jetpack/compose/interop/interop-apis?hl=pt-br
+
 ------------------------------------------------------------------------------------------------------------------------
+Migrar apps baseados em visualização
+https://developer.android.com/jetpack/compose/migrate?hl=pt-br
+
+Compose samples
+https://github.com/android/sunflower/tree/main
+
+App Crane
+https://github.com/android/compose-samples/tree/main/Crane
+
+https://github.com/android/compose-samples
+
 ------------------------------------------------------------------------------------------------------------------------
+
+Como usar visualizações no Compose
+https://developer.android.com/jetpack/compose/migrate/interoperability-apis/views-in-compose?hl=pt-br
+
 ------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------
+
+https://developer.android.com/jetpack/compose/resources
+
+--------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------

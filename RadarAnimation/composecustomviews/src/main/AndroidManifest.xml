@@ -3,10 +3,75 @@
 
     <application>
         <activity
+            android:name="com.br.tutotiral.google.leessonone.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="1st_tutorial_jetpack_compose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.tutorials.medium.preferencesettings.PreferenceApiJetpackComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_preference_api_jetpack_compose_i"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="main_api_reference_jetpack_compose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.tutorials.medium.general.composablefun.ComposableFunctionActivity"
+            android:exported="true"
+            android:label="@string/title_activity_composable_function"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="composable_function_tutorial_jetpack_compose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.tutorials.medium.views.borderanimation.BorderAnimationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_border_animation"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="border_animation_tutorial_jetpack_compose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".feature.createpolygons.DrawingPolygonsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_drawing_polygons"
-            android:theme="@style/Theme.RadarAnimation" />
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="drawing_polygons_tutorial_jetpack_compose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".feature.tutorialgoogle.JetpackComposeTutorialActivity"
             android:exported="false"

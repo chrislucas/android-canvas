@@ -9,13 +9,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation">
         <activity
+            android:name="com.br.experience.features.customswitchbutton.CustomSwitchButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.db.fromroomtodelight.FromRoomToSqlDelightActivity"
+            android:exported="false"
+            android:label="@string/title_activity_from_room_to_sql_delight" />
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.viewmodellifecycle.ViewLifecycleLazyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.cardview.layoutbasedcardview.LayoutBasedOnCardViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.textinputlaout.TextInputLayoutIActivity"
+            android:exported="false" />
+        <activity
             android:name="com.br.experience.features.beziercurve.drawingheart.DrawingHeartWithBezierCurveActivity"
             android:exported="false" />
         <activity
-            android:name="com.br.experience.features.android2dgraphics.AllBookSamplesActivity"
+            android:name="com.br.experience.features.book.android2dgraphics.AllBookSamplesActivity"
             android:exported="false" />
         <activity
-            android:name="com.br.experience.features.android2dgraphics.chp1.DrawingTextIActivity"
+            android:name="com.br.experience.features.book.android2dgraphics.chp1.DrawingTextIActivity"
             android:exported="true"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.RadarAnimation.NoActionBar">
@@ -31,18 +47,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.br.experience.features.android2dgraphics.chp1.DrawCenteredLineViewActivity"
+            android:name="com.br.experience.features.book.android2dgraphics.chp1.DrawCenteredLineViewActivity"
             android:exported="false"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.RadarAnimation.NoActionBar" />
         <activity
-            android:name="com.br.experience.features.android2dgraphics.chp3.DrawTextActivity"
+            android:name="com.br.experience.features.book.android2dgraphics.chp3.DrawTextActivity"
             android:exported="false" />
         <activity
-            android:name="com.br.experience.features.android2dgraphics.chp3.ExplorerCanvasPathActivity"
+            android:name="com.br.experience.features.book.android2dgraphics.chp3.ExplorerCanvasPathActivity"
             android:exported="false" />
         <activity
-            android:name="com.br.experience.features.android2dgraphics.chp3.DrawingPrimitivesActivity"
+            android:name="com.br.experience.features.book.android2dgraphics.chp3.DrawingPrimitivesActivity"
             android:exported="false" />
         <activity
             android:name="com.br.experience.features.animation.view.BasicsViewAnimationActivity"

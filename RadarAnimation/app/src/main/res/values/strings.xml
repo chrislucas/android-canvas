@@ -12,4 +12,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_bt_open_main_compose_activity">Abrir Main Activity Modulo Estudos Compose</string>
     <string name="label_bt_open_drawing_centered_text_activity">Abrir Activity com DrawTextView</string>
+    <string name="title_activity_from_room_to_sql_delight">FromRoomToSqlDelightActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
