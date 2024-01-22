@@ -1,0 +1,63 @@
+------------------------------------------------------------------------------------------------------------------------
+O ciclo de vida de um ViewModel
+https://developer.android.com/topic/libraries/architecture/viewmodel?hl=pt-br#lifecycle
+
+------------------------------------------------------------------------------------------------------------------------
+Criar ViewModels com dependências
+https://developer.android.com/topic/libraries/architecture/viewmodel/viewmodel-factories?hl=pt-br
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+extension function viewModels
+https://developer.android.com/reference/kotlin/androidx/fragment/app/package-summary#(androidx.fragment.app.Fragment).viewModels(kotlin.Function0,kotlin.Function0,kotlin.Function0)
+
+
+@MainThread
+inline fun <VM : ViewModel> Fragment.viewModels(
+    noinline ownerProducer: () -> ViewModelStoreOwner = { this },
+    noinline extrasProducer: (() -> CreationExtras)? = null,
+    noinline factoryProducer: (() -> ViewModelProvider.Factory)? = null
+): Lazy<VM>
+
+What is by viewModels{} in Android
+https://dev.to/theplebdev/what-is-viewmodels-in-android-5464
+------------------------------------------------------------------------------------------------------------------------
+Re-Slicing Your ViewModel with Delegates
+https://medium.com/@frenziedherring/re-slicing-your-viewmodel-with-delegates-1a7f9adf05d5
+------------------------------------------------------------------------------------------------------------------------\
+How does kotlin use this by delegate to instantiate the viewmodel
+https://stackoverflow.com/questions/58106707/how-does-kotlin-use-this-by-delegate-to-instantiate-the-viewmodel
+
+------------------------------------------------------------------------------------------------------------------------
+Slicing your ViewModel with Delegates
+
+https://medium.com/@rodrigolino/slicing-your-viewmodel-with-delegates-2594e6ab4959
+------------------------------------------------------------------------------------------------------------------------
+Leveraging Kotlin Delegation to Simplify ViewModel Collaboration and State Management
+https://proandroiddev.com/leveraging-kotlin-delegation-to-simplify-viewmodel-collaboration-and-state-management-399c17cf5df5
+
+------------------------------------------------------------------------------------------------------------------------
+Kotlin, Android, Bits and tricks Series' Articles
+https://dev.to/theplebdev/series/18367
+
+
+------------------------------------------------------------------------------------------------------------------------
+viewmodels() extension function
+https://stackoverflow.com/questions/66191801/why-is-the-android-viewmodels-extension-function-available-in-the-fragment-ktx
+
+Relacionados
+Android KTX
+https://developer.android.com/kotlin/ktx
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------

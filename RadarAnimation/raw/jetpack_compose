@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------------------------------------------------------
+Migrate existing View-based apps
+
+https://developer.android.com/jetpack/compose/migrate
+https://developer.android.com/jetpack/compose/migrate/migration-scenarios/recycler-view
+https://medium.com/androiddevelopers/jetpack-compose-interop-using-compose-in-a-recyclerview-569c7ec7a583
+------------------------------------------------------------------------------------------------------------------------
 Slider
 https://developer.android.com/jetpack/compose/components/slider
 https://developer.android.com/reference/com/google/android/material/slider/Slider
@@ -53,6 +59,27 @@ https://developer.android.com/jetpack/compose/migrate/interoperability-apis/view
 https://developer.android.com/jetpack/compose/resources
 
 --------------------------------------------------------------------------------------------------------------
+
+Samples
+https://developer.android.com/design/ui/mobile/samples#fromHistory
+https://github.com/android/compose-samples/tree/main/Jetchat
+------------------------------------------------------------------------------------------------------------------------
+App data and files
+https://developer.android.com/guide/topics/data#fromHistory
+
+------------------------------------------------------------------------------------------------------------------------
+Storage samples
+https://github.com/android/storage-samples
+------------------------------------------------------------------------------------------------------------------------
+Room
+https://developer.android.com/jetpack/androidx/releases/room?hl=pt-br
+https://developer.android.com/training/data-storage/room?hl=pt-br
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------

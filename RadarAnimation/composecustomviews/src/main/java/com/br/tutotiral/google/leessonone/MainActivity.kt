@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.TextUnit
 import com.br.tutotiral.google.leessonone.ui.theme.RadarAnimationTheme
 
 class MainActivity : ComponentActivity() {
@@ -49,4 +50,5 @@ fun GreetingPreview7() {
     RadarAnimationTheme {
         Greeting7("Android")
     }
+    Text(text = "Hello, My Friend")
 }

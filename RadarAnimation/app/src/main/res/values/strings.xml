@@ -8,12 +8,33 @@
     <string name="text_bt_drawing_paths">Path</string>
     <string name="text_bt_drawing_square">Quadrado</string>
     <string name="text_bt_drawing_triangle">Triângulo</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_bt_open_main_compose_activity">Abrir Main Activity Modulo Estudos Compose</string>
+    <string name="label_bt_open_first_tutorial_compose">Abrir Activity do Primeiro Tutorial de Compose</string>
     <string name="label_bt_open_drawing_centered_text_activity">Abrir Activity com DrawTextView</string>
     <string name="title_activity_from_room_to_sql_delight">FromRoomToSqlDelightActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_word">Word…</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="add_word">Add word</string>
+    <string name="label_bt_open_first_tutorial_room_with_view_model_and_livedata">
+        Abrir Activity Codebabs Room With ViewModel e LiveData
+    </string>
+    <string name="label_bt_open_first_tutorial_room_with_view_model_and_flow">
+        Abrir Activity Codebabs Room With ViewModel e Flow
+    </string>
+    <string name="title_activity_open_feature">OpenFeatureActivity</string>
+    <string-array name="hints_word">
+        <item>Word</item>
+        <item>Anything</item>
+    </string-array>
+
+
 </resources>

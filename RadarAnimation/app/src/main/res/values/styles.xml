@@ -4,4 +4,16 @@
         <item name="android:background">@color/gray_400</item>
         <item name="exampleColor">@color/light_blue_400</item>
     </style>
+
+    <style name="DefaultStyle_CardView" parent="Base.CardView">
+        <item name="cardCornerRadius">@dimen/card_view_default_radius</item>
+        <item name="cardElevation">@dimen/card_view_default_elevation</item>
+
+        <item name="contentPadding">10sp</item>
+        <item name="android:layout_marginBottom">8sp</item>
+        <item name="android:layout_marginStart">8sp</item>
+        <item name="android:layout_marginEnd">8sp</item>
+        <item name="android:layout_marginTop">8sp</item>
+
+    </style>
 </resources>

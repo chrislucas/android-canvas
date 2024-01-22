@@ -3,14 +3,31 @@
 
     <application>
         <activity
+            android:name="com.br.tutotiral.google.aboutwindowinsets.WindowsInsetsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_windows_insets"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.lazylist.FunWithLazyListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_fun_with_lazy_list"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.stateandjackpackcompose.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
             android:name="com.br.tutotiral.google.leessonone.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="1st_tutorial_jetpack_compose"
                     android:scheme="dpl" />
@@ -23,8 +40,10 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="main_api_reference_jetpack_compose"
                     android:scheme="dpl" />
@@ -37,8 +56,10 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="composable_function_tutorial_jetpack_compose"
                     android:scheme="dpl" />
@@ -51,8 +72,10 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="border_animation_tutorial_jetpack_compose"
                     android:scheme="dpl" />
@@ -65,8 +88,10 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="drawing_polygons_tutorial_jetpack_compose"
                     android:scheme="dpl" />

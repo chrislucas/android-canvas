@@ -56,6 +56,29 @@
                 android:text="@string/label_bt_open_drawing_centered_text_activity"
                 />
 
+            <Button
+                android:id="@+id/bt_open_first_tutorial_compose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_first_tutorial_compose"
+                />
+
+
+            <Button
+                android:id="@+id/bt_open_tutorial_room_with_view_model_and_livedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_first_tutorial_room_with_view_model_and_livedata"
+                />
+
+
+            <Button
+                android:id="@+id/bt_open_tutorial_room_with_view_model_and_flow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_first_tutorial_room_with_view_model_and_flow"
+                />
+
         </LinearLayout>
 
     </ScrollView>

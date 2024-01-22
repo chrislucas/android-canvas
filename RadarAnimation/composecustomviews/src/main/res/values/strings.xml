@@ -6,4 +6,6 @@
     <string name="title_activity_composable_function">ComposableFunctionActivity</string>
     <string name="title_activity_preference_api_jetpack_compose">PreferenceApiJetpackComposeActivity</string>
     <string name="title_activity_preference_api_jetpack_compose_i">Api Preference Jetpack Compose</string>
+    <string name="title_activity_fun_with_lazy_list">FunWithLazyListActivity</string>
+    <string name="title_activity_windows_insets">WindowsInsetsActivity</string>
 </resources>

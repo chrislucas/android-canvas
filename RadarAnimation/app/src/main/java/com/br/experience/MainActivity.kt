@@ -24,10 +24,18 @@ class MainActivity : AppCompatActivity() {
             btOpenDrawingCenteredTextActivity.setOnClickListener {
                 it.context.startActivityByDeeplink("dpl://drawing_centered_text")
             }
+
+            btOpenFirstTutorialCompose.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://1st_tutorial_jetpack_compose")
+            }
+
+            btOpenTutorialRoomWithViewModelAndLivedata.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://codelabsroomwithviewmodelandlivedata")
+            }
+
+            btOpenTutorialRoomWithViewModelAndFlow.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://codelabsroomwithviewmodelandflow")
+            }
         }
-
-
-
-
     }
 }

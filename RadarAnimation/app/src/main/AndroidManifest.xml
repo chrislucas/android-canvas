@@ -7,7 +7,52 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RadarAnimation">
+        android:theme="@style/Theme.RadarAnimation.NoActionBar">
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.DrawUnderStatusBarActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.listandopen.OpenFeatureActivity"
+            android:exported="false"
+            android:label="@string/title_activity_open_feature"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.listadaptervsrecyclerview.AppListAdapterVsRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.codelabs.arch.basicroomcleanarch.SampleWithCleanArchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.codelabs.arch.basicroomwithflow.CodeLabsRoomWithViewModelAndFlow"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="codelabsroomwithviewmodelandflow"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.codelabs.arch.basicroomwithllivedata.views.CodeLabsRoomWithViewModelAndLiveData"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="codelabsroomwithviewmodelandlivedata"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.codelabs.sec.privacysample.AndroidPrivacyCodelabsActivity"
+            android:exported="false" />
         <activity
             android:name="com.br.experience.features.customswitchbutton.CustomSwitchButtonActivity"
             android:exported="false" />
