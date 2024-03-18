@@ -8,4 +8,13 @@
     <string name="title_activity_preference_api_jetpack_compose_i">Api Preference Jetpack Compose</string>
     <string name="title_activity_fun_with_lazy_list">FunWithLazyListActivity</string>
     <string name="title_activity_windows_insets">WindowsInsetsActivity</string>
+    <string name="title_activity_episode_one">EpisodeOneActivity</string>
+    <string name="title_activity_episode_iiactivity">EpisodeIIActivity</string>
+    <string name="title_activity_animated_border">AnimatedBorderActivity</string>
+    <string name="title_activity_container_transform_animation">ContainerTransformAnimationActivity</string>
+    <string name="title_activity_overview_animation">OverviewAnimationActivity</string>
+    <string name="title_activity_view_model_and_state">ViewModelAndStateActivity</string>
+    <string name="title_activity_testing_compose">TestingComposeActivity</string>
+    <string name="title_activity_all_compose_view">AllComposeViewActivity</string>
+    <string name="title_activity_sample_of_lists">SampleOfListsActivity</string>
 </resources>

@@ -9,6 +9,78 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation.NoActionBar">
         <activity
+            android:name="com.br.experience.features.codelabs.arch.lifecycleawarecomponents.views.CodelabsLifecycleAwareComponentsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.codelabs.testinginjetpackcompose.TestingInJetpackComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_testing_in_jetpack_compose"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar" />
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.aboutcoroutines.mocking.FakeApiMockingCoroutinesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.reclerview.diffutilsi.UsingDiffUtilsOnRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.aboutcoroutines.dispatcher.SampleCoroutineDispatcherKDocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="samplecoroutinedispatcher"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.tutorials.medium.unittestcoroutines.UnitTestCoroutinesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_unit_test_coroutines"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar" />
+        <activity
+            android:name="com.br.experience.features.codelabs.viewmodelunittest.scramblewordgamecopy.ScrambleGameActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scramble_game"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar" />
+        <activity
+            android:name="com.br.experience.features.funwithrobolectric.FirstTestWithRobolectricActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="robolectric1sttest"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.codelabs.viewmodelunittest.scramblewordgamecopy.ScrambleWordGameActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="codelabsscramblewordgamecopy"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.codelabs.funwithworkmanager.FunWithWorkManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.studies.booke.androidarchfinal.AndroidArchitechtureActivity"
+            android:exported="false" />
+        <activity
             android:name="com.br.experience.features.tutorials.medium.DrawUnderStatusBarActivity"
             android:exported="false" />
         <activity

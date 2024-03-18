@@ -4,7 +4,6 @@ import com.br.experience.features.codelabs.arch.basicroomwithllivedata.entity.Wo
 
 data class Word(val value: String)
 
-
 fun Word.toEntityWord() = WordEntity(word = value)
 
 fun WordEntity.toWord() = Word(value = word)

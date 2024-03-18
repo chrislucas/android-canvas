@@ -31,4 +31,6 @@
         <!-- Optional: set for a light status bar with dark content. -->
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <style name="Theme.Unscramble" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

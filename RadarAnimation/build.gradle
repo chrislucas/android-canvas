@@ -6,6 +6,6 @@ plugins {
     id 'com.google.devtools.ksp' version '1.9.22-1.0.16' apply false
 }
 
-task clean(type: Delete) {
+tasks.register('clean', Delete) {
     delete rootProject.buildDir
 }

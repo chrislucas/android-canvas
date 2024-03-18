@@ -3,6 +3,51 @@
 
     <application>
         <activity
+            android:name="com.br.tutotiral.google.allcomponents.feature.basiclists.SampleOfListsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sample_of_lists"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.allcomponents.AllComposeViewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_all_compose_view"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.codelabs.testingcompose.TestingComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_testing_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.codelabs.viewmodelandstate.ViewModelAndStateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_view_model_and_state"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.animation.OverviewAnimationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_overview_animation"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.containertransformanimation.ContainerTransformAnimationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_container_transform_animation"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.animatedborder.AnimatedBorderActivity"
+            android:exported="false"
+            android:label="@string/title_activity_animated_border"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.ktacademy.episodeii.EpisodeIIActivity"
+            android:exported="false"
+            android:label="@string/title_activity_episode_iiactivity"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.ktacademy.episodei.EpisodeOneActivity"
+            android:exported="false"
+            android:label="@string/title_activity_episode_one"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
             android:name="com.br.tutotiral.google.aboutwindowinsets.WindowsInsetsActivity"
             android:exported="false"
             android:label="@string/title_activity_windows_insets"

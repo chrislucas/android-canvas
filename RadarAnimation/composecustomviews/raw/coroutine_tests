@@ -1,0 +1,39 @@
+https://developer.android.com/kotlin/coroutines/test
+------------------------------------------------------------------------------------------------------------
+https://developer.android.com/kotlin/coroutines/test#injecting-test-dispatchers
+------------------------------------------------------------------------------------------------------------
+
+coroutines
+https://developer.android.com/kotlin/coroutines
+------------------------------------------------------------------------------------------------------------
+https://medium.com/mobile-app-development-publication/7-gotchas-when-explore-kotlin-coroutine-64b78f005150
+
+
+Resumo do artigo
+
+runBlocking(Dispatchers.Main) trava o funcionamento do app
+
+No texto o autor usa como exemplo o bloco de codigo abaixo para exemplificar
+
+    runBlocking(Dispatchers.Main) {
+        Log.d("Track", "${Thread.currentThread()}")
+        Log.d("Track", "$coroutineContext")
+    }
+
+Com o Dispatchers.Main o metodo onCreate nao finaliza
+
+A instrucao runBlocking(Dispatchers.Main) nao eh a mesma coisa na MainThread do que
+executar runBlocking {} Na MainThread
+------------------------------------------------------------------------------------------------------------
+
+Coroutine context and dispatchers﻿
+https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html#dispatchers-and-threads
+
+
+------------------------------------------------------------------------------------------------------------
+compose
+https://developer.android.com/courses/android-basics-compose/course
+------------------------------------------------------------------------------------------------------------
+Unit Test in Jetpack Compose
+https://medium.com/huawei-developers/unit-test-in-jetpack-compose-57c64fd035b7
+------------------------------------------------------------------------------------------------------------

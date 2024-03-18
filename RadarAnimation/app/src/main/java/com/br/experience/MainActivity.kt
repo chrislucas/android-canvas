@@ -36,6 +36,14 @@ class MainActivity : AppCompatActivity() {
             btOpenTutorialRoomWithViewModelAndFlow.setOnClickListener {
                 it.context.startActivityByDeeplink("dpl://codelabsroomwithviewmodelandflow")
             }
+
+            btOpenTutorialViewModelAndLivedataTestCodelabs.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://codelabsscramblewordgamecopy")
+            }
+
+            btOpenTutorialCoroutineDispatcher.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://samplecoroutinedispatcher")
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.br.experience.features.codelabs.arch.basicroomwithllivedata.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,7 +10,7 @@ import com.br.experience.features.codelabs.arch.basicroomwithllivedata.entity.Wo
 import com.br.experience.features.codelabs.arch.basicroomwithllivedata.model.Word
 import com.br.experience.features.codelabs.arch.basicroomwithllivedata.model.toEntityWord
 import com.br.experience.features.codelabs.arch.basicroomwithllivedata.model.toWord
-import com.br.experience.features.codelabs.arch.basicroomwithllivedata.repository.WordRepository
+import com.br.experience.features.codelabs.arch.basicroomwithllivedata.repository.WordLiveDataRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -26,7 +27,7 @@ import kotlinx.coroutines.launch
  * com uma classe do Android
  */
 
-class WordViewModel(private val repository: WordRepository) : ViewModel() {
+class WordViewModel(private val repository: WordLiveDataRepository) : ViewModel() {
 
     private val wordsMutableLiveData = MutableLiveData<List<Word>>()
 
@@ -39,18 +40,23 @@ class WordViewModel(private val repository: WordRepository) : ViewModel() {
     fun insert(word: Word) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.insert(word.toEntityWord())
+            val list = repository.liveDataWordsEntity?.value?.map(WordEntity::toWord) ?: listOf<Word>()
+            Log.i("ADDING_WORD", "$list")
+            //wordsMutableLiveData.value = list
+        }
+    }
+
+    class WordViewModelFactory(private val repository: WordLiveDataRepository): ViewModelProvider.Factory {
+
+        @Suppress("UNCHECKED_CAST")
+        override fun <T : ViewModel> create(modelClass: Class<T>): T {
+            return if(modelClass.isAssignableFrom(WordViewModel::class.java)) {
+                WordViewModel(repository) as T
+            } else {
+                throw IllegalArgumentException("throws exception on create WordViewModel")
+            }
         }
     }
 }
 
 
-class WordViewModelFactory(private val repository: WordRepository): ViewModelProvider.Factory {
-
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return if(modelClass.isAssignableFrom(WordViewModel::class.java)) {
-            WordViewModel(repository) as T
-        } else {
-            throw IllegalArgumentException("throws exception on create WordViewModel")
-        }
-    }
-}

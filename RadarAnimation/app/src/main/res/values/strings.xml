@@ -31,10 +31,33 @@
         Abrir Activity Codebabs Room With ViewModel e Flow
     </string>
     <string name="title_activity_open_feature">OpenFeatureActivity</string>
+    <string name="label_bt_open_tutorial_view_model_test_codelabs">Abrir Activity Test View Model e Live Data</string>
+    <string name="title_activity_scramble_game">ScrambleGameActivity</string>
+    <string name="label_start_game_scramble_word_activity">Start Word Scramble</string>
+    <string name="title_activity_unit_test_coroutines">UnitTestCoroutinesActivity</string>
+    <string name="label_bt_open_tutorial_coroutine_dispatcher">
+        Abrir Activity Test Coroutine Dispatcher
+    </string>
+    <string name="app_name_game">Unscramble</string>
+    <!-- Inicio strings projeto wordscramble-->
+    <string name="instructions">Unscramble the word using all the letters.</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="score">Score: %d</string>
+    <string name="word_count">%d/10</string>
+
+    <string name="enter_your_word">Enter your word</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_scored">"You scored: %d"</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+    <string name="wrong_guess">Wrong Guess!</string>
+    <string name="title_activity_testing_in_jetpack_compose">TestingInJetpackComposeActivity</string>
     <string-array name="hints_word">
         <item>Word</item>
         <item>Anything</item>
     </string-array>
+    <!-- fim strings projeto wordscramble-->
 
 
 </resources>

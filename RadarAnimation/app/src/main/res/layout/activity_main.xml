@@ -79,6 +79,20 @@
                 android:text="@string/label_bt_open_first_tutorial_room_with_view_model_and_flow"
                 />
 
+            <Button
+                android:id="@+id/bt_open_tutorial_view_model_and_livedata_test_codelabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_tutorial_view_model_test_codelabs"
+                />
+
+            <Button
+                android:id="@+id/bt_open_tutorial_coroutine_dispatcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_tutorial_coroutine_dispatcher"
+                />
+
         </LinearLayout>
 
     </ScrollView>

@@ -14,7 +14,6 @@ import com.br.experience.features.codelabs.arch.basicroomwithllivedata.views.vie
 
 class WordListAdapter: ListAdapter<Word, WordViewHolder>(WordsComparator) {
 
-
     companion object {
         private val WordsComparator = object : DiffUtil.ItemCallback<Word>() {
             override fun areItemsTheSame(oldItem: Word, newItem: Word) =

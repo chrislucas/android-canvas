@@ -45,5 +45,93 @@ https://developer.android.com/develop/ui/views/layout/edge-to-edge-manually
 
 
 -----------------------------------------------------------------------------------------------------
+Build type  e Flavors
+https://developer.android.com/build/build-variants
+
+
+- Build Variant é o resultado de uso de um conjunto especifico de regras combinadas
+para gerar uma configuração, código e recursos configurados num Build Type e Product Flavor.
+
+- Um Product Flavor com nome de "demo" pode especificar certas caracteristicas e requisitos
+para um dispositivo, como uma API Level mínima, um código fonte ou recurso específico
+
+- Um Build Type denominado "debug" (ou release) aplica diferentes configuracoes de build e packaging,
+tais como debug options e signing keys (chave de asinatura do app na loja/console)
+
+- O Build Variant combina ProductFlavor e BuildType, por exemplo com demoDebug que é uma combinacao os
+recursos e configurações do Product Flavor "demo" com o Build Type Debug e o sourceset main/
+
+
+- POdemos criar uma confuguracao de Build Type dentro do arquivo build.gradle(.kts)
+	- Quando criamos um módulo, a IDE automaticamente cria os build types debug e release
+		- Embora o build type debug não seja adicionado explicitamente no arquivo .gradle, podemos
+		adiciona-lo caso queiramos configurar algo específico para ele
+		- o Build Type debug tem a flag debugglable definida como true por padrão, por motivos
+		obvios, isso permite depurar o aplicativo num dispositivo e assina o app com uma chave
+		de debug generica
+
+- Product Flavor
+	- o bloco productFlavor suporta as mesmas propriedades que defaultConfig
+	- isso porque defaultConfig pertence a classe ProductFlavor
+	- Assim, podemos definir configuraçoes que se repetem em defaultCOnfig e as
+	especificas para cada productFlavor. Por exemplo definir um applicationId para cada
+	flavor.
+	- todo flavor deve pertencer a um flavor-dimension, que é um grupo de product-flavors
+	    exemplo de flavorDimesion e productFlavor
+	    flavorDimensions "version"
+        productFlavors {
+            demo {
+                // Assigns this product flavor to the "version" flavor dimension.
+                // If you are using only one dimension, this property is optional,
+                // and the plugin automatically assigns all the module's flavors to
+                // that dimension.
+                dimension "version"
+                applicationIdSuffix ".demo"
+                versionNameSuffix "-demo"
+            }
+            full {
+                dimension "version"
+                applicationIdSuffix ".full"
+                versionNameSuffix "-full"
+            }
+        }
+
+        - apos dar um sync no arqvuivo o gradle ira tentar criar as variantes de build  baseados
+        nos nomes dos build types e product flavors seguindo o seguinte padrao
+        	- product-flavor + build-type
+        	- exemplo
+        		ProductFlavor {demo, full}
+        		BuildType {debug, release}
+        		- build variants
+        			- demoDebug, demoRelease, fullDebug e fullRelease
+
+    - É possivel modificar o aplication ID das variantes
+    	- Se quisermos criar diferentes versoes do aplicativo para publicar na loja, por
+    	exemplo uma versao demo e uma versao paga/completa/full para aparecer
+    	de forma separada na loja, cada variacao precisa ter um application Id diferente
+    	- Exemplo
+    	    defaultConfig {
+                applicationId "com.example.myapp"
+            }
+            productFlavors {
+                free {
+                    applicationIdSuffix ".free"
+                }
+                pro {
+                    applicationIdSuffix ".pro"
+                }
+            }
+
+            - podemos mofiicar a applicationId  do flavor sobreescrevendo o
+             atributo applicationId, ou adicionar um sufixo usando o atributo
+             applicationIdSuffix
+
+             - Tambem é possivel fazer essa modificacao no buildType
+             buildTypes {
+                     debug {
+                         applicationIdSuffix ".debug"
+                     }
+                 }
+
 -----------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------

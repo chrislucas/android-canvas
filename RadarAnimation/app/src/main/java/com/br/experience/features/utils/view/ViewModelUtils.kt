@@ -5,6 +5,7 @@ import android.graphics.Rect
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
+import androidx.core.view.WindowCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -94,4 +95,12 @@ fun FragmentActivity.showSystemUI() {
     window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE
             or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
             or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
+}
+
+fun FragmentActivity.setDecorFitsSystemWindows(decorFitsSystemWindows: Boolean) {
+    /**
+     * https://developer.android.com/develop/ui/views/layout/edge-to-edge-manually
+     */
+    WindowCompat.setDecorFitsSystemWindows(window, decorFitsSystemWindows)
+
 }

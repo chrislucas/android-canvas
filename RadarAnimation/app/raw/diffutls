@@ -1,0 +1,13 @@
+https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil
+https://medium.com/android-news/smart-way-to-update-recyclerview-using-diffutil-345941a160e0
+https://medium.com/@wambuinjumbi/using-diffutil-in-a-recyclerview-da38d64c83f2
+
+
+AsyncListUtil
+https://developer.android.com/reference/androidx/recyclerview/widget/AsyncListUtil
+https://medium.com/android-news/how-to-use-asynclistutil-16b5175bb468
+
+
+RecyclerView.AdapterDataObserve
+https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.AdapterDataObserver
+https://medium.com/@ar.xa.vasquez/a-real-world-working-example-of-a-recyclerview-with-reactive-elements-4ec8d1515e8a

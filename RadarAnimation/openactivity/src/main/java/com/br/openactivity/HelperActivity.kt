@@ -24,11 +24,17 @@ fun Context.startActivityByDeeplink(
 ) {
     with(this) {
         val defaultFlags =
-            Intent.FLAG_ACTIVITY_CLEAR_TASK or
-                    Intent.FLAG_ACTIVITY_NEW_TASK or
-                    Intent.URI_ALLOW_UNSAFE or
-                    Intent.URI_ANDROID_APP_SCHEME or
-                    Intent.URI_INTENT_SCHEME
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
+                Intent.FLAG_ACTIVITY_CLEAR_TASK or
+                        Intent.FLAG_ACTIVITY_NEW_TASK or
+                        Intent.URI_ALLOW_UNSAFE or
+                        Intent.URI_ANDROID_APP_SCHEME or
+                        Intent.URI_INTENT_SCHEME
+            } else {
+                Intent.FLAG_ACTIVITY_CLEAR_TASK or
+                        Intent.FLAG_ACTIVITY_NEW_TASK or
+                        Intent.URI_INTENT_SCHEME
+            }
 
         val intent = Intent.parseUri(deeplink, flags ?: defaultFlags)
 
@@ -50,8 +56,6 @@ fun Context.startActivityByDeeplink(
                 PackageManager.GET_RESOLVED_FILTER or PackageManager.MATCH_DEFAULT_ONLY
             )
         }
-
-
 
         resolveInfo?.let {
             this.redirect(it.activityInfo.createIntent())
