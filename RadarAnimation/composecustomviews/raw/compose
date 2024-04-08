@@ -5,3 +5,59 @@ https://medium.com/@sujathamudadla1213/remembersaveable-explain-dafb25a1cd7b
 State and Jetpack Compose
 https://developer.android.com/jetpack/compose/state
 ------------------------------------------------------------------------------------------------------------------
+Interoperability APIs
+https://developer.android.com/jetpack/compose/migrate/interoperability-apis
+
+
+------------------------------------------------------------------------------------------------------------------
+fragment compose
+https://developer.android.com/jetpack/compose/migrate/interoperability-apis/views-in-compose
+https://medium.com/@smish_/unlocking-the-power-of-jetpack-compose-fragments-stateflow-and-viewmodels-a-comprehensive-guide-f0b76f9a02ee
+------------------------------------------------------------------------------------------------------------------
+Flow Adapter compose
+https://google.github.io/accompanist/flowlayout/
+https://developer.android.com/jetpack/compose/mental-model
+https://medium.com/androiddevelopers/jetpack-compose-interop-using-compose-in-a-recyclerview-569c7ec7a583
+https://medium.com/@android-world/data-binding-in-jetpack-compose-1a174e056c6d
+------------------------------------------------------------------------------------------------------------------
+ViewPager compose
+https://developer.android.com/jetpack/compose/layouts/pager
+https://www.sinasamaki.com/setting-up-viewpager-in-jetpack-compose/
+
+https://medium.com/@domen.lanisnik/exploring-the-official-pager-in-compose-8c2698c49a98
+https://proandroiddev.com/viewpager-in-jetpack-compose-using-official-api-d440055febf9
+https://fvilarino.medium.com/creating-a-viewpager-in-jetpack-compose-332d6a9181a5
+
+https://medium.com/@paritasampa95/viewpager-in-android-jetpack-compose-34fc7df02255
+https://github.com/mende273/ViewPagerComposeExamples
+
+------------------------------------------------------------------------------------------------------------------
+Slider compose
+https://developer.android.com/jetpack/compose/components/slider
+------------------------------------------------------------------------------------------------------------------
+Compose Foundation
+https://developer.android.com/jetpack/androidx/releases/compose-foundation
+
+
+------------------------------------------------------------------------------------------------------------------
+
+LocalContext jetpack compose. How to get Android Context
+https://foso.github.io/Jetpack-Compose-Playground/cookbook/get_android_context/
+
+
+Local Content jetpack compose
+https://developer.android.com/jetpack/compose/compositionlocal
+https://medium.com/@kamal.lakhani56/compositionlocalprovider-jetpack-compose-2ecce8ba1c07
+https://medium.com/geekculture/jetpack-compose-compositionlocal-what-you-need-to-know-979a4aef6412
+https://nameisjayant.medium.com/composition-local-in-jetpack-compose-660eb799d0ed
+https://www.kodeco.com/34513206-compositionlocal-in-jetpack-compose
+
+Resources in Compose
+https://developer.android.com/jetpack/compose/resources
+
+
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------

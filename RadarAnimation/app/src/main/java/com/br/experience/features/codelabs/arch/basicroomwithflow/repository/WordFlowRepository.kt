@@ -3,7 +3,7 @@ package com.br.experience.features.codelabs.arch.basicroomwithflow.repository
 import android.content.Context
 import com.br.experience.features.codelabs.arch.basicroomwithflow.db.WordFlowDB
 import com.br.experience.features.codelabs.arch.basicroomwithflow.db.dao.WordFlowDao
-import com.br.experience.features.codelabs.arch.basicroomwithflow.entity.WordEntity
+import com.br.experience.features.codelabs.arch.basicroomwithflow.entity.WordFlowEntity
 import com.br.experience.features.codelabs.arch.basicroomwithflow.model.Word
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
@@ -21,7 +21,7 @@ class WordFlowRepository(ctx: Context, coroutineScope: CoroutineScope) {
             entities.map { Word(it.word) }
         } ?: flowOf(listOf())
 
-    suspend fun insert(entity: WordEntity) {
+    suspend fun insert(entity: WordFlowEntity) {
         dao?.insert(entity) ?: throw Exception("Dao undefined")
     }
 }

@@ -7,11 +7,11 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.br.experience.features.codelabs.arch.basicroomwithflow.db.dao.WordFlowDao
-import com.br.experience.features.codelabs.arch.basicroomwithflow.entity.WordEntity
+import com.br.experience.features.codelabs.arch.basicroomwithflow.entity.WordFlowEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-@Database(entities = [WordEntity::class], version = 1, exportSchema = false)
+@Database(entities = [WordFlowEntity::class], version = 1, exportSchema = false)
 abstract class WordFlowDB : RoomDatabase() {
 
     abstract fun getWordDao(): WordFlowDao
@@ -34,8 +34,8 @@ abstract class WordFlowDB : RoomDatabase() {
             private suspend fun mockInsert(wordFlowDao: WordFlowDao) {
                 with(wordFlowDao) {
                     deleteAll()
-                    insert(WordEntity(word = "Olá"))
-                    insert(WordEntity(word = "Mundo"))
+                    insert(WordFlowEntity(word = "Olá"))
+                    insert(WordFlowEntity(word = "Mundo"))
                 }
             }
 
@@ -57,7 +57,7 @@ abstract class WordFlowDB : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context,
                         WordFlowDB::class.java,
-                        WordFlowDao.TableFlowWord.TABLE_NAME
+                        WordFlowEntity.TABLE_NAME
                     ).addCallback(WordFlowDBCallback(coroutineScope)).build()
                 }
                 instance

@@ -5,17 +5,12 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.br.experience.features.codelabs.arch.basicroomwithllivedata.db.dao.WordDao.TableFlowWord.TABLE_NAME
 import com.br.experience.features.codelabs.arch.basicroomwithllivedata.entity.WordEntity
 
 @Dao
 interface WordDao {
 
-    object TableFlowWord {
-        const val TABLE_NAME: String = "words_livedata"
-    }
-
-    @Query("SELECT * FROM $TABLE_NAME ORDER BY word ASC")
+    @Query("SELECT * FROM ${WordEntity.TABLE_NAME} ORDER BY word ASC")
     fun get(): LiveData<List<WordEntity>>
 
     /**
@@ -28,6 +23,6 @@ interface WordDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(wordEntity: WordEntity)
 
-    @Query("DELETE FROM words")
+    @Query("DELETE FROM ${WordEntity.TABLE_NAME}")
     fun deleteAll()
 }

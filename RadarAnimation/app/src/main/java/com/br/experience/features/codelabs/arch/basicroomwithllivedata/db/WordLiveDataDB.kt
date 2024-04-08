@@ -55,9 +55,8 @@ abstract class WordLiveDataDB : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         WordLiveDataDB::class.java,
-                        WordDao.TableFlowWord.TABLE_NAME
-                    ).addCallback(WordDBCallback(coroutineScope))
-                        .build()
+                        WordEntity.TABLE_NAME
+                    ).addCallback(WordDBCallback(coroutineScope)).build()
                 }
                 instance
             } else {

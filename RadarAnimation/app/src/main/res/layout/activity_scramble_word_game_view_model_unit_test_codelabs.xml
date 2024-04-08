@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.br.experience.features.codelabs.viewmodelunittest.scramblewordgamecopy.ScrambleWordGameActivity">
+    tools:context="com.br.experience.features.codelabs.jetpackcompose.scramblewordgamecopy.ScrambleWordGameActivity">
 
     <Button
         android:id="@+id/start_game_scramble_word_activity"

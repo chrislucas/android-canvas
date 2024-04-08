@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.br.tutotiral.google.allcomponents.ui.theme.RadarAnimationTheme
 
 /**
+ * TODO
  * O objeto desse projeto é ter uma lista de todos os componentes visuais
  * que eu conseguir juntar.
  *
@@ -21,6 +22,9 @@ import com.br.tutotiral.google.allcomponents.ui.theme.RadarAnimationTheme
  *
  * basics
  * https://developer.android.com/jetpack/compose/layouts/basics
+ *
+ * Layouts in Compose
+ * https://developer.android.com/jetpack/compose/layouts
  *
  * Buttons
  * https://developer.android.com/jetpack/compose/components/button

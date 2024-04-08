@@ -4,12 +4,8 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.br.experience.features.codelabs.arch.basicroomwithflow.db.dao.WordFlowDao.TableFlowWord.TABLE_NAME
-import com.br.experience.features.codelabs.arch.basicroomwithflow.entity.WordEntity
-
+import com.br.experience.features.codelabs.arch.basicroomwithflow.entity.WordFlowEntity
 import kotlinx.coroutines.flow.Flow
-
-
 
 
 /**
@@ -18,12 +14,10 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface WordFlowDao {
 
-    object TableFlowWord {
-        const val TABLE_NAME: String = "words_flow"
-    }
 
-    @Query("SELECT * FROM $TABLE_NAME ORDER BY word ASC")
-    fun get(): Flow<List<WordEntity>>
+
+    @Query("SELECT * FROM ${WordFlowEntity.TABLE_NAME} ORDER BY word ASC")
+    fun get(): Flow<List<WordFlowEntity>>
 
     /**
      * A estratégia OnConflictStrategy.IGNORE ignora ua nova palavra
@@ -33,8 +27,8 @@ interface WordFlowDao {
      * https://developer.android.com/reference/androidx/room/OnConflictStrategy
      */
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(wordEntity: WordEntity)
+    suspend fun insert(wordEntity: WordFlowEntity)
 
-    @Query("DELETE FROM $TABLE_NAME")
+    @Query("DELETE FROM ${WordFlowEntity.TABLE_NAME} ")
     fun deleteAll()
 }

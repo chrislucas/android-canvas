@@ -31,12 +31,15 @@
         Abrir Activity Codebabs Room With ViewModel e Flow
     </string>
     <string name="title_activity_open_feature">OpenFeatureActivity</string>
-    <string name="label_bt_open_tutorial_view_model_test_codelabs">Abrir Activity Test View Model e Live Data</string>
+    <string name="label_bt_open_tutorial_view_model_test_codelabs">Abrir Test View Model - Game Word Scramble</string>
     <string name="title_activity_scramble_game">ScrambleGameActivity</string>
     <string name="label_start_game_scramble_word_activity">Start Word Scramble</string>
     <string name="title_activity_unit_test_coroutines">UnitTestCoroutinesActivity</string>
     <string name="label_bt_open_tutorial_coroutine_dispatcher">
         Abrir Activity Test Coroutine Dispatcher
+    </string>
+    <string name="label_bt_open_tutorial_accessibility_service">
+        Abrir Activity Tutorial AccessibilityService
     </string>
     <string name="app_name_game">Unscramble</string>
     <!-- Inicio strings projeto wordscramble-->
@@ -53,6 +56,7 @@
     <string name="play_again">Play Again</string>
     <string name="wrong_guess">Wrong Guess!</string>
     <string name="title_activity_testing_in_jetpack_compose">TestingInJetpackComposeActivity</string>
+    <string name="title_activity_write_automated_test">WriteAutomatedTestActivity</string>
     <string-array name="hints_word">
         <item>Word</item>
         <item>Anything</item>

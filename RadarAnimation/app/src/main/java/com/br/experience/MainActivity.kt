@@ -44,6 +44,11 @@ class MainActivity : AppCompatActivity() {
             btOpenTutorialCoroutineDispatcher.setOnClickListener {
                 it.context.startActivityByDeeplink("dpl://samplecoroutinedispatcher")
             }
+
+
+            btOpenTutorialAccessibilityService.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://samplecheckcontentdescriptionintext")
+            }
         }
     }
 }

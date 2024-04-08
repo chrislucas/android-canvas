@@ -17,4 +17,15 @@
     <string name="title_activity_testing_compose">TestingComposeActivity</string>
     <string name="title_activity_all_compose_view">AllComposeViewActivity</string>
     <string name="title_activity_sample_of_lists">SampleOfListsActivity</string>
+    <string name="title_activity_inttro_accessibility">InttroAccessibilityActivity</string>
+    <string name="title_activity_simple_combination_text_element">SimpleCombinationTextElementActivity</string>
+    <string name="title_activity_compose_basics">ComposeBasicsActivity</string>
+    <string name="title_activity_image_in_compose">ImageInComposeActivity</string>
+    <string name="title_activity_box_layour">BoxLayourActivity</string>
+    <string name="title_activity_compose_guide_book">ComposeGuideBookActivity</string>
+    <string name="title_activity_handling_clicks">HandlingClicksActivity</string>
+    <string name="title_activity_taps_and_press">TapsAndPressActivity</string>
+    <string name="title_activity_handle_change_to_text_field">HandleChangeToTextFieldActivity</string>
+    <string name="title_activity_flex_box_layout_behavior">FlexBoxLayoutBehaviorActivity</string>
+    <string name="title_activity_flexible_rows_and_columns_compose">FlexibleRowsAndColumnsComposeActivity</string>
 </resources>

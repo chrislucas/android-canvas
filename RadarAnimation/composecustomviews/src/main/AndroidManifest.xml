@@ -3,6 +3,61 @@
 
     <application>
         <activity
+            android:name="com.br.tutotiral.medium.flexiblelayout.FlexibleRowsAndColumnsComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_flexible_rows_and_columns_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.flexboxlayoutbehavior.FlexBoxLayoutBehaviorActivity"
+            android:exported="false"
+            android:label="@string/title_activity_flex_box_layout_behavior"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.playground.cookbook.handletextfield.HandleChangeToTextFieldActivity"
+            android:exported="false"
+            android:label="@string/title_activity_handle_change_to_text_field"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.docs.touchandinput.tapsandpress.TapsAndPressActivity"
+            android:exported="false"
+            android:label="@string/title_activity_taps_and_press"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.hadlingclicks.HandlingClicksActivity"
+            android:exported="false"
+            android:label="@string/title_activity_handling_clicks"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.guidebook.ComposeGuideBookActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_guide_book"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.playground.boxlayout.BoxLayoutActivity"
+            android:exported="false"
+            android:label="@string/title_activity_box_layour"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.workingwithimages.ImageInComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_in_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.codelabs.composebasicsii.ComposeBasicsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_basics"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.codelabs.composebasics.SimpleCombinationTextElementActivity"
+            android:exported="false"
+            android:label="@string/title_activity_simple_combination_text_element"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.codelabs.introaccessibility.IntroAccessibilityActivity"
+            android:exported="false"
+            android:label="@string/title_activity_inttro_accessibility"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
             android:name="com.br.tutotiral.google.allcomponents.feature.basiclists.SampleOfListsActivity"
             android:exported="false"
             android:label="@string/title_activity_sample_of_lists"
@@ -69,10 +124,8 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data
                     android:host="1st_tutorial_jetpack_compose"
                     android:scheme="dpl" />
