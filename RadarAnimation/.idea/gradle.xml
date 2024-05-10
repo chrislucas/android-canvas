@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ExoplayerInCompose" />
             <option value="$PROJECT_DIR$/adaptivelayout" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/composecustomviews" />
@@ -18,6 +19,7 @@
             <option value="$PROJECT_DIR$/funjetpackmediaplayer" />
             <option value="$PROJECT_DIR$/funwithaccessibility" />
             <option value="$PROJECT_DIR$/funwithgemini" />
+            <option value="$PROJECT_DIR$/funwithhandler" />
             <option value="$PROJECT_DIR$/openactivity" />
             <option value="$PROJECT_DIR$/reflib" />
             <option value="$PROJECT_DIR$/storagepermission" />

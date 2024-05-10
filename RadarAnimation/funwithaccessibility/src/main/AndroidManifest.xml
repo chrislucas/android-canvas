@@ -3,14 +3,30 @@
 
     <application>
         <activity
-            android:name=".CheckContentDescriptionInTextViewActivity"
+            android:name=".views.activities.CheckContentDescriptionInTextViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="samplecheckcontentdescriptionintext"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.activities.FunWithAccessibilityDelegateActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="samplefunwithaccessibilitydelegate"
                     android:scheme="dpl" />
             </intent-filter>
         </activity>

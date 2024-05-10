@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation.NoActionBar">
         <activity
+            android:name="com.br.experience.features.dragndrop.clockdraganddrop.DraggableClockActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.dragndrop.tutorials.medium.dragndropyouneedtoknow.AllYouNeedToKnowDragAndDropActivity"
+            android:exported="false" />
+        <activity
             android:name="com.br.experience.features.tutorials.medium.androidstorage.AndroidAndScopeStorageActivity"
             android:exported="false" />
         <activity
@@ -35,8 +41,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="samplecoroutinedispatcher"
                     android:scheme="dpl" />

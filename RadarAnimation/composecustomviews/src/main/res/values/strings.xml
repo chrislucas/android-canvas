@@ -28,4 +28,6 @@
     <string name="title_activity_handle_change_to_text_field">HandleChangeToTextFieldActivity</string>
     <string name="title_activity_flex_box_layout_behavior">FlexBoxLayoutBehaviorActivity</string>
     <string name="title_activity_flexible_rows_and_columns_compose">FlexibleRowsAndColumnsComposeActivity</string>
+    <string name="title_activity_bar_code_with_compose">BarCodeWithComposeActivity</string>
+    <string name="title_activity_tutorial_shared_element_transition">TutorialSharedElementTransitionActivity</string>
 </resources>

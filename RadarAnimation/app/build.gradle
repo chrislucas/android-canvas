@@ -71,6 +71,7 @@ dependencies {
 
     implementation "androidx.dynamicanimation:dynamicanimation:1.0.0"
     implementation 'androidx.activity:activity-ktx:1.8.2'
+    implementation 'androidx.activity:activity:1.8.0'
     //implementation platform('androidx.compose:compose-bom:2024.03.00')
     //androidTestImplementation platform('androidx.compose:compose-bom:2024.03.00')
 
@@ -102,6 +103,14 @@ dependencies {
     implementation 'io.coil-kt:coil-compose:2.6.0'
 
     implementation project(':viewmodelbuilder')
+
+    // dragndrop
+    /*
+        https://developer.android.com/jetpack/androidx/releases/draganddrop
+        Accept drag-and-drop data from another app or within an app, and show a consistent drop target affordance.
+
+     */
+    implementation("androidx.draganddrop:draganddrop:1.0.0")
 
     def room_version = "2.6.1"
     implementation "androidx.room:room-runtime:2.6.1"

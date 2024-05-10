@@ -3,6 +3,25 @@
 
     <application>
         <activity
+            android:name="com.br.tutotiral.google.sharedelementtransition.TutorialSharedElementTransitionActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tutorial_shared_element_transition"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="shared_element_transition_jetpack_compose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.tutotiral.github.barchartcompose.BarCodeWithComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bar_code_with_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
             android:name="com.br.tutotiral.medium.flexiblelayout.FlexibleRowsAndColumnsComposeActivity"
             android:exported="false"
             android:label="@string/title_activity_flexible_rows_and_columns_compose"
@@ -124,8 +143,10 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="1st_tutorial_jetpack_compose"
                     android:scheme="dpl" />
@@ -138,10 +159,8 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data
                     android:host="main_api_reference_jetpack_compose"
                     android:scheme="dpl" />
