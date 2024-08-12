@@ -1,0 +1,44 @@
+implement secure offline authetication android
+https://stackoverflow.com/questions/48844636/how-to-keep-keys-secure-in-fully-offline-app
+https://stackoverflow.com/questions/76620192/offline-auth-implementation
+
+How to Use Smart Offline Handoff for Mobile App Data Encryption
+https://www.appdome.com/how-to/mobile-app-security/mobile-data-encryption/enable-secure-offline-access-to-encrypted-data/
+
+----------------------------------------------------------------------------------------------------
+Build an offline-first app
+https://developer.android.com/topic/architecture/data-layer/offline-first
+
+----------------------------------------------------------------------------------------------------
+All You Need to Know About Android App Vulnerability: Insecure Authentication
+https://www.getastra.com/blog/mobile/all-you-need-to-know-about-android-app-vulnerability-insecure-authentication/
+----------------------------------------------------------------------------------------------------\
+
+
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Android Vulnerabilities
+https://yashpawar931.medium.com/android-vulnerabilities-dbe9771ffba5
+----------------------------------------------------------------------------------------------------
+Secure Mobile Biometric Authentication: Best Practices and Implementation Guidelines for Kotlin, Swift, and Flutter
+https://medium.com/@ostorlab/introduction-d481bcc774c8
+----------------------------------------------------------------------------------------------------
+binary attack android
+https://github.com/vusec/drammer
+https://medium.com/swlh/how-to-prevent-mfa-bypass-in-mobile-apps-2aeb25c4588d
+https://lolcads.github.io/posts/2022/11/diving_into_the_art_of_userspace_exploitation_under_android/
+https://cqr.company/web-vulnerabilities/binary-vulnerabilities/
+https://owasp.org/www-project-mobile-top-10/2014-risks/m10-lack-of-binary-protections
+https://owasp.org/www-project-mobile-top-10/2023-risks/m7-insufficient-binary-protection
+https://developers.google.com/android/binary_transparency/overview
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------

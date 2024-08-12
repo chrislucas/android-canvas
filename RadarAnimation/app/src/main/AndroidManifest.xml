@@ -9,6 +9,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation.NoActionBar">
         <activity
+            android:name="com.br.experience.features.tutorials.medium.pdfdocument.PdfDocumentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.spans.tutorial.spantastic.SpantasticsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.spans.SpansActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.codelabs.testdoublesdependencyinjection.TestDoublesAndDependencyInjectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.codelabs.testingbasics.TestingBasicsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar" />
+        <activity
+            android:name="com.br.experience.features.contentprovider.CreateContentProviderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.runadb.RunADBCommandsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="sampleruncommandadb"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.experience.features.memoryleak.CheckMemoryLeakActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar" />
+        <activity
+            android:name="com.br.experience.features.book.cleanandroidarchitecture.CleanAndroidArchitectureBookActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RadarAnimation.NoActionBar" />
+        <activity
             android:name="com.br.experience.features.tutorials.medium.androidstorage.AndroidAndScopeStorageActivity"
             android:exported="false" />
         <activity
@@ -35,8 +75,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="samplecoroutinedispatcher"
                     android:scheme="dpl" />
@@ -203,7 +245,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

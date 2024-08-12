@@ -14,6 +14,7 @@ import com.br.tutotiral.google.codelabs.viewmodelandstate.ui.theme.RadarAnimatio
 
 /**
  * https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state#0
+ * https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state#0
  */
 class ViewModelAndStateActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

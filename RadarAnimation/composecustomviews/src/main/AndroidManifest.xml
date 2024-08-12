@@ -3,6 +3,149 @@
 
     <application>
         <activity
+            android:name=".feature.all.ListOfFeaturesComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_list_of_features"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="listoffeaturesjetpackcompose"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.quickguide.lists.displaypagedcontent.DisplayPagedContentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_display_paged_content"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name=".feature.canvas.AllCanvasTutorialsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_all_canvas_tutorials"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.codelabs.viewmodelunittest.UnscrableActivity"
+            android:exported="false"
+            android:label="@string/title_activity_unscrable"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.training.essetials.ComposeBasicsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_basics"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.medium.whatisscaffold.WhatIsScaffoldActivity"
+            android:exported="false"
+            android:label="@string/title_activity_what_is_scafffold"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.scaffold.WhatIsScaffoldActivity"
+            android:exported="false"
+            android:label="@string/title_activity_what_is_scaffold"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.pointerinputs.scroll.ScrollActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scroll"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.pager.PagerInComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pager_in_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.basics.layouts.foundation.row.RowActivity"
+            android:exported="false"
+            android:label="@string/title_activity_row"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.basics.layouts.foundation.column.ColumnActivity"
+            android:exported="false"
+            android:label="@string/title_activity_column"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.basics.layouts.materialcomponents.MaterialComponentsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_material_components"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.basics.layouts.layoutbasics.LayoutBasicsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_layout_basics"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.basics.composelayoutbasics.ComposeLayoutBasicsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_layout_basics"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.state.StateInJetpackComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_state_in_jetpack_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.composables.menudropdown.DropdownComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dropdown_compose"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.composables.listcomposables.AllComposeComponentsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_all_compose_components"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.tutotiral.google.listsandgrids.ListsAndGridsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lists_and_grids"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.quickguide.switchtoggle.SwitchButtonActivity"
+            android:exported="false"
+            android:label="@string/title_activity_switch_button"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.quickguide.lists.displaycollection.DisplayCollectionsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_display_collections"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="quickguidedisplaycollections"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.quickguide.all.AllQuickGuideActivity"
+            android:exported="true"
+            android:label="@string/title_activity_all_quick_guide"
+            android:theme="@style/Theme.RadarAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="allquickguidesandroid"
+                    android:scheme="dpl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.br.quickguide.animationimage.QuickGuideAnimatedImageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quick_guide_animated_image"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
+            android:name="com.br.quickguide.createbutton.QuickGuideCreateButtonActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quick_guide_create_button"
+            android:theme="@style/Theme.RadarAnimation" />
+        <activity
             android:name="com.br.tutotiral.medium.flexiblelayout.FlexibleRowsAndColumnsComposeActivity"
             android:exported="false"
             android:label="@string/title_activity_flexible_rows_and_columns_compose"
@@ -124,8 +267,10 @@
             android:theme="@style/Theme.RadarAnimation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="1st_tutorial_jetpack_compose"
                     android:scheme="dpl" />

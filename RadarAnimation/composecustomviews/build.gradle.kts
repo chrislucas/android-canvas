@@ -52,10 +52,12 @@ android {
 
 dependencies {
 
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
 
     // view pager
-    implementation("androidx.compose.foundation:foundation:1.6.4")
+    implementation("androidx.compose.foundation:foundation:1.6.8")
+
+    implementation("com.composables.ui:menu:1.4.0")
 
 
     // Android Studio Preview support
@@ -81,7 +83,7 @@ dependencies {
     api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
     api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
-    val retrofitVersion = "2.9.0"
+    val retrofitVersion = "2.11.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
@@ -97,32 +99,37 @@ dependencies {
     implementation("androidx.compose.material3:material3-window-size-class")
 
     // Optional - Integration with activities
-    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.activity:activity-compose:1.9.0")
     // Optional - Integration with ViewModels
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1")
     // Optional - Integration with LiveData
     implementation("androidx.compose.runtime:runtime-livedata")
     // Optional - Integration with RxJava
     implementation("androidx.compose.runtime:runtime-rxjava2")
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
 
     // optional - RxJava2 support
-    implementation("androidx.datastore:datastore-preferences-rxjava2:1.0.0")
+    implementation("androidx.datastore:datastore-preferences-rxjava2:1.1.1")
 
     // optional - RxJava3 support
-    implementation("androidx.datastore:datastore-preferences-rxjava3:1.0.0")
+    implementation("androidx.datastore:datastore-preferences-rxjava3:1.1.1")
 
-    implementation("androidx.datastore:datastore:1.0.0")
+    implementation("androidx.datastore:datastore:1.1.1")
 
     // optional - RxJava2 support
-    implementation("androidx.datastore:datastore-rxjava2:1.0.0")
+    implementation("androidx.datastore:datastore-rxjava2:1.1.1")
 
     // optional - RxJava3 support
-    implementation("androidx.datastore:datastore-rxjava3:1.0.0")
+    implementation("androidx.datastore:datastore-rxjava3:1.1.1")
+
+    implementation("androidx.paging:paging-compose:3.3.2")
+
+    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.14")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

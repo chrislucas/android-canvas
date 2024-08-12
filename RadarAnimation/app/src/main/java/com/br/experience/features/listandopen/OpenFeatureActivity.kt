@@ -12,6 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.br.experience.features.listandopen.ui.theme.RadarAnimationTheme
 
+/**
+ * TODo
+ * criar uma lista de deeplinks que ao clicar abre um activity deste projeto
+ * a ideia é criar uma lista para abrir os tutoriais e testes que tenho
+ * feito.
+ */
 class OpenFeatureActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

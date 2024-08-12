@@ -8,6 +8,7 @@
     tools:context=".CheckContentDescriptionInTextViewActivity">
 
     <TextView
+        android:id="@+id/tv_title_accessibility_event"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:text="@string/hello_world"

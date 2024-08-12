@@ -28,4 +28,27 @@
     <string name="title_activity_handle_change_to_text_field">HandleChangeToTextFieldActivity</string>
     <string name="title_activity_flex_box_layout_behavior">FlexBoxLayoutBehaviorActivity</string>
     <string name="title_activity_flexible_rows_and_columns_compose">FlexibleRowsAndColumnsComposeActivity</string>
+    <string name="title_activity_quick_guide_create_button">QuickGuideCreateButtonActivity</string>
+    <string name="title_activity_quick_guide_animated_image">QuickGuideAnimatedImageActivity
+    </string>
+    <string name="title_activity_all_quick_guide">AllQuickGuideActivity</string>
+    <string name="title_activity_display_collections">DisplayCollectionsActivity</string>
+    <string name="title_activity_switch_button">SwitchButtonActivity</string>
+    <string name="title_activity_lists_and_grids">ListsAndGridsActivity</string>
+    <string name="title_activity_all_compose_components">AllComposeComponentsActivity</string>
+    <string name="title_activity_dropdown_compose">DropdownComposeActivity</string>
+    <string name="title_activity_state_in_jetpack_compose">StateInJetpackComposeActivity</string>
+    <string name="title_activity_compose_layout_basics">ComposeLayoutBasicsActivity</string>
+    <string name="title_activity_layout_basics">LayoutBasicsActivity</string>
+    <string name="title_activity_material_components">MaterialComponentsActivity</string>
+    <string name="title_activity_column">ColumnActivity</string>
+    <string name="title_activity_row">RowActivity</string>
+    <string name="title_activity_pager_in_compose">PagerInComposeActivity</string>
+    <string name="title_activity_scroll">ScrollActivity</string>
+    <string name="title_activity_what_is_scaffold">WhatIsScaffoldActivity</string>
+    <string name="title_activity_what_is_scafffold">WhatIsScafffoldActivity</string>
+    <string name="title_activity_unscrable">UnscrableActivity</string>
+    <string name="title_activity_all_canvas_tutorials">AllCanvasTutorialsActivity</string>
+    <string name="title_activity_display_paged_content">DisplayPagedContentActivity</string>
+    <string name="title_activity_list_of_features">ListOfFeaturesActivity</string>
 </resources>

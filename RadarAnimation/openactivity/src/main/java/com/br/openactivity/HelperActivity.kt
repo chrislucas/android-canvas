@@ -28,8 +28,9 @@ fun Context.startActivityByDeeplink(
             Intent.URI_ALLOW_UNSAFE or
             Intent.URI_ANDROID_APP_SCHEME or
             Intent.URI_INTENT_SCHEME
+            Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         */
-        val defaultFlags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+        val defaultFlags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.URI_ALLOW_UNSAFE
         val intent = Intent.parseUri(deeplink, flags ?: defaultFlags)
 
         /**

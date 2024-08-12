@@ -1,0 +1,67 @@
+https://developer.android.com/reference/android/os/Handler
+
+"A Handler allows you to send and process Message and Runnable objects associated with a thread's MessageQueue.
+Each Handler instance is associated with a single thread and that thread's message queue. When you create a new Handler
+it is bound to a Looper. It will deliver messages and runnables to that Looper's message queue and execute them on that
+Looper's thread.
+
+There are two main uses for a Handler: (1) to schedule messages and runnables to be executed at some point
+in the future; and (2) to enqueue an action to be performed on a different thread than your own.
+
+
+------------------------------------------------------------------------------------------------------------------------
+Drift Away From Android Handlers. Use Coroutines and Jobs Instead!
+https://betterprogramming.pub/drift-away-from-android-handlers-use-coroutines-and-jobs-instead-581815dd3e72
+------------------------------------------------------------------------------------------------------------------------
+https://github.com/chrislucas/repo-android-2/blob/master/kotlin/news/SampleFrameRate/raw/handler_thread
+------------------------------------------------------------------------------------------------------------------------
+https://github.com/chrislucas/repo-android-2/blob/master/kotlin/async/multiprocess/raw/looper-class
+------------------------------------------------------------------------------------------------------------------------
+Understanding Android Core: Looper, Handler, and HandlerThread
+
+https://janisharali.com/blog/android-core-looper-handler-and-handlerthread-bd54d69fe91a
+------------------------------------------------------------------------------------------------------------------------
+Safe delay in Android Views: goodbye Handlers, Hello Coroutines!
+
+https://juliensalvi.medium.com/safe-delay-in-android-views-goodbye-handlers-hello-coroutines-cd47f53f0fbf
+------------------------------------------------------------------------------------------------------------------------
+Trabalhando com delay's em Android. Melhor abordagem?
+https://pt.stackoverflow.com/questions/22656/trabalhando-com-delays-em-android-melhor-abordagem
+------------------------------------------------------------------------------------------------------------------------
+Careful when handling Handlers!
+https://medium.com/@ehsanulfahad/careful-when-handling-handlers-fe4b4224fe4c
+------------------------------------------------------------------------------------------------------------------------
+handlers are useful android
+
+https://medium.com/@jagsaund/android-handler-internals-b5d49eba6977
+https://stackoverflow.com/questions/12312926/why-use-handler
+https://betterprogramming.pub/drift-away-from-android-handlers-use-coroutines-and-jobs-instead-581815dd3e72
+
+How Android Handlers and Loopers Help Android Apps Do Their Magic!
+https://medium.com/@aaarke/how-android-handlers-and-loopers-help-android-apps-do-their-magic-e6ccf756b617
+
+
+How Android Handlers and Loopers Help Android Apps Do Their Magic!
+https://medium.com/@aaarke/how-android-handlers-and-loopers-help-android-apps-do-their-magic-e6ccf756b617
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------

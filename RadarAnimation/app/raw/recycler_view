@@ -1,0 +1,18 @@
+Estudar sobre essas classes e exemplos de uso
+import android.support.v7.recyclerview.extensions.AsyncDifferConfig
+import android.support.v7.recyclerview.extensions.AsyncListDiffer
+import android.support.v7.util.DiffUtil
+import android.support.v7.util.ListUpdateCallback
+
+https://gist.github.com/NickHolcombe/0e1c27892d6b73271f10e12268f40187
+
+
+AsyncDifferConfig
+https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/AsyncDifferConfig
+https://developer.android.com/reference/androidx/recyclerview/widget/AsyncDifferConfig
+
+
+Smart way to update RecyclerView using DiffUtil
+https://medium.com/android-news/smart-way-to-update-recyclerview-using-diffutil-345941a160e0
+
+https://stackoverflow.com/questions/31367599/how-to-update-recyclerview-adapter-data

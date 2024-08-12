@@ -101,6 +101,38 @@
                 android:text="@string/label_bt_open_tutorial_accessibility_service"
                 />
 
+
+            <Button
+                android:id="@+id/bt_open_tutorial_run_adb_commands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_tutorial_run_adb_commands"
+                />
+
+
+            <Button
+                android:id="@+id/bt_open_quick_guide_create_vertical_scrolling_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_quick_guide_create_vertical_scrolling_list"
+                />
+
+
+            <Button
+                android:id="@+id/bt_open_tutorial_all_features_jetpack_compose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_all_features_jetpack_compose"
+                />
+
+
+            <Button
+                android:id="@+id/bt_open_all_quick_guides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bt_open_all_quick_guides"
+                />
+
         </LinearLayout>
 
     </ScrollView>

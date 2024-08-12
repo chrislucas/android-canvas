@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/adaptivelayout" />
+            <option value="$PROJECT_DIR$/annorationprocessor" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/composecustomviews" />
             <option value="$PROJECT_DIR$/composeflowlayout" />
@@ -17,7 +18,10 @@
             <option value="$PROJECT_DIR$/elementsofandroidjetpackbook" />
             <option value="$PROJECT_DIR$/funjetpackmediaplayer" />
             <option value="$PROJECT_DIR$/funwithaccessibility" />
+            <option value="$PROJECT_DIR$/funwithexoplayer" />
             <option value="$PROJECT_DIR$/funwithgemini" />
+            <option value="$PROJECT_DIR$/funwithhandler" />
+            <option value="$PROJECT_DIR$/funwithhilt" />
             <option value="$PROJECT_DIR$/openactivity" />
             <option value="$PROJECT_DIR$/reflib" />
             <option value="$PROJECT_DIR$/storagepermission" />
@@ -27,5 +31,6 @@
         <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
+    <option name="parallelModelFetch" value="true" />
   </component>
 </project>

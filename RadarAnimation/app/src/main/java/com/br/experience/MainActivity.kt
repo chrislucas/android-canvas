@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+
+        /**
+         * TODO mudar isso para um recycler view
+         */
+
         with(binding) {
             btOpenMainComposeActivity.setOnClickListener {
                 it.context.startActivityByDeeplink("dpl://main_compose_activity")
@@ -48,6 +53,23 @@ class MainActivity : AppCompatActivity() {
 
             btOpenTutorialAccessibilityService.setOnClickListener {
                 it.context.startActivityByDeeplink("dpl://samplecheckcontentdescriptionintext")
+            }
+
+            btOpenTutorialAccessibilityService.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://sampleruncommandadb")
+            }
+
+            btOpenQuickGuideCreateVerticalScrollingList.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://quickguidedisplaycollections")
+            }
+
+
+            btOpenTutorialAllFeaturesJetpackCompose.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://listoffeaturesjetpackcompose")
+            }
+
+            btOpenAllQuickGuides.setOnClickListener {
+                it.context.startActivityByDeeplink("dpl://allquickguidesandroid")
             }
         }
     }
