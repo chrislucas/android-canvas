@@ -1,4 +1,4 @@
-package com.br.funwithaccessibility
+package com.br.funwithaccessibility.views.activities
 
 import android.os.Bundle
 import android.view.accessibility.AccessibilityEvent
@@ -7,10 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.br.funwithaccessibility.R
+import com.br.funwithaccessibility.extensions.fromAccessibilityManagerFireEvent
 
 class CheckContentDescriptionInTextViewActivity : AppCompatActivity() {
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,11 @@ class CheckContentDescriptionInTextViewActivity : AppCompatActivity() {
             event.packageName = packageName
             event.eventType = AccessibilityEvent.TYPE_ANNOUNCEMENT
             event.text.add("Disparando um evento de acessibilidade")
-            it.context.sendAccessibilityEvent(event)
+            it.context.fromAccessibilityManagerFireEvent(event)
         }
+
+
+        val textRuntimeContentDescription = findViewById<TextView>(R.id.tv_title_content_description_runtime)
+        textRuntimeContentDescription.contentDescription = "Um texto qualquer"
     }
 }

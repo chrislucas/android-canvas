@@ -1,3 +1,4 @@
 <resources>
     <string name="hello_world">Olá, ModaFoca</string>
+    <string name="runtime_content_description">Content Description em Runtime</string>
 </resources>

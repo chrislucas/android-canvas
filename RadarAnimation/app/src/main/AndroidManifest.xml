@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RadarAnimation.NoActionBar">
         <activity
+            android:name="com.br.experience.features.dragndrop.clockdraganddrop.DraggableClockActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.br.experience.features.dragndrop.tutorials.medium.dragndropyouneedtoknow.AllYouNeedToKnowDragAndDropActivity"
+            android:exported="false" />
+        <activity
             android:name="com.br.experience.features.tutorials.medium.pdfdocument.PdfDocumentActivity"
             android:exported="false" />
         <activity

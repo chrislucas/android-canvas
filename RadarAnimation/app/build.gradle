@@ -113,6 +113,14 @@ dependencies {
 
     implementation project(':viewmodelbuilder')
 
+    // dragndrop
+    /*
+        https://developer.android.com/jetpack/androidx/releases/draganddrop
+        Accept drag-and-drop data from another app or within an app, and show a consistent drop target affordance.
+
+     */
+    implementation("androidx.draganddrop:draganddrop:1.0.0")
+
     def room_version = "2.6.1"
     implementation "androidx.room:room-runtime:2.6.1"
     ksp "androidx.room:room-compiler:$room_version"

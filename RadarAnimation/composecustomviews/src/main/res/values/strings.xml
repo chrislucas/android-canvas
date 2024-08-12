@@ -51,4 +51,6 @@
     <string name="title_activity_all_canvas_tutorials">AllCanvasTutorialsActivity</string>
     <string name="title_activity_display_paged_content">DisplayPagedContentActivity</string>
     <string name="title_activity_list_of_features">ListOfFeaturesActivity</string>
+    <string name="title_activity_bar_code_with_compose">BarCodeWithComposeActivity</string>
+    <string name="title_activity_tutorial_shared_element_transition">TutorialSharedElementTransitionActivity</string>
 </resources>

@@ -16,3 +16,7 @@ https://medium.com/@muhamed.riyas/enhancing-accessibility-in-android-compose-wit
 https://proandroiddev.com/accessibility-testing-in-jetpack-compose-2ecdcc392c52
 https://www.kodeco.com/books/jetpack-compose-by-tutorials/v2.0/chapters/15-accessibility-in-jetpack-compose
 https://www.deque.com/blog/building-accessible-android-apps-with-jetpack-compose-real-time-examples/
+
+
+View.AccessibilityDelegate
+https://developer.android.com/reference/android/view/View.AccessibilityDelegate?authuser=1
